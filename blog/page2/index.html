@@ -183,6 +183,16 @@ $.get("http://ipinfo.io", function (response) {
     
       <!-- Article -->
       <article>
+        <span class="date">12/07/2015</span>
+        <span class="time">Frank Lin</span>
+        <div class="timeline_content">
+          <i class="fa fa-clock-o" jQuery></i>
+          <h3><a href="/design/2015/12/07/markdown-guide/">Markdown语法说明</a></h3>
+        </div>
+      </article><!-- End Article -->
+    
+      <!-- Article -->
+      <article>
         <span class="date">12/04/2015</span>
         <span class="time">Frank Lin</span>
         <div class="timeline_content">
@@ -231,16 +241,6 @@ $.get("http://ipinfo.io", function (response) {
         </div>
       </article><!-- End Article -->
     
-      <!-- Article -->
-      <article>
-        <span class="date">11/03/2015</span>
-        <span class="time">Frank Lin</span>
-        <div class="timeline_content">
-          <i class="fa fa-clock-o" jQuery></i>
-          <h3><a href="/design/2015/11/03/custom-snippet-for-markdown-in-atom/">Atom中为markdown自定义snippets</a></h3>
-        </div>
-      </article><!-- End Article -->
-    
   </div>
 </div><!-- End Timeline widet -->
 
@@ -248,6 +248,27 @@ $.get("http://ipinfo.io", function (response) {
 <div class="widget">
   <div class="widget_title"><h3>Recent posts</h3></div>
   <div class="tb_widget_recent_list clearfix">
+    
+    <!-- Post item -->
+    <div class="item clearfix">
+      <div class="item_thumb">
+        <div class="thumb_icon">
+          <a href="/journal/2016/01/01/happy-new-year-2016/" jQuery><i class="fa fa-copy"></i></a>
+        </div>
+        
+        <div class="thumb_hover">
+          <a href="/journal/2016/01/01/happy-new-year-2016/"><img src="http://i65.tinypic.com/2rnkjsx.jpg" alt="新年快乐"></a>
+        </div>
+        
+      </div>
+      <div class="item_content">
+        <h4><a href="/journal/2016/01/01/happy-new-year-2016/">新年快乐</a></h4>
+        <div class="item_meta clearfix">
+            <span class="meta_date">Jan 1, 2016</span>
+            <span class="meta_author"><a href="/journal/2016/01/01/happy-new-year-2016/">Frank Lin</a></span>
+        </div>
+      </div>
+    </div><!-- End Post item -->
     
     <!-- Post item -->
     <div class="item clearfix">
@@ -312,27 +333,6 @@ $.get("http://ipinfo.io", function (response) {
       </div>
     </div><!-- End Post item -->
     
-    <!-- Post item -->
-    <div class="item clearfix">
-      <div class="item_thumb">
-        <div class="thumb_icon">
-          <a href="/journal/2015/12/04/remind-the-writing-a-little-bowl-of-wonton/" jQuery><i class="fa fa-copy"></i></a>
-        </div>
-        
-        <div class="thumb_hover">
-          <a href="/journal/2015/12/04/remind-the-writing-a-little-bowl-of-wonton/"><img src="http://i65.tinypic.com/2v7unwl.png" alt="自己也曾经写作过，读一读“一碗小馄饨”"></a>
-        </div>
-        
-      </div>
-      <div class="item_content">
-        <h4><a href="/journal/2015/12/04/remind-the-writing-a-little-bowl-of-wonton/">自己也曾经写作过，读一读“一碗小馄饨”</a></h4>
-        <div class="item_meta clearfix">
-            <span class="meta_date">Dec 4, 2015</span>
-            <span class="meta_author"><a href="/journal/2015/12/04/remind-the-writing-a-little-bowl-of-wonton/">Frank Lin</a></span>
-        </div>
-      </div>
-    </div><!-- End Post item -->
-    
   </div>
 </div><!-- End Recent posts -->
 
@@ -348,7 +348,7 @@ $.get("http://ipinfo.io", function (response) {
       
       <li><a href="/categories/#reading">reading</a> (1)</li>
       
-      <li><a href="/categories/#journal">journal</a> (2)</li>
+      <li><a href="/categories/#journal">journal</a> (3)</li>
       
       <li><a href="/categories/#study">study</a> (2)</li>
       
@@ -431,6 +431,61 @@ $.get("http://ipinfo.io", function (response) {
             <div class="col col_9_of_12">
               <!-- Row -->
 <div class="row">
+  
+  <div class="col col_12_of_12">
+    <!-- Layout post -->
+    <div class="layout_post_1">
+      <div class="item_content">
+          <div class="head_title"><h2><a href="/study/2015/12/01/bool-in-c-sharp/">C#中布尔逻辑</a></h2></div>
+      </div>
+      
+      <div class="item_thumb">
+        <div class="thumb_icon">
+          <a href="/study/2015/12/01/bool-in-c-sharp/" jQuery><i class="fa fa-link"></i></a>
+        </div>
+        <div class="thumb_hover">
+          <a href="/study/2015/12/01/bool-in-c-sharp/"><img src="http://i65.tinypic.com/vhry95.jpg" alt="C#中布尔逻辑"></a>
+        </div>
+        <!-- <div class="thumb_meta">
+          <span class="category" jQuery><a href="/blog/">Study</a></span>
+          <span class="comments"><a href="/study/2015/12/01/bool-in-c-sharp/">Dec 1, 2015</a></span>
+        </div> -->
+      </div>
+      <!-- Full meta -->
+      <div class="full_meta clearfix">
+        <span class="meta_format"><i class="fa fa-file-text"></i></span>
+        <span class="meta_date">Dec 1, 2015</span>
+        <span class="meta_author">Frank Lin</span>
+        
+        <span class="meta_tags"> <u>C#</u> 
+        
+      </div><!-- End Full meta -->
+      
+      <div class="item_content">
+        <p><p>C#中，bool类型可以有两个值：true或false。这种类型常常用于记录某些操作的结果，当然也用作存储比较结果，用以判断。</p></p>
+        <p><!-- Duoshuo Share Buttons -->
+<div class="ds-share flat" data-thread-key="flinhong/study/2015/12/01/bool-in-c-sharp" data-title="C#中布尔逻辑" data-images="http://i65.tinypic.com/vhry95.jpg" data-content="C#中，bool类型可以有两个值：true或false。这种类型常常用于记录某些操作的结果，当然也用作存储比较结果，用以判断。" data-url="http://www.flinhong.com/study/2015/12/01/bool-in-c-sharp/">
+    <div class="ds-share-inline alignleft">
+      <ul  class="ds-share-icons-16">
+
+        <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+        <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">&nbsp;</a></li>
+        <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">&nbsp;</a></li>
+        <li><a class="ds-twitter" href="javascript:void(0);" data-service="twitter">&nbsp;</a></li>
+        <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">&nbsp;</a></li>
+        <li><a class="ds-douban" href="javascript:void(0);" data-service="douban">&nbsp;</a></li>
+
+      </ul>
+      <div class="ds-share-icons-more">
+      </div>
+    </div>
+ </div>
+<!-- End Duoshuo Share Buttons -->
+
+        <a class="alignright" href="/study/2015/12/01/bool-in-c-sharp/"> Continue Reading <i class="fa fa-angle-double-right"></i></a><br><br></p>
+      </div>
+    </div><!-- End Layout post -->
+  </div>
   
   <div class="col col_12_of_12">
     <!-- Layout post -->
@@ -652,61 +707,6 @@ $.get("http://ipinfo.io", function (response) {
     </div><!-- End Layout post -->
   </div>
   
-  <div class="col col_12_of_12">
-    <!-- Layout post -->
-    <div class="layout_post_1">
-      <div class="item_content">
-          <div class="head_title"><h2><a href="/journal/2015/09/28/tai-hang-fire-dragon/">没有错过的大坑舞火龙</a></h2></div>
-      </div>
-      
-      <div class="item_thumb">
-        <div class="thumb_icon">
-          <a href="/journal/2015/09/28/tai-hang-fire-dragon/" jQuery><i class="fa fa-link"></i></a>
-        </div>
-        <div class="thumb_hover">
-          <a href="/journal/2015/09/28/tai-hang-fire-dragon/"><img src="https://c1.staticflickr.com/1/715/21738135646_29299e432f_h.jpg" alt="没有错过的大坑舞火龙"></a>
-        </div>
-        <!-- <div class="thumb_meta">
-          <span class="category" jQuery><a href="/blog/">Journal</a></span>
-          <span class="comments"><a href="/journal/2015/09/28/tai-hang-fire-dragon/">Sep 28, 2015</a></span>
-        </div> -->
-      </div>
-      <!-- Full meta -->
-      <div class="full_meta clearfix">
-        <span class="meta_format"><i class="fa fa-file-text"></i></span>
-        <span class="meta_date">Sep 28, 2015</span>
-        <span class="meta_author">Frank Lin</span>
-        
-        <span class="meta_tags"> <u>Hong Kong</u> 
-        
-      </div><!-- End Full meta -->
-      
-      <div class="item_content">
-        <p><p>每年农历八月十四、十五、十六日，也就是中秋节迎月、赏月、追月三日，位于香港岛大大坑村都会举行盛大的舞火龙庆典。这项庆祝活动开始于1880年（维基百科上说最早于19世纪末出现，实际上由何时开始则无从稽考）。当时大坑一带聚居不少客家农民。村民多以务农、打猎为生，生活十分简朴。据闻中秋节前夕的一晚，台风吹袭大坑村，有一条大蟒蛇吞食村里的家畜，给村民合力打死于破屋内。翌日，台风过后，大蟒蛇尸体失踪。不久之后，大坑一带发生瘟疫，死人无数，村民感到惶恐不安。后来村中有道士说此大蟒蛇原本是龙王之儿子，因此要降疫症惩罚该村，报复杀子之仇恨，而村中又有一位老翁，声称有神仙打救报梦，表示必须在中秋节前后三天舞动火龙绕村巡游，并燃烧炮竹，这样便能驱除瘟疫，确保平安。自始便形成了大坑从每年举行舞火龙的习俗。于此同时，亦是香港在中秋节期间，一项非常独特的民间风俗。</p></p>
-        <p><!-- Duoshuo Share Buttons -->
-<div class="ds-share flat" data-thread-key="flinhong/journal/2015/09/28/tai-hang-fire-dragon" data-title="没有错过的大坑舞火龙" data-images="https://c1.staticflickr.com/1/715/21738135646_29299e432f_h.jpg" data-content="每年农历八月十四、十五、十六日，也就是中秋节迎月、赏月、追月三日，位于香港岛大大坑村都会举行盛大的舞火龙庆典。这项庆祝活动开始于1880年（维基百科上说最早于19世纪末出现，实际上由何时开始则无从稽考）。当时大坑一带聚居不少客家农民。村民多以务农、打猎为生，生活十分简朴。据闻中秋节前夕的一晚，台风吹袭大坑村，有一条大蟒蛇吞食村里的家畜，给村民合力打死于破屋内。翌日，台风过后，大蟒蛇尸体失踪。不久之后，大坑一带发生瘟疫，死人无数，村民感到惶恐不安。后来村中有道士说此大蟒蛇原本是龙王之儿子，因此要降疫症惩罚该村，报复杀子之仇恨，而村中又有一位老翁，声称有神仙打救报梦，表示必须在中秋节前后三天舞动火龙绕村巡游，并燃烧炮竹，这样便能驱除瘟疫，确保平安。自始便形成了大坑从每年举行舞火龙的习俗。于此同时，亦是香港在中秋节期间，一项非常独特的民间风俗。" data-url="http://www.flinhong.com/journal/2015/09/28/tai-hang-fire-dragon/">
-    <div class="ds-share-inline alignleft">
-      <ul  class="ds-share-icons-16">
-
-        <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
-        <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">&nbsp;</a></li>
-        <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">&nbsp;</a></li>
-        <li><a class="ds-twitter" href="javascript:void(0);" data-service="twitter">&nbsp;</a></li>
-        <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">&nbsp;</a></li>
-        <li><a class="ds-douban" href="javascript:void(0);" data-service="douban">&nbsp;</a></li>
-
-      </ul>
-      <div class="ds-share-icons-more">
-      </div>
-    </div>
- </div>
-<!-- End Duoshuo Share Buttons -->
-
-        <a class="alignright" href="/journal/2015/09/28/tai-hang-fire-dragon/"> Continue Reading <i class="fa fa-angle-double-right"></i></a><br><br></p>
-      </div>
-    </div><!-- End Layout post -->
-  </div>
-  
 </div>
 <!-- Pagination -->
 <ul class="page-numbers">
@@ -726,6 +726,10 @@ $.get("http://ipinfo.io", function (response) {
     
       
       <li><a class="page-numbers" href="/blog/page3">3</a></li>
+      
+    
+      
+      <li><a class="page-numbers" href="/blog/page4">4</a></li>
       
     
 
@@ -907,6 +911,20 @@ ds.charset = 'UTF-8';
     <!-- Post item -->
     <div class="item clearfix">
       <div class="item_thumb clearfix">
+        <a href="/journal/2016/01/01/happy-new-year-2016/"><img src="http://i65.tinypic.com/2rnkjsx.jpg" alt="新年快乐" class="visible animated"></a>
+      </div>
+      <div class="item_content">
+        <div class="item_meta clearfix">
+          <span class="meta_date">Jan 1, 2016</span>
+        </div>
+        <h4><a href="/journal/2016/01/01/happy-new-year-2016/">新年快乐</a></h4>
+      </div>
+      <div class="order">&#9812;</div>
+    </div><!-- End Post item -->
+  
+    <!-- Post item -->
+    <div class="item clearfix">
+      <div class="item_thumb clearfix">
         <a href="/tips/2015/12/30/duoshuo-css/"><img src="http://i68.tinypic.com/2wnbneq.jpg" alt="多说评论框自定义CSS优化" class="visible animated"></a>
       </div>
       <div class="item_content">
@@ -928,20 +946,6 @@ ds.charset = 'UTF-8';
           <span class="meta_date">Dec 11, 2015</span>
         </div>
         <h4><a href="/media/2015/12/11/thank-u-se7en/">SE7EN - THANK U (MV)</a></h4>
-      </div>
-      <div class="order">&#9812;</div>
-    </div><!-- End Post item -->
-  
-    <!-- Post item -->
-    <div class="item clearfix">
-      <div class="item_thumb clearfix">
-        <a href="/design/2015/12/07/markdown-guide/"><img src="http://i67.tinypic.com/2eo9vh3.jpg" alt="Markdown语法说明" class="visible animated"></a>
-      </div>
-      <div class="item_content">
-        <div class="item_meta clearfix">
-          <span class="meta_date">Dec 7, 2015</span>
-        </div>
-        <h4><a href="/design/2015/12/07/markdown-guide/">Markdown语法说明</a></h4>
       </div>
       <div class="order">&#9812;</div>
     </div><!-- End Post item -->

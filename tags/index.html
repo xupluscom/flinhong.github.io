@@ -183,6 +183,16 @@ $.get("http://ipinfo.io", function (response) {
     
       <!-- Article -->
       <article>
+        <span class="date">12/07/2015</span>
+        <span class="time">Frank Lin</span>
+        <div class="timeline_content">
+          <i class="fa fa-clock-o" jQuery></i>
+          <h3><a href="/design/2015/12/07/markdown-guide/">Markdown语法说明</a></h3>
+        </div>
+      </article><!-- End Article -->
+    
+      <!-- Article -->
+      <article>
         <span class="date">12/04/2015</span>
         <span class="time">Frank Lin</span>
         <div class="timeline_content">
@@ -231,16 +241,6 @@ $.get("http://ipinfo.io", function (response) {
         </div>
       </article><!-- End Article -->
     
-      <!-- Article -->
-      <article>
-        <span class="date">11/03/2015</span>
-        <span class="time">Frank Lin</span>
-        <div class="timeline_content">
-          <i class="fa fa-clock-o" jQuery></i>
-          <h3><a href="/design/2015/11/03/custom-snippet-for-markdown-in-atom/">Atom中为markdown自定义snippets</a></h3>
-        </div>
-      </article><!-- End Article -->
-    
   </div>
 </div><!-- End Timeline widet -->
 
@@ -248,6 +248,27 @@ $.get("http://ipinfo.io", function (response) {
 <div class="widget">
   <div class="widget_title"><h3>Recent posts</h3></div>
   <div class="tb_widget_recent_list clearfix">
+    
+    <!-- Post item -->
+    <div class="item clearfix">
+      <div class="item_thumb">
+        <div class="thumb_icon">
+          <a href="/journal/2016/01/01/happy-new-year-2016/" jQuery><i class="fa fa-copy"></i></a>
+        </div>
+        
+        <div class="thumb_hover">
+          <a href="/journal/2016/01/01/happy-new-year-2016/"><img src="http://i65.tinypic.com/2rnkjsx.jpg" alt="新年快乐"></a>
+        </div>
+        
+      </div>
+      <div class="item_content">
+        <h4><a href="/journal/2016/01/01/happy-new-year-2016/">新年快乐</a></h4>
+        <div class="item_meta clearfix">
+            <span class="meta_date">Jan 1, 2016</span>
+            <span class="meta_author"><a href="/journal/2016/01/01/happy-new-year-2016/">Frank Lin</a></span>
+        </div>
+      </div>
+    </div><!-- End Post item -->
     
     <!-- Post item -->
     <div class="item clearfix">
@@ -312,27 +333,6 @@ $.get("http://ipinfo.io", function (response) {
       </div>
     </div><!-- End Post item -->
     
-    <!-- Post item -->
-    <div class="item clearfix">
-      <div class="item_thumb">
-        <div class="thumb_icon">
-          <a href="/journal/2015/12/04/remind-the-writing-a-little-bowl-of-wonton/" jQuery><i class="fa fa-copy"></i></a>
-        </div>
-        
-        <div class="thumb_hover">
-          <a href="/journal/2015/12/04/remind-the-writing-a-little-bowl-of-wonton/"><img src="http://i65.tinypic.com/2v7unwl.png" alt="自己也曾经写作过，读一读“一碗小馄饨”"></a>
-        </div>
-        
-      </div>
-      <div class="item_content">
-        <h4><a href="/journal/2015/12/04/remind-the-writing-a-little-bowl-of-wonton/">自己也曾经写作过，读一读“一碗小馄饨”</a></h4>
-        <div class="item_meta clearfix">
-            <span class="meta_date">Dec 4, 2015</span>
-            <span class="meta_author"><a href="/journal/2015/12/04/remind-the-writing-a-little-bowl-of-wonton/">Frank Lin</a></span>
-        </div>
-      </div>
-    </div><!-- End Post item -->
-    
   </div>
 </div><!-- End Recent posts -->
 
@@ -348,7 +348,7 @@ $.get("http://ipinfo.io", function (response) {
       
       <li><a href="/categories/#reading">reading</a> (1)</li>
       
-      <li><a href="/categories/#journal">journal</a> (2)</li>
+      <li><a href="/categories/#journal">journal</a> (3)</li>
       
       <li><a href="/categories/#study">study</a> (2)</li>
       
@@ -1069,6 +1069,36 @@ $.get("http://ipinfo.io", function (response) {
   </div>
 </div>
 
+<!-- Panel title -->
+<div class="panel_title">
+  <div>
+    <h4><a id="life">life</a></h4>
+  </div>
+  <span>View all articles under life</span>
+</div><!-- End Panel title -->
+
+<div class="row">
+  <div class="col col_12_of_12">
+    <!-- List layout -->
+    <div class="list_posts_1">
+      
+        <!-- Post item -->
+        <div class="item clearfix">
+          <div class="item_content">
+
+            <h4><a href="/journal/2016/01/01/happy-new-year-2016/"><span class="format">life</span>新年快乐</a></h4>
+            <p>2016，新的一年来了。不管自己是不是真的更成熟，年龄总是越来越大了，想想就悲哀！但是，既然标题都说了是新年快乐，那就给我嗨起来！</p>
+            <div class="item_meta clearfix">
+              <span class="meta_date">Jan 1, 2016</span>
+              <span class="meta_author"><a href="/">Frank Lin</a></span>
+            </div>
+          </div>
+        </div><!-- End Post item -->
+      
+    </div><!-- End List layout -->
+  </div>
+</div>
+
 
             </div><!-- Main content End -->
             <!-- Sidebar -->
@@ -1229,6 +1259,20 @@ $.get("http://ipinfo.io", function (response) {
     <!-- Post item -->
     <div class="item clearfix">
       <div class="item_thumb clearfix">
+        <a href="/journal/2016/01/01/happy-new-year-2016/"><img src="http://i65.tinypic.com/2rnkjsx.jpg" alt="新年快乐" class="visible animated"></a>
+      </div>
+      <div class="item_content">
+        <div class="item_meta clearfix">
+          <span class="meta_date">Jan 1, 2016</span>
+        </div>
+        <h4><a href="/journal/2016/01/01/happy-new-year-2016/">新年快乐</a></h4>
+      </div>
+      <div class="order">&#9812;</div>
+    </div><!-- End Post item -->
+  
+    <!-- Post item -->
+    <div class="item clearfix">
+      <div class="item_thumb clearfix">
         <a href="/tips/2015/12/30/duoshuo-css/"><img src="http://i68.tinypic.com/2wnbneq.jpg" alt="多说评论框自定义CSS优化" class="visible animated"></a>
       </div>
       <div class="item_content">
@@ -1250,20 +1294,6 @@ $.get("http://ipinfo.io", function (response) {
           <span class="meta_date">Dec 11, 2015</span>
         </div>
         <h4><a href="/media/2015/12/11/thank-u-se7en/">SE7EN - THANK U (MV)</a></h4>
-      </div>
-      <div class="order">&#9812;</div>
-    </div><!-- End Post item -->
-  
-    <!-- Post item -->
-    <div class="item clearfix">
-      <div class="item_thumb clearfix">
-        <a href="/design/2015/12/07/markdown-guide/"><img src="http://i67.tinypic.com/2eo9vh3.jpg" alt="Markdown语法说明" class="visible animated"></a>
-      </div>
-      <div class="item_content">
-        <div class="item_meta clearfix">
-          <span class="meta_date">Dec 7, 2015</span>
-        </div>
-        <h4><a href="/design/2015/12/07/markdown-guide/">Markdown语法说明</a></h4>
       </div>
       <div class="order">&#9812;</div>
     </div><!-- End Post item -->
