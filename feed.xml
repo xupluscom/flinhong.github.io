@@ -1,0 +1,1591 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Frank&#39;s Blog</title>
+    <description>This personal blog was built with ❤️ by Frank Lin. Thanks to GitHub and Jekyll for technical supports.</description>
+    <link>http://www.flinhong.com/</link>
+    <atom:link href="http://www.flinhong.com/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Fri, 01 Jan 2016 08:51:55 +0800</pubDate>
+    <lastBuildDate>Fri, 01 Jan 2016 08:51:55 +0800</lastBuildDate>
+    <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>多说评论框自定义CSS优化</title>
+        <description>&lt;p&gt;多说的个性化设置里有个自定义CSS，将你要更改的CSS样式代码粘贴进去保存就好了；注意：有些属性如果修改了没效果的话，要在每个属性后面加上一个&lt;code&gt;!important&lt;/code&gt;，将优先级调为最高就可以看到效果了，比如：&lt;code&gt;padding:10px&lt;/code&gt;; 这个属性没生效的话就要这样改：&lt;code&gt;padding:10px !important&lt;/code&gt;; 这样就可以生效了。&lt;/p&gt;
+
+&lt;p&gt;下面将网络上现有的几个不错的css样式整理并分享给大家。&lt;/p&gt;
+
+&lt;h2 id=&quot;id-section&quot;&gt;圆角（或者圆形）+ 阴影&lt;/h2&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-avatar&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;54px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;54px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/*设置图像的长和宽*/&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;radius&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;27px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/*设置图像圆角效果,在这里我直接设置了超过width/2的像素，即为圆形了*/&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;webkit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;radius&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;27px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/*圆角效果：兼容webkit浏览器*/&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;moz&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;radius&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;27px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;6&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shadow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;inset&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;-1px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#3333sf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/*设置图像阴影效果*/&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;7&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;webkit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shadow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;inset&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;-1px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#3333sf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;8&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;id-section-1&quot;&gt;鼠标悬浮时，圆形+图像进行360度旋转&lt;/h2&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;lineno&quot;&gt; 1&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-avatar&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 2&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;54px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;54px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/*设置图像的长和宽*/&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 3&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;radius&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;27px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/*设置图像圆角效果,在这里我直接设置了超过width/2的像素，即为圆形了*/&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 4&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;webkit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;radius&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;27px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/*圆角效果：兼容webkit浏览器*/&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 5&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;moz&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;radius&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;27px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 6&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shadow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;inset&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;-1px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#3333sf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/*设置图像阴影效果*/&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 7&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;webkit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shadow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;inset&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;-1px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#3333sf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 8&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;webkit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transition&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0.4s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 9&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;webkit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transition&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;webkit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transform&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0.4s&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ease&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;transition&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;transform&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0.4s&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ease&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/*变化时间设置为0.4秒(变化动作即为下面的图像旋转360读）*/&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;11&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;moz&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transition&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;moz&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transform&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0.4s&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ease&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;13&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt;14&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-avatar&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:hover&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/*设置鼠标悬浮在头像时的CSS样式*/&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;15&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shadow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#fff&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rgba&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;inset&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;20px&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rgba&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;16&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;webkit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shadow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#fff&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rgba&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;inset&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;20px&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rgba&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;17&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rotateZ&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;360&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;deg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/*图像旋转360度*/&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;18&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;webkit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rotateZ&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;360&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;deg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;19&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;moz&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rotateZ&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;360&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;deg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;20&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;id-section-2&quot;&gt;鼠标悬浮时：圆形+图像进行360度旋转+半圆遮盖&lt;/h2&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;lineno&quot;&gt; 1&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-thread&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;ul&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.ds-comments-tabs&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;li&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.ds-tab&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.ds-current&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;#848568&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;text-shadow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;#dddfc2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 2&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-thread&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-highlight&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Arial&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Helvetica&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;sans-serif&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;14px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;font-weight&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;bold&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;#848568&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 3&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-thread&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;ul&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.ds-comments-tabs&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;li&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.ds-tab&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.ds-current&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:hover&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;#696a52&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;#d4d6ba&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 4&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-thread&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.ds-highlight&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:hover&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;#696a52&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 5&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt; 6&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-thread&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;padding-left&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;30px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 7&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-thread&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;li&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.ds-post&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;#ds-thread&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-hot-posts&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;overflow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;visible&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 8&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-thread&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-post-self&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 9&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-thread&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;li&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.ds-post&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;#ds-thread&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-post-self&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-avatar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-thread&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;ul&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.ds-children&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-avatar&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;absolute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;top&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;26px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:-&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;14px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;5px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;36px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;36px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shadow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:-&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1px&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rgba&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;inset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;radius&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;46px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;#E5E6D0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;11&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-thread&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;ul&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.ds-children&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-avatar&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:-&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;23px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-thread&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-avatar&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;inline&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;block&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;32px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;32px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1px&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;solid&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#b9baa6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;radius&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;50%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;#fff&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;13&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-thread&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-avatar&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:hover&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;border-color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;#de5a4e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;14&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-thread&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-avatar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;img&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;15&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-thread&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-replybox&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shadow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;16&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-thread&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;ul&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.ds-children&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-replybox.ds-inline-replybox&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.ds-avatar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;17&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-replybox.ds-inline-replybox&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.ds-avatar&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;top&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;32px&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;32px&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shadow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;18&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-replybox.ds-inline-replybox&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.ds-avatar&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;img&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;32px&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;32px&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;radius&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;50%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;19&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-replybox&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.ds-avatar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;20&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-replybox&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-avatar&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;img&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;50px&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;50px&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;radius&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;5px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;21&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-avatar&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;img&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;32px&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;32px&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;radius&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;32px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shadow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;3px&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rgba&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;22&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;22&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;webkit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transition&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4s&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;all&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ease&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;moz&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transition&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4s&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;all&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ease&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transition&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4s&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;all&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ease&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ms&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transition&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4s&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;all&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ease&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transition&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4s&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;all&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ease&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;23&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;24&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-post-self&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:hover&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-avatar&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;25&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;webkit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rotate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;360&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;deg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;moz&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rotate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;360&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;deg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rotate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;360&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;deg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ms&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rotate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;360&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;deg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rotate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;360&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;deg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);}&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;26&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt;27&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-thread&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-comment-body&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#F0F0E3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;15px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;15px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;12px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;32px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;radius&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;5px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shadow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2px&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rgba&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rgba&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;75&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;inset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;28&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt;29&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-thread&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-comment-body&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;#787968&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;30&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-thread&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-comments&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.ds-user-name&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;font-weight&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;bold&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;#696A52&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;31&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-thread&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-comments&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.ds-user-name&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:hover&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;#D32&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;32&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt;33&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-thread&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-hot-posts&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;34&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-hot-posts&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-gradient-bg&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;35&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt;36&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-bubble&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-ctx&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-ctx-entry&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;37&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-bubble&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-avatar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-bubble&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-ctx-bubble&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-avatar&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;static&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shadow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;38&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-bubble&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-avatar&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-bubble&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-ctx-bubble&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-avatar&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;45px&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;45px&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;39&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-bubble&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-user-name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;padding-left&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;13px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;40&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt;41&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-comment-body&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-ctx&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;border-left&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1px&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;solid&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#b9baa6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;#e8e8dc&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;42&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-ctx&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;margin-right&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:-&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;15px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;43&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-ctx&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-ctx-entry&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;relative&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;30px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;44&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-ctx&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-ctx-entry&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-avatar&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;top&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;6px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;5px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shadow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;45&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-ctx&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-ctx-entry&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-ctx-body&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;margin-left&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;46px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;46&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-ctx&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-ctx-entry&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-ctx-content&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;#787968&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;47&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-ctx&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-ctx-entry&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-ctx-head&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;#696A52&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;font-weight&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;bold&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;简要说明：&lt;/p&gt;
+
+&lt;p&gt;配色是非常重要的，特别是记得改「#ds-reset .ds-avatar, #ds-thread #ds-reset ul.ds-children .ds-avatar {background:网站的背景颜色}」。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;用户气泡提示框代码:&lt;/strong&gt; 隐藏用户气泡提示框「#ds-thread #ds-reset #ds-bubble {display:none !important}」，这是隐藏鼠标移至用户名称时弹出来的气泡提示框。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;评论盖楼样式代码:&lt;/strong&gt; 倒数1-8行。（不用盖楼的评论方式用户可以直接删除这几行，精简一下代码。）&lt;/p&gt;
+
+&lt;h2 id=&quot;id-css&quot;&gt;多说css自定义代码（用于细微调整）：&lt;/h2&gt;
+
+&lt;h3 id=&quot;id-qq&quot;&gt;将评论框底部的分享到微博QQ空间什么的隐藏起来&lt;/h3&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-sync&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;none&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;/*隐藏评论框底部分享*/&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;id-section-3&quot;&gt;定义评论框背景图片&lt;/h3&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-textarea-wrapper.ds-rounded-top&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#ffffff&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;url(这里添加图片的网址)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;no-repeat&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;right&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;bottom&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;/*定义评论框背景背景*/&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;注意图片最好是透明或者白色的，图片的像素大小最好要去你的评论框大小一样，不然可能会出现拉伸。&lt;/p&gt;
+
+&lt;h3 id=&quot;id-section-4&quot;&gt;隐藏评论框底部渐变背景&lt;/h3&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-gradient-bg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;none&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;/*设置评论框下方渐变*/&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;话说渐变色什么的虽然立体感较强但是和主题整体风格不融洽，隐藏之，这样底部就是透明的了。&lt;/p&gt;
+
+&lt;h3 id=&quot;id-section-5&quot;&gt;定义评论框内字体&lt;/h3&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-thread&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-textarea-wrapper&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;textarea&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-thread&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-textarea-wrapper&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-hidden-text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;‘微软雅黑’&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;‘&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Microsoft&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Yahei&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;’&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;12px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;letter-spacing&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;/*定义评论框内字体*/&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;这个好像是定义评论框内输入的文字字体的。&lt;/p&gt;
+
+&lt;h3 id=&quot;id-section-6&quot;&gt;定义发布按钮字体，以及渐变色背景&lt;/h3&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-thread&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-post-button&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;‘微软雅黑’&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;‘&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Microsoft&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Yahei&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;’&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;font-weight&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;bold&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;12px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;none&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;6&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;#49976b&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;7&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;/*定义发布按钮字体以及渐变背景*/&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;id-section-7&quot;&gt;隐藏评论右上方 最热 最新 排序 按钮&lt;/h3&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-thread&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-sort&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;/*隐藏最新最热等*/&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;id-section-8&quot;&gt;隐藏评论左上方 评论总数背景色及边框&lt;/h3&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-thread&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;li&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.ds-tab&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.ds-current&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;/*隐藏评论总数背景及边框*/&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;id-section-9&quot;&gt;隐藏底部多说版权&lt;/h3&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-thread&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-powered-by&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;/*隐藏多说底部版权*/&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;id-section-10&quot;&gt;定义各种文字高亮颜色，以及浮动窗口的高亮颜色&lt;/h3&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;lineno&quot;&gt; 1&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-highlight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 2&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;#49976b&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 3&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;/*定义高亮字体颜色*/&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 4&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt; 5&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-thread&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-bubble&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 6&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#49976b&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 7&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;/*定义评论框内其他高亮颜色*/&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt; 8&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt; 9&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-thread&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-bubble&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#49976b&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;11&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;/*定义评论框内其他高亮颜色*/&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;12&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt;13&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-ctx&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-ctx-entry&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.ds-ctx-head&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;14&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#49976b&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;15&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;/*定义评论框内其他高亮颜色*/&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;16&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt;17&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-thread&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.ds-comment-context&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:hover&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;18&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#49976b&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;19&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;/*定义评论框内其他高亮颜色*/&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;20&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt;21&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-thread&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#ds-reset&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.ds-comment-context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;22&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#49976b&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;23&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;/*定义评论框内其他高亮颜色*/&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;id-section-11&quot;&gt;评论框左右边距&lt;/h3&gt;
+
+&lt;p&gt;如果你的评论框左右边距过小（评论框太宽），输入下列代码调整宽度，直到页面上评论框宽度显示合适：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#ds-thread  {padding:24px;}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;或&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#ds-thread {margin:24px;}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;如果你的评论框太窄，可能是宽度被设定了不合适的值，输入下列代码让宽度自动拉伸：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#ds-thread {width:auto;}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;id-section-12&quot;&gt;评论框整体的背景色&lt;/h3&gt;
+
+&lt;p&gt;多说评论会采用主题的背景色作为整体评论框的背景，这样可能导致评论本身不是很显眼。你可以输入下列代码来更改整体评论框的背景颜色：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#ds-thread {background: #ffffff;}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;这个评论背景的边角默认是直角，如果想改成圆角，请输入下列代码（仅在Firefox，Chrome及高版本ie浏览器下有效，ie6,7,8将仍然为直角显示）：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#ds-thread{ border-radius: 5px;}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;注意：其中的#ffffff可以被替换为你希望的颜色，以便于评论文字相适应。&lt;/p&gt;
+
+&lt;h3 id=&quot;id-section-13&quot;&gt;高亮字体的颜色&lt;/h3&gt;
+
+&lt;p&gt;高亮字体包括“n条评论”，“n条微博”，评论者名字的颜色，想修改它的显示颜色（在大多数情况下默认是红色），输入下列代码：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#ds-thread #ds-reset .ds-highlight{color: #ffffff !important;}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;id-section-14&quot;&gt;更改评论字体颜色&lt;/h3&gt;
+
+&lt;p&gt;想修改评论正文的字体颜色，请输入下列代码：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#ds-thread #ds-reset .ds-comment-body p {color: #ffffff;}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;当您在修改一部分上面未示例的标签样式时，遇到无效的情况，请尝试增加&lt;code&gt;!important&lt;/code&gt;。&lt;/p&gt;
+
+&lt;h3 id=&quot;id-section-15&quot;&gt;更改最近访客头像大小&lt;/h3&gt;
+
+&lt;p&gt;想要修改最新访客头像的大小，请输入下列代码：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#ds-recent-visitors .ds-avatar img {width: 30px !important;height: 30px !important;}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;其中30px是宽和高，请根据效果修改不同高度和宽度。&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;📎 &lt;strong&gt;引用来源：&lt;/strong&gt;&lt;a href=&quot;http://blog.flycmd.com/archives/29&quot;&gt;http://blog.flycmd.com/archives/29&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 30 Dec 2015 00:00:00 +0800</pubDate>
+        <link>http://www.flinhong.com/tips/2015/12/30/duoshuo-css/</link>
+        <guid isPermaLink="true">http://www.flinhong.com/tips/2015/12/30/duoshuo-css/</guid>
+        
+        <category>design</category>
+        
+        <category>CSS</category>
+        
+        
+        <category>tips</category>
+        
+      </item>
+    
+      <item>
+        <title>SE7EN - THANK U (MV)</title>
+        <description>&lt;p&gt;这是SE7EN服役前为感谢一直支持的粉丝们特别推出的一首单曲，还是他亲自作词作曲，整首歌满满的感谢，娓娓道来了SE7EN从出道到最后的演唱会的过程。值得回味。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i68.tinypic.com/mu9zxi.jpg&quot; alt=&quot;SE7EN - THANK U&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;这首歌居然还有个日本的短版~&lt;/p&gt;
+
+&lt;iframe width=&quot;1280&quot; height=&quot;720&quot; src=&quot;https://www.youtube.com/embed/2quC5ZCCYTw&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;当年的不舍现在早已没有了，倒是祝福崔社长新的事业红红火火呀，看Ins上新公司马上就装修好了，近期在日本的10周年巡演也很顺利，那就满心期待新歌咯。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i68.tinypic.com/2hn2uz9.jpg&quot; alt=&quot;ELEVEN9 Entertainment&quot; /&gt;&lt;/p&gt;
+
+&lt;iframe width=&quot;1280&quot; height=&quot;720&quot; src=&quot;https://www.youtube.com/embed/v3tAsya31D0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+</description>
+        <pubDate>Fri, 11 Dec 2015 00:00:00 +0800</pubDate>
+        <link>http://www.flinhong.com/media/2015/12/11/thank-u-se7en/</link>
+        <guid isPermaLink="true">http://www.flinhong.com/media/2015/12/11/thank-u-se7en/</guid>
+        
+        <category>video</category>
+        
+        
+        <category>media</category>
+        
+      </item>
+    
+      <item>
+        <title>Markdown语法说明</title>
+        <description>&lt;p&gt;Markdown是一种轻量级的「标记语言」，使用特殊的Markdown文档处理器将Markdown语法翻译成预设的文档格式、标题大小等，一般用于展示时输出的是HTML，也可以十分方便的导出PDF格式。它的优点很多，目前也被越来越多的写作爱好者、撰稿者广泛使用。Markdown的目标是实现「易读易写」，相对于更为复杂的HTML标记语言来说，Markdown可谓十分轻量，学习成本也不需要太多，且一旦熟悉这种语法规则，会有一劳永逸的效果。&lt;/p&gt;
+
+&lt;p&gt;从这个博客搭建开始，我就使用Markdown写文章，遇到需要的功能都是直接搜索，一直没有系统的学习过，常用的命令也就那么几个。有时候想排版的更好，但不知道怎么实现，那就趁现在好好学习一下Markdown的语法吧，也供自己今后参考。&lt;/p&gt;
+
+&lt;h2 id=&quot;id-markdown-&quot;&gt;Markdown 官方文档&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;http://daringfireball.net/projects/markdown/syntax&quot;&gt;创始人 John Gruber 的 Markdown 语法说明&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;http://wowubuntu.com/markdown/#list&quot;&gt;Markdown 中文版语法说明&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;id-section&quot;&gt;本文参考文档&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;http://www.applecho.com/markdown/&quot;&gt;Markdown 语法说明&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;http://www.jianshu.com/p/1e402922ee32/&quot;&gt;Markdown——入门指南&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;id-markdown&quot;&gt;Markdown概述&lt;/h2&gt;
+
+&lt;h3 id=&quot;id-section-1&quot;&gt;宗旨&lt;/h3&gt;
+
+&lt;p&gt;Markdown的目标是实现「易读易写」。&lt;/p&gt;
+
+&lt;p&gt;可读性，无论如何，都是最重要的。一份使用 Markdown格式撰写的文件应该可以直接以纯文本发布，并且看起来不会像是由许多标签或是格式指令所构成。Markdown语法受到一些既有text-to-HTML格式的影响，包括 Setext、atx、Textile、reStructuredText、Grutatext和EtText，而最大灵感来源其实是纯文本电子邮件的格式。&lt;/p&gt;
+
+&lt;p&gt;总之， Markdown的语法全由一些符号所组成，这些符号经过精挑细选，其作用一目了然。比如：在文字两旁加上星号，看起来就像&lt;em&gt;强调&lt;/em&gt;。Markdown的列表看起来，嗯，就是列表。Markdown 的区块引用看起来就真的像是引用一段文字，就像你曾在电子邮件中见过的那样。&lt;/p&gt;
+
+&lt;h3 id=&quot;id-html&quot;&gt;兼容 HTML&lt;/h3&gt;
+
+&lt;p&gt;Markdown语法的目标是：成为一种适用于网络的书写语言。&lt;/p&gt;
+
+&lt;p&gt;Markdown并不是想取代HTML的地位，甚至接近它。它的语法种类很少，只对应HTML标记的一小部分。Markdown的构想不是要使得HTML文档更容易书写。在我看来， HTML 已经很容易写了。Markdown的理念是，能让文档更容易读、写和随意改。HTML是一种发布的格式，Markdown是一种书写的格式。就这样，Markdown的格式语法只涵盖纯文本可以涵盖的范围。&lt;/p&gt;
+
+&lt;p&gt;不在Markdown涵盖范围之内的标签，都可以直接在文档里面用HTML撰写。不需要额外标注这是HTML或是Markdown，只要直接加标签就可以了。&lt;/p&gt;
+
+&lt;p&gt;要制约的只有一些HTML区块元素――比如 &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;、&lt;code&gt;&amp;lt;table&amp;gt;&lt;/code&gt;、&lt;code&gt;&amp;lt;pre&amp;gt;&lt;/code&gt;、&lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;等标签，必须在前后加上空行与其它内容区隔开，还要求它们的开始标签与结尾标签不能用制表符或空格来缩进。Markdown的生成器有足够智能，不会在HTML区块标签外加上不必要的&lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;标签。&lt;/p&gt;
+
+&lt;p&gt;例子如下，在 Markdown文件里加上一段HTML表格：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;这是一个普通段落。
+
+&amp;lt;table&amp;gt;
+    &amp;lt;tr&amp;gt;
+        &amp;lt;td&amp;gt;Foo&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+&amp;lt;/table&amp;gt;
+
+这是另一个普通段落。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;请注意，在HTML区块标签间的Markdown格式语法将不会被处理。比如，你在HTML区块内使用Markdown样式的&lt;code&gt;*强调*&lt;/code&gt;会没有效果。&lt;/p&gt;
+
+&lt;p&gt;HTML的区段（行内）标签如&lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt;、&lt;code&gt;&amp;lt;cite&amp;gt;&lt;/code&gt;、&lt;code&gt;&amp;lt;del&amp;gt;&lt;/code&gt;可以在Markdown的段落、列表或是标题里随意使用。依照个人习惯，甚至可以不用Markdown格式，而直接采用HTML标签来格式化。举例说明：如果比较喜欢HTML的&lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt;或&lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt;标签，可以直接使用这些标签，而不用Markdown提供的链接或是图像标签语法。&lt;/p&gt;
+
+&lt;p&gt;和处在HTML区块标签间不同，Markdown语法在HTML区段标签间是有效的。&lt;/p&gt;
+
+&lt;h3 id=&quot;id-section-2&quot;&gt;特殊字符自动转换&lt;/h3&gt;
+
+&lt;p&gt;在HTML文件中，有两个字符需要特殊处理：&lt;code&gt;&amp;lt;&lt;/code&gt;和&lt;code&gt;&amp;amp;&lt;/code&gt;。&lt;code&gt;&amp;lt;&lt;/code&gt;符号用于起始标签，&lt;code&gt;&amp;amp;&lt;/code&gt;符号则用于标记HTML实体，如果你只是想要显示这些字符的原型，你必须要使用实体的形式，像是&lt;code&gt;&amp;amp;lt&lt;/code&gt;; 和&lt;code&gt;&amp;amp;amp&lt;/code&gt;;。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;amp;&lt;/code&gt;字符尤其让网络文档编写者受折磨，如果你要打&lt;code&gt;「AT&amp;amp;T」&lt;/code&gt;，你必须要写成&lt;code&gt;「AT&amp;amp;amp;T」&lt;/code&gt;。而网址中的&lt;code&gt;&amp;amp;&lt;/code&gt;字符也要转换。比如你要链接到：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;http://images.google.com/images?num=30&amp;amp;q=larry+bird
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;你必须要把网址转换写为：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;http://images.google.com/images?num=30&amp;amp;amp;q=larry+bird
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;才能放到链接标签的&lt;code&gt;href&lt;/code&gt;属性里。不用说也知道这很容易忽略，这也可能是&lt;code&gt;HTML&lt;/code&gt;标准检验所检查到的错误中，数量最多的。&lt;/p&gt;
+
+&lt;p&gt;Markdown让你可以自然地书写字符，需要转换的由它来处理好了。如果你使用的&lt;code&gt;&amp;amp;&lt;/code&gt;字符是HTML字符实体的一部分，它会保留原状，否则它会被转换成&lt;code&gt;&amp;amp;amp;&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;所以你如果要在文档中插入一个版权符号&lt;code&gt;©&lt;/code&gt;，你可以这样写：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;amp;copy;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Markdown 会保留它不动。而若你写：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;AT&amp;amp;T
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Markdown 就会将它转为&lt;code&gt;AT&amp;amp;amp;T&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;类似的状况也会发生在&lt;code&gt;&amp;lt;&lt;/code&gt;符号上，因为Markdown允许兼容HTML，如果你是把&lt;code&gt;&amp;lt;&lt;/code&gt;符号作为HTML标签的定界符使用，那Markdown也不会对它做任何转换，但是如果你写：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;4 &amp;lt; 5
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Markdown 将会把它转换为&lt;code&gt;4 &amp;amp;lt; 5&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;不过需要注意的是，code范围内，不论是行内还是区块，&lt;code&gt;&amp;lt;&lt;/code&gt;和&lt;code&gt;&amp;amp;&lt;/code&gt;两个符号都一定会被转换成HTML实体，这项特性让你可以很容易地用Markdown写HTML code（和HTML相对而言，HTML语法中，你要把所有的&lt;code&gt;&amp;lt;&lt;/code&gt;和&lt;code&gt;&amp;amp;&lt;/code&gt;都转换为HTML实体，才能在HTML文件里面写出HTML code。）&lt;/p&gt;
+
+&lt;h2 id=&quot;id-section-3&quot;&gt;区块元素&lt;/h2&gt;
+
+&lt;h3 id=&quot;id-section-4&quot;&gt;段落和换行&lt;/h3&gt;
+
+&lt;p&gt;一个Markdown段落是由一个或多个连续的文本行组成，它的前后要有一个以上的空行（空行的定义是显示上看起来像是空的，便会被视为空行。比方说，若某一行只包含空格和制表符，则该行也会被视为空行）。普通段落不该用空格或制表符来缩进。&lt;/p&gt;
+
+&lt;p&gt;「由一个或多个连续的文本行组成」这句话其实暗示了Markdown允许段落内的强迫换行（插入换行符），这个特性和其他大部分的text-to-HTML格式不一样（包括Movable Type的「Convert Line Breaks」选项），其它的格式会把每个换行符都转成&lt;code&gt;&amp;lt;br /&amp;gt;&lt;/code&gt;标签。&lt;/p&gt;
+
+&lt;p&gt;如果你确实想要依赖Markdown来插入&lt;code&gt;&amp;lt;br /&amp;gt;&lt;/code&gt;标签的话，在插入处先按入两个以上的空格然后回车。&lt;/p&gt;
+
+&lt;p&gt;的确，需要多费点事（多加空格）来产生&lt;code&gt;&amp;lt;br /&amp;gt;&lt;/code&gt;，但是简单地「每个换行都转换为&lt;code&gt;&amp;lt;br /&amp;gt;&lt;/code&gt;」的方法在Markdown中并不适合，Markdown中email式的区块引用和多段落的列表 在使用换行来排版的时候，不但更好用，还更方便阅读。&lt;/p&gt;
+
+&lt;h3 id=&quot;id-section-5&quot;&gt;标题&lt;/h3&gt;
+
+&lt;p&gt;Markdown支持两种标题的语法，类Setext和类atx形式。&lt;/p&gt;
+
+&lt;p&gt;类Setext形式是用底线的形式，利用&lt;code&gt;=&lt;/code&gt;（最高阶标题）和&lt;code&gt;-&lt;/code&gt;（第二阶标题），例如：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;This is an H1
+=============
+
+This is an H2
+-------------
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;任何数量的&lt;code&gt;=&lt;/code&gt;和&lt;code&gt;-&lt;/code&gt;都可以有效果。&lt;/p&gt;
+
+&lt;p&gt;类Atx形式则是在行首插入1到6个&lt;code&gt;#&lt;/code&gt;，对应到标题1到6阶，例如：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# 这是 H1
+
+## 这是 H2
+
+###### 这是 H6
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;你可以选择性地「闭合」类atx样式的标题，这纯粹只是美观用的，若是觉得这样看起来比较舒适，你就可以在行尾加上&lt;code&gt;#&lt;/code&gt;，而行尾的&lt;code&gt;#&lt;/code&gt;数量也不用和开头一样（行首的井字符数量决定标题的阶数）：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# 这是 H1 #
+
+## 这是 H2 ##
+
+### 这是 H3 ######
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;id-blockquotes&quot;&gt;区块引用 Blockquotes&lt;/h3&gt;
+
+&lt;p&gt;Markdown标记区块引用是使用类似email中用&lt;code&gt;&amp;gt;&lt;/code&gt;的引用方式。如果你还熟悉在email信件中的引言部分，你就知道怎么在Markdown文件中建立一个区块引用，那会看起来像是你自己先断好行，然后在每行的最前面加上&lt;code&gt;&amp;gt;&lt;/code&gt;：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+&amp;gt; consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+&amp;gt; Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+&amp;gt;
+&amp;gt; Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+&amp;gt; id sem consectetuer libero luctus adipiscing.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Markdown 也允许你偷懒只在整个段落的第一行最前面加上&lt;code&gt;&amp;gt;&lt;/code&gt;：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+
+&amp;gt; Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+id sem consectetuer libero luctus adipiscing.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;区块引用可以嵌套（例如：引用内的引用），只要根据层次加上不同数量的&lt;code&gt;&amp;gt;&lt;/code&gt;：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt; This is the first level of quoting.
+&amp;gt;
+&amp;gt; &amp;gt; This is nested blockquote.
+&amp;gt;
+&amp;gt; Back to the first level.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;引用的区块内也可以使用其他的Markdown语法，包括标题、列表、代码区块等：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt; ## 这是一个标题。
+&amp;gt;
+&amp;gt; 1.   这是第一行列表项。
+&amp;gt; 2.   这是第二行列表项。
+&amp;gt;
+&amp;gt; 给出一些例子代码：
+&amp;gt;
+&amp;gt;     return shell_exec(&quot;echo $input | $markdown_script&quot;);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;任何像样的文本编辑器都能轻松地建立email型的引用。例如在BBEdit中，你可以选取文字后然后从选单中选择增加引用阶层。&lt;/p&gt;
+
+&lt;h3 id=&quot;id-section-6&quot;&gt;列表&lt;/h3&gt;
+
+&lt;p&gt;Markdown支持有序列表和无序列表。&lt;/p&gt;
+
+&lt;p&gt;无序列表使用星号、加号或是减号作为列表标记：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;*   Red
+*   Green
+*   Blue
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;等同于：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;+   Red
++   Green
++   Blue
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;也等同于：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;-   Red
+-   Green
+-   Blue
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;有序列表则使用数字接着一个英文句点：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;1.  Bird
+2.  McHale
+3.  Parish
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;很重要的一点是，你在列表标记上使用的数字并不会影响输出的 HTML 结果，上面的列表所产生的 HTML 标记为：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;ol&amp;gt;
+&amp;lt;li&amp;gt;Bird&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;McHale&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Parish&amp;lt;/li&amp;gt;
+&amp;lt;/ol&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;如果你的列表标记写成：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;1.  Bird
+1.  McHale
+1.  Parish
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;或甚至是：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;3. Bird
+1. McHale
+8. Parish
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;你都会得到完全相同的HTML输出。重点在于，你可以让Markdown文件的列表数字和输出的结果相同，或是你懒一点，你可以完全不用在意数字的正确性。&lt;/p&gt;
+
+&lt;p&gt;如果你使用懒惰的写法，建议第一个项目最好还是从&lt;code&gt;1.&lt;/code&gt;开始，因为Markdown未来可能会支持有序列表的start属性。&lt;/p&gt;
+
+&lt;p&gt;列表项目标记通常是放在最左边，但是其实也可以缩进，最多3个空格，项目标记后面则一定要接着至少一个空格或制表符。&lt;/p&gt;
+
+&lt;p&gt;要让列表看起来更漂亮，你可以把内容用固定的缩进整理好：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+    Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
+    viverra nec, fringilla in, laoreet vitae, risus.
+*   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
+    Suspendisse id sem consectetuer libero luctus adipiscing.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;但是如果你懒，那也行：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
+viverra nec, fringilla in, laoreet vitae, risus.
+*   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
+Suspendisse id sem consectetuer libero luctus adipiscing.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;如果列表项目间用空行分开，在输出HTML时Markdown就会将项目内容用&lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;标签包起来，举例来说：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;*   Bird
+*   Magic
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;会被转换为：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;Bird&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Magic&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;但是这个：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;*   Bird
+
+*   Magic
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;会被转换为：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;&amp;lt;p&amp;gt;Bird&amp;lt;/p&amp;gt;&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;&amp;lt;p&amp;gt;Magic&amp;lt;/p&amp;gt;&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;列表项目可以包含多个段落，每个项目下的段落都必须缩进4个空格或是1个制表符：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;1.  This is a list item with two paragraphs. Lorem ipsum dolor
+    sit amet, consectetuer adipiscing elit. Aliquam hendrerit
+    mi posuere lectus.
+
+    Vestibulum enim wisi, viverra nec, fringilla in, laoreet
+    vitae, risus. Donec sit amet nisl. Aliquam semper ipsum
+    sit amet velit.
+
+2.  Suspendisse id sem consectetuer libero luctus adipiscing.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;如果你每行都有缩进，看起来会看好很多，当然，再次地，如果你很懒惰，Markdown也允许：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;*   This is a list item with two paragraphs.
+
+    This is the second paragraph in the list item. You&#39;re
+only required to indent the first line. Lorem ipsum dolor
+sit amet, consectetuer adipiscing elit.
+
+*   Another item in the same list.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;如果要在列表项目内放进引用，那&lt;code&gt;&amp;gt;&lt;/code&gt;就需要缩进：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;*   A list item with a blockquote:
+
+    &amp;gt; This is a blockquote
+    &amp;gt; inside a list item.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;如果要放代码区块的话，该区块就需要缩进两次，也就是8个空格或是2个制表符：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;*   一列表项包含一个列表区块：
+
+        &amp;lt;代码写在这&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;当然，项目列表很可能会不小心产生，像是下面这样的写法：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;1986. What a great season.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;换句话说，也就是在行首出现数字-句点-空白，要避免这样的状况，你可以在句点前面加上反斜杠。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;1986\. What a great season.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;id-section-7&quot;&gt;代码区块&lt;/h3&gt;
+
+&lt;p&gt;和程序相关的写作或是标签语言原始码通常会有已经排版好的代码区块，通常这些区块我们并不希望它以一般段落文件的方式去排版，而是照原来的样子显示，Markdown会用&lt;code&gt;&amp;lt;pre&amp;gt;&lt;/code&gt;和&lt;code&gt;&amp;lt;code&amp;gt;&lt;/code&gt;标签来把代码区块包起来。&lt;/p&gt;
+
+&lt;p&gt;要在Markdown中建立代码区块很简单，只要简单地缩进4个空格或是1个制表符就可以，例如，下面的输入：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;这是一个普通段落：
+
+    这是一个代码区块。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Markdown 会转换成：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;这是一个普通段落：&amp;lt;/p&amp;gt;
+
+&amp;lt; pre&amp;gt;&amp;lt;code&amp;gt;这是一个代码区块。
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;这个每行一阶的缩进（4个空格或是1个制表符），都会被移除，例如：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Here is an example of AppleScript:
+
+    tell application &quot;Foo&quot;
+        beep
+    end tell
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;会被转换为：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;Here is an example of AppleScript:&amp;lt;/p&amp;gt;
+
+&amp;lt; pre&amp;gt;&amp;lt;code&amp;gt;tell application &quot;Foo&quot;
+    beep
+end tell
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;一个代码区块会一直持续到没有缩进的那一行（或是文件结尾）。&lt;/p&gt;
+
+&lt;p&gt;在代码区块里面，&lt;code&gt;&amp;amp;&lt;/code&gt;、&lt;code&gt;&amp;lt;&lt;/code&gt;和&lt;code&gt;&amp;gt;&lt;/code&gt;会自动转成HTML实体，这样的方式让你非常容易使用Markdown插入范例用的HTML原始码，只需要复制贴上，再加上缩进就可以了，剩下的Markdown都会帮你处理，例如：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&quot;footer&quot;&amp;gt;
+    &amp;amp;copy; 2004 Foo Corporation
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;会被转换为：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;pre&amp;gt;&amp;lt;code&amp;gt;&amp;amp;lt;div class=&quot;footer&quot;&amp;amp;gt;
+    &amp;amp;amp;copy; 2004 Foo Corporation
+&amp;amp;lt;/div&amp;amp;gt;
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;代码区块中，一般的Markdown语法不会被转换，像是星号便只是星号，这表示你可以很容易地以 Markdown法撰写Markdown语法相关的文件。&lt;/p&gt;
+
+&lt;h3 id=&quot;id-section-8&quot;&gt;分隔线&lt;/h3&gt;
+
+&lt;p&gt;你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。下面每种写法都可以建立分隔线：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;* * *
+
+***
+
+*****
+
+- - -
+
+---------------------------------------
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;id-section-9&quot;&gt;区段元素&lt;/h2&gt;
+
+&lt;h3 id=&quot;id-section-10&quot;&gt;链接&lt;/h3&gt;
+
+&lt;p&gt;Markdown支持两种形式的链接语法：行内式和参考式两种形式。&lt;/p&gt;
+
+&lt;p&gt;不管是哪一种，链接文字都是用 [方括号] 来标记。&lt;/p&gt;
+
+&lt;p&gt;要建立一个行内式的链接，只要在方块括号后面紧接着圆括号并插入网址链接即可，如果你还想要加上链接的title文字，只要在网址后面，用双引号把title文字包起来即可，例如：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;This is [an example](http://example.com/ &quot;Title&quot;) inline link.
+
+[This link](http://example.net/) has no title attribute.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;会产生：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;This is &amp;lt;a href=&quot;http://example.com/&quot; title=&quot;Title&quot;&amp;gt;
+an example&amp;lt;/a&amp;gt; inline link.&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;&amp;lt;a href=&quot;http://example.net/&quot;&amp;gt;This link&amp;lt;/a&amp;gt; has no
+title attribute.&amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;如果你是要链接到同样主机的资源，你可以使用相对路径：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;See my [About](/about/) page for details.   
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;参考式的链接是在链接文字的括号后面再接上另一个方括号，而在第二个方括号里面要填入用以辨识链接的标记：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;This is [an example][id] reference-style link.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;你也可以选择性地在两个方括号中间加上一个空格：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;This is [an example] [id] reference-style link.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;接着，在文件的任意处，你可以把这个标记的链接内容定义出来：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[id]: http://example.com/  &quot;Optional Title Here&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;链接内容定义的形式为：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;方括号（前面可以选择性地加上至多三个空格来缩进），里面输入链接文字&lt;/li&gt;
+  &lt;li&gt;接着一个冒号&lt;/li&gt;
+  &lt;li&gt;接着一个以上的空格或制表符&lt;/li&gt;
+  &lt;li&gt;接着链接的网址&lt;/li&gt;
+  &lt;li&gt;选择性地接着title内容，可以用单引号、双引号或是括弧包着&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;下面这三种链接的定义都是相同：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[foo]: http://example.com/  &quot;Optional Title Here&quot;
+[foo]: http://example.com/  &#39;Optional Title Here&#39;
+[foo]: http://example.com/  (Optional Title Here)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;请注意&lt;/strong&gt;：有一个已知的问题是 Markdown.pl 1.0.1会忽略单引号包起来的链接title。&lt;/p&gt;
+
+&lt;p&gt;链接网址也可以用尖括号包起来：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[id]: &amp;lt;http://example.com/&amp;gt;  &quot;Optional Title Here&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;你也可以把title属性放到下一行，也可以加一些缩进，若网址太长的话，这样会比较好看：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[id]: http://example.com/longish/path/to/resource/here
+    &quot;Optional Title Here&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;网址定义只有在产生链接的时候用到，并不会直接出现在文件之中。&lt;/p&gt;
+
+&lt;p&gt;链接辨别标签可以有字母、数字、空白和标点符号，但是并不区分大小写，因此下面两个链接是一样的：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[link text][a]
+[link text][A]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;隐式链接标记功能让你可以省略指定链接标记，这种情形下，链接标记会视为等同于链接文字，要用隐式链接标记只要在链接文字后面加上一个空的方括号，如果你要让”Google”链接到google.com，你可以简化成：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[Google][]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后定义链接内容：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[Google]: http://google.com/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;由于链接文字可能包含空白，所以这种简化型的标记内也许包含多个单词：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Visit [Daring Fireball][] for more information.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后接着定义链接：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[Daring Fireball]: http://daringfireball.net/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;链接的定义可以放在文件中的任何一个地方，我比较偏好直接放在链接出现段落的后面，你也可以把它放在文件最后面，就像是注解一样。&lt;/p&gt;
+
+&lt;p&gt;下面是一个参考式链接的范例：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;I get 10 times more traffic from [Google] [1] than from
+[Yahoo] [2] or [MSN] [3].
+
+  [1]: http://google.com/        &quot;Google&quot;
+  [2]: http://search.yahoo.com/  &quot;Yahoo Search&quot;
+  [3]: http://search.msn.com/    &quot;MSN Search&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;如果改成用链接名称的方式写：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;I get 10 times more traffic from [Google][] than from
+[Yahoo][] or [MSN][].
+
+  [google]: http://google.com/        &quot;Google&quot;
+  [yahoo]:  http://search.yahoo.com/  &quot;Yahoo Search&quot;
+  [msn]:    http://search.msn.com/    &quot;MSN Search&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;上面两种写法都会产生下面的HTML。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;I get 10 times more traffic from &amp;lt;a href=&quot;http://google.com/&quot;
+title=&quot;Google&quot;&amp;gt;Google&amp;lt;/a&amp;gt; than from
+&amp;lt;a href=&quot;http://search.yahoo.com/&quot; title=&quot;Yahoo Search&quot;&amp;gt;Yahoo&amp;lt;/a&amp;gt;
+or &amp;lt;a href=&quot;http://search.msn.com/&quot; title=&quot;MSN Search&quot;&amp;gt;MSN&amp;lt;/a&amp;gt;.&amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;下面是用行内式写的同样一段内容的Markdown文件，提供作为比较之用：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;I get 10 times more traffic from [Google](http://google.com/ &quot;Google&quot;)
+than from [Yahoo](http://search.yahoo.com/ &quot;Yahoo Search&quot;) or
+[MSN](http://search.msn.com/ &quot;MSN Search&quot;).
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;参考式的链接其实重点不在于它比较好写，而是它比较好读，比较一下上面的范例，使用参考式的文章本身只有81个字符，但是用行内形式的却会增加到176个字元，如果是用纯HTML格式来写，会有234个字元，在HTML格式中，标签比文本还要多。&lt;/p&gt;
+
+&lt;p&gt;使用Markdown的参考式链接，可以让文件更像是浏览器最后产生的结果，让你可以把一些标记相关的元数据移到段落文字之外，你就可以增加链接而不让文章的阅读感觉被打断。&lt;/p&gt;
+
+&lt;h3 id=&quot;id-section-11&quot;&gt;强调&lt;/h3&gt;
+
+&lt;p&gt;Markdown使用星号（&lt;code&gt;*&lt;/code&gt;）和底线（&lt;code&gt;_&lt;/code&gt;）作为标记强调字词的符号，被&lt;code&gt;*&lt;/code&gt;或&lt;code&gt;_&lt;/code&gt;包围的字词会被转成用&lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt;标签包围，用两个&lt;code&gt;*&lt;/code&gt;或&lt;code&gt;_&lt;/code&gt;包起来的话，则会被转成&lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt;，例如：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;*single asterisks*
+
+_single underscores_
+
+**double asterisks**
+
+__double underscores__
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;会转成：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;em&amp;gt;single asterisks&amp;lt;/em&amp;gt;
+
+&amp;lt;em&amp;gt;single underscores&amp;lt;/em&amp;gt;
+
+&amp;lt;strong&amp;gt;double asterisks&amp;lt;/strong&amp;gt;
+
+&amp;lt;strong&amp;gt;double underscores&amp;lt;/strong&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;你可以随便用你喜欢的样式，唯一的限制是，你用什么符号开启标签，就要用什么符号结束。&lt;/p&gt;
+
+&lt;p&gt;强调也可以直接插在文字中间：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;un*frigging*believable
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;但是如果你的&lt;code&gt;*&lt;/code&gt;和&lt;code&gt;_&lt;/code&gt;两边都有空白的话，它们就只会被当成普通的符号。&lt;/p&gt;
+
+&lt;p&gt;如果要在文字前后直接插入普通的星号或底线，你可以用反斜线：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;\*this text is surrounded by literal asterisks\*
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;id-section-12&quot;&gt;代码&lt;/h3&gt;
+
+&lt;p&gt;如果要标记一小段行内代码，你可以用反引号把它包起来（），例如：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Use the `printf()` function.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;会产生：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;Use the &amp;lt; code&amp;gt;printf()&amp;lt;/code&amp;gt; function.&amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;如果要在代码区段内插入反引号，你可以用多个反引号来开启和结束代码区段：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;``There is a literal backtick (`) here.``
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;这段语法会产生：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;&amp;lt;code&amp;gt;There is a literal backtick (`) here.&amp;lt;/code&amp;gt;&amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;代码区段的起始和结束端都可以放入一个空白，起始端后面一个，结束端前面一个，这样你就可以在区段的一开始就插入反引号：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;A single backtick in a code span: `` ` ``
+
+A backtick-delimited string in a code span: `` `foo` ``
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;会产生：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;A single backtick in a code span: &amp;lt; code&amp;gt;`&amp;lt;/code&amp;gt;&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;A backtick-delimited string in a code span: &amp;lt;code&amp;gt;`foo`&amp;lt;/code&amp;gt;&amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;在代码区段内，&lt;code&gt;&amp;amp;&lt;/code&gt;和尖括号都会被自动地转成HTML实体，这使得插入HTML原始码变得很容易，Markdown会把下面这段：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Please don&#39;t use any `&amp;lt;blink&amp;gt;` tags.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;转为：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;Please don&#39;t use any &amp;lt;code&amp;gt;&amp;amp;lt;blink&amp;amp;gt;&amp;lt;/code&amp;gt; tags.&amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;你也可以这样写：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;`&amp;amp;#8212;` is the decimal-encoded equivalent of `&amp;amp;mdash;`.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;以产生：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;&amp;lt;code&amp;gt;&amp;amp;amp;#8212;&amp;lt;/code&amp;gt; is the decimal-encoded
+equivalent of &amp;lt;code&amp;gt;&amp;amp;amp;mdash;&amp;lt;/code&amp;gt;.&amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;id-section-13&quot;&gt;图片&lt;/h3&gt;
+
+&lt;p&gt;很明显地，要在纯文字应用中设计一个「自然」的语法来插入图片是有一定难度的。&lt;/p&gt;
+
+&lt;p&gt;Markdown使用一种和链接很相似的语法来标记图片，同样也允许两种样式： 行内式和参考式。&lt;/p&gt;
+
+&lt;p&gt;行内式的图片语法看起来像是：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;![Alt text](/path/to/img.jpg)
+
+![Alt text](/path/to/img.jpg &quot;Optional title&quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;详细叙述如下：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;一个惊叹号&lt;code&gt;!&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;接着一个方括号，里面放上图片的替代文字&lt;/li&gt;
+  &lt;li&gt;接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上 选择性的’title’文字。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;参考式的图片语法则长得像这样：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;![Alt text][id]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;「id」是图片参考的名称，图片参考的定义方式则和连结参考一样：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[id]: url/to/image  &quot;Optional title attribute&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;到目前为止，Markdown还没有办法指定图片的宽高，如果你需要的话，你可以使用普通的&lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt;标签。&lt;/p&gt;
+
+&lt;h2 id=&quot;id-section-14&quot;&gt;其它&lt;/h2&gt;
+
+&lt;h3 id=&quot;id-section-15&quot;&gt;自动链接&lt;/h3&gt;
+
+&lt;p&gt;Markdown支持以比较简短的自动链接形式来处理网址和电子邮件信箱，只要是用尖括号包起来，Markdown就会自动把它转成链接。一般网址的链接文字就和链接地址一样，例如：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;http://example.com/&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Markdown会转为：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;a href=&quot;http://example.com/&quot;&amp;gt;http://example.com/&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;邮址的自动链接也很类似，只是Markdown会先做一个编码转换的过程，把文字字符转成16进位码的HTML实体，这样的格式可以糊弄一些不好的邮址收集机器人，例如：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;address@example.com&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Markdown会转成：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;a href=&quot;&amp;amp;#x6D;&amp;amp;#x61;i&amp;amp;#x6C;&amp;amp;#x74;&amp;amp;#x6F;:&amp;amp;#x61;&amp;amp;#x64;&amp;amp;#x64;&amp;amp;#x72;&amp;amp;#x65;
+&amp;amp;#115;&amp;amp;#115;&amp;amp;#64;&amp;amp;#101;&amp;amp;#120;&amp;amp;#x61;&amp;amp;#109;&amp;amp;#x70;&amp;amp;#x6C;e&amp;amp;#x2E;&amp;amp;#99;&amp;amp;#111;
+&amp;amp;#109;&quot;&amp;gt;&amp;amp;#x61;&amp;amp;#x64;&amp;amp;#x64;&amp;amp;#x72;&amp;amp;#x65;&amp;amp;#115;&amp;amp;#115;&amp;amp;#64;&amp;amp;#101;&amp;amp;#120;&amp;amp;#x61;
+&amp;amp;#109;&amp;amp;#x70;&amp;amp;#x6C;e&amp;amp;#x2E;&amp;amp;#99;&amp;amp;#111;&amp;amp;#109;&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;在浏览器里面，这段字串（其实是&lt;code&gt;&amp;lt;a href=&quot;mailto:address@example.com&quot;&amp;gt;address@example.com&amp;lt;/a&amp;gt;&lt;/code&gt;）会变成一个可以点击的「address@example.com」链接。&lt;/p&gt;
+
+&lt;p&gt;（这种作法虽然可以糊弄不少的机器人，但并不能全部挡下来，不过总比什么都不做好些。不管怎样，公开你的信箱终究会引来广告信件的。）&lt;/p&gt;
+
+&lt;h3 id=&quot;id-section-16&quot;&gt;反斜杠&lt;/h3&gt;
+
+&lt;p&gt;Markdown可以利用反斜杠来插入一些在语法中有其它意义的符号，例如：如果你想要用星号加在文字旁边的方式来做出强调效果（但不用&lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt;标签），你可以在星号的前面加上反斜杠：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;\*literal asterisks\*
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Markdown支持以下这些符号前面加上反斜杠来帮助插入普通的符号：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;\   反斜线
+`   反引号
+*   星号
+_   底线
+{}  花括号
+[]  方括号
+()  括弧
+#   井字号
++   加号
+-   减号
+.   英文句点
+!   惊叹号
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;: This is Simplelified Chinese Edition Document of Markdown Syntax. If you are seeking for English Edition Document. Please refer to &lt;a href=&quot;http://daringfireball.net/projects/markdown/syntax&quot;&gt;Markdown: Syntax&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 07 Dec 2015 00:00:00 +0800</pubDate>
+        <link>http://www.flinhong.com/design/2015/12/07/markdown-guide/</link>
+        <guid isPermaLink="true">http://www.flinhong.com/design/2015/12/07/markdown-guide/</guid>
+        
+        <category>Markdown</category>
+        
+        
+        <category>design</category>
+        
+      </item>
+    
+      <item>
+        <title>自己也曾经写作过，读一读“一碗小馄饨”</title>
+        <description>&lt;p&gt;今天看豆瓣上一篇散文，抑或随笔，深深勾起自己写作的欲望。我不是一个好的写手，但我是一个认真的读者，总有那么一点点冲动往自己想要的地方伸展，点点滴滴地总会有些变化吧。&lt;/p&gt;
+
+&lt;p&gt;这篇文章叫&lt;a href=&quot;https://www.douban.com/note/527109873/&quot;&gt;《一碗小馄饨》&lt;/a&gt;，分享给大家：&lt;/p&gt;
+
+&lt;p&gt;小馄饨，这大约是江浙地区叫法，一种家常食物。在江西叫清汤，福建称扁食，四川好像是叫抄手的，据说有海鲜和麻辣两种口味，港粤起名云吞，个头大的多，咬一口，虾肉弹牙鲜美。&lt;/p&gt;
+
+&lt;p&gt;电视剧《红色》里有一幕，男主徐天给女主田丹买小馄饨，听到楼下竹梆声，便推开阁楼窗，垂下一条系着篾竹篮的长绳，篮里放上几个子儿，待摊主煮好馄饨搁入篮里，慢慢将绳子收回，方便省力，连楼梯都不用走。接了馄饨，两人相视而笑，饶是一番细腻的温情暖意。&lt;/p&gt;
+
+&lt;p&gt;摊主的馄饨往往是挑着担子来卖，这样的担子从前很普通，木柴烧火，打竹板叫卖，所以叫“柴爿馄饨”。“柴爿”是吴侬软语，上海人称这个人很瘦，说的就是“各宁长的像柴爿”。不过“柴爿馄饨”也有不挑担子，只是在黄鱼车里架一口锅，旁边横几条板凳，就是一担买卖了。很类似如今的夜排档，堪称黑暗料理的鼻祖。小时候奶奶叫我唱儿歌，“老头邦，敲竹梆，一敲敲到陆家浜”，指的就是卖柴爿馄饨的。&lt;/p&gt;
+
+&lt;p&gt;再说那幅担子，汪曾祺在《三姐妹出嫁》里写的详细，“一头是一个木柜，上面有七八个扁扁的抽屉；一头是安放在木柜里的烧松柴的小缸灶，上面支一口紫铜浅锅。铜锅分两格，一格是骨头汤，一格是下馄饨的清水。扁担不是套在两头的柜子上，而是打的时候就安在柜子上，和两个柜子成一体。扁担不是直的，是弯的，像一个罗锅桥。这副担子是楠木的，雕着花，细巧玲珑，很好看。这好像是《东京梦华录》时期的东西，李嵩笔下画出来的玩意儿。秦老吉老远地来了，他挑的不像是馄饨担子，倒好像挑着一件什么文物。这副担子不知道传了多少代了，因为材料结实，做工精细，到现在还很完好。”&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i63.tinypic.com/2n9xdn4.jpg&quot; alt=&quot;叫卖小混沌&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;上海的小馄饨多是纯肉馅儿的，七分瘦三分肥，用刀背剁成肉泥，和葱、姜、盐搅拌均匀，裹在皮子里，水开即熟，汤里再放上紫菜、虾皮、蛋皮。小馄饨味道鲜美，馄饨皮必得擀的薄，从前都是手工作业，手艺好的，那皮子晶莹剔透、薄可见字。&lt;/p&gt;
+
+&lt;p&gt;有阵子饮食店里挂食牌，写的是“绉纱小馄饨”，十分的形象，待馄饨熟了，皮子在汤水里懒懒的散开，像一层薄薄的绢纱，带着天然的婉约，又兼葱花是碧绿的，蛋皮是鹅黄的，紫菜是紫褐的，勺上一点喷香的猪油，一碗小馄饨捂在手里，色香味形就全都有了，人就那么容易的得到满足了。&lt;/p&gt;
+
+&lt;p&gt;朋友说她最爱砂锅小馄饨，每回不等汤滚的嘟嘟响，就猴急的将馄饨往嘴里塞，有一回馋虫妖娆，豪迈的将砂锅举起汤汁一干而尽，待放下时，看到男神目瞪口呆的坐在对面，顿时心碎满地。想要从此和心爱的砂锅小馄饨说再见，又发现割舍不了，思来念去，食色终究还是比美色重要。&lt;/p&gt;
+
+&lt;p&gt;从前的点心店都是敞开式现包现吃，阿姨们一手持竹篾，一手捧馄饨皮，挑肉掐馄饨，手指翻飞，眼花缭乱，堪称是艺术。我研究了许久，看我妈包小馄饨，也是一秒一个，奈何到我就成了隔行如隔山。凡经我手的小馄饨，乍看还挺像那回事，一下锅，全散成了一团混沌。&lt;/p&gt;
+
+&lt;p&gt;想来世间万物都有一种巧，不入其门，举步维艰。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;我呢，打小就爱吃这种“馄饨”，在我们四川，那就确实是抄手了。在去天津上学以前，饺子这种东西从来不会出现在我家的餐桌上的，我也不清楚它们俩到底有啥区别。饺子我也是爱吃的，尤其是蒸饺，蘸着辣椒就可以吃几十个，直到饱。可冥冥中还是更喜欢抄手的，皮薄、入味。抄手的皮还不是圆的，一个梯形的皮可以容得下你想要的味道，但肯定少不了剁碎的猪肉，那是小时候少有的味道！然而不得不说的是，我们可没有江浙沪那样的精致，抄手可都是大个的，自己包抄手时还总想把里面塞得满满的，一入锅，呵呵，那也得看运气了。:smiley:&lt;/p&gt;
+</description>
+        <pubDate>Fri, 04 Dec 2015 00:00:00 +0800</pubDate>
+        <link>http://www.flinhong.com/journal/2015/12/04/remind-the-writing-a-little-bowl-of-wonton/</link>
+        <guid isPermaLink="true">http://www.flinhong.com/journal/2015/12/04/remind-the-writing-a-little-bowl-of-wonton/</guid>
+        
+        <category>reading</category>
+        
+        
+        <category>journal</category>
+        
+      </item>
+    
+      <item>
+        <title>C#中布尔逻辑</title>
+        <description>&lt;p&gt;C#中，bool类型可以有两个值：true或false。这种类型常常用于记录某些操作的结果，当然也用作存储比较结果，用以判断。&lt;/p&gt;
+
+&lt;p&gt;布尔逻辑在其他语言中也非常常见，用法也很简单，但也有一些需要注意的地方，一边学一边做些笔记吧。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;有时候无意间假设&lt;code&gt;val1 &amp;lt; val2&lt;/code&gt;是false，而认为&lt;code&gt;val1 &amp;gt; val2&lt;/code&gt;便是true，需要注意，还有&lt;code&gt;val1 == val2&lt;/code&gt;这个情况。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;使用&lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt;和&lt;code&gt;||&lt;/code&gt;运算符来代替&lt;code&gt;&amp;amp;&lt;/code&gt;和&lt;code&gt;|&lt;/code&gt;，性能会有一定提高，在大量使用这些运算符的应用程序中表现尤为明显。例如说，&lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt;运算符的第一个操作数是&lt;code&gt;false&lt;/code&gt;，则不需要考虑第二个操作数了，因为无论第二个操作数的值是什么，其结果都是&lt;code&gt;false&lt;/code&gt;。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;另外，还有一个非常有用的例子：&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c#&quot; data-lang=&quot;c#&quot;&gt;&lt;span class=&quot;n&quot;&gt;var1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;var2&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;var3&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;var2&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;在上面的例子中，如果&lt;code&gt;var2&lt;/code&gt;是0，则&lt;code&gt;var3 / var2&lt;/code&gt;就会导致“除0错误”，或者把&lt;code&gt;var1&lt;/code&gt;定义为无穷大。而通过&lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt;先判断&lt;code&gt;var2&lt;/code&gt;的值就可以规避这种不经意的错误。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;&amp;amp;&lt;/code&gt;、&lt;code&gt;|&lt;/code&gt;和&lt;code&gt;^&lt;/code&gt;运算符还有一个有趣的作用：对数值执行按位操作，它们处理的是变量中存储的一系列位，而不是改变变量值。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;例如，考虑以下代码的操作：&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c#&quot; data-lang=&quot;c#&quot;&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;op1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;op2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;op1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;op2&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;op1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;op2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;这里就需要考虑&lt;code&gt;op1&lt;/code&gt;和&lt;code&gt;op2&lt;/code&gt;的二进制表示，它们分别是&lt;code&gt;100&lt;/code&gt;和&lt;code&gt;101&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i65.tinypic.com/29mpy0m.png&quot; alt=&quot;按位运算&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;按位对比后，二进制结果为&lt;code&gt;100&lt;/code&gt;，即&lt;code&gt;op1 &amp;amp; op2&lt;/code&gt;结果是4。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;C#中还可以使用一元运算符&lt;code&gt;~&lt;/code&gt;，它将操作数中的位取反。但需要注意的是整数在&lt;code&gt;.NET&lt;/code&gt;中存储的方式称为2的补位，按照2的补位系统，&lt;code&gt;(-x)&lt;/code&gt;定义为&lt;code&gt;(~x + 1)&lt;/code&gt;。例如，把10和-5相加（即10-5），用32位&lt;code&gt;int&lt;/code&gt;表示为：&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i66.tinypic.com/2zggahf.png&quot; alt=&quot;补位相减&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;忽略最左端的1，就得到&lt;code&gt;10-5&lt;/code&gt;的二进制表示，即十进制5。类似地&lt;code&gt;~1 = 2&lt;/code&gt;这样比较奇怪的结果就是因为底层的结构强制生成了这个结果。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;除了上面介绍的&lt;code&gt;&amp;amp;&lt;/code&gt;、&lt;code&gt;|&lt;/code&gt;、&lt;code&gt;^&lt;/code&gt;和&lt;code&gt;~&lt;/code&gt;外，还有两个移位运算符：&lt;code&gt;&amp;gt;&amp;gt;&lt;/code&gt;和&lt;code&gt;&amp;lt;&amp;lt;&lt;/code&gt;。比如说下面这个例子：&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c#&quot; data-lang=&quot;c#&quot;&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;var1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;var2&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;var3&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;var1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;var2&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;var3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;最终&lt;code&gt;var1&lt;/code&gt;的值是40。具体执行过程如下：&lt;code&gt;var2&lt;/code&gt;的二进制值是&lt;code&gt;1010&lt;/code&gt;，把该二进制值向左移位两位（&lt;code&gt;var3&lt;/code&gt;），得到&lt;code&gt;101000&lt;/code&gt;，即十进制中的40。实际上，是执行了乘法操作，每向左移动一位，该数都要乘以2。&lt;/p&gt;
+
+&lt;p&gt;类似地，每向右移动一位，则将操作数除以2，并丢弃非整数余数：&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c#&quot; data-lang=&quot;c#&quot;&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;var1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;var2&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;var3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;var1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;var2&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;var3&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;var2&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;上面示例中，&lt;code&gt;var1&lt;/code&gt;的值是5，而&lt;code&gt;var3&lt;/code&gt;的值是2。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;按位移位运算符主要用于高度优化的代码，通常用于设备驱动程序或是系统代码。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 01 Dec 2015 00:00:00 +0800</pubDate>
+        <link>http://www.flinhong.com/study/2015/12/01/bool-in-c-sharp/</link>
+        <guid isPermaLink="true">http://www.flinhong.com/study/2015/12/01/bool-in-c-sharp/</guid>
+        
+        <category>C#</category>
+        
+        
+        <category>study</category>
+        
+      </item>
+    
+      <item>
+        <title>Office (Word) 2016中手动加载Endnote X7.4</title>
+        <description>&lt;p&gt;电脑升级到Windows 10之后，顺便把Office也升级到2016版Office 365，可即便Endnote已更新到最新版本，Word中也没有CWYW的选项卡，这里就介绍如何使用Endnote官方的补丁手动注册Endnote的CWYW选项卡。&lt;/p&gt;
+
+&lt;p&gt;Endnote在官网给出了一个补丁：&lt;a href=&quot;http://endnote.com/kb/137576&quot;&gt;http://endnote.com/kb/137576&lt;/a&gt;，里面也给出了详细的说明，请注意该说明中提到的资源在上述网页的右边栏中下载，或者是从我下面给出的链接中下载。&lt;/p&gt;
+
+&lt;p&gt;这里给大家引用一下官方的说明：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Launch Word 2016.&lt;/li&gt;
+  &lt;li&gt;In Word’s ribbon tab, select “File”, then “Account”, and then click “About Word” button.  The end of the first line indicates the architecture (32-bit or 64-bit) of this installation of Microsoft Word.  Close Microsoft Word after you have checked this.&lt;/li&gt;
+  &lt;li&gt;Please on the right side download the “X74_CWYW_X86.zip” if you are using Microsoft Word 32-bit, or “X74_CWYW_X64.zip” if you are using Microsoft Word 64-bit.&lt;/li&gt;
+  &lt;li&gt;Right click the downloaded zip file, and select “Extract All…”, and extract it to a temporary location you like (i.e. Desktop).  After the extraction, it will open an Explorer window, with a folder “ResearchSoft” in it.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Move the “ResearchSoft” folder inside that folder to the appropriate Common Program Files folder depends on your system:&lt;/p&gt;
+
+    &lt;p&gt;* If you are running 32-bit version of Windows there is no “C:\Program Files (x86)”, move the “ResearchSoft” folder to:&lt;br /&gt;
+C:\Program Files\Common Files&lt;/p&gt;
+
+    &lt;p&gt;* If you are running 64-bit version of Windows, and you downloaded X74_CWYW_X86.zip (for Word 2016 32-bit), move the “ResearchSoft” folder to:&lt;br /&gt;
+C:\Program Files (x86)\Common Files&lt;/p&gt;
+
+    &lt;p&gt;* If you are running 64-bit version of Windows, and you downloaded X74_CWYW_X64.zip (for Word 2016 64-bit), move the “ResearchSoft” folder to:&lt;br /&gt;
+C:\Program Files\Common Files&lt;/p&gt;
+
+    &lt;p&gt;* Select “Continue” if you are prompted to provide administrative permission to move the folder.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Double click the “ResearchSoft” folder in Common Program Files folder, then “Cwyw”, and then “17”.&lt;/li&gt;
+  &lt;li&gt;Right click the “InstallCWYW.bat”, and select “Run as administrator”, and click “Yes” in the User Account Control elevation prompt.&lt;/li&gt;
+  &lt;li&gt;Launch Word again, you should see the “EndNote X7” or “EndNote” ribbon tab, depends on whether you have EndNote X7 installed, and have selected the EndNote X7 or EndNote online tools.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;简单说来，就是先要确定自己的Office (Word)版本，看你装的是32位还是64位的Office，然后根据情况下载下面其中一个资源：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://kbportal.thomson.com/utility/getfile.aspx?rid=7645&quot;&gt;X74_CWYW_X86.zip&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://kbportal.thomson.com/utility/getfile.aspx?rid=7646&quot;&gt;X74_CWYW_X64.zip&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;下载完后，解压缩到自己喜欢的位置，里面包含一个&lt;code&gt;ResearchSoft&lt;/code&gt;的文件夹，将这个文件夹移动到系统相应的&lt;code&gt;Common Files&lt;/code&gt;文件夹中：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;如果你使用32位的Windows系统，就移动到&lt;code&gt;C:\Program Files\Common Files&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;如果你使用64位的Windows系统，但是安装的是32位Office软件，就移动到&lt;code&gt;C:\Program Files (x86)\Common Files&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;如果你使用64位的Windows，并安装的是64位的Office，那就移动到&lt;code&gt;C:\Program Files\Common Files&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;然后双击打开&lt;code&gt;ResearchSoft&lt;/code&gt;文件夹，再打开&lt;code&gt;CWYW&lt;/code&gt;，接着打开&lt;code&gt;17&lt;/code&gt;文件夹。&lt;/p&gt;
+
+&lt;p&gt;右击&lt;code&gt;InstallCWYW.bat&lt;/code&gt;并选择管理员模式运行，在弹出的窗口中单击&lt;code&gt;确定&lt;/code&gt;。这样就完成了Endnote CWYW选项卡的注册，重启Office (Word)就可以照常使用了。相信过不久Endnote更新会自动更新这一块的。&lt;/p&gt;
+</description>
+        <pubDate>Mon, 30 Nov 2015 00:00:00 +0800</pubDate>
+        <link>http://www.flinhong.com/tips/2015/11/30/endnote-in-word-2016/</link>
+        <guid isPermaLink="true">http://www.flinhong.com/tips/2015/11/30/endnote-in-word-2016/</guid>
+        
+        <category>Endnote</category>
+        
+        
+        <category>tips</category>
+        
+      </item>
+    
+      <item>
+        <title>我最喜欢的截图软件——ShareX</title>
+        <description>&lt;p&gt;&lt;strong&gt;ShareX&lt;/strong&gt;的功能很难用一句话说清楚。它首先是开源免费的（&lt;a href=&quot;https://github.com/ShareX/ShareX&quot;&gt;Github&lt;/a&gt;）。&lt;/p&gt;
+
+&lt;p&gt;它的功能多到夸张，支持分享文字，文件，截图到 30 多种网络服务，包括 imgur, Flickr, Pastebin, gist.Github, Dropbox, Google Drive, Mega, FTP 等等等等，以及自定义上传（发送 Post，get 请求之类的）。&lt;/p&gt;
+
+&lt;p&gt;来看看支持上传的服务列表吧，是不是很给力：&lt;/p&gt;
+
+&lt;h4 id=&quot;id-section&quot;&gt;图片上传&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://imgur.com&quot;&gt;Imgur&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://imageshack.us&quot;&gt;ImageShack&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tinypic.com&quot;&gt;TinyPic&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.flickr.com&quot;&gt;Flickr&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://photobucket.com&quot;&gt;Photobucket&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://picasaweb.google.com&quot;&gt;Picasa&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://twitter.com&quot;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chevereto.com&quot;&gt;Chevereto&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://vgy.me&quot;&gt;vgy.me&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://someimage.com&quot;&gt;SomeImage&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Custom image uploader&lt;/li&gt;
+  &lt;li&gt;File uploader&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;id-section-1&quot;&gt;文本上传&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://pastebin.com&quot;&gt;Pastebin&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://paste2.org&quot;&gt;Paste2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://slexy.org&quot;&gt;Slexy&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pastee.org&quot;&gt;Pastee.org&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://paste.ee&quot;&gt;Paste.ee&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gist.github.com&quot;&gt;GitHub Gist&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://upaste.me&quot;&gt;uPaste&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://hastebin.com&quot;&gt;Hastebin&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://onetimesecret.com&quot;&gt;OneTimeSecret&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Custom text uploader&lt;/li&gt;
+  &lt;li&gt;File uploader&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;id-section-2&quot;&gt;文件上传&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.dropbox.com&quot;&gt;Dropbox&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/File_Transfer_Protocol&quot;&gt;FTP&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://onedrive.live.com&quot;&gt;OneDrive&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://drive.google.com&quot;&gt;Google Drive&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.copy.com&quot;&gt;Copy&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.box.com&quot;&gt;Box&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://mega.co.nz&quot;&gt;MEGA&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://aws.amazon.com/s3/&quot;&gt;Amazon S3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://owncloud.org&quot;&gt;ownCloud&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.mediafire.com&quot;&gt;MediaFire&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://gfycat.com&quot;&gt;Gfycat&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.pushbullet.com&quot;&gt;Pushbullet&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.sendspace.com&quot;&gt;SendSpace&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://minus.com&quot;&gt;Minus&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://ge.tt&quot;&gt;Ge.tt&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://hostr.co&quot;&gt;Hostr&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.atlassian.com/software/jira&quot;&gt;JIRA&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://lambda.sx&quot;&gt;Lambda&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://imgrush.com&quot;&gt;Imgrush&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://videobin.org&quot;&gt;VideoBin&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://maxfile.ro&quot;&gt;MaxFile&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://dropfile.to&quot;&gt;Dropfile&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://up1.ca&quot;&gt;Up1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Shared folder&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Email&quot;&gt;Email&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Custom file uploader&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;id-url&quot;&gt;URL缩短&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://bitly.com&quot;&gt;bit.ly&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://goo.gl&quot;&gt;goo.gl&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://is.gd&quot;&gt;is.gd&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://v.gd&quot;&gt;v.gd&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tinyurl.com&quot;&gt;tinyurl.com&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://turl.ca&quot;&gt;turl.ca&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://yourls.org&quot;&gt;yourls.org&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://nl.cm&quot;&gt;nl.cm&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://adf.ly&quot;&gt;adf.ly&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://coinurl.com&quot;&gt;coinurl.com&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://qr.net&quot;&gt;qr.net&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://vurl.com&quot;&gt;vurl.com&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://2.gp&quot;&gt;2.gp&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Cydrobolt/polr&quot;&gt;Polr&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Custom URL shortener&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;id-url-1&quot;&gt;URL分享&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Email&quot;&gt;Email&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://twitter.com&quot;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.facebook.com&quot;&gt;Facebook&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://plus.google.com&quot;&gt;Google+&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.reddit.com&quot;&gt;Reddit&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.pinterest.com&quot;&gt;Pinterest&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.tumblr.com&quot;&gt;Tumblr&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.linkedin.com&quot;&gt;LinkedIn&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.stumbleupon.com&quot;&gt;StumbleUpon&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://delicious.com&quot;&gt;Delicious&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://vk.com&quot;&gt;VK&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.pushbullet.com&quot;&gt;Pushbullet&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;大部分的功能和快捷键都可以自定义。比如说你可以配置成，按下快捷键截图后，自动加上水印（或者其他效果），自动上传到 imgur，然后把可以分享的图片网址自动缩短（是的，你没看错，这货也支持各种网址缩短），然后自动复制链接到剪切板，并同时自动发送 tweet。&lt;/p&gt;
+
+&lt;p&gt;对我来说，最常用的就是截图然后上传到指定服务器，然后它就自动给出了图片地址，往post里面一粘贴就可以了，相当方便。当然，除了截图以外，ShareX 还能分享剪切板内的文字，或者上传文件到各种服务。然后，它还有一些其他的功能，感兴趣话可以去安装来慢慢研究。&lt;/p&gt;
+</description>
+        <pubDate>Mon, 23 Nov 2015 00:00:00 +0800</pubDate>
+        <link>http://www.flinhong.com/app/2015/11/23/sharex/</link>
+        <guid isPermaLink="true">http://www.flinhong.com/app/2015/11/23/sharex/</guid>
+        
+        <category>ShareX</category>
+        
+        
+        <category>app</category>
+        
+      </item>
+    
+      <item>
+        <title>Markdown中插入LaTeX数学公式的方法</title>
+        <description>&lt;p&gt;Markdown刚兴起的时候没太在意，没想到自己为了搭建博客也慢慢用起来了。现在使用Markdown+Github Pages发文章，还是挺顺利的。&lt;/p&gt;
+
+&lt;p&gt;最近又开始学习LaTeX，要用Markdown做笔记就遇到麻烦了，不过没关系，万能的搜索引擎分分钟搞定。&lt;/p&gt;
+
+&lt;p&gt;下面介绍的方法使用html的语法，在网页中自动生成LaTeX数学公式，免去将公式保存为图片的麻烦。当然，弊端也是有的，公式太多，可能会造成刷新比一般的网页慢一些，而且现在不太懂LaTex，用起来还不顺手。&lt;/p&gt;
+
+&lt;h3 id=&quot;id-google-chart&quot;&gt;方法一：使用Google Chart的服务器&lt;/h3&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://chart.googleapis.com/chart?cht=tx&amp;amp;chl= 在此插入LaTex公式&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;border:none;&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;举个例子：&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://chart.googleapis.com/chart?cht=tx&amp;amp;chl=\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;border:none;&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;公式显示结果为：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://chart.googleapis.com/chart?cht=tx&amp;amp;chl=\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}&quot; style=&quot;border:none;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Google Chart服务器的响应速度还可以，但据说可能复杂一些的LaTeX公式可能无法解析。&lt;/p&gt;
+
+&lt;h3 id=&quot;id-forkosh&quot;&gt;方法二：使用forkosh服务器&lt;/h3&gt;
+
+&lt;p&gt;forkosh上提供了关于LaTeX公式的一份简短而很有用的帮助，使用forkosh插入公式的方法是：&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://www.forkosh.com/mathtex.cgi? 在此处插入LaTex公式&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;同样一个例子：&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://www.forkosh.com/mathtex.cgi? \Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;显示结果为：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.forkosh.com/mathtex.cgi? \Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;因为网页插入公式的原理是调用“某某网站的服务器”动态生成的，所有保证公式正常显示的前提是该网址能一直存在着为我等小生做些小小的服务。&lt;/p&gt;
+
+&lt;h3 id=&quot;id-mathjax&quot;&gt;方法三：使用MathJax引擎&lt;/h3&gt;
+
+&lt;p&gt;大家应该看过&lt;a href=&quot;http://stackoverflow.com/&quot;&gt;Stackoverflow&lt;/a&gt;上的公式吧，其生成的不是图片。这就要用到&lt;a href=&quot;https://www.mathjax.org/&quot;&gt;MathJax&lt;/a&gt;引擎，在Markdown中添加MathJax引擎也很简单，先添加一段&lt;code&gt;javascript&lt;/code&gt;：&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/script&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;然后，再使用TeX/LaTex写公式。&lt;code&gt;$$公式$$&lt;/code&gt;表示行间公式，本来TeX中使用&lt;code&gt;\(公式\)&lt;/code&gt;表示行内公式，但因为Markdown中&lt;code&gt;\&lt;/code&gt;是转义字符，所以在Markdown中输入行内公式使用&lt;code&gt;\\(公式\\)&lt;/code&gt;，如下代码：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
+\\(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;分别显示结果（行间公式）：&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}&lt;/script&gt;
+
+&lt;p&gt;行内公式：\(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\)&lt;/p&gt;
+
+&lt;p&gt;你还可以试一下，公式上还可以使用鼠标右键操作，比如说直接保存TeX命令等。&lt;/p&gt;
+</description>
+        <pubDate>Mon, 23 Nov 2015 00:00:00 +0800</pubDate>
+        <link>http://www.flinhong.com/study/2015/11/23/latex-in-markdown/</link>
+        <guid isPermaLink="true">http://www.flinhong.com/study/2015/11/23/latex-in-markdown/</guid>
+        
+        <category>Markdown</category>
+        
+        <category>LaTeX</category>
+        
+        <category>MathJax</category>
+        
+        
+        <category>study</category>
+        
+      </item>
+    
+      <item>
+        <title>Atom中为markdown自定义snippets</title>
+        <description>&lt;p&gt;Snippets在书写代码的时候非常有用，当然写文章的时候也可以借用。换到Atom之后，也想在markdown文件中使用自定义的snippets，主要还是为了加YAML信息。今天自己尝试了一下，管用！&lt;/p&gt;
+
+&lt;p&gt;当然，根据官方&lt;a href=&quot;https://atom.io/docs/latest/using-atom-snippets&quot;&gt;Snippets&lt;/a&gt;指南，还是比较容易学懂的。但是对于markdown格式来说，可能需要注意他的source格式是&lt;code&gt;source.gfm&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i68.tinypic.com/js0ro6.png&quot; alt=&quot;gfm&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;由于我常用的YAML信息是：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;---
+layout:
+titile:
+category:
+tags:
+image:
+description:
+---
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;所以，在&lt;code&gt;.atom/snippets.cson&lt;/code&gt;中的配置如下：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&#39;.source.gfm&#39;:
+  &#39;yaml&#39;:
+    &#39;prefix&#39;: &#39;yaml&#39;
+    &#39;body&#39;: &quot;&quot;&quot;
+      ---
+      layout: $1
+      title: $2
+      category: $3
+      tags: $4
+      image: $5
+      description: $6
+      ---
+
+      $7
+    &quot;&quot;&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;这样，我在markdown格式的文件中，直接使用&lt;code&gt;yaml&lt;/code&gt;+&lt;code&gt;tab&lt;/code&gt;就能快速填充YAML信息了。&lt;/p&gt;
+</description>
+        <pubDate>Tue, 03 Nov 2015 00:00:00 +0800</pubDate>
+        <link>http://www.flinhong.com/design/2015/11/03/custom-snippet-for-markdown-in-atom/</link>
+        <guid isPermaLink="true">http://www.flinhong.com/design/2015/11/03/custom-snippet-for-markdown-in-atom/</guid>
+        
+        <category>Atom</category>
+        
+        <category>snippets</category>
+        
+        
+        <category>design</category>
+        
+      </item>
+    
+      <item>
+        <title>没有错过的大坑舞火龙</title>
+        <description>&lt;p&gt;中秋节，除了月饼和灯谜，在香港还有一种特别的中秋庆祝方式——舞火龙，而且今年，我没有错过。&lt;/p&gt;
+
+&lt;p&gt;2011年的时候，舞火龙已经成为第三批国家级非物质文化遗产，那么就先来介绍介绍一下这项习俗吧。&lt;/p&gt;
+
+&lt;h2 id=&quot;id-section&quot;&gt;习俗起源&lt;/h2&gt;
+
+&lt;p&gt;每年农历八月十四、十五、十六日，也就是中秋节迎月、赏月、追月三日，位于香港岛大大坑村都会举行盛大的舞火龙庆典。这项庆祝活动开始于1880年（维基百科上说最早于19世纪末出现，实际上由何时开始则无从稽考）。当时大坑一带聚居不少客家农民。村民多以务农、打猎为生，生活十分简朴。据闻中秋节前夕的一晚，台风吹袭大坑村，有一条大蟒蛇吞食村里的家畜，给村民合力打死于破屋内。翌日，台风过后，大蟒蛇尸体失踪。不久之后，大坑一带发生瘟疫，死人无数，村民感到惶恐不安。后来村中有道士说此大蟒蛇原本是龙王之儿子，因此要降疫症惩罚该村，报复杀子之仇恨，而村中又有一位老翁，声称有神仙打救报梦，表示必须在中秋节前后三天舞动火龙绕村巡游，并燃烧炮竹，这样便能驱除瘟疫，确保平安。自始便形成了大坑从每年举行舞火龙的习俗。于此同时，亦是香港在中秋节期间，一项非常独特的民间风俗。&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;id-section-1&quot;&gt;火龙的诞生&lt;/h2&gt;
+
+&lt;p&gt;舞龙是中国固有的传统，但大坑龙与众不同之处在于它的名副其实，它确实是一条火龙，是由一点一点的香火汇聚而成。火龙的龙头、龙身、龙尾，以及两颗龙珠，都插满了由大坑居民特制的长寿香，点点香火使火龙在晚间舞动起来，气魄逼人。一般舞龙，是由人躲到布后，但火龙又岂能这样？火龙是由草扎作而成，然后再插上一束又一束的香。干草易碎，是什么能支持这巨大火龙活灵活现跃然街中？它的秘密是珍珠草。&lt;/p&gt;
+
+&lt;p&gt;不要以为珍珠草是什么稀世奇珍，过往，香港有很多珍珠草，或香港岛或九龙或新界都是四处可见，珍珠草唾手可得。只是随着社会发展，空地减少，珍珠草变得芳踪难觅。它不是绝迹香江，只是数目太少，不足用以扎作。大坑弟子四处寻访，就在大潭道的两条水坝找到几十颗珍珠草，但扎成火龙要的是上百担草，这几十颗根本不够。加上珍珠草分散香港各地，实在难以寻得。因此，近十几年，辉哥&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;透过中联办在内地觅得扎龙的材料，从东莞、石门一带运来珍珠草。&lt;/p&gt;
+
+&lt;p&gt;然而，不是找到珍珠草就已经万事俱备，还要留意天气和时间。辉哥说：&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;扎龙前还要看天气。如果下雨，而时间又太过紧迫，我们便会把草先割回来，铺在地上吹干或晒干。用来扎龙的草不能太湿，若用了湿了的草扎龙，在舞龙时水分便会干，干了便会缩，缩便会松，松便容易散。若没有太阳，时间又太紧迫，迫于无奈下，通宵扎龙也试过。故此，配合时间扎龙也是非常重要的。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;龙头由藤条屈曲为骨架；龙牙以锯齿的铁片造成；双眼是手电筒；舌头是漆红的木片。带引舞龙的珠球是个插满线香的沙田柚，一共两个。&lt;/p&gt;
+
+&lt;h2 id=&quot;id-section-2&quot;&gt;舞火龙盛况&lt;/h2&gt;
+
+&lt;p&gt;农历八月十四日晚上七时，过百名舞龙健儿举着整条龙（还没有插上长寿香）到莲花宫&lt;sup id=&quot;fnref:3&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;，向观音菩萨参拜，并举行开光仪式。开光时，只有龙头被带到庙内。&lt;/p&gt;
+
+&lt;p&gt;火龙每次起舞前，都必先在此经过“点睛”、“簪花”和“挂红”的仪式。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;首先，必须为火龙点睛。然后是簪花，簪花时可能簪几种不同的花。再之后是挂青，最后是挂长红。原则上，除了这几样外，我们会让一些官员致辞，之后剪裁，接着便起龙。传统上，仪式的主持人必须由客家人担任，禀神内容也须用客家话说出来。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;鼓声一响，每人向空中发射五彩缤纷的纸彩炮，之后健儿便马上舞动虎虎生威的龙头。顿时，全场气氛热血沸腾，各人手舞足蹈，准备迎接火龙。而在庙外的其余三十二节龙身体，亦紧接被带进庙内绕过神坛，再往浣纱街方向走去。当火龙舞动到街外后，各健儿马上把两万五千枝长寿香插在整条龙身上，之后，舞火龙的仪式才能正式开始。与此同时，一些可爱的小女孩身穿美丽夺目的唐装，个人手持一个粉红色的莲花灯表演莲花舞。当长寿香点满在火龙身上时，亦是整晚活动的高潮，各健儿舞动全长六十七米的金色大火龙，穿梭于大坑一带的大街小巷。在场的数千名市民不断欢呼鼓掌，同时亦忙于拍下此难得的盛会。&lt;/p&gt;
+
+&lt;p&gt;第一、二天，舞火龙约十时半便会结束，而最后一晚，则是大概十时十五分。传统火龙将会反始终方向行大坑一圈，表示行大运、祝合境平安。&lt;/p&gt;
+
+&lt;p&gt;农历十六晚的舞火龙仪式结束后，健儿们把火龙送到铜锣湾的避风塘，并举行祭祀神灵仪式，之后便把火龙送到海上&lt;sup id=&quot;fnref:4&quot;&gt;&lt;a href=&quot;#fn:4&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;，寓意“龙归沧海”。最后大会派发龙饼给街坊，祝福各人丰衣足食。&lt;/p&gt;
+
+&lt;h2 id=&quot;id-section-3&quot;&gt;这是我看到的&lt;/h2&gt;
+
+&lt;p&gt;看完别人的介绍，还是看看我所见到的吧。&lt;/p&gt;
+
+&lt;p&gt;去的时候有些晚了（说是8点15开始，到的时候差不多8点半了），人超多，根本挤不进去，索性就不挤了。下面是刚从天后站出来遇到的第一个指示牌和围观火龙的人群。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://c1.staticflickr.com/1/637/21766315075_8a97c96f9b_b.jpg&quot; alt=&quot;接口指示牌&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://c1.staticflickr.com/1/586/21766405475_55d68a02fe_b.jpg&quot; alt=&quot;人群&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;没成想，刚从人群里面出来，就遇到舞龙队朝着自己的方向走来，原来是到旁边的商家那里取悬挂的生菜和红包。运气真好，呵呵。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://c1.staticflickr.com/1/585/21578491400_edc487c77e_b.jpg&quot; alt=&quot;舞龙队&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;之后舞龙队就往后面的街道继续巡游去了。人群过于壮观也就没跟着过去了。到了一条叫火龙径的地方拍照。这条街直接通往维多利亚公园，待会在那里还会有舞龙表演。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://c1.staticflickr.com/1/610/21754989712_7690fd323f_b.jpg&quot; alt=&quot;彩带&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://c1.staticflickr.com/1/636/21766744405_b0fac889fc_b.jpg&quot; alt=&quot;摄影师&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;到了维多利亚公园，先看看彩灯展，一顿拍，可是没一个拍好的~然后找个前排的位置等10点半的主角戏——舞龙表演。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://c2.staticflickr.com/6/5692/21766888735_5025e1448a_b.jpg&quot; alt=&quot;彩灯&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;等了好久，终于开始了。不过，先等等，苏格兰风笛表演先给大家暖暖场。然后是火龙进场，“点睛”、“簪花”和“挂红”来一遍，再是少不了的官员致辞。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://c1.staticflickr.com/1/633/21755326542_db7f6186a0_b.jpg&quot; alt=&quot;苏格兰风笛&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;最后才是正式的舞火龙了。整个仪式果真是按照整“火龙过桥”、“火龙缠双柱”、“彩灯火龙结团圆”三部分来的。随手拍拍，莫要介意。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://c1.staticflickr.com/1/715/21767170815_5363b8637f_b.jpg&quot; alt=&quot;舞火龙1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://c1.staticflickr.com/1/639/21767248015_cca10b1bf6_b.jpg&quot; alt=&quot;舞火龙2&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;何辉生：《香港风俗及节令文化》。香港：明报出版社有限公司，2006年。 &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;陈素怡、李智浩：&amp;lt;大坑舞火龙：神话与凡俗&amp;gt;，《故园故事》。湾仔区议会，2007年。 &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:3&quot;&gt;
+      &lt;p&gt;莲花宫，位于铜锣湾大坑莲花宫西街街尾，创建于清同治三年（1864年），奉祀观音。 &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:4&quot;&gt;
+      &lt;p&gt;近年为免污染海水，于深夜用货车送到焚化炉去，变作“飞龙在天”。 &lt;a href=&quot;#fnref:4&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Mon, 28 Sep 2015 00:00:00 +0800</pubDate>
+        <link>http://www.flinhong.com/journal/2015/09/28/tai-hang-fire-dragon/</link>
+        <guid isPermaLink="true">http://www.flinhong.com/journal/2015/09/28/tai-hang-fire-dragon/</guid>
+        
+        <category>Hong Kong</category>
+        
+        
+        <category>journal</category>
+        
+      </item>
+    
+  </channel>
+</rss>
