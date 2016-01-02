@@ -137,7 +137,7 @@ $.get("http://ipinfo.io", function (response) {
       var screenWidth = jWindow.width();
       var postHeight = $('#post_content').height() + 150;
       var footerHeight = $('#footer').height();
-      if(scrollHeight > 600 && scrollHeight < postHeight && screenWidth > 1000){
+      if(scrollHeight > 600 && scrollHeight < postHeight && screenWidth > 1200){
         $('#fixtoc').css({
           'position':'fixed',
           'top':'75px',
@@ -157,6 +157,7 @@ $.get("http://ipinfo.io", function (response) {
       jWindow.trigger('scroll');
     });
     </script>
+
     
     <!-- End postion detection -->
 
@@ -704,11 +705,15 @@ $.get("http://ipinfo.io", function (response) {
 
 </div><!-- End Comments -->
 
+              
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55d1d3f27f6078ce" async="async"></script>
+
             </div><!-- Main content End -->
             <!-- Sidebar -->
-<div id="sidebar-follow">
 <div class="col col_3_of_12">
   <!-- Widget Search widget -->
+  <div id="fixed_search">
   <div class="widget">
     <div class="widget_title"><h3>Search widget</h3></div>
     <div class="tb_widget_search">
@@ -718,6 +723,7 @@ $.get("http://ipinfo.io", function (response) {
       </form>
     </div>
   </div><!-- End Widget Search widget -->
+  </div>
 
   
     <!-- Widget Social widget -->
@@ -804,7 +810,6 @@ $.get("http://ipinfo.io", function (response) {
   
 
 </div><!-- End Sidebar -->
-</div>
 
           </div><!-- end row -->
         </div><!-- end container -->
