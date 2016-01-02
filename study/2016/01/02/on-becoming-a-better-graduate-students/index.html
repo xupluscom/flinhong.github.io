@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>怎样当一名研究生，以及给研究生的一些建议 - Frank's Blog</title>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- Post Propertites -->
+  <link rel="canonical" href="http://www.flinhong.com/study/2016/01/02/on-becoming-a-better-graduate-students/">
+  <meta name="description" content="在上海大学读研究生的时候，每人都会发一本叶校长编写的《怎样当一名研究生》，我记得我还拿着同学的书去找叶校长签了个名（现在想想够萌的:smiley:）。这本书里，有钱校长的几篇讲座，介绍如何做研究、如何读文献，都是很普适的一些引导。最近又看了一篇耶鲁大学教授写的*Some Modest Advice for Graduate Students*，很具体而且很有针对性。看看这些，勿忘初心，自己是名研究生，那就做好一名研究生吧！">
+  <meta name="author" content="Frank Lin">
+
+  <meta name="google-site-verification" content="wc5yltpwXh2yCl_FDs1tTZZjKNSjv472zn_UxO6vKUQ" />
+  <meta name="baidu-site-verification" content="UuLhUp8nxE" />
+  <meta name="msvalidate.01" content="1A07987F97E9CB54E6658A930023D60C" />
+  <meta name="360-site-verification" content="42ac234ae1fbbfd83c7005d6cf38601d" />
+
+  <!-- Favicons -->
+  <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/img/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/img/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/img/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/img/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/img/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+  <link rel="manifest" href="/img/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/img/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/fontawesome.css">
+  <link rel="stylesheet" href="/css/weather.css">
+  <link rel="stylesheet" href="/css/colors.css">
+  <link rel="stylesheet" href="/css/typography.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/syntax.css">
+
+  <!-- Responsive -->
+  <link rel="stylesheet" type="text/css" media="(max-width:768px)" href="/css/responsive-0.css">
+  <link rel="stylesheet" type="text/css" media="(min-width:769px) and (max-width:992px)" href="/css/responsive-768.css">
+  <link rel="stylesheet" type="text/css" media="(min-width:993px) and (max-width:1200px)" href="/css/responsive-992.css">
+  <link rel="stylesheet" type="text/css" media="(min-width:1201px)" href="/css/responsive-1200.css">
+  <link href='http://fonts.googleapis.com/css?family=Titillium+Web:300,300italic,400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+  <!-- Baidu Tongji -->
+  <script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?91c58d9b4a0b3590bf5b19e85650c159";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+  </script>
+
+</head>
+
+  <body>
+    <!-- Wrapper -->
+    <div id="wrapper" class="wide">
+      <!-- Header -->
+<header id="header" role="banner">
+<!-- Header meta -->
+<div class="header_meta" class="sticky header_meta">
+  <div class="container">
+
+    <!-- Weather -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript">
+
+$.get("http://ipinfo.io", function (response) {
+    $("#ip").html("IP: " + response.ip);
+    $("#address").html("Location: " + response.city + ", " + response.region);
+    $("#details").html(JSON.stringify(response, null, 4));
+    $("#city").html(response.city + ", " + response.country);
+    $("#loc").html(response.loc);
+    var result = response.loc.split(",");
+    var lat = result[0];
+    var lon = result[1];
+    document.getElementById('city').value = response.city;
+
+    $.get("http://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&units=metric&appid=6fe49f5ee6dd7ff81e5bc5404d93920b", function (wdata) {
+      var temp = (wdata.main.temp);
+      var weather = (wdata.weather[0].main);
+      $("#temp").html(temp + "°C");
+    });
+
+}, "jsonp");
+</script>
+
+<div class="weather_forecast">
+  <i class="wi wi-day-cloudy"></i>
+  <span class="city" id="city"></span>
+  <span class="temp" id="temp"></span>
+</div><!-- End Weather forecast -->
+
+
+    <!-- Scroll Up -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+    $(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() >= 50) { // If page is scrolled more than 50px
+                $('#return-to-top').fadeIn(200); // Fade in the arrow
+            }
+            else {
+                $('#return-to-top').fadeOut(200); // Else fade out the arrow
+            }
+        });
+        $('#return-to-top').click(function () { // When arrow is clicked
+            $('body,html').animate({
+                scrollTop: 0 // Scroll to top of body
+            }, 500);
+        });
+    });
+    </script>
+    <!-- Scroll Up End -->
+
+    <!-- Position detection -->
+    
+    <script>
+    var jWindow = $(window);
+    jWindow.scroll(function(){
+      var scrollHeight = jWindow.scrollTop();
+      var screenHeight = jWindow.height();
+      var screenWidth = jWindow.width();
+      var postHeight = $('#post_content').height() + 150;
+      var footerHeight = $('#footer').height();
+      if(scrollHeight > 600 && scrollHeight < postHeight && screenWidth > 1000){
+        $('#fixtoc').css({
+          'position':'fixed',
+          'top':'75px',
+          'z-index': '0'
+        });
+      }else{
+        $('#fixtoc').css({
+          'position':'static'
+        });
+      }
+    });
+
+    window.onload = function(){
+      jWindow.trigger('scroll');
+    };
+    jWindow.resize(function(){
+      jWindow.trigger('scroll');
+    });
+    </script>
+    
+    <!-- End postion detection -->
+
+    <!-- Top menu -->
+    <nav class="top_navigation" role="navigation">
+      <span class="top_navigation_toggle"><i class="fa fa-reorder"></i></span>
+      <ul class="menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li class="menu-item-has-children"><a href="#">Pages</a>
+            <span class="top_sub_menu_toggle"></span>
+            <ul class="sub-menu">
+                <li><a href="/404.html">404 Page</a></li>
+                <li><a href="/tags/">Tags</a></li>
+                <li><a href="/categories/">Categories</a></li>
+                <li><a href="/shortcodes/">Shortcodes</a></li>
+                <li><a href="/archieves/">Blog Archieve</a></li>
+            </ul>
+        </li>
+        <li><a href="/shortcodes/">Shortcodes</a></li>
+        <li class="search_icon_form"><a href="#"><i class="fa fa-search"></i></a>
+          <div class="sub-search">
+            <form action="/search/" target="_blank" method="get">
+              <input type="search" name=q size=40 placeholder="Search in site...">
+              <input type="submit" value="Search">
+            </form>
+          </div>
+        </li>
+      </ul>
+    </nav><!-- End Top menu -->
+  </div>
+</div><!-- End Header meta -->
+<!-- Header main -->
+<div id="header_main" class="sticky header_main">
+    <div class="container">
+        <!-- Logo -->
+        <div class="site_brand">
+            <h1 id="site_title"><a href="/">Frank's<span>Blog</span></a></h1>
+            <h2 id="site_description">Coding and recording...</h2>
+        </div><!-- End Logo -->
+        <!-- Site navigation -->
+        <nav class="site_navigation" role="navigation">
+          <span class="site_navigation_toggle"><i class="fa fa-reorder"></i></span>
+          <ul class="menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li class="menu-item-has-children has_dt_mega_menu"><a href="/">Widget Menu</a>
+  <span class="site_sub_menu_toggle"></span>
+  <ul class="dt_mega_menu" jQuery>
+    <li>
+      <!-- Timeline widet -->
+<div class="widget">
+  <div class="widget_title"><h3>Timeline</h3></div>
+  <div class="tb_widget_timeline clearfix">
+    
+      <!-- Article -->
+      <article>
+        <span class="date">12/11/2015</span>
+        <span class="time">Frank Lin</span>
+        <div class="timeline_content">
+          <i class="fa fa-clock-o" jQuery></i>
+          <h3><a href="/media/2015/12/11/thank-u-se7en/">SE7EN - THANK U (MV)</a></h3>
+        </div>
+      </article><!-- End Article -->
+    
+      <!-- Article -->
+      <article>
+        <span class="date">12/07/2015</span>
+        <span class="time">Frank Lin</span>
+        <div class="timeline_content">
+          <i class="fa fa-clock-o" jQuery></i>
+          <h3><a href="/design/2015/12/07/markdown-guide/">Markdown语法说明</a></h3>
+        </div>
+      </article><!-- End Article -->
+    
+      <!-- Article -->
+      <article>
+        <span class="date">12/04/2015</span>
+        <span class="time">Frank Lin</span>
+        <div class="timeline_content">
+          <i class="fa fa-clock-o" jQuery></i>
+          <h3><a href="/journal/2015/12/04/remind-the-writing-a-little-bowl-of-wonton/">自己也曾经写作过，读一读“一碗小馄饨”</a></h3>
+        </div>
+      </article><!-- End Article -->
+    
+      <!-- Article -->
+      <article>
+        <span class="date">12/01/2015</span>
+        <span class="time">Frank Lin</span>
+        <div class="timeline_content">
+          <i class="fa fa-clock-o" jQuery></i>
+          <h3><a href="/study/2015/12/01/bool-in-c-sharp/">C#中布尔逻辑</a></h3>
+        </div>
+      </article><!-- End Article -->
+    
+      <!-- Article -->
+      <article>
+        <span class="date">11/30/2015</span>
+        <span class="time">Frank Lin</span>
+        <div class="timeline_content">
+          <i class="fa fa-clock-o" jQuery></i>
+          <h3><a href="/tips/2015/11/30/endnote-in-word-2016/">Office (Word) 2016中手动加载Endnote X7.4</a></h3>
+        </div>
+      </article><!-- End Article -->
+    
+      <!-- Article -->
+      <article>
+        <span class="date">11/23/2015</span>
+        <span class="time">Frank Lin</span>
+        <div class="timeline_content">
+          <i class="fa fa-clock-o" jQuery></i>
+          <h3><a href="/app/2015/11/23/sharex/">我最喜欢的截图软件——ShareX</a></h3>
+        </div>
+      </article><!-- End Article -->
+    
+  </div>
+</div><!-- End Timeline widet -->
+
+      <!-- Recent posts -->
+<div class="widget">
+  <div class="widget_title"><h3>Recent posts</h3></div>
+  <div class="tb_widget_recent_list clearfix">
+    
+    <!-- Post item -->
+    <div class="item clearfix">
+      <div class="item_thumb">
+        <div class="thumb_icon">
+          <a href="/study/2016/01/02/on-becoming-a-better-graduate-students/" jQuery><i class="fa fa-copy"></i></a>
+        </div>
+        
+        <div class="thumb_hover">
+          <a href="/study/2016/01/02/on-becoming-a-better-graduate-students/"><img src="http://i63.tinypic.com/2zgwvmw.png" alt="怎样当一名研究生，以及给研究生的一些建议"></a>
+        </div>
+        
+      </div>
+      <div class="item_content">
+        <h4><a href="/study/2016/01/02/on-becoming-a-better-graduate-students/">怎样当一名研究生，以及给研究生的一些建议</a></h4>
+        <div class="item_meta clearfix">
+            <span class="meta_date">Jan 2, 2016</span>
+            <span class="meta_author"><a href="/study/2016/01/02/on-becoming-a-better-graduate-students/">Frank Lin</a></span>
+        </div>
+      </div>
+    </div><!-- End Post item -->
+    
+    <!-- Post item -->
+    <div class="item clearfix">
+      <div class="item_thumb">
+        <div class="thumb_icon">
+          <a href="/journal/2016/01/01/happy-new-year-2016/" jQuery><i class="fa fa-copy"></i></a>
+        </div>
+        
+        <div class="thumb_hover">
+          <a href="/journal/2016/01/01/happy-new-year-2016/"><img src="http://i65.tinypic.com/2rnkjsx.jpg" alt="新年快乐"></a>
+        </div>
+        
+      </div>
+      <div class="item_content">
+        <h4><a href="/journal/2016/01/01/happy-new-year-2016/">新年快乐</a></h4>
+        <div class="item_meta clearfix">
+            <span class="meta_date">Jan 1, 2016</span>
+            <span class="meta_author"><a href="/journal/2016/01/01/happy-new-year-2016/">Frank Lin</a></span>
+        </div>
+      </div>
+    </div><!-- End Post item -->
+    
+    <!-- Post item -->
+    <div class="item clearfix">
+      <div class="item_thumb">
+        <div class="thumb_icon">
+          <a href="/tips/2015/12/30/duoshuo-css/" jQuery><i class="fa fa-copy"></i></a>
+        </div>
+        
+        <div class="thumb_hover">
+          <a href="/tips/2015/12/30/duoshuo-css/"><img src="http://i68.tinypic.com/2wnbneq.jpg" alt="多说评论框自定义CSS优化"></a>
+        </div>
+        
+      </div>
+      <div class="item_content">
+        <h4><a href="/tips/2015/12/30/duoshuo-css/">多说评论框自定义CSS优化</a></h4>
+        <div class="item_meta clearfix">
+            <span class="meta_date">Dec 30, 2015</span>
+            <span class="meta_author"><a href="/tips/2015/12/30/duoshuo-css/">Frank Lin</a></span>
+        </div>
+      </div>
+    </div><!-- End Post item -->
+    
+    <!-- Post item -->
+    <div class="item clearfix">
+      <div class="item_thumb">
+        <div class="thumb_icon">
+          <a href="/media/2015/12/11/thank-u-se7en/" jQuery><i class="fa fa-copy"></i></a>
+        </div>
+        
+        <div class="thumb_hover">
+          <a href="/media/2015/12/11/thank-u-se7en/"><img src="/demo/500x500.jpg" alt="SE7EN - THANK U (MV)"></a>
+        </div>
+        
+      </div>
+      <div class="item_content">
+        <h4><a href="/media/2015/12/11/thank-u-se7en/">SE7EN - THANK U (MV)</a></h4>
+        <div class="item_meta clearfix">
+            <span class="meta_date">Dec 11, 2015</span>
+            <span class="meta_author"><a href="/media/2015/12/11/thank-u-se7en/">Frank Lin</a></span>
+        </div>
+      </div>
+    </div><!-- End Post item -->
+    
+  </div>
+</div><!-- End Recent posts -->
+
+      <!-- Category widget -->
+<div class="widget">
+  <div class="widget_title"><h3>Archive</h3></div>
+  <div class="tb_widget_categories">
+    <ul>
+      
+      <li><a href="/categories/#tips">tips</a> (4)</li>
+      
+      <li><a href="/categories/#design">design</a> (4)</li>
+      
+      <li><a href="/categories/#reading">reading</a> (1)</li>
+      
+      <li><a href="/categories/#journal">journal</a> (3)</li>
+      
+      <li><a href="/categories/#study">study</a> (3)</li>
+      
+      <li><a href="/categories/#app">app</a> (1)</li>
+      
+      <li><a href="/categories/#media">media</a> (1)</li>
+      
+    </ul>
+  </div>
+</div><!-- End Category widget -->
+
+      <!-- Tags -->
+<div class="widget">
+  <div class="widget_title"><h3>Tags</h3></div>
+  <div class="tb_widget_tagcloud clearfix">
+    
+    <a href="/tags/#360wifi2">360wifi2</a>
+    
+    <a href="/tags/#Ubuntu">Ubuntu</a>
+    
+    <a href="/tags/#jekyll">jekyll</a>
+    
+    <a href="/tags/#highlighting">highlighting</a>
+    
+    <a href="/tags/#html">html</a>
+    
+    <a href="/tags/#path">path</a>
+    
+    <a href="/tags/#reading">reading</a>
+    
+    <a href="/tags/#QRcode">QRcode</a>
+    
+    <a href="/tags/#Hong Kong">Hong Kong</a>
+    
+    <a href="/tags/#Atom">Atom</a>
+    
+    <a href="/tags/#snippets">snippets</a>
+    
+    <a href="/tags/#Markdown">Markdown</a>
+    
+    <a href="/tags/#LaTeX">LaTeX</a>
+    
+    <a href="/tags/#MathJax">MathJax</a>
+    
+    <a href="/tags/#ShareX">ShareX</a>
+    
+    <a href="/tags/#Endnote">Endnote</a>
+    
+    <a href="/tags/#C#">C#</a>
+    
+    <a href="/tags/#video">video</a>
+    
+    <a href="/tags/#design">design</a>
+    
+    <a href="/tags/#CSS">CSS</a>
+    
+  </div>
+</div>
+<!-- End Tags -->
+
+    </li>
+  </ul>
+</li>
+
+          </ul>
+        </nav><!-- End Site navigation -->
+    </div>
+</div><!-- End Header main -->
+
+
+
+</header><!-- End Header -->
+
+
+      <!-- Section -->
+      <section>
+        <div class="container"><!-- container -->
+          <div class="row"><!--  row -->
+            <!-- Main content -->
+            <div class="col col_9_of_12">
+              <!-- Post -->
+              <article class="post" id="post_content">
+                <!-- Media -->
+                
+                <div class="entry_media">
+                  <a href="http://i63.tinypic.com/2zgwvmw.png" class="popup_link"><img src="http://i63.tinypic.com/2zgwvmw.png" alt="怎样当一名研究生，以及给研究生的一些建议"></a>
+                </div>
+                
+                
+                
+                <!-- End Media -->
+                <!-- Full meta -->
+                <div class="full_meta clearfix">
+                  <span class="meta_format"><i class="fa fa-file-text"></i></span>
+                  <span class="meta_date">Jan 2, 2016</span>
+                  <span class="meta_author">Frank Lin</span>
+                  
+                  <span class="meta_tags"> <u>advice</u> 
+                  
+                </div><!-- End Full meta -->
+                <!-- Entry content -->
+                <div class="entry_content">
+                  <!-- Entry title -->
+                  <h1 class="entry_title">怎样当一名研究生，以及给研究生的一些建议</h1><!-- End Entry title -->
+                  <p>在上海大学读研究生的时候，每人都会发一本叶校长编写的《怎样当一名研究生》，我记得我还拿着同学的书去找叶校长签了个名（现在想想够萌的:smiley:）。这本书里，有钱校长的几篇讲座，介绍如何做研究、如何读文献，都是很普适的一些引导。最近又看了一篇耶鲁大学教授写的<em>Some Modest Advice for Graduate Students</em>，很具体而且很有针对性。看看这些，勿忘初心，自己是名研究生，那就做好一名研究生吧！</p>
+
+<h2 id="id-section">怎样当一名研究生</h2>
+
+<p><strong>怎样当一名研究生</strong> 是钱校长在1993上海工业大学研究生开学典礼上的讲话，叶校长把它放在了《怎样当一名研究生》这本书的最前面，句句都是钱校长一生的经验呀。这里摘给大家：</p>
+
+<p>你们大学毕业以后，第一次进入研究生队伍。研究生这个名字，实际上翻译得不太恰当，在国外，研究生叫gradute sdudents，这是已毕业的学生的意思。毕业以后你们没有参加工作，而是继续研究生学习，这个研究生的学习和大学生的学习完全不一样。对大学生，一般讲现成知识，讲一些比较基本的东西，很多是非发展中的东西。而研究生是要学习做研究工作，这个“工作”是一下子到了生产实际第一线，第一线中的很多问题不是大学里所学的知识能解决的，它们都是发展中所面临的问题。你们在大学里学的是比较成熟的知识部分，而生产中所面临的问题很多是还需要不断改进的知识部分。到了生产第一线，你们会感到很不适应，很困难。</p>
+
+<p>我们记得50年代对教育的目标和方式有很大的争论，清华大学曾经提出大学是“工程师的摇篮”，我认为这个提法是错误的。工程师不可能从摇篮里摇出来，而是从生产实践中锻炼出来的。大学教育只是给了一些成熟的基本知识，工程师所面临的问题都是不成熟的，这怎么能摇得出来呢。50年代学习苏联的教育模式有很大缺陷，我概括为八个字，叫做“不教不懂，一教就会”。这种教育在大学里业已根深蒂固，而在研究生的阶段就不能这样要求。为什么要培养研究生，就是要你们将来处理更难的问题，真正到一切知识的最前沿，去探索、处理、发展，使知识更完美，更能促进生产。研究生学习就是这样一种过程。从一个一切被动地把成熟东西放在书本上教给你的过程，变成在导师指导下探索学习和研究的过程。虽然你们在处理这个过程中间还是学生，但这个学习和大学学习完全不一样。</p>
+
+<p>有人说，研究生要学得更多一点，更深一点。我认为，这里不是多少、深浅的问题，而是要你们从书本学习转到在实际工作中学习，深入到工作的最前沿。现在我们的工作，譬如经济工作或者是工业技术工作，或者是建筑工作中所碰到的问题，在大学本科学习中是不可能教过的。因为在大学本科学到的是最成熟、最常见的基础知识，而实际工作往往是一个不成熟、不常见的工作，这就要有训练。因为要求你们担当更重要的任务，所以这样的训练和大学里是不一样的，应该到第一线的工作中去训练。我们有的老师可能还不太理解，因为他们从大学里出来，又在大学里坐下来讲课，讲的是从以前老师讲课中听来的东西，所以他们不太能体会。那么怎么训练？你们首先要学会分析问题和解决问题的能力，对具体问题要会分析。过去都是老师分析好了告诉你，现在你们要学习自己来分析问题。要提高自己去获得知识的能力，也要学会在前人工作基础上往前走地把成熟东西放在书本上教给你的过程，变成在导师指导下探索学习和研究的过程。虽然你们在处理这个过程中间还是学生，但这个学习和大学学习完全不一样。因为你们面临的问题可能已有不少人碰到过，把它记载下来了，你们要想法去搜集这种记载的文字，所以研究生要学会去搜集资料或信息。</p>
+
+<p>寻找信息的训练、搜集资料的训练、阅读资料的训练，绝大部分是自学的。比如阅读文献是一个很重要的部分，因为你们要自己寻找来阅读。没有经过训练的人，寻一样东西都要找老师，只有经过了这种训练的人，才不需要找老师，自己去找。没有经过训练的人，不知道要找的东西在哪儿。图书馆有很多的材料，你去找什么？找这些资料有一套办法，将来我们请图书馆的同志讲寻找资料的办法，那是很具体的。现在有计算机光盘，实际上比我们当年念书时容易得多。我们那时是用手工的，可也得找啊。从近到远，从最近发生的问题到过去几十年甚至上百年的，我们都要看过。但要注意也有一些通俗的言论不一定对。譬如牛顿看见苹果掉下来，才发现了对地球引力的理解。这种说法是故事，而事实不是这样的。牛顿以前八九百年就已经有人在研究这个问题了，各种研究得到了各种结论，有很多很大的差别。牛顿只不过是综合了各种矛盾的结论，在里面抽出最关键的东西来，这是他的功劳。他是站在人家的肩膀上得到的结论。以后一直到了1902年、1903年，他还是独一无二的，所以牛顿的贡献就在这里。可现在我们又知道牛顿的理论是在一定范围内成立的，超出这个范围他的理论就不符合实际了。这是爱因斯坦的贡献。爱因斯坦的理论是怎么来的？也不是凭空想出来的，是经过反反复复的过程才总结出来的。现在相对论的许多结论开始时很多人不相信，从1918年、1924年、1928年，一直到1936年，原子能出来了，才完全证实了他的推论。爱因斯坦是从已有的众多现象里仔细观察以后，用严格的分析推理得到了许多结论。这种过程就是锻炼我们处理问题的过程，所以我们要看很多的资料。看资料是我们研究生阶段特别重要的，不要轻视了。</p>
+
+<p>我们这里还有一些教师并不理解这个，因为他们没有经过研究生的训练，而是经过大学本科训练后担任助教，以后由讲师到副教授这么上来的，他没有经过很多的科研。因为在一段时间里，我们教育界有个错误认识，即认为科研和教学应该是分开的，科学院搞科研，我们学校搞教学。邓小平在1979年提出学校里应该有两个中心，既要搞科研，又要搞教学，才把它弥补过来。所以邓小平把这样一个教育的方向问题扭了过来，是对我们国家的大贡献，以后就恢复了研究生制度，建立了学位制。没有他的扭转，你们研究生也就不存在了。对社会而言，是要求你们更好地推动科学进步，承担第一线的任务。对学校而言也是培养将来学校中的教师骨干。所以我们现在要提出要求来，以后学校里的教师必须通过研究生训练。过去大学毕业出来就留校工作，这是“近亲繁殖”。现在培养研究生，就是培养你们要勇于拓宽科技新领域，到第一线去干，这一步是很难的，你们不要轻视了。首先你们要逐步学会怎样找到材料。资料拿来，你们要分析哪些是对的，哪些是错的，然后得出自己的结论。研究生的培养分两个阶段，一个阶段还要给你们讲些课，让你们习惯，全部不讲课也是不行的。因为你们习惯于听课，不听课好像学不到东西，而且还规定怎么听，有多少学分，但分量必须大大减少，把阅读文献提到重要的地位。第一阶段是一步一步把你们引入庙堂，可还有一条腿在庙堂外头，还在过去“先生不讲不懂”的阶段。第二阶段是研究生的做论文阶段，这就完全不一样了，主要依靠你们自己去做论文。我们对这个也有不同的要求。硕士生论文，总是结合老师在做的工作进行，这样带一带路是可以的。博士生应该是自己去找题目，导师给你判断题目是否合适。不能找一个题目用十年八年做不出来，有的题目太脱离实际，实际不能做到也不行。根据你们的能力，各人从各自不同的条件出发，从你们现有的知识出发，根据自己阅读文献、分析问题、解决问题的能力，自己提课题，导师来审定，然后你们自己搞调查、找材料。</p>
+
+<p>文献是调查的一方面，而且在学习上文献是一个重要的方面，国际上也习惯于这样做。理论工作出来要有论文，论文记载了一个研究课题的过程和结论，达到了什么阶段，怎样达到的。论文是记载你工作的过程，给后来人接班。每一个人的科研工作都是在前人的基础上进行的。正如牛顿所说的他是站在人家的肩膀上爬上去的一样，人类社会所取得的任何成果都不是从天上掉下来的，而是一步一步地取得的，我们在接人家的班，比人家爬得更高，那么你也应准备别人来爬你的肩膀，所以你要发表论文，提供肩膀。发表论文不是为了名，更不是为了利。</p>
+
+<p>我们科研工作者是为人类向自然界进攻的一支大队伍，这支队伍通过论文组织起来，所以你有什么研究成果和思想，一般地不应该保密，应发表出来，希望人家站在你的肩膀上上去，为人类作贡献。每个人都应有责任感，责任感就是千军万马在往前走，你是中间一分子，不能掉队。最近在北京召开的第二届国际非线性力学会议，与会者中有许多很有名的人，前苏联的谢道夫被称为“人造卫星之父”，他就是这样的观点。所以我们希望中国的科技工作者队伍大大扩大，要不然我们前进不了。这个队伍是一个突击队伍，代表着我们的民族在前进、在突击。你们每个人的工作好像是一个很具体的工作，实际上结合在一起是一项很大的工程，是一个很大的配合。我们说2000年以后，世界上要把经济重心移到亚洲来，经济中心主要还要靠科技中心。现在，国家很重视研究生的培养，让你们有更好的工作条件，利用这个研究生阶段，在开始工作前让你们再学点，教你们工作，教到你们能够自主，将来出来都有独立的主张。同时，你们也要懂得跟别人联系，而联系的办法就是懂得写论文，懂得在人家肩膀上上去，懂得把自己所得教给人家。论文必须具名，你应该负责，而不能胡扯。我们过去有个研究生，他搞了一些软件，可人家使用他的软件都不能用，是骗人的。骗人只能骗一天而不能骗一辈子，所以工作都要老老实实地去做。</p>
+
+<p>我们中国人并不笨，但是要学会一套科学的工作步骤。我们学校找文献的条件优于国内许多学校，我们学校图书馆里国际期刊的数量在全国也是数一数二的，够你们用的了。所以，你们要着眼于现实，获取当代世界科技最前沿的知识与信息，要学会使用这些材料。有些老师因为没有经过这样的训练，不懂得利用现代科技资料，就只抱着一本教科书。有的老师1989年出了一本教科书，用了一些新材料和从前的不一样，他以为这样就成功了，而实际上又落后了。1989年出版的教科书，都是1985、1986年前的东西，已经晚了三年，再加上印刷翻译又晚了两年，总是差了五到十年。所以要求大家学外文，学外文不是为了留学、吃洋面包去，而是为了能争取时间直接从人家那里拿来东西。所以，首先我们外文的训练是着眼于阅读专业的文献，自己能写一些简单的报告和论文。这个要求，我现在发现也是不够的，作为研究生，还要参与国际学术交流，因而口语训练也是相当重要的。有两位我们的博士毕业生在最近一次国际学术会议的大会上作了报告，那两篇论文在当前世界上是属研究前沿的东西，很受重视，可他们的英文不行，怎么讲也讲不明白。到后来，大家只能一边看一边听，他讲的没有写的清楚，这就吃亏了。所以应该注意这个问题，以后要想办法，研究生也要作口语训练。</p>
+
+<p>自己要研究问题，获得知识，就要有语言文字的表达能力，所以应当重视口语，口语没有是不行的。我们有的老师口语也很差，所以我们也得慢慢想办法改变一下。这都是历史问题，并不是我们的民族不行。要美国人念中文，他也不行。所以我对大家寄予极大的希望。</p>
+
+<p>我跟大家谈了对研究生的理解，是要培养一个能够独立地到一个未知领域里工作的人，因为我们面向的都是未知的领域。现在即使做干部也不容易，在经济改革中，许多问题也都是未知的。你们将来都将面向一种未知的没有现成经验的领域，因此现在必须接受严格的锻炼。</p>
+
+<p>你们中将来有一批人留在学校，你们要有这个能力进入未知领域，而不是抱着一本书讲100次。我对你们寄予极大的希望，国家对你们也寄予极大的希望。研究生要算国家与民族的大账，而不能沉湎于一己之私，要有远大的理想和抱负。</p>
+
+<p>大家应该有自尊心，有民族自尊心。我们是有能力的，我们的国家是有发展潜力的。我们搞原子能，美国并没有给我们什么，前苏联也没有给我们什么，我们不依靠别人自己都搞起来了。所以我想把我老师赵忠尧教授的回忆录印出来发给大家，看看老一辈科学家当年是怎样为祖国的科学事业而发奋进取的。赵忠尧教授是中国有名的搞原子能的前辈。我们要有老一辈科学家那种献身祖国、献身科学的精神，我们能比别人搞得都好，这才真正是21世纪形成的“亚洲的世纪”。那不是口号，那是要去做的， 世纪中华的腾飞要靠你们，我们要走到前头去，希望大家共同努力。</p>
+
+<hr />
+
+<h2 id="id-section-1">给研究生的一些建议</h2>
+
+<p>这些建议是译自耶鲁大学Stephen C. Stearns教授的文章<a href="http://stearnslab.yale.edu/some-modest-advice-graduate-students"><em>Some Modest Advice for Graduate Students</em></a>。他是生态学与进化生物学讲座教授，他将这些建议发在了自己的<strong>Stearns Lab</strong>实验室的网站上，作为其实验室同学们开展研究工作的指导，当然也可以看做一些章程式的规定。在我看来，都是些非常具体的建议，尤其是在博士阶段的同学们呀，看看很受用！</p>
+
+<ul>
+  <li>
+    <p><strong>永远要做好最坏的打算</strong>。<br />
+凡事预则立，不预则废。你只要做一点点的“预”，就可以让你在博士生涯中避免一些灭顶之灾。想吐槽就吐槽吧（Be cynical）。假如你的研究计划行不通，假如某个导师非但对你的研究计划不予支持，甚至嗤之以鼻。那么，你还是赶紧换一个研究题目为妙。</p>
+  </li>
+  <li>
+    <p><strong>别指望教授来管你</strong>。<br />
+现实中，有些教授会去管你，有些则不会去管你。大部分教授估计想管你，但他们整日都忙得晕头转向，不亦乐乎，自己都顾不过来，那有时间去管你呢，爱莫能助。那么，你就得完全靠自己，而且最好习以为常。</p>
+  </li>
+</ul>
+
+<p>我这么说有多层含义，其中两个要点是：(1) 你最好尽早确定你到底想做什么题目。学位是你要去拿，而不是教授要去拿，你要你自己去争取。当然，导师也不会袖手旁观，导师会给你一些指导，也会在一定程度上帮你解决你在培养程序和经费上的后顾之忧，但是，且记：导师不会手把手地告诉你你的论文如何做。很多事情都取决于你自己。如果你需要导师指导，你就去问导师；这是他义不容辞的责任。(2) 如果你想得到别人的指导，那你就必须主动地找他/她，别守株待兔。</p>
+
+<ul>
+  <li><strong>你必须知道你的研究工作的重要性之所在</strong>。<br />
+当你初来咋到，你得在第一年广泛地阅读和思考。学而不思则罔，思而不学则殆。可能会出现这样的情况：你感觉你阅读的那些文献，都是狗屎一堆，后来你会品味出原来不是那样。如果文献中有些东西你看不懂，不要灰心丧气，可能那不是你的问题，而是作者的问题，他/她可能根本就没有说清楚。如果某个大权威对你说，你将一无所获，原因是你没有去上课，没有获得数据，那么，请你勇敢地告诉他／她，你会出成果的。如果他们依旧固执己见，那就跟他/她拜拜。唯有你自己最清楚自己工作的意义，让他见鬼去把。</li>
+</ul>
+
+<p>这个阶段会让人有受煎熬、受挫折的感觉，为伊消得人憔悴。但天无绝人之路。你需要冷静地思考，不断问问自己：我现在在这里究竟在干啥？要沉得住气。这个阶段对你的个人生涯发展至关重要，同时对出新思想至关重要。此时，你得考虑，究竟什么东西可以构成一个重要的科学问题。</p>
+
+<p>这个决定必须由你自己独立做出，理由有二：首先，如果你研究的问题是别人给你的，你会感到这个问题是别人要你去做，而不是自己要去做，因而不会捍卫它，不会为之奋斗，直至获得漂亮的结果。第二，你攻读博士学位期间的研究工作，会影响你未来的发展。你未来将献身于哪个领域，这个决定必须由你自己自主的作出。慎重地选择你的科研方向，这对科学的发展也是非常重要的。也许在这个方向上你可以开辟一个全新的天地。请记住：如果你根本不知道为什么要做某个研究，就去开始去收集数据，那有什么意义呢？那是做无用功。</p>
+
+<ul>
+  <li><strong>要克服心理障碍</strong>。<br />
+在你的研究生生涯早期，你就必须培养坚忍不拔的心理素质，这样就不至于被后来可能碰到的各种挫折所干扰。如果你不时刻保持警惕，那么课业的压力、听课的压力、语言的压力以及其他种种意料之外的压力，会把你忙得团团转，像一个无头苍蝇一样儿，或者说像一个分子做杂乱无章的布朗运动。这里有一些事情需要注意：</li>
+</ul>
+
+<ol>
+  <li>
+    <p><strong>仔细斟酌博士选题，并为之奋斗终身</strong>。无论你多么努力地去尝试，你都将无法规避你的课题。每人都一样。这源于论文问题的开放性。你必须学会判断什么样的论文是“好“论文。论文通常可以改善，这使你可以永无止境地对他进行改进。你得意识到你不可能写出一篇“完美”的论文。正如其他任何事物一样，论文也会有瑕疵。静下心来，在可由你支配的有限时间、金钱、精力、激励和思考下，尽你所能，把论文修改到最好。在研究生涯的早期，你可以通过完成所有既定的任务来减缓论文的问题。请尽早修完你的所有课程并完成相应的考试。这不仅让你因此清除了准备学位论文前的障碍，在成功完成这些任务后，也可以让你信服，毕竟此时你可能足够出色了。</p>
+  </li>
+  <li>
+    <p><strong>唯马首是瞻的行为不会有出色的表现的</strong>。期待并要求别人像同事一样看待你。论文的要求是你不得不面对的硬指标，而同事或者合作者的态度则是一个不明的挑战。如果你表现得像一个同事一样，别人也会把你看成是一个同事。读研究生只是改变你的未来发展的途径之一。如果出现了更好的机会，那就不妨做一个“逃兵”。有三个好理由值得这样做：首先，一个真正的机会可能会出现，而且这个机会比读研救生所做的任何事都更有创造性和挑战性。当你有足够长的一段时间来证明辍学是一个不错的选择时，那就暂时放弃读研吧。比如一个跟你博士工作不是直接相关的非洲野外项目、一个软件开发的合同、一个在首府科技政策制定部门当助手的工作机会，或者在某个主流报纸/杂志社当科学栏目实习记者的机会。其次，只有同时关注这些机会时，你才能被称为是一个真正独立的研究生。如果你认为读研究生是你唯一的选择，你会于心不安，容易变得有些沮丧并且心态不稳，以及你无法达到你的最佳状态。最后，如果读研真的不合适你，那么选择继续读研将只会伤害你自己，甚至失去许多其他的机会。除了当一位科学家，生活中还有许多其他有趣的事情值得去做，包括在人力市场找到的一些工作也会比当科学家好得多。如果你真的不适合当科学家，或许你应该尝试其他的工作。但是，千万不要鲁莽行事(go off half-cocked)。这是一个很严肃的决定。在做出最后决定前，确保跟研究生院负责人和人品不错的老师谈话。</p>
+  </li>
+</ol>
+
+<ul>
+  <li>
+    <p><strong>尽量少选课，多阅读多讨论</strong>。如果你对你的研究领域已经相当熟悉，那么就尽量减少上课的数量。这个建议看上去和之前有点自相矛盾，其实有它的道理。当下，你应该学会如何为你的课题思考。这需要你主动出击，而不是被动地听课和机械地重复。学会思考，你需要两样东西：一是得有大块完整的时间；其次是，你得跟比你对科学问题理解得更透彻的人进行尽量多时间的一对一交流。上课可能反而碍事（适得其反）。如果你很有积极性，那么阅读和讨论将会比听课更有效和更具有启发性。跟少数几个同事一起组织研讨一个共同感兴趣的课题，并邀请一两位老师参加，这通常是一个好主意。老师们一般都会很热意参加。毕竟，他们对讨论的课题也很感兴趣，也会喜欢你们的创意－这种讨论同时会给教该门课的老师积累一定的信誉，而且他们还不用做任何工作。何乐而不为呢？当然，这些建议不适用于一些介绍专业技能的课程，比如电镜成像、组织学和轻潜水技术(scuba diving)等等。</p>
+  </li>
+  <li>
+    <p><strong>撰写研究计划，并拿出去征求别人的意见</strong>。撰写研究计划有许多好处：</p>
+  </li>
+</ul>
+
+<ol>
+  <li>
+    <p>总结一年来你所看和所想的内容，并通过梳理与总结，可以激发你新的想法；</p>
+  </li>
+  <li>
+    <p>通过提供一个具体的演示(concrete demonstration)来证明你在合理地利用时间，并以此维持你自己做事的独立性。</p>
+  </li>
+  <li>
+    <p>别人因此可以帮助你。直接口头交流心中的想法真是太复杂了，因此心中的想法会非常琐碎，缺少条理。只有细心整理、简介的文档才能在同行之间传阅，并获得他人的意见。众人只有阅读了你的研究计划以后才可能给出一些建设性的意见。</p>
+  </li>
+  <li>
+    <p>你需要学习如何写文章。我们也一样。</p>
+  </li>
+  <li>
+    <p>找到让你自己满意的科学问题，这点是很重要的一点。你需要向同事证明你并不是完全对此手足无措，而实际上，你需要得到大家的支持。其中提出一个研究计划，并达成这个目标的方法是：</p>
+  </li>
+</ol>
+
+<p>1) 一份有关你的研究计划的简短陈述，可是是一个科学问题或者假说。</p>
+
+<p>2) 从学术角度提出该假说的重要性，而不是从你个人的角度出发。以及，该假说如何与你所研究的其他更广领域内的想法相结合。</p>
+
+<p>3) 用详尽的文献综述来证实你所提到的有关该假说的重要性。</p>
+
+<p>4) 把你的科学问题拆分成你个小问题，并通过一系列较小的步骤逐个击破。在世纪实验、观察以及分析时，请确保在每一阶段都准备好备选实验。把这些步骤一个个列罗起来，并逐个解决这些问题。通过把大问题转化成一系列的小问题，你可以永远知道下一步该怎么做，以此减轻刚开始面对一个大问题时的手足无措。你可以从中知道该问题哪些步骤比较费时，或者困难比较大，并因此你能列出各个事情的优先顺序，使你知道一些步骤没法解决时，你有其他一系列的事情可以做。</p>
+
+<ol>
+  <li>
+    <p>写出一些列可能出现并对整个项目具有毁灭性打击的大问题，并按此写出一些列的备选实验，以防所担心的问题在实验进行中真的出现。</p>
+  </li>
+  <li>
+    <p>设计两到三个实验，并同时开展，以此确定哪个实验最可能成功。这或许是个不错的主意。这可能同时有两到三个模型对你的想法有相似的解释力度，但是在实际操作中，可能早已包括这些问题。刚开始就发现这些问题，比在同时开展两到三个实验，并当第一个实验失败后再考虑这些问题更有效。</p>
+  </li>
+  <li>
+    <p>给你的论文报告选定一个日期，并合理安排报告开始前的这段时间。给自己设定好截止日期后，你会有紧张感。别担心，当这样进行一段时日后，这种紧张感会更加强。</p>
+  </li>
+  <li>
+    <p>在你完成文献的阅读之后，需要花费两到三周的时间来撰写研究计划，并争取给更多的同行评阅，以此得到尽量多的评审意见。希望他们返回的意见是有所助益的，然后你再针对这些意见逐一回复。</p>
+  </li>
+  <li>
+    <p>当完成这些步骤都时，你其实已经差不多写好了引言部分，而你才在这里度过一年到一年半的时间。</p>
+  </li>
+</ol>
+
+<ul>
+  <li>
+    <p><strong>时不时向导师汇报进展</strong>。让你的导师时刻知道你在做什么，但不要打扰到他(们)。让导师们对你的出现感兴趣，而不是像对待害虫一样。每年至少主动提交一份一至两页纸的研究进展报告。他们会欣赏你举动，并会对此留下良好印象。预见并尽量避免跟导师出现个人争端。如果你跟你的导师难以继续相处，那么趁早换导师吧。刚开始选择导师需要非常谨慎，其中最重要的一点是：你跟导师的研究兴趣需要保持一致。</p>
+  </li>
+  <li>
+    <p><strong>了解不同类型的论文</strong>。千万不要在已有的但不确定的想法上说一大堆华而不实的废话。直入主题，并验证一些重要环节中具有主要研究意义但未曾检验的假说，或者列出一个新研究的提纲[注：此乃点睛之笔，彪悍得五体投地。原文为</p>
+  </li>
+</ul>
+
+<blockquote>
+  <p>Never elaborate a baroque excrescence on top of existing but shakyideas. Go right to the foundations and test the implicit but unexaminedassumptions of an important body of work, or lay the foundations for a newresearch thrust。</p>
+</blockquote>
+
+<p>当然，这里还有其他类型的论文：</p>
+
+<ol>
+  <li>
+    <p>经典的论文包括模型的演绎推算。这些模型会相当新颖，并得到令人惊奇的预测，在此之后你得在对该假说不利的假设下，客观地验证并证实它。这是事半功倍的做法。</p>
+  </li>
+  <li>
+    <p>对现有的某个重要研究理论进行批评。同样，如果能够合理解释，你也能成为少数几个令人尊敬的赢家。</p>
+  </li>
+  <li>
+    <p>纯理论研究的论文。这需要勇气，尤其是在一个经验主义者占主导的研究领域，但是如果你在数学以及推理能力上足够强的话，你也会成功。</p>
+  </li>
+  <li>
+    <p>收集一些别人也同样能收集的数据。这是最糟糕的论文，但是有时候可以帮你突围。对于一部分拥有一大堆数据的人，那怕他没有验证一个假说，有时也会给人留下深刻印象。至少结果说明你已经努力工作了，你可以因此向你的评审委员会索求授予你博士学位。</p>
+  </li>
+</ol>
+
+<p>论文的类型其实相当多，就跟有多种研究生一样。之前所列举的四种论文分别提供了好、差以及糟糕论文案例。博士论文的研究工作提供了让你尝试各种研究类型的机会，并让你发现哪种研究最适合你：理论研究、野外工作还是实验室工作？理想状况下，你能权衡三者，成为凤毛麟角的集大成者：从经验主义者的角度思考理论问题，从理论学家的视角解决现实世界的问题。</p>
+
+<ul>
+  <li><strong>趁早发文章</strong>。别骗自己了。你可能得进入这个发表论文的节奏当中，并暂时远离你所钟爱的动植物、所好奇的大自然及探索真理的热情，因为如果你没有发表的论文，你将找不到一份长期的工作。你需要在国际上受认可的同行评议期刊上连续发表论文。如果没有论文发表，你可以放弃科研这条路了。这听上去很残忍，但也有它的道理，而且这其实是一个很有趣的挑战和实现过程。科学是共享知识的。在科研结果无法有效地交流之前，其他它们并不存在。发表论文只是科研工作的一部分，直到文章发表，才意味着该研究工作的结束。你必须掌握撰写简洁扼要、精心组织的学术论文的技能。以下是几点有关发表论文的提示：</li>
+</ul>
+
+<ol>
+  <li>
+    <p>跟一些更富论文撰写经验的人共同发表论文。跟当下有共同研究兴趣的教授套瓷，如果他愿意，他会给你的论文发表有所助益。作为回馈，给他署名为论文的主要合作者。他会对署名心存感激，并会给你的论文提供许多好的修改建议。</p>
+  </li>
+  <li>
+    <p>别期望你的第一篇论文就能举世震惊。许多杰出的科学家都是从很小的研究工作开始的。学术论文所报道的平均信息量可能比你想像的要少。先在一些不太出名的期刊上发表一到两篇完整的论文，再在之后把目标定向主流杂志。你将会迅速发现，不管杂志的名声如何，所有杂志编委都会竭尽全力来保证所任杂志发表论文的质量－这也正是他们的职责！</p>
+  </li>
+  <li>
+    <p>如果你的研究计划已经足够完美，那么可以把它以评论性的综述论文来发表。如果论文发表了，你可能已经选择了合适的研究领域，并可以对此继续开展研究。</p>
+  </li>
+  <li>
+    <p>不要把你的博士论文写成“教科书”(monograph)。可以把你的博士论文写成一系列可以发表的稿件，然后尽早把它们投出去，因此在答辩前，至少博士论文中的一到两章可以成为在刊或刊出的文章。</p>
+  </li>
+  <li>
+    <p>购买一本William Strunk和E. P. White合著的<em>Elements of Style</em>。在你准备开始撰写第一篇论文之前，请仔细阅读此书，然后每隔三四年至少再阅读一遍。Robert Day的<em>How to Write a Scientific Paper</em>这本书也不错。</p>
+  </li>
+  <li>
+    <p>在你投稿之前，让一个有时间能够对你论文的写作、想法和条理性提出修改意见的人修改。</p>
+  </li>
+</ol>
+
+<ul>
+  <li><strong>可别小看硕士论文</strong>。<br />
+不读硕士的唯一理由常常成为一个普遍的误区：我已经足够好了，没必要做类似硕士论文的事情。其实，完成硕士论文有许多好处：读硕士，你有一个换学校的机会。你可以利用这一点拓宽你的研究背景。此外，在你当下的发展期，有关你对“一个重要问题由哪些部分组成”的想法可能会迅速转变。你会迅速了解更多学者所做的研究，以及他们各自开展研究的地点。如果你打算换学校，读硕士是最好的方式。你离开母校，母校的同行对你的表现也挺满意，并且他们给你提供了一份很给力的推荐信。此时，你已经满意地达到了攻读博士的要求。</li>
+</ul>
+
+<p>你积累了许多科学研究中急需的经验，并且在比博士研究风险更小的环境下撰写论文。你可以逐渐挑战你自己。在研究中，你见识了解决一个科学问题的难易程度。经历过硕士阶段的人们常常会更加容易地完成博士论文的研究工作。</p>
+
+<p>你有在硕士期间发表的论文。</p>
+
+<p>你急啥呢？如果你过早地开始找工作，你可能还没有完全准备妥当。最好稍微晚点出手，先逐渐加强你的背景基础，然后再展现拥有更多和更广经验的你。</p>
+
+<ul>
+  <li><strong>定期发表论文，但别贪多，并非多多益善</strong>。发表论文的压力已经侵蚀了杂志的质量，并同时也侵蚀了作者的精神生活。发表几篇能够被广为阅读的高质量论文会比发表一些列迅速被人遗忘的小文章要好很多。你也得回到现实。你需要发表论文来获得博士后岗位，并发表更多的论文来获得一个教职，直至获得终身教职。但是，如果你能把你的研究工作持续发表成连续的高质量论文，那么无论对于你个人，还是你所研究的学科，都是极好的事情。</li>
+</ul>
+
+<p>大多数人只发表少量能够引起重大影响的文章。大多数文章的被引用数会很少，甚至没有被引用。要知道，90％的引用是约10％的论文贡献的。没有被引用的文章是时间和精力的浪费。追求高质量，而不是数量。这需要勇气和毅力，但是你不会因此后悔。如果你能够发表一至两篇精雕细琢有明显突破的好文章，并且每年被持续引用，那么表明你将会做得很出色，也表明你已经把时间花在刀刃上了。</p>
+
+                </div><!-- End entry content -->
+                <div class="bottom_wrapper"><!-- bottom tags and categories -->
+                  <!-- Entry tags -->
+                  <div class="entry_tags">
+                    <span><i class="fa fa-tags"></i> Tags</span>
+                    
+                    
+                    <a href="/tags/#advice">advice</a>
+                    
+                    
+                  </div><!-- End Entry tags -->
+                  <!-- Entry categories -->
+                  <div class="entry_tags categories">
+                    <span><i class="fa fa-folder-open"></i> Category</span>
+                    
+                    <a href="/categories/#Study">Study</a>
+                    
+                  </div><!-- End Entry categories -->
+                </div><!-- end bottom tags and categories -->
+              </article><!-- End Post -->
+              <!-- Baidu Share-->
+<div class="widget">
+<div class="widget_title"><h3>Share this post</h3></div>
+<div class="tb_widget_weibo clearfix">
+  <!-- Duoshuo Share Buttons -->
+  <div class="ds-share flat" data-thread-key="flinhong/study/2016/01/02/on-becoming-a-better-graduate-students" data-title="怎样当一名研究生，以及给研究生的一些建议" data-images="http://i63.tinypic.com/2zgwvmw.png" data-content="在上海大学读研究生的时候，每人都会发一本叶校长编写的《怎样当一名研究生》，我记得我还拿着同学的书去找叶校长签了个名（现在想想够萌的:smiley:）。这本书里，有钱校长的几篇讲座，介绍如何做研究、如何读文献，都是很普适的一些引导。最近又看了一篇耶鲁大学教授写的*Some Modest Advice for Graduate Students*，很具体而且很有针对性。看看这些，勿忘初心，自己是名研究生，那就做好一名研究生吧！" data-url="http://www.flinhong.com/study/2016/01/02/on-becoming-a-better-graduate-students/">
+      <div class="ds-share-inline alignleft">
+        <ul  class="ds-share-icons-16">
+
+          <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+          <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">新浪微博</a></li>
+          <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+          <li><a class="ds-twitter" href="javascript:void(0);" data-service="twitter">Twitter</a></li>
+          <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+          <li><a class="ds-douban" href="javascript:void(0);" data-service="douban">豆瓣网</a></li>
+          <li> <a class="ds-facebook" href="javascript:void(0);" data-service="facebook">Facebook</a></li>
+
+        </ul>
+        <div class="ds-share-icons-more">
+        </div>
+      </div>
+      <script type="text/javascript">
+      var duoshuoQuery = {short_name:"flinhong"};
+      (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+      </script>
+   </div>
+  <!-- End Duoshuo Share Buttons -->
+
+  <!-- Baidu share buttons -->
+  <div class="bdsharebuttonbox alignright" data-tag="share_1">
+  	<a class="bds_tsina" data-cmd="tsina"></a>
+    <a class="bds_qzone" data-cmd="qzone" href="#"></a>
+  	<a class="bds_douban" data-cmd="douban"></a>
+    <a class="bds_weixin" data-cmd="weixin"></a>
+    <a class="bds_fbook" data-cmd="fbook"></a>
+    <a class="bds_twi" data-cmd="twi"></a>
+    <a class="bds_evernotecn" data-cmd="evernotecn"></a>
+  	<a class="bds_more" data-cmd="more">更多</a>
+  	<a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+  	window._bd_share_config = {
+  		common : {
+  			bdText : '怎样当一名研究生，以及给研究生的一些建议',
+  			bdDesc : '在上海大学读研究生的时候，每人都会发一本叶校长编写的《怎样当一名研究生》，我记得我还拿着同学的书去找叶校长签了个名（现在想想够萌的:smiley:）。这本书里，有钱校长的几篇讲座，介绍如何做研究、如何读文献，都是很普适的一些引导。最近又看了一篇耶鲁大学教授写的*Some Modest Advice for Graduate Students*，很具体而且很有针对性。看看这些，勿忘初心，自己是名研究生，那就做好一名研究生吧！',
+  			bdUrl : 'http://www.flinhong.com/study/2016/01/02/on-becoming-a-better-graduate-students/',
+  			bdPic : 'http://i63.tinypic.com/2zgwvmw.png'
+  		},
+  		share : [{
+  			"bdSize" : 16
+  		}]
+  	}
+  	with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+  </script>
+  <!-- End Baidu Share Buttons -->
+  <hr>
+</div>
+<div class="tb_widget_weibo clearfix">
+  
+    <a class="alignleft" href="/journal/2016/01/01/happy-new-year-2016/"><i class="fa fa-chevron-left"></i> 上一篇：新年快乐</a>
+  
+  
+    <a class="alignright" href="/archieves/">Blog Archieves <i class="fa fa-chevron-right"></i></a>
+  
+</div>
+</div>
+
+              <!-- Comments -->
+<div id="comments">
+  <div class="panel_title">
+    <div>
+      <h4>Comments</h4>
+    </div>
+  </div>
+
+  <!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="flinhong/study/2016/01/02/on-becoming-a-better-graduate-students" data-title="怎样当一名研究生，以及给研究生的一些建议" data-url="http://www.flinhong.com/study/2016/01/02/on-becoming-a-better-graduate-students/"></div>
+<!-- 多说评论框 end -->
+
+  <!-- <br>
+  <div class="accordion_content">
+      <h4 class="accordion_content_title"><u>Prefer Disqus? This way please...</u></h4>
+      <div class="accordion_content_inner">
+        <p><div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'flinhong'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</p>
+      </div>
+  </div> -->
+
+</div><!-- End Comments -->
+
+            </div><!-- Main content End -->
+            <!-- Sidebar -->
+<div id="sidebar-follow">
+<div class="col col_3_of_12">
+  <!-- Widget Search widget -->
+  <div class="widget">
+    <div class="widget_title"><h3>Search widget</h3></div>
+    <div class="tb_widget_search">
+      <form action="/search/" target="_blank" method="get">
+        <input type="text" name=q size=40 placeholder="Search in site...">
+        <input type="submit" value="Search">
+      </form>
+    </div>
+  </div><!-- End Widget Search widget -->
+
+  
+    <!-- Widget Social widget -->
+<div class="widget" id="socialize">
+  <div class="widget_title"><h3>Socialize</h3></div>
+  <div class="tb_widget_socialize clearfix">
+    <a href="https://www.facebook.com/frankhonglin" target="_blank" class="icon facebook">
+      <div class="symbol"><i class="fa fa-facebook"></i></div>
+      <div class="text"><p>FB</p><p>Frank Lin</p></div>
+    </a>
+    <a href="http://weibo.com/linhong" target="_blank" class="icon google">
+      <div class="symbol"><i class="fa fa-weibo"></i></div>
+      <div class="text"><p>微博</p><p>@林宏</p></div>
+    </a>
+    <a href="http://www.twitter.com/flinhong" target="_blank" class="icon twitter">
+      <div class="symbol"><i class="fa fa-twitter"></i></div>
+      <div class="text"><p>Twitter</p><p>@flinhong</p></div>
+    </a>
+    <a href="https://cn.linkedin.com/in/flinhong" target="_blank" class="icon linkedin">
+      <div class="symbol"><i class="fa fa-linkedin"></i></div>
+      <div class="text"><p>LinkedIn</p><p>Hong Lin</p></div>
+    </a>
+  </div>
+</div><!-- End Widget Social widget -->
+
+    <!-- Tags -->
+<div class="widget">
+  <div class="widget_title"><h3>Tags</h3></div>
+  <div class="tb_widget_tagcloud clearfix">
+    
+    <a href="/tags/#360wifi2">360wifi2</a>
+    
+    <a href="/tags/#Ubuntu">Ubuntu</a>
+    
+    <a href="/tags/#jekyll">jekyll</a>
+    
+    <a href="/tags/#highlighting">highlighting</a>
+    
+    <a href="/tags/#html">html</a>
+    
+    <a href="/tags/#path">path</a>
+    
+    <a href="/tags/#reading">reading</a>
+    
+    <a href="/tags/#QRcode">QRcode</a>
+    
+    <a href="/tags/#Hong Kong">Hong Kong</a>
+    
+    <a href="/tags/#Atom">Atom</a>
+    
+    <a href="/tags/#snippets">snippets</a>
+    
+    <a href="/tags/#Markdown">Markdown</a>
+    
+    <a href="/tags/#LaTeX">LaTeX</a>
+    
+    <a href="/tags/#MathJax">MathJax</a>
+    
+    <a href="/tags/#ShareX">ShareX</a>
+    
+    <a href="/tags/#Endnote">Endnote</a>
+    
+    <a href="/tags/#C#">C#</a>
+    
+    <a href="/tags/#video">video</a>
+    
+    <a href="/tags/#design">design</a>
+    
+    <a href="/tags/#CSS">CSS</a>
+    
+  </div>
+</div>
+<!-- End Tags -->
+
+    <!-- Toc -->
+<div class="widget">
+  <div id="fixtoc">
+    <div id="toc"></div>
+    <!-- Related to the end of js.html -->
+  </div>
+</div>
+<!-- End Toc -->
+
+  
+
+</div><!-- End Sidebar -->
+</div>
+
+          </div><!-- end row -->
+        </div><!-- end container -->
+      </section><!-- Section End -->
+      <!-- Footer -->
+<footer id="footer">
+<div class="container">
+  <div class="row">
+    <div class="col col_3_of_12">
+      <!-- Widget Text widget -->
+      <div class="widget">
+        <div class="widget_title"><h3>Bloginfo</h3></div>
+        <p>This personal blog was built with ❤️ by Frank Lin. Thanks to GitHub and Jekyll for technical supports.</p>
+        <!-- <p>Please feel free to fork this theme on <a href="https://github.com/flinhong/flinhong.github.io"><i class="fa fa-github"></i><a>.</p> -->
+        <p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creativecommons Licenses" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a></p>
+      </div><!-- End Widget text widget -->
+      <!-- Widget Social widget -->
+      <div class="widget">
+        <div class="widget_title"><h3>Socialize</h3></div>
+        <div class="tb_widget_socialize clearfix">
+          <a href="http://www.twitter.com/flinhong" target="_blank" class="icon twitter">
+            <div class="symbol"><i class="fa fa-twitter"></i></div>
+            <div class="text"><p>Twitter</p><p>@flinhong</p></div>
+          </a>
+          <a href="http://weibo.com/linhong" target="_blank" class="icon google">
+            <div class="symbol"><i class="fa fa-weibo"></i></div>
+            <div class="text"><p>微博</p><p>@林宏</p></div>
+          </a>
+        </div>
+      </div><!-- End Widget Social widget -->
+    </div>
+
+    <div class="col col_3_of_12">
+      <!-- Widget Recent Posts-->
+<div class="widget">
+<div class="widget_title"><h3>Recent posts</h3></div>
+<div class="tb_widget_top_rated clearfix">
+  
+    <!-- Post item -->
+    <div class="item clearfix">
+      <div class="item_thumb clearfix">
+        <a href="/study/2016/01/02/on-becoming-a-better-graduate-students/"><img src="http://i63.tinypic.com/2zgwvmw.png" alt="怎样当一名研究生，以及给研究生的一些建议" class="visible animated"></a>
+      </div>
+      <div class="item_content">
+        <div class="item_meta clearfix">
+          <span class="meta_date">Jan 2, 2016</span>
+        </div>
+        <h4><a href="/study/2016/01/02/on-becoming-a-better-graduate-students/">怎样当一名研究生，以及给研究生的一些建议</a></h4>
+      </div>
+      <div class="order">&#9812;</div>
+    </div><!-- End Post item -->
+  
+    <!-- Post item -->
+    <div class="item clearfix">
+      <div class="item_thumb clearfix">
+        <a href="/journal/2016/01/01/happy-new-year-2016/"><img src="http://i65.tinypic.com/2rnkjsx.jpg" alt="新年快乐" class="visible animated"></a>
+      </div>
+      <div class="item_content">
+        <div class="item_meta clearfix">
+          <span class="meta_date">Jan 1, 2016</span>
+        </div>
+        <h4><a href="/journal/2016/01/01/happy-new-year-2016/">新年快乐</a></h4>
+      </div>
+      <div class="order">&#9812;</div>
+    </div><!-- End Post item -->
+  
+    <!-- Post item -->
+    <div class="item clearfix">
+      <div class="item_thumb clearfix">
+        <a href="/tips/2015/12/30/duoshuo-css/"><img src="http://i68.tinypic.com/2wnbneq.jpg" alt="多说评论框自定义CSS优化" class="visible animated"></a>
+      </div>
+      <div class="item_content">
+        <div class="item_meta clearfix">
+          <span class="meta_date">Dec 30, 2015</span>
+        </div>
+        <h4><a href="/tips/2015/12/30/duoshuo-css/">多说评论框自定义CSS优化</a></h4>
+      </div>
+      <div class="order">&#9812;</div>
+    </div><!-- End Post item -->
+  
+</div>
+</div><!-- End Widget recent posts -->
+
+    </div>
+
+    <div class="col col_3_of_12">
+      <!-- Widget recent tweets -->
+      <div class="widget">
+        <div class="widget_title"><h3>Recent Tweets</h3></div>
+          <div class="tb_widget_recent_list clearfix">
+            <a class="twitter-timeline" href="https://twitter.com/flinhong" data-widget-id="653933574882619392" data-chrome="nofooter noborders noheader transparent noscrollbar">Tweets by @flinhong</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          </div>
+      </div><!-- End Widget recent tweets -->
+    </div>
+
+    <div class="col col_3_of_12">
+      <div class="widget">
+        <div class="widget_title"><h3>Links</h3></div>
+        <div class="tb_widget_categories">
+          <ul>
+            <li><a href="/sitemap.xml">Sitemap</a> <i class="fa fa-sitemap"></i></li>
+            <li><a href="/feed.xml">Feeds</a> <i class="fa fa-rss"></i></li>
+            <li><a href="/atom.xml">Atom Feeds</a> <i class="fa fa-rss-square"></i></li>
+            <li><a href="https://github.com/flinhong">GitHub</a> <i class="fa fa-github-square"></i></li>
+            <li><a href="/archieves/">Blog Archieve</a> <i class="fa fa-archive"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</footer><!-- End Footer -->
+<a id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-71878985-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- Google analytics -->
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    bp.src = '//push.zhanzhang.baidu.com/push.js';
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- Push urls to Baidu -->
+
+    </div><!-- Wrapper End -->
+    <!-- Scripts -->
+<script type="text/javascript" src="/js/jqueryscript.min.js"></script>
+<script type="text/javascript" src="/js/jqueryuiscript.min.js"></script>
+<script type="text/javascript" src="/js/easing.min.js"></script>
+<script type="text/javascript" src="/js/smoothscroll.min.js"></script>
+<script type="text/javascript" src="/js/magnific.min.js"></script>
+<script type="text/javascript" src="/js/bxslider.min.js"></script>
+<script type="text/javascript" src="/js/fitvids.min.js"></script>
+<script type="text/javascript" src="/js/viewportchecker.min.js"></script>
+<script type="text/javascript" src="/js/init.js"></script>
+<!-- <script id="dsq-count-scr" src="//flinhong.disqus.com/count.js" async></script> -->
+
+
+<script type="text/javascript" src="/js/toc.js"></script>
+<script>
+$(document).ready(function() {
+  // $('#toc').toc();
+  // $('#toc').toc({ noBackToTopLinks: true });
+  $('#toc').toc({ headers: '.entry_content h1, .entry_content h2, .entry_content h3, .entry_content h4'});
+  // $('#').sticky();
+  // $("#post_side_widget").stick_in_parent();
+});
+</script>
+
+
+  </body>
+</html>
