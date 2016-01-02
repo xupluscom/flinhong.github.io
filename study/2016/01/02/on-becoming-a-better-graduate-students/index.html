@@ -129,35 +129,6 @@ $.get("http://ipinfo.io", function (response) {
 
     <!-- Position detection -->
     
-    <script>
-    var jWindow = $(window);
-    jWindow.scroll(function(){
-      var scrollHeight = jWindow.scrollTop();
-      var screenHeight = jWindow.height();
-      var screenWidth = jWindow.width();
-      var postHeight = $('#post_content').height() + 150;
-      var footerHeight = $('#footer').height();
-      if(scrollHeight > 600 && scrollHeight < postHeight && screenWidth > 1000){
-        $('#fixtoc').css({
-          'position':'fixed',
-          'top':'75px',
-          'z-index': '0'
-        });
-      }else{
-        $('#fixtoc').css({
-          'position':'static'
-        });
-      }
-    });
-
-    window.onload = function(){
-      jWindow.trigger('scroll');
-    };
-    jWindow.resize(function(){
-      jWindow.trigger('scroll');
-    });
-    </script>
-    
     <!-- End postion detection -->
 
     <!-- Top menu -->
@@ -514,8 +485,6 @@ $.get("http://ipinfo.io", function (response) {
 
 <p>大家应该有自尊心，有民族自尊心。我们是有能力的，我们的国家是有发展潜力的。我们搞原子能，美国并没有给我们什么，前苏联也没有给我们什么，我们不依靠别人自己都搞起来了。所以我想把我老师赵忠尧教授的回忆录印出来发给大家，看看老一辈科学家当年是怎样为祖国的科学事业而发奋进取的。赵忠尧教授是中国有名的搞原子能的前辈。我们要有老一辈科学家那种献身祖国、献身科学的精神，我们能比别人搞得都好，这才真正是21世纪形成的“亚洲的世纪”。那不是口号，那是要去做的， 世纪中华的腾飞要靠你们，我们要走到前头去，希望大家共同努力。</p>
 
-<hr />
-
 <h2 id="id-section-1">给研究生的一些建议</h2>
 
 <p>这些建议是译自耶鲁大学Stephen C. Stearns教授的文章<a href="http://stearnslab.yale.edu/some-modest-advice-graduate-students"><em>Some Modest Advice for Graduate Students</em></a>。他是生态学与进化生物学讲座教授，他将这些建议发在了自己的<strong>Stearns Lab</strong>实验室的网站上，作为其实验室同学们开展研究工作的指导，当然也可以看做一些章程式的规定。在我看来，都是些非常具体的建议，尤其是在博士阶段的同学们呀，看看很受用！</p>
@@ -827,6 +796,30 @@ $.get("http://ipinfo.io", function (response) {
   </div>
 </div><!-- End Widget Social widget -->
 
+    <!-- Banners -->
+<div class="widget">
+  <div class="widget_title"><h3><a href="https://www.flickr.com/photos/frankhlin/">Flickr</a></h3></div>
+  <!-- Fickr Feeds -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script src="/js/jflickrfeed/jflickrfeed.js"></script>
+  <script>
+    jQuery(document).ready(function($){
+      //you can now use $ as your jQuery object.
+      $('#bannerflickr1').jflickrfeed({
+    		limit: 8,
+    		qstrings: {
+    			id: '106195235@N05'
+    		},
+        useTemplate: false,
+    		itemCallback: function(item){
+    			$(this).append("<a href='" + item.image_b + "'><img src='" + item.image_m + "' alt=''/></a>");
+    		}
+    	});
+    });
+  </script>
+  <div id="bannerflickr1" class="tb_widget_banner_125 clearfix"></div>
+</div><!-- End Banners -->
+
     <!-- Tags -->
 <div class="widget">
   <div class="widget_title"><h3>Tags</h3></div>
@@ -875,15 +868,6 @@ $.get("http://ipinfo.io", function (response) {
   </div>
 </div>
 <!-- End Tags -->
-
-    <!-- Toc -->
-<div class="widget">
-  <div id="fixtoc">
-    <div id="toc"></div>
-    <!-- Related to the end of js.html -->
-  </div>
-</div>
-<!-- End Toc -->
 
   
 
@@ -1039,17 +1023,6 @@ $.get("http://ipinfo.io", function (response) {
 <script type="text/javascript" src="/js/init.js"></script>
 <!-- <script id="dsq-count-scr" src="//flinhong.disqus.com/count.js" async></script> -->
 
-
-<script type="text/javascript" src="/js/toc.js"></script>
-<script>
-$(document).ready(function() {
-  // $('#toc').toc();
-  // $('#toc').toc({ noBackToTopLinks: true });
-  $('#toc').toc({ headers: '.entry_content h1, .entry_content h2, .entry_content h3, .entry_content h4'});
-  // $('#').sticky();
-  // $("#post_side_widget").stick_in_parent();
-});
-</script>
 
 
   </body>
