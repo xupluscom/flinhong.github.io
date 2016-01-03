@@ -12,6 +12,7 @@
   <meta name="description" content="在上海大学读研究生的时候，每人都会发一本叶校长编写的《怎样当一名研究生》，我记得我还拿着同学的书去找叶校长签了个名（现在想想够萌的😅）。这本书里，有钱校长的几篇讲座，介绍如何做研究、如何读文献，都是很普适的一些引导。最近又看了一篇耶鲁大学教授写的*Some Modest Advice for Graduate Students*，很具体而且很有针对性。看看这些，勿忘初心，自己是名研究生，那就做好一名研究生吧！">
   <meta name="author" content="Frank Lin">
 
+  <!-- Webmaster tools verification -->
   <meta name="google-site-verification" content="wc5yltpwXh2yCl_FDs1tTZZjKNSjv472zn_UxO6vKUQ" />
   <meta name="baidu-site-verification" content="UuLhUp8nxE" />
   <meta name="msvalidate.01" content="1A07987F97E9CB54E6658A930023D60C" />
@@ -53,16 +54,41 @@
   <link rel="stylesheet" type="text/css" media="(min-width:1201px)" href="/css/responsive-1200.css">
   <link href='http://fonts.googleapis.com/css?family=Titillium+Web:300,300italic,400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 
+  
   <!-- Baidu Tongji -->
-  <script>
-  var _hmt = _hmt || [];
-  (function() {
-    var hm = document.createElement("script");
-    hm.src = "//hm.baidu.com/hm.js?91c58d9b4a0b3590bf5b19e85650c159";
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?91c58d9b4a0b3590bf5b19e85650c159";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<!-- Google analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-71878985-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Push urls to Baidu -->
+<script>
+(function(){
+    var bp = document.createElement('script');
+    bp.src = '//push.zhanzhang.baidu.com/push.js';
     var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(hm, s);
-  })();
-  </script>
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+  
 
 </head>
 
@@ -107,7 +133,6 @@ $.get("http://ipinfo.io", function (response) {
 
 
     <!-- Scroll Up -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>
     $(function () {
         $(window).scroll(function () {
@@ -137,14 +162,14 @@ $.get("http://ipinfo.io", function (response) {
       var screenWidth = jWindow.width();
       var postHeight = $('#post_content').height() + 150;
       var footerHeight = $('#footer').height();
-      if(scrollHeight > 1200 && screenWidth > 1200){
-        $('#fixed_search').css({
+      if(scrollHeight > 600 && scrollHeight < postHeight && screenWidth > 1200){
+        $('#fixtoc').css({
           'position':'fixed',
           'top':'75px',
           'z-index': '0'
         });
       }else{
-        $('#fixed_search').css({
+        $('#fixtoc').css({
           'position':'static'
         });
       }
@@ -157,6 +182,7 @@ $.get("http://ipinfo.io", function (response) {
       jWindow.trigger('scroll');
     });
     </script>
+
     
     <!-- End postion detection -->
 
@@ -214,21 +240,21 @@ $.get("http://ipinfo.io", function (response) {
     
       <!-- Article -->
       <article>
-        <span class="date">12/11/2015</span>
+        <span class="date">12/30/2015</span>
         <span class="time">Frank Lin</span>
         <div class="timeline_content">
           <i class="fa fa-clock-o" jQuery></i>
-          <h3><a href="/media/2015/12/11/thank-u-se7en/">SE7EN - THANK U (MV)</a></h3>
+          <h3><a href="/tips/2015/12/30/duoshuo-css/">多说评论框自定义CSS优化</a></h3>
         </div>
       </article><!-- End Article -->
     
       <!-- Article -->
       <article>
-        <span class="date">12/07/2015</span>
+        <span class="date">12/11/2015</span>
         <span class="time">Frank Lin</span>
         <div class="timeline_content">
           <i class="fa fa-clock-o" jQuery></i>
-          <h3><a href="/design/2015/12/07/markdown-guide/">Markdown语法说明</a></h3>
+          <h3><a href="/media/2015/12/11/thank-u-se7en/">SE7EN - THANK U (MV)</a></h3>
         </div>
       </article><!-- End Article -->
     
@@ -279,6 +305,27 @@ $.get("http://ipinfo.io", function (response) {
 <div class="widget">
   <div class="widget_title"><h3>Recent posts</h3></div>
   <div class="tb_widget_recent_list clearfix">
+    
+    <!-- Post item -->
+    <div class="item clearfix">
+      <div class="item_thumb">
+        <div class="thumb_icon">
+          <a href="/media/2016/01/03/Benjamin-Francis-Leftwich-Shine-remixed-by-Kygo/" jQuery><i class="fa fa-copy"></i></a>
+        </div>
+        
+        <div class="thumb_hover">
+          <a href="/media/2016/01/03/Benjamin-Francis-Leftwich-Shine-remixed-by-Kygo/"><img src="/demo/500x500.jpg" alt="Benjamin Francis Leftwich - Shine (Kygo Remix)"></a>
+        </div>
+        
+      </div>
+      <div class="item_content">
+        <h4><a href="/media/2016/01/03/Benjamin-Francis-Leftwich-Shine-remixed-by-Kygo/">Benjamin Francis Leftwich - Shine (Kygo Remix)</a></h4>
+        <div class="item_meta clearfix">
+            <span class="meta_date">Jan 3, 2016</span>
+            <span class="meta_author"><a href="/media/2016/01/03/Benjamin-Francis-Leftwich-Shine-remixed-by-Kygo/">Frank Lin</a></span>
+        </div>
+      </div>
+    </div><!-- End Post item -->
     
     <!-- Post item -->
     <div class="item clearfix">
@@ -343,27 +390,6 @@ $.get("http://ipinfo.io", function (response) {
       </div>
     </div><!-- End Post item -->
     
-    <!-- Post item -->
-    <div class="item clearfix">
-      <div class="item_thumb">
-        <div class="thumb_icon">
-          <a href="/media/2015/12/11/thank-u-se7en/" jQuery><i class="fa fa-copy"></i></a>
-        </div>
-        
-        <div class="thumb_hover">
-          <a href="/media/2015/12/11/thank-u-se7en/"><img src="/demo/500x500.jpg" alt="SE7EN - THANK U (MV)"></a>
-        </div>
-        
-      </div>
-      <div class="item_content">
-        <h4><a href="/media/2015/12/11/thank-u-se7en/">SE7EN - THANK U (MV)</a></h4>
-        <div class="item_meta clearfix">
-            <span class="meta_date">Dec 11, 2015</span>
-            <span class="meta_author"><a href="/media/2015/12/11/thank-u-se7en/">Frank Lin</a></span>
-        </div>
-      </div>
-    </div><!-- End Post item -->
-    
   </div>
 </div><!-- End Recent posts -->
 
@@ -375,7 +401,7 @@ $.get("http://ipinfo.io", function (response) {
       
       <li><a href="/categories/#tips">tips</a> (4)</li>
       
-      <li><a href="/categories/#design">design</a> (4)</li>
+      <li><a href="/categories/#design">design</a> (3)</li>
       
       <li><a href="/categories/#reading">reading</a> (1)</li>
       
@@ -385,7 +411,7 @@ $.get("http://ipinfo.io", function (response) {
       
       <li><a href="/categories/#app">app</a> (1)</li>
       
-      <li><a href="/categories/#media">media</a> (1)</li>
+      <li><a href="/categories/#media">media</a> (2)</li>
       
     </ul>
   </div>
@@ -451,6 +477,19 @@ $.get("http://ipinfo.io", function (response) {
 
 
 
+<!-- Duoshuo JS -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"flinhong"};
+(function() {
+var ds = document.createElement('script');
+ds.type = 'text/javascript';ds.async = true;
+ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+ds.charset = 'UTF-8';
+(document.getElementsByTagName('head')[0]
+|| document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script>
+
 </header><!-- End Header -->
 
 
@@ -490,29 +529,34 @@ $.get("http://ipinfo.io", function (response) {
 
 <p><strong>怎样当一名研究生</strong> 是钱校长在1993上海工业大学研究生开学典礼上的讲话，叶校长把它放在了《怎样当一名研究生》这本书的最前面，句句都是钱校长一生的经验呀。这里摘给大家：</p>
 
-<p>你们大学毕业以后，第一次进入研究生队伍。研究生这个名字，实际上翻译得不太恰当，在国外，研究生叫gradute sdudents，这是已毕业的学生的意思。毕业以后你们没有参加工作，而是继续研究生学习，这个研究生的学习和大学生的学习完全不一样。对大学生，一般讲现成知识，讲一些比较基本的东西，很多是非发展中的东西。而研究生是要学习做研究工作，这个“工作”是一下子到了生产实际第一线，第一线中的很多问题不是大学里所学的知识能解决的，它们都是发展中所面临的问题。你们在大学里学的是比较成熟的知识部分，而生产中所面临的问题很多是还需要不断改进的知识部分。到了生产第一线，你们会感到很不适应，很困难。</p>
+<div class="accordion_content">
+    <h4 class="accordion_content_title">怎样当一名研究生，1993，钱伟长</h4>
+    <div class="accordion_content_inner">
+        <p>你们大学毕业以后，第一次进入研究生队伍。研究生这个名字，实际上翻译得不太恰当，在国外，研究生叫gradute sdudents，这是已毕业的学生的意思。毕业以后你们没有参加工作，而是继续研究生学习，这个研究生的学习和大学生的学习完全不一样。对大学生，一般讲现成知识，讲一些比较基本的东西，很多是非发展中的东西。而研究生是要学习做研究工作，这个“工作”是一下子到了生产实际第一线，第一线中的很多问题不是大学里所学的知识能解决的，它们都是发展中所面临的问题。你们在大学里学的是比较成熟的知识部分，而生产中所面临的问题很多是还需要不断改进的知识部分。到了生产第一线，你们会感到很不适应，很困难。</p>
 
-<p>我们记得50年代对教育的目标和方式有很大的争论，清华大学曾经提出大学是“工程师的摇篮”，我认为这个提法是错误的。工程师不可能从摇篮里摇出来，而是从生产实践中锻炼出来的。大学教育只是给了一些成熟的基本知识，工程师所面临的问题都是不成熟的，这怎么能摇得出来呢。50年代学习苏联的教育模式有很大缺陷，我概括为八个字，叫做“不教不懂，一教就会”。这种教育在大学里业已根深蒂固，而在研究生的阶段就不能这样要求。为什么要培养研究生，就是要你们将来处理更难的问题，真正到一切知识的最前沿，去探索、处理、发展，使知识更完美，更能促进生产。研究生学习就是这样一种过程。从一个一切被动地把成熟东西放在书本上教给你的过程，变成在导师指导下探索学习和研究的过程。虽然你们在处理这个过程中间还是学生，但这个学习和大学学习完全不一样。</p>
+        <p>我们记得50年代对教育的目标和方式有很大的争论，清华大学曾经提出大学是“工程师的摇篮”，我认为这个提法是错误的。工程师不可能从摇篮里摇出来，而是从生产实践中锻炼出来的。大学教育只是给了一些成熟的基本知识，工程师所面临的问题都是不成熟的，这怎么能摇得出来呢。50年代学习苏联的教育模式有很大缺陷，我概括为八个字，叫做“不教不懂，一教就会”。这种教育在大学里业已根深蒂固，而在研究生的阶段就不能这样要求。为什么要培养研究生，就是要你们将来处理更难的问题，真正到一切知识的最前沿，去探索、处理、发展，使知识更完美，更能促进生产。研究生学习就是这样一种过程。从一个一切被动地把成熟东西放在书本上教给你的过程，变成在导师指导下探索学习和研究的过程。虽然你们在处理这个过程中间还是学生，但这个学习和大学学习完全不一样。</p>
 
-<p>有人说，研究生要学得更多一点，更深一点。我认为，这里不是多少、深浅的问题，而是要你们从书本学习转到在实际工作中学习，深入到工作的最前沿。现在我们的工作，譬如经济工作或者是工业技术工作，或者是建筑工作中所碰到的问题，在大学本科学习中是不可能教过的。因为在大学本科学到的是最成熟、最常见的基础知识，而实际工作往往是一个不成熟、不常见的工作，这就要有训练。因为要求你们担当更重要的任务，所以这样的训练和大学里是不一样的，应该到第一线的工作中去训练。我们有的老师可能还不太理解，因为他们从大学里出来，又在大学里坐下来讲课，讲的是从以前老师讲课中听来的东西，所以他们不太能体会。那么怎么训练？你们首先要学会分析问题和解决问题的能力，对具体问题要会分析。过去都是老师分析好了告诉你，现在你们要学习自己来分析问题。要提高自己去获得知识的能力，也要学会在前人工作基础上往前走地把成熟东西放在书本上教给你的过程，变成在导师指导下探索学习和研究的过程。虽然你们在处理这个过程中间还是学生，但这个学习和大学学习完全不一样。因为你们面临的问题可能已有不少人碰到过，把它记载下来了，你们要想法去搜集这种记载的文字，所以研究生要学会去搜集资料或信息。</p>
+        <p>有人说，研究生要学得更多一点，更深一点。我认为，这里不是多少、深浅的问题，而是要你们从书本学习转到在实际工作中学习，深入到工作的最前沿。现在我们的工作，譬如经济工作或者是工业技术工作，或者是建筑工作中所碰到的问题，在大学本科学习中是不可能教过的。因为在大学本科学到的是最成熟、最常见的基础知识，而实际工作往往是一个不成熟、不常见的工作，这就要有训练。因为要求你们担当更重要的任务，所以这样的训练和大学里是不一样的，应该到第一线的工作中去训练。我们有的老师可能还不太理解，因为他们从大学里出来，又在大学里坐下来讲课，讲的是从以前老师讲课中听来的东西，所以他们不太能体会。那么怎么训练？你们首先要学会分析问题和解决问题的能力，对具体问题要会分析。过去都是老师分析好了告诉你，现在你们要学习自己来分析问题。要提高自己去获得知识的能力，也要学会在前人工作基础上往前走地把成熟东西放在书本上教给你的过程，变成在导师指导下探索学习和研究的过程。虽然你们在处理这个过程中间还是学生，但这个学习和大学学习完全不一样。因为你们面临的问题可能已有不少人碰到过，把它记载下来了，你们要想法去搜集这种记载的文字，所以研究生要学会去搜集资料或信息。</p>
 
-<p>寻找信息的训练、搜集资料的训练、阅读资料的训练，绝大部分是自学的。比如阅读文献是一个很重要的部分，因为你们要自己寻找来阅读。没有经过训练的人，寻一样东西都要找老师，只有经过了这种训练的人，才不需要找老师，自己去找。没有经过训练的人，不知道要找的东西在哪儿。图书馆有很多的材料，你去找什么？找这些资料有一套办法，将来我们请图书馆的同志讲寻找资料的办法，那是很具体的。现在有计算机光盘，实际上比我们当年念书时容易得多。我们那时是用手工的，可也得找啊。从近到远，从最近发生的问题到过去几十年甚至上百年的，我们都要看过。但要注意也有一些通俗的言论不一定对。譬如牛顿看见苹果掉下来，才发现了对地球引力的理解。这种说法是故事，而事实不是这样的。牛顿以前八九百年就已经有人在研究这个问题了，各种研究得到了各种结论，有很多很大的差别。牛顿只不过是综合了各种矛盾的结论，在里面抽出最关键的东西来，这是他的功劳。他是站在人家的肩膀上得到的结论。以后一直到了1902年、1903年，他还是独一无二的，所以牛顿的贡献就在这里。可现在我们又知道牛顿的理论是在一定范围内成立的，超出这个范围他的理论就不符合实际了。这是爱因斯坦的贡献。爱因斯坦的理论是怎么来的？也不是凭空想出来的，是经过反反复复的过程才总结出来的。现在相对论的许多结论开始时很多人不相信，从1918年、1924年、1928年，一直到1936年，原子能出来了，才完全证实了他的推论。爱因斯坦是从已有的众多现象里仔细观察以后，用严格的分析推理得到了许多结论。这种过程就是锻炼我们处理问题的过程，所以我们要看很多的资料。看资料是我们研究生阶段特别重要的，不要轻视了。</p>
+        <p>寻找信息的训练、搜集资料的训练、阅读资料的训练，绝大部分是自学的。比如阅读文献是一个很重要的部分，因为你们要自己寻找来阅读。没有经过训练的人，寻一样东西都要找老师，只有经过了这种训练的人，才不需要找老师，自己去找。没有经过训练的人，不知道要找的东西在哪儿。图书馆有很多的材料，你去找什么？找这些资料有一套办法，将来我们请图书馆的同志讲寻找资料的办法，那是很具体的。现在有计算机光盘，实际上比我们当年念书时容易得多。我们那时是用手工的，可也得找啊。从近到远，从最近发生的问题到过去几十年甚至上百年的，我们都要看过。但要注意也有一些通俗的言论不一定对。譬如牛顿看见苹果掉下来，才发现了对地球引力的理解。这种说法是故事，而事实不是这样的。牛顿以前八九百年就已经有人在研究这个问题了，各种研究得到了各种结论，有很多很大的差别。牛顿只不过是综合了各种矛盾的结论，在里面抽出最关键的东西来，这是他的功劳。他是站在人家的肩膀上得到的结论。以后一直到了1902年、1903年，他还是独一无二的，所以牛顿的贡献就在这里。可现在我们又知道牛顿的理论是在一定范围内成立的，超出这个范围他的理论就不符合实际了。这是爱因斯坦的贡献。爱因斯坦的理论是怎么来的？也不是凭空想出来的，是经过反反复复的过程才总结出来的。现在相对论的许多结论开始时很多人不相信，从1918年、1924年、1928年，一直到1936年，原子能出来了，才完全证实了他的推论。爱因斯坦是从已有的众多现象里仔细观察以后，用严格的分析推理得到了许多结论。这种过程就是锻炼我们处理问题的过程，所以我们要看很多的资料。看资料是我们研究生阶段特别重要的，不要轻视了。</p>
 
-<p>我们这里还有一些教师并不理解这个，因为他们没有经过研究生的训练，而是经过大学本科训练后担任助教，以后由讲师到副教授这么上来的，他没有经过很多的科研。因为在一段时间里，我们教育界有个错误认识，即认为科研和教学应该是分开的，科学院搞科研，我们学校搞教学。邓小平在1979年提出学校里应该有两个中心，既要搞科研，又要搞教学，才把它弥补过来。所以邓小平把这样一个教育的方向问题扭了过来，是对我们国家的大贡献，以后就恢复了研究生制度，建立了学位制。没有他的扭转，你们研究生也就不存在了。对社会而言，是要求你们更好地推动科学进步，承担第一线的任务。对学校而言也是培养将来学校中的教师骨干。所以我们现在要提出要求来，以后学校里的教师必须通过研究生训练。过去大学毕业出来就留校工作，这是“近亲繁殖”。现在培养研究生，就是培养你们要勇于拓宽科技新领域，到第一线去干，这一步是很难的，你们不要轻视了。首先你们要逐步学会怎样找到材料。资料拿来，你们要分析哪些是对的，哪些是错的，然后得出自己的结论。研究生的培养分两个阶段，一个阶段还要给你们讲些课，让你们习惯，全部不讲课也是不行的。因为你们习惯于听课，不听课好像学不到东西，而且还规定怎么听，有多少学分，但分量必须大大减少，把阅读文献提到重要的地位。第一阶段是一步一步把你们引入庙堂，可还有一条腿在庙堂外头，还在过去“先生不讲不懂”的阶段。第二阶段是研究生的做论文阶段，这就完全不一样了，主要依靠你们自己去做论文。我们对这个也有不同的要求。硕士生论文，总是结合老师在做的工作进行，这样带一带路是可以的。博士生应该是自己去找题目，导师给你判断题目是否合适。不能找一个题目用十年八年做不出来，有的题目太脱离实际，实际不能做到也不行。根据你们的能力，各人从各自不同的条件出发，从你们现有的知识出发，根据自己阅读文献、分析问题、解决问题的能力，自己提课题，导师来审定，然后你们自己搞调查、找材料。</p>
+        <p>我们这里还有一些教师并不理解这个，因为他们没有经过研究生的训练，而是经过大学本科训练后担任助教，以后由讲师到副教授这么上来的，他没有经过很多的科研。因为在一段时间里，我们教育界有个错误认识，即认为科研和教学应该是分开的，科学院搞科研，我们学校搞教学。邓小平在1979年提出学校里应该有两个中心，既要搞科研，又要搞教学，才把它弥补过来。所以邓小平把这样一个教育的方向问题扭了过来，是对我们国家的大贡献，以后就恢复了研究生制度，建立了学位制。没有他的扭转，你们研究生也就不存在了。对社会而言，是要求你们更好地推动科学进步，承担第一线的任务。对学校而言也是培养将来学校中的教师骨干。所以我们现在要提出要求来，以后学校里的教师必须通过研究生训练。过去大学毕业出来就留校工作，这是“近亲繁殖”。现在培养研究生，就是培养你们要勇于拓宽科技新领域，到第一线去干，这一步是很难的，你们不要轻视了。首先你们要逐步学会怎样找到材料。资料拿来，你们要分析哪些是对的，哪些是错的，然后得出自己的结论。研究生的培养分两个阶段，一个阶段还要给你们讲些课，让你们习惯，全部不讲课也是不行的。因为你们习惯于听课，不听课好像学不到东西，而且还规定怎么听，有多少学分，但分量必须大大减少，把阅读文献提到重要的地位。第一阶段是一步一步把你们引入庙堂，可还有一条腿在庙堂外头，还在过去“先生不讲不懂”的阶段。第二阶段是研究生的做论文阶段，这就完全不一样了，主要依靠你们自己去做论文。我们对这个也有不同的要求。硕士生论文，总是结合老师在做的工作进行，这样带一带路是可以的。博士生应该是自己去找题目，导师给你判断题目是否合适。不能找一个题目用十年八年做不出来，有的题目太脱离实际，实际不能做到也不行。根据你们的能力，各人从各自不同的条件出发，从你们现有的知识出发，根据自己阅读文献、分析问题、解决问题的能力，自己提课题，导师来审定，然后你们自己搞调查、找材料。</p>
 
-<p>文献是调查的一方面，而且在学习上文献是一个重要的方面，国际上也习惯于这样做。理论工作出来要有论文，论文记载了一个研究课题的过程和结论，达到了什么阶段，怎样达到的。论文是记载你工作的过程，给后来人接班。每一个人的科研工作都是在前人的基础上进行的。正如牛顿所说的他是站在人家的肩膀上爬上去的一样，人类社会所取得的任何成果都不是从天上掉下来的，而是一步一步地取得的，我们在接人家的班，比人家爬得更高，那么你也应准备别人来爬你的肩膀，所以你要发表论文，提供肩膀。发表论文不是为了名，更不是为了利。</p>
+        <p>文献是调查的一方面，而且在学习上文献是一个重要的方面，国际上也习惯于这样做。理论工作出来要有论文，论文记载了一个研究课题的过程和结论，达到了什么阶段，怎样达到的。论文是记载你工作的过程，给后来人接班。每一个人的科研工作都是在前人的基础上进行的。正如牛顿所说的他是站在人家的肩膀上爬上去的一样，人类社会所取得的任何成果都不是从天上掉下来的，而是一步一步地取得的，我们在接人家的班，比人家爬得更高，那么你也应准备别人来爬你的肩膀，所以你要发表论文，提供肩膀。发表论文不是为了名，更不是为了利。</p>
 
-<p>我们科研工作者是为人类向自然界进攻的一支大队伍，这支队伍通过论文组织起来，所以你有什么研究成果和思想，一般地不应该保密，应发表出来，希望人家站在你的肩膀上上去，为人类作贡献。每个人都应有责任感，责任感就是千军万马在往前走，你是中间一分子，不能掉队。最近在北京召开的第二届国际非线性力学会议，与会者中有许多很有名的人，前苏联的谢道夫被称为“人造卫星之父”，他就是这样的观点。所以我们希望中国的科技工作者队伍大大扩大，要不然我们前进不了。这个队伍是一个突击队伍，代表着我们的民族在前进、在突击。你们每个人的工作好像是一个很具体的工作，实际上结合在一起是一项很大的工程，是一个很大的配合。我们说2000年以后，世界上要把经济重心移到亚洲来，经济中心主要还要靠科技中心。现在，国家很重视研究生的培养，让你们有更好的工作条件，利用这个研究生阶段，在开始工作前让你们再学点，教你们工作，教到你们能够自主，将来出来都有独立的主张。同时，你们也要懂得跟别人联系，而联系的办法就是懂得写论文，懂得在人家肩膀上上去，懂得把自己所得教给人家。论文必须具名，你应该负责，而不能胡扯。我们过去有个研究生，他搞了一些软件，可人家使用他的软件都不能用，是骗人的。骗人只能骗一天而不能骗一辈子，所以工作都要老老实实地去做。</p>
+        <p>我们科研工作者是为人类向自然界进攻的一支大队伍，这支队伍通过论文组织起来，所以你有什么研究成果和思想，一般地不应该保密，应发表出来，希望人家站在你的肩膀上上去，为人类作贡献。每个人都应有责任感，责任感就是千军万马在往前走，你是中间一分子，不能掉队。最近在北京召开的第二届国际非线性力学会议，与会者中有许多很有名的人，前苏联的谢道夫被称为“人造卫星之父”，他就是这样的观点。所以我们希望中国的科技工作者队伍大大扩大，要不然我们前进不了。这个队伍是一个突击队伍，代表着我们的民族在前进、在突击。你们每个人的工作好像是一个很具体的工作，实际上结合在一起是一项很大的工程，是一个很大的配合。我们说2000年以后，世界上要把经济重心移到亚洲来，经济中心主要还要靠科技中心。现在，国家很重视研究生的培养，让你们有更好的工作条件，利用这个研究生阶段，在开始工作前让你们再学点，教你们工作，教到你们能够自主，将来出来都有独立的主张。同时，你们也要懂得跟别人联系，而联系的办法就是懂得写论文，懂得在人家肩膀上上去，懂得把自己所得教给人家。论文必须具名，你应该负责，而不能胡扯。我们过去有个研究生，他搞了一些软件，可人家使用他的软件都不能用，是骗人的。骗人只能骗一天而不能骗一辈子，所以工作都要老老实实地去做。</p>
 
-<p>我们中国人并不笨，但是要学会一套科学的工作步骤。我们学校找文献的条件优于国内许多学校，我们学校图书馆里国际期刊的数量在全国也是数一数二的，够你们用的了。所以，你们要着眼于现实，获取当代世界科技最前沿的知识与信息，要学会使用这些材料。有些老师因为没有经过这样的训练，不懂得利用现代科技资料，就只抱着一本教科书。有的老师1989年出了一本教科书，用了一些新材料和从前的不一样，他以为这样就成功了，而实际上又落后了。1989年出版的教科书，都是1985、1986年前的东西，已经晚了三年，再加上印刷翻译又晚了两年，总是差了五到十年。所以要求大家学外文，学外文不是为了留学、吃洋面包去，而是为了能争取时间直接从人家那里拿来东西。所以，首先我们外文的训练是着眼于阅读专业的文献，自己能写一些简单的报告和论文。这个要求，我现在发现也是不够的，作为研究生，还要参与国际学术交流，因而口语训练也是相当重要的。有两位我们的博士毕业生在最近一次国际学术会议的大会上作了报告，那两篇论文在当前世界上是属研究前沿的东西，很受重视，可他们的英文不行，怎么讲也讲不明白。到后来，大家只能一边看一边听，他讲的没有写的清楚，这就吃亏了。所以应该注意这个问题，以后要想办法，研究生也要作口语训练。</p>
+        <p>我们中国人并不笨，但是要学会一套科学的工作步骤。我们学校找文献的条件优于国内许多学校，我们学校图书馆里国际期刊的数量在全国也是数一数二的，够你们用的了。所以，你们要着眼于现实，获取当代世界科技最前沿的知识与信息，要学会使用这些材料。有些老师因为没有经过这样的训练，不懂得利用现代科技资料，就只抱着一本教科书。有的老师1989年出了一本教科书，用了一些新材料和从前的不一样，他以为这样就成功了，而实际上又落后了。1989年出版的教科书，都是1985、1986年前的东西，已经晚了三年，再加上印刷翻译又晚了两年，总是差了五到十年。所以要求大家学外文，学外文不是为了留学、吃洋面包去，而是为了能争取时间直接从人家那里拿来东西。所以，首先我们外文的训练是着眼于阅读专业的文献，自己能写一些简单的报告和论文。这个要求，我现在发现也是不够的，作为研究生，还要参与国际学术交流，因而口语训练也是相当重要的。有两位我们的博士毕业生在最近一次国际学术会议的大会上作了报告，那两篇论文在当前世界上是属研究前沿的东西，很受重视，可他们的英文不行，怎么讲也讲不明白。到后来，大家只能一边看一边听，他讲的没有写的清楚，这就吃亏了。所以应该注意这个问题，以后要想办法，研究生也要作口语训练。</p>
 
-<p>自己要研究问题，获得知识，就要有语言文字的表达能力，所以应当重视口语，口语没有是不行的。我们有的老师口语也很差，所以我们也得慢慢想办法改变一下。这都是历史问题，并不是我们的民族不行。要美国人念中文，他也不行。所以我对大家寄予极大的希望。</p>
+        <p>自己要研究问题，获得知识，就要有语言文字的表达能力，所以应当重视口语，口语没有是不行的。我们有的老师口语也很差，所以我们也得慢慢想办法改变一下。这都是历史问题，并不是我们的民族不行。要美国人念中文，他也不行。所以我对大家寄予极大的希望。</p>
 
-<p>我跟大家谈了对研究生的理解，是要培养一个能够独立地到一个未知领域里工作的人，因为我们面向的都是未知的领域。现在即使做干部也不容易，在经济改革中，许多问题也都是未知的。你们将来都将面向一种未知的没有现成经验的领域，因此现在必须接受严格的锻炼。</p>
+        <p>我跟大家谈了对研究生的理解，是要培养一个能够独立地到一个未知领域里工作的人，因为我们面向的都是未知的领域。现在即使做干部也不容易，在经济改革中，许多问题也都是未知的。你们将来都将面向一种未知的没有现成经验的领域，因此现在必须接受严格的锻炼。</p>
 
-<p>你们中将来有一批人留在学校，你们要有这个能力进入未知领域，而不是抱着一本书讲100次。我对你们寄予极大的希望，国家对你们也寄予极大的希望。研究生要算国家与民族的大账，而不能沉湎于一己之私，要有远大的理想和抱负。</p>
+        <p>你们中将来有一批人留在学校，你们要有这个能力进入未知领域，而不是抱着一本书讲100次。我对你们寄予极大的希望，国家对你们也寄予极大的希望。研究生要算国家与民族的大账，而不能沉湎于一己之私，要有远大的理想和抱负。</p>
 
-<p>大家应该有自尊心，有民族自尊心。我们是有能力的，我们的国家是有发展潜力的。我们搞原子能，美国并没有给我们什么，前苏联也没有给我们什么，我们不依靠别人自己都搞起来了。所以我想把我老师赵忠尧教授的回忆录印出来发给大家，看看老一辈科学家当年是怎样为祖国的科学事业而发奋进取的。赵忠尧教授是中国有名的搞原子能的前辈。我们要有老一辈科学家那种献身祖国、献身科学的精神，我们能比别人搞得都好，这才真正是21世纪形成的“亚洲的世纪”。那不是口号，那是要去做的， 世纪中华的腾飞要靠你们，我们要走到前头去，希望大家共同努力。</p>
+        <p>大家应该有自尊心，有民族自尊心。我们是有能力的，我们的国家是有发展潜力的。我们搞原子能，美国并没有给我们什么，前苏联也没有给我们什么，我们不依靠别人自己都搞起来了。所以我想把我老师赵忠尧教授的回忆录印出来发给大家，看看老一辈科学家当年是怎样为祖国的科学事业而发奋进取的。赵忠尧教授是中国有名的搞原子能的前辈。我们要有老一辈科学家那种献身祖国、献身科学的精神，我们能比别人搞得都好，这才真正是21世纪形成的“亚洲的世纪”。那不是口号，那是要去做的， 世纪中华的腾飞要靠你们，我们要走到前头去，希望大家共同努力。</p>
+    </div>
+</div>
 
 <h2 id="id-section-1">给研究生的一些建议</h2>
 
@@ -698,17 +742,6 @@ $.get("http://ipinfo.io", function (response) {
         <div class="ds-share-icons-more">
         </div>
       </div>
-      <script type="text/javascript">
-      var duoshuoQuery = {short_name:"flinhong"};
-      (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0]
-      || document.getElementsByTagName('body')[0]).appendChild(ds);
-      })();
-      </script>
    </div>
   <!-- End Duoshuo Share Buttons -->
 
@@ -741,12 +774,14 @@ $.get("http://ipinfo.io", function (response) {
   <!-- End Baidu Share Buttons -->
   <hr>
 </div>
+
+<!-- Page pagination -->
 <div class="tb_widget_weibo clearfix">
   
     <a class="alignleft" href="/journal/2016/01/01/happy-new-year-2016/"><i class="fa fa-chevron-left"></i> 上一篇：新年快乐</a>
   
   
-    <a class="alignright" href="/archieves/">Blog Archieves <i class="fa fa-chevron-right"></i></a>
+    <a class="alignright" href="/media/2016/01/03/Benjamin-Francis-Leftwich-Shine-remixed-by-Kygo/">下一篇：Benjamin Francis Leftwich - Shine (Kygo Remix) <i class="fa fa-chevron-right"></i></a>
   
 </div>
 </div>
@@ -763,26 +798,6 @@ $.get("http://ipinfo.io", function (response) {
 	<div class="ds-thread" data-thread-key="flinhong/study/2016/01/02/on-becoming-a-better-graduate-students" data-title="怎样当一名研究生，以及给研究生的一些建议" data-url="http://www.flinhong.com/study/2016/01/02/on-becoming-a-better-graduate-students/"></div>
 <!-- 多说评论框 end -->
 
-  <!-- <br>
-  <div class="accordion_content">
-      <h4 class="accordion_content_title"><u>Prefer Disqus? This way please...</u></h4>
-      <div class="accordion_content_inner">
-        <p><div id="disqus_thread"></div>
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'flinhong'; // required: replace example with your forum shortname
-
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</p>
-      </div>
-  </div> -->
 
 </div><!-- End Comments -->
 
@@ -825,30 +840,6 @@ $.get("http://ipinfo.io", function (response) {
     </a>
   </div>
 </div><!-- End Widget Social widget -->
-
-    <!-- Banners -->
-<div class="widget">
-  <div class="widget_title"><h3><a href="https://www.flickr.com/photos/frankhlin/">Flickr</a></h3></div>
-  <!-- Fickr Feeds -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-  <script src="/js/jflickrfeed/jflickrfeed.js"></script>
-  <script>
-    jQuery(document).ready(function($){
-      //you can now use $ as your jQuery object.
-      $('#bannerflickr1').jflickrfeed({
-    		limit: 8,
-    		qstrings: {
-    			id: '106195235@N05'
-    		},
-        useTemplate: false,
-    		itemCallback: function(item){
-    			$(this).append("<a href='" + item.image_b + "'><img src='" + item.image_m + "' alt=''/></a>");
-    		}
-    	});
-    });
-  </script>
-  <div id="bannerflickr1" class="tb_widget_banner_125 clearfix"></div>
-</div><!-- End Banners -->
 
     <!-- Tags -->
 <div class="widget">
@@ -899,6 +890,15 @@ $.get("http://ipinfo.io", function (response) {
 </div>
 <!-- End Tags -->
 
+    <!-- Toc -->
+<div class="widget">
+  <div id="fixtoc">
+    <div id="toc"></div>
+    <!-- Related to the end of js.html -->
+  </div>
+</div>
+<!-- End Toc -->
+
   
 
 </div><!-- End Sidebar -->
@@ -914,7 +914,7 @@ $.get("http://ipinfo.io", function (response) {
       <!-- Widget Text widget -->
       <div class="widget">
         <div class="widget_title"><h3>Bloginfo</h3></div>
-        <p>This personal blog was built with ❤️ by Frank Lin. Thanks to GitHub and Jekyll for technical supports.</p>
+        <p>This personal blog was built with ❤️ by Frank Lin. Thanks to GitHub (GitCafe) and Jekyll for the technical supports.</p>
         <!-- <p>Please feel free to fork this theme on <a href="https://github.com/flinhong/flinhong.github.io"><i class="fa fa-github"></i><a>.</p> -->
         <p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creativecommons Licenses" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a></p>
       </div><!-- End Widget text widget -->
@@ -943,6 +943,20 @@ $.get("http://ipinfo.io", function (response) {
     <!-- Post item -->
     <div class="item clearfix">
       <div class="item_thumb clearfix">
+        <a href="/media/2016/01/03/Benjamin-Francis-Leftwich-Shine-remixed-by-Kygo/"><img src="/demo/500x500.jpg" alt="Benjamin Francis Leftwich - Shine (Kygo Remix)" class="visible animated"></a>
+      </div>
+      <div class="item_content">
+        <div class="item_meta clearfix">
+          <span class="meta_date">Jan 3, 2016</span>
+        </div>
+        <h4><a href="/media/2016/01/03/Benjamin-Francis-Leftwich-Shine-remixed-by-Kygo/">Benjamin Francis Leftwich - Shine (Kygo Remix)</a></h4>
+      </div>
+      <div class="order">&#9812;</div>
+    </div><!-- End Post item -->
+  
+    <!-- Post item -->
+    <div class="item clearfix">
+      <div class="item_thumb clearfix">
         <a href="/study/2016/01/02/on-becoming-a-better-graduate-students/"><img src="http://i63.tinypic.com/2zgwvmw.png" alt="怎样当一名研究生，以及给研究生的一些建议" class="visible animated"></a>
       </div>
       <div class="item_content">
@@ -964,20 +978,6 @@ $.get("http://ipinfo.io", function (response) {
           <span class="meta_date">Jan 1, 2016</span>
         </div>
         <h4><a href="/journal/2016/01/01/happy-new-year-2016/">新年快乐</a></h4>
-      </div>
-      <div class="order">&#9812;</div>
-    </div><!-- End Post item -->
-  
-    <!-- Post item -->
-    <div class="item clearfix">
-      <div class="item_thumb clearfix">
-        <a href="/tips/2015/12/30/duoshuo-css/"><img src="http://i68.tinypic.com/2wnbneq.jpg" alt="多说评论框自定义CSS优化" class="visible animated"></a>
-      </div>
-      <div class="item_content">
-        <div class="item_meta clearfix">
-          <span class="meta_date">Dec 30, 2015</span>
-        </div>
-        <h4><a href="/tips/2015/12/30/duoshuo-css/">多说评论框自定义CSS优化</a></h4>
       </div>
       <div class="order">&#9812;</div>
     </div><!-- End Post item -->
@@ -1017,28 +1017,6 @@ $.get("http://ipinfo.io", function (response) {
 </footer><!-- End Footer -->
 <a id="return-to-top"><i class="fa fa-chevron-up"></i></a>
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-71878985-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-<!-- Google analytics -->
-
-<script>
-(function(){
-    var bp = document.createElement('script');
-    bp.src = '//push.zhanzhang.baidu.com/push.js';
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(bp, s);
-})();
-</script>
-<!-- Push urls to Baidu -->
-
     </div><!-- Wrapper End -->
     <!-- Scripts -->
 <script type="text/javascript" src="/js/jqueryscript.min.js"></script>
@@ -1052,6 +1030,17 @@ $.get("http://ipinfo.io", function (response) {
 <script type="text/javascript" src="/js/init.js"></script>
 <!-- <script id="dsq-count-scr" src="//flinhong.disqus.com/count.js" async></script> -->
 
+
+<script type="text/javascript" src="/js/toc.js"></script>
+<script>
+$(document).ready(function() {
+  // $('#toc').toc();
+  // $('#toc').toc({ noBackToTopLinks: true });
+  $('#toc').toc({ headers: '.entry_content h1, .entry_content h2, .entry_content h3, .entry_content h4, .entry_content h5, .entry_content h6'});
+  // $('#').sticky();
+  // $("#post_side_widget").stick_in_parent();
+});
+</script>
 
 
   </body>

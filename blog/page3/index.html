@@ -9,9 +9,10 @@
 
   <!-- Post Propertites -->
   <link rel="canonical" href="http://www.flinhong.com/blog/page3/">
-  <meta name="description" content="This personal blog was built with ❤️ by Frank Lin. Thanks to GitHub and Jekyll for technical supports.">
+  <meta name="description" content="This personal blog was built with ❤️ by Frank Lin. Thanks to GitHub (GitCafe) and Jekyll for the technical supports.">
   <meta name="author" content="Frank Lin">
 
+  <!-- Webmaster tools verification -->
   <meta name="google-site-verification" content="wc5yltpwXh2yCl_FDs1tTZZjKNSjv472zn_UxO6vKUQ" />
   <meta name="baidu-site-verification" content="UuLhUp8nxE" />
   <meta name="msvalidate.01" content="1A07987F97E9CB54E6658A930023D60C" />
@@ -53,16 +54,41 @@
   <link rel="stylesheet" type="text/css" media="(min-width:1201px)" href="/css/responsive-1200.css">
   <link href='http://fonts.googleapis.com/css?family=Titillium+Web:300,300italic,400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 
+  
   <!-- Baidu Tongji -->
-  <script>
-  var _hmt = _hmt || [];
-  (function() {
-    var hm = document.createElement("script");
-    hm.src = "//hm.baidu.com/hm.js?91c58d9b4a0b3590bf5b19e85650c159";
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?91c58d9b4a0b3590bf5b19e85650c159";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<!-- Google analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-71878985-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Push urls to Baidu -->
+<script>
+(function(){
+    var bp = document.createElement('script');
+    bp.src = '//push.zhanzhang.baidu.com/push.js';
     var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(hm, s);
-  })();
-  </script>
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+  
 
 </head>
 
@@ -107,7 +133,6 @@ $.get("http://ipinfo.io", function (response) {
 
 
     <!-- Scroll Up -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>
     $(function () {
         $(window).scroll(function () {
@@ -214,21 +239,21 @@ $.get("http://ipinfo.io", function (response) {
     
       <!-- Article -->
       <article>
-        <span class="date">12/11/2015</span>
+        <span class="date">12/30/2015</span>
         <span class="time">Frank Lin</span>
         <div class="timeline_content">
           <i class="fa fa-clock-o" jQuery></i>
-          <h3><a href="/media/2015/12/11/thank-u-se7en/">SE7EN - THANK U (MV)</a></h3>
+          <h3><a href="/tips/2015/12/30/duoshuo-css/">多说评论框自定义CSS优化</a></h3>
         </div>
       </article><!-- End Article -->
     
       <!-- Article -->
       <article>
-        <span class="date">12/07/2015</span>
+        <span class="date">12/11/2015</span>
         <span class="time">Frank Lin</span>
         <div class="timeline_content">
           <i class="fa fa-clock-o" jQuery></i>
-          <h3><a href="/design/2015/12/07/markdown-guide/">Markdown语法说明</a></h3>
+          <h3><a href="/media/2015/12/11/thank-u-se7en/">SE7EN - THANK U (MV)</a></h3>
         </div>
       </article><!-- End Article -->
     
@@ -279,6 +304,27 @@ $.get("http://ipinfo.io", function (response) {
 <div class="widget">
   <div class="widget_title"><h3>Recent posts</h3></div>
   <div class="tb_widget_recent_list clearfix">
+    
+    <!-- Post item -->
+    <div class="item clearfix">
+      <div class="item_thumb">
+        <div class="thumb_icon">
+          <a href="/media/2016/01/03/Benjamin-Francis-Leftwich-Shine-remixed-by-Kygo/" jQuery><i class="fa fa-copy"></i></a>
+        </div>
+        
+        <div class="thumb_hover">
+          <a href="/media/2016/01/03/Benjamin-Francis-Leftwich-Shine-remixed-by-Kygo/"><img src="/demo/500x500.jpg" alt="Benjamin Francis Leftwich - Shine (Kygo Remix)"></a>
+        </div>
+        
+      </div>
+      <div class="item_content">
+        <h4><a href="/media/2016/01/03/Benjamin-Francis-Leftwich-Shine-remixed-by-Kygo/">Benjamin Francis Leftwich - Shine (Kygo Remix)</a></h4>
+        <div class="item_meta clearfix">
+            <span class="meta_date">Jan 3, 2016</span>
+            <span class="meta_author"><a href="/media/2016/01/03/Benjamin-Francis-Leftwich-Shine-remixed-by-Kygo/">Frank Lin</a></span>
+        </div>
+      </div>
+    </div><!-- End Post item -->
     
     <!-- Post item -->
     <div class="item clearfix">
@@ -343,27 +389,6 @@ $.get("http://ipinfo.io", function (response) {
       </div>
     </div><!-- End Post item -->
     
-    <!-- Post item -->
-    <div class="item clearfix">
-      <div class="item_thumb">
-        <div class="thumb_icon">
-          <a href="/media/2015/12/11/thank-u-se7en/" jQuery><i class="fa fa-copy"></i></a>
-        </div>
-        
-        <div class="thumb_hover">
-          <a href="/media/2015/12/11/thank-u-se7en/"><img src="/demo/500x500.jpg" alt="SE7EN - THANK U (MV)"></a>
-        </div>
-        
-      </div>
-      <div class="item_content">
-        <h4><a href="/media/2015/12/11/thank-u-se7en/">SE7EN - THANK U (MV)</a></h4>
-        <div class="item_meta clearfix">
-            <span class="meta_date">Dec 11, 2015</span>
-            <span class="meta_author"><a href="/media/2015/12/11/thank-u-se7en/">Frank Lin</a></span>
-        </div>
-      </div>
-    </div><!-- End Post item -->
-    
   </div>
 </div><!-- End Recent posts -->
 
@@ -375,7 +400,7 @@ $.get("http://ipinfo.io", function (response) {
       
       <li><a href="/categories/#tips">tips</a> (4)</li>
       
-      <li><a href="/categories/#design">design</a> (4)</li>
+      <li><a href="/categories/#design">design</a> (3)</li>
       
       <li><a href="/categories/#reading">reading</a> (1)</li>
       
@@ -385,7 +410,7 @@ $.get("http://ipinfo.io", function (response) {
       
       <li><a href="/categories/#app">app</a> (1)</li>
       
-      <li><a href="/categories/#media">media</a> (1)</li>
+      <li><a href="/categories/#media">media</a> (2)</li>
       
     </ul>
   </div>
@@ -450,6 +475,19 @@ $.get("http://ipinfo.io", function (response) {
 </div><!-- End Header main -->
 
 
+
+<!-- Duoshuo JS -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"flinhong"};
+(function() {
+var ds = document.createElement('script');
+ds.type = 'text/javascript';ds.async = true;
+ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+ds.charset = 'UTF-8';
+(document.getElementsByTagName('head')[0]
+|| document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script>
 
 </header><!-- End Header -->
 
@@ -771,18 +809,6 @@ $.get("http://ipinfo.io", function (response) {
 </ul><!-- End Pagination -->
 <!-- End Row -->
 
-<script type="text/javascript">
-var duoshuoQuery = {short_name:"flinhong"};
-(function() {
-var ds = document.createElement('script');
-ds.type = 'text/javascript';ds.async = true;
-ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-ds.charset = 'UTF-8';
-(document.getElementsByTagName('head')[0]
-|| document.getElementsByTagName('body')[0]).appendChild(ds);
-})();
-</script>
-
             </div><!-- Main content End -->
             <!-- Sidebar -->
 <div class="col col_3_of_12">
@@ -827,7 +853,16 @@ ds.charset = 'UTF-8';
 </div>
 </div><!-- End Widget Weibo -->
 
-  <!-- Banners -->
+  <!-- Recent Comments -->
+<div class="widget">
+  <div class="widget_title"><h3>Recent Comments</h3></div>
+    <!-- 多说最新评论 start -->
+    	<div class="ds-recent-comments" data-num-items="5" data-show-avatars="1" data-show-time="1" data-show-title="1" data-show-admin="1" data-excerpt-length="70"></div>
+    <!-- 多说最新评论 end -->
+</div>
+<!-- End Recent Comments -->
+
+  <!-- Flickr Banners -->
 <div class="widget">
   <div class="widget_title"><h3><a href="https://www.flickr.com/photos/frankhlin/">Flickr</a></h3></div>
   <!-- Fickr Feeds -->
@@ -913,7 +948,7 @@ ds.charset = 'UTF-8';
       <!-- Widget Text widget -->
       <div class="widget">
         <div class="widget_title"><h3>Bloginfo</h3></div>
-        <p>This personal blog was built with ❤️ by Frank Lin. Thanks to GitHub and Jekyll for technical supports.</p>
+        <p>This personal blog was built with ❤️ by Frank Lin. Thanks to GitHub (GitCafe) and Jekyll for the technical supports.</p>
         <!-- <p>Please feel free to fork this theme on <a href="https://github.com/flinhong/flinhong.github.io"><i class="fa fa-github"></i><a>.</p> -->
         <p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creativecommons Licenses" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a></p>
       </div><!-- End Widget text widget -->
@@ -942,6 +977,20 @@ ds.charset = 'UTF-8';
     <!-- Post item -->
     <div class="item clearfix">
       <div class="item_thumb clearfix">
+        <a href="/media/2016/01/03/Benjamin-Francis-Leftwich-Shine-remixed-by-Kygo/"><img src="/demo/500x500.jpg" alt="Benjamin Francis Leftwich - Shine (Kygo Remix)" class="visible animated"></a>
+      </div>
+      <div class="item_content">
+        <div class="item_meta clearfix">
+          <span class="meta_date">Jan 3, 2016</span>
+        </div>
+        <h4><a href="/media/2016/01/03/Benjamin-Francis-Leftwich-Shine-remixed-by-Kygo/">Benjamin Francis Leftwich - Shine (Kygo Remix)</a></h4>
+      </div>
+      <div class="order">&#9812;</div>
+    </div><!-- End Post item -->
+  
+    <!-- Post item -->
+    <div class="item clearfix">
+      <div class="item_thumb clearfix">
         <a href="/study/2016/01/02/on-becoming-a-better-graduate-students/"><img src="http://i63.tinypic.com/2zgwvmw.png" alt="怎样当一名研究生，以及给研究生的一些建议" class="visible animated"></a>
       </div>
       <div class="item_content">
@@ -963,20 +1012,6 @@ ds.charset = 'UTF-8';
           <span class="meta_date">Jan 1, 2016</span>
         </div>
         <h4><a href="/journal/2016/01/01/happy-new-year-2016/">新年快乐</a></h4>
-      </div>
-      <div class="order">&#9812;</div>
-    </div><!-- End Post item -->
-  
-    <!-- Post item -->
-    <div class="item clearfix">
-      <div class="item_thumb clearfix">
-        <a href="/tips/2015/12/30/duoshuo-css/"><img src="http://i68.tinypic.com/2wnbneq.jpg" alt="多说评论框自定义CSS优化" class="visible animated"></a>
-      </div>
-      <div class="item_content">
-        <div class="item_meta clearfix">
-          <span class="meta_date">Dec 30, 2015</span>
-        </div>
-        <h4><a href="/tips/2015/12/30/duoshuo-css/">多说评论框自定义CSS优化</a></h4>
       </div>
       <div class="order">&#9812;</div>
     </div><!-- End Post item -->
@@ -1015,28 +1050,6 @@ ds.charset = 'UTF-8';
 </div>
 </footer><!-- End Footer -->
 <a id="return-to-top"><i class="fa fa-chevron-up"></i></a>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-71878985-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-<!-- Google analytics -->
-
-<script>
-(function(){
-    var bp = document.createElement('script');
-    bp.src = '//push.zhanzhang.baidu.com/push.js';
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(bp, s);
-})();
-</script>
-<!-- Push urls to Baidu -->
 
     </div><!-- Wrapper End -->
     <!-- Scripts -->

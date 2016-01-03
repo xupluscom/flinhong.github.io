@@ -2,12 +2,43 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Frank&#39;s Blog</title>
-    <description>This personal blog was built with ❤️ by Frank Lin. Thanks to GitHub and Jekyll for technical supports.</description>
+    <description>This personal blog was built with ❤️ by Frank Lin. Thanks to GitHub (GitCafe) and Jekyll for the technical supports.</description>
     <link>http://www.flinhong.com/</link>
     <atom:link href="http://www.flinhong.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 03 Jan 2016 00:46:56 +0800</pubDate>
-    <lastBuildDate>Sun, 03 Jan 2016 00:46:56 +0800</lastBuildDate>
+    <pubDate>Sun, 03 Jan 2016 19:22:09 +0800</pubDate>
+    <lastBuildDate>Sun, 03 Jan 2016 19:22:09 +0800</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Benjamin Francis Leftwich - Shine (Kygo Remix)</title>
+        <description>&lt;p&gt;好听的歌不是天天有，这首&lt;em&gt;Shine&lt;/em&gt;由我非常喜欢的&lt;strong&gt;Kygo&lt;/strong&gt; Remix，他在Soundcloud有不少好听的歌曲，这是我无意间发现的第一首，一听就上瘾。&lt;/p&gt;
+
+&lt;p&gt;听了这个，连原唱都不用找了，循环了好久，就是觉得Remix中Bass可以再少点点就好。再者，这首歌个歌词也是非常暖心的，慢慢听着就能睡着：&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I could live in a different place&lt;br /&gt;
+I could wrap you in your favourite clothes&lt;br /&gt;
+I hope you find the love that’s true&lt;br /&gt;
+I could fly you away with me&lt;br /&gt;
+I hope you find the love that’s true&lt;br /&gt;
+I could wait with you by the water&lt;br /&gt;
+I could wait with you for the winter to come&lt;br /&gt;
+I could stand with you with your snow boots on&lt;br /&gt;
+I hope you find the love that’s true&lt;br /&gt;
+I hope you find what you’re looking for&lt;br /&gt;
+So your heart is warm for ever more&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Sun, 03 Jan 2016 00:00:00 +0800</pubDate>
+        <link>http://www.flinhong.com/media/2016/01/03/Benjamin-Francis-Leftwich-Shine-remixed-by-Kygo/</link>
+        <guid isPermaLink="true">http://www.flinhong.com/media/2016/01/03/Benjamin-Francis-Leftwich-Shine-remixed-by-Kygo/</guid>
+        
+        <category>remix</category>
+        
+        
+        <category>media</category>
+        
+      </item>
     
       <item>
         <title>怎样当一名研究生，以及给研究生的一些建议</title>
@@ -17,29 +48,34 @@
 
 &lt;p&gt;&lt;strong&gt;怎样当一名研究生&lt;/strong&gt; 是钱校长在1993上海工业大学研究生开学典礼上的讲话，叶校长把它放在了《怎样当一名研究生》这本书的最前面，句句都是钱校长一生的经验呀。这里摘给大家：&lt;/p&gt;
 
-&lt;p&gt;你们大学毕业以后，第一次进入研究生队伍。研究生这个名字，实际上翻译得不太恰当，在国外，研究生叫gradute sdudents，这是已毕业的学生的意思。毕业以后你们没有参加工作，而是继续研究生学习，这个研究生的学习和大学生的学习完全不一样。对大学生，一般讲现成知识，讲一些比较基本的东西，很多是非发展中的东西。而研究生是要学习做研究工作，这个“工作”是一下子到了生产实际第一线，第一线中的很多问题不是大学里所学的知识能解决的，它们都是发展中所面临的问题。你们在大学里学的是比较成熟的知识部分，而生产中所面临的问题很多是还需要不断改进的知识部分。到了生产第一线，你们会感到很不适应，很困难。&lt;/p&gt;
+&lt;div class=&quot;accordion_content&quot;&gt;
+    &lt;h4 class=&quot;accordion_content_title&quot;&gt;怎样当一名研究生，1993，钱伟长&lt;/h4&gt;
+    &lt;div class=&quot;accordion_content_inner&quot;&gt;
+        &lt;p&gt;你们大学毕业以后，第一次进入研究生队伍。研究生这个名字，实际上翻译得不太恰当，在国外，研究生叫gradute sdudents，这是已毕业的学生的意思。毕业以后你们没有参加工作，而是继续研究生学习，这个研究生的学习和大学生的学习完全不一样。对大学生，一般讲现成知识，讲一些比较基本的东西，很多是非发展中的东西。而研究生是要学习做研究工作，这个“工作”是一下子到了生产实际第一线，第一线中的很多问题不是大学里所学的知识能解决的，它们都是发展中所面临的问题。你们在大学里学的是比较成熟的知识部分，而生产中所面临的问题很多是还需要不断改进的知识部分。到了生产第一线，你们会感到很不适应，很困难。&lt;/p&gt;
 
-&lt;p&gt;我们记得50年代对教育的目标和方式有很大的争论，清华大学曾经提出大学是“工程师的摇篮”，我认为这个提法是错误的。工程师不可能从摇篮里摇出来，而是从生产实践中锻炼出来的。大学教育只是给了一些成熟的基本知识，工程师所面临的问题都是不成熟的，这怎么能摇得出来呢。50年代学习苏联的教育模式有很大缺陷，我概括为八个字，叫做“不教不懂，一教就会”。这种教育在大学里业已根深蒂固，而在研究生的阶段就不能这样要求。为什么要培养研究生，就是要你们将来处理更难的问题，真正到一切知识的最前沿，去探索、处理、发展，使知识更完美，更能促进生产。研究生学习就是这样一种过程。从一个一切被动地把成熟东西放在书本上教给你的过程，变成在导师指导下探索学习和研究的过程。虽然你们在处理这个过程中间还是学生，但这个学习和大学学习完全不一样。&lt;/p&gt;
+        &lt;p&gt;我们记得50年代对教育的目标和方式有很大的争论，清华大学曾经提出大学是“工程师的摇篮”，我认为这个提法是错误的。工程师不可能从摇篮里摇出来，而是从生产实践中锻炼出来的。大学教育只是给了一些成熟的基本知识，工程师所面临的问题都是不成熟的，这怎么能摇得出来呢。50年代学习苏联的教育模式有很大缺陷，我概括为八个字，叫做“不教不懂，一教就会”。这种教育在大学里业已根深蒂固，而在研究生的阶段就不能这样要求。为什么要培养研究生，就是要你们将来处理更难的问题，真正到一切知识的最前沿，去探索、处理、发展，使知识更完美，更能促进生产。研究生学习就是这样一种过程。从一个一切被动地把成熟东西放在书本上教给你的过程，变成在导师指导下探索学习和研究的过程。虽然你们在处理这个过程中间还是学生，但这个学习和大学学习完全不一样。&lt;/p&gt;
 
-&lt;p&gt;有人说，研究生要学得更多一点，更深一点。我认为，这里不是多少、深浅的问题，而是要你们从书本学习转到在实际工作中学习，深入到工作的最前沿。现在我们的工作，譬如经济工作或者是工业技术工作，或者是建筑工作中所碰到的问题，在大学本科学习中是不可能教过的。因为在大学本科学到的是最成熟、最常见的基础知识，而实际工作往往是一个不成熟、不常见的工作，这就要有训练。因为要求你们担当更重要的任务，所以这样的训练和大学里是不一样的，应该到第一线的工作中去训练。我们有的老师可能还不太理解，因为他们从大学里出来，又在大学里坐下来讲课，讲的是从以前老师讲课中听来的东西，所以他们不太能体会。那么怎么训练？你们首先要学会分析问题和解决问题的能力，对具体问题要会分析。过去都是老师分析好了告诉你，现在你们要学习自己来分析问题。要提高自己去获得知识的能力，也要学会在前人工作基础上往前走地把成熟东西放在书本上教给你的过程，变成在导师指导下探索学习和研究的过程。虽然你们在处理这个过程中间还是学生，但这个学习和大学学习完全不一样。因为你们面临的问题可能已有不少人碰到过，把它记载下来了，你们要想法去搜集这种记载的文字，所以研究生要学会去搜集资料或信息。&lt;/p&gt;
+        &lt;p&gt;有人说，研究生要学得更多一点，更深一点。我认为，这里不是多少、深浅的问题，而是要你们从书本学习转到在实际工作中学习，深入到工作的最前沿。现在我们的工作，譬如经济工作或者是工业技术工作，或者是建筑工作中所碰到的问题，在大学本科学习中是不可能教过的。因为在大学本科学到的是最成熟、最常见的基础知识，而实际工作往往是一个不成熟、不常见的工作，这就要有训练。因为要求你们担当更重要的任务，所以这样的训练和大学里是不一样的，应该到第一线的工作中去训练。我们有的老师可能还不太理解，因为他们从大学里出来，又在大学里坐下来讲课，讲的是从以前老师讲课中听来的东西，所以他们不太能体会。那么怎么训练？你们首先要学会分析问题和解决问题的能力，对具体问题要会分析。过去都是老师分析好了告诉你，现在你们要学习自己来分析问题。要提高自己去获得知识的能力，也要学会在前人工作基础上往前走地把成熟东西放在书本上教给你的过程，变成在导师指导下探索学习和研究的过程。虽然你们在处理这个过程中间还是学生，但这个学习和大学学习完全不一样。因为你们面临的问题可能已有不少人碰到过，把它记载下来了，你们要想法去搜集这种记载的文字，所以研究生要学会去搜集资料或信息。&lt;/p&gt;
 
-&lt;p&gt;寻找信息的训练、搜集资料的训练、阅读资料的训练，绝大部分是自学的。比如阅读文献是一个很重要的部分，因为你们要自己寻找来阅读。没有经过训练的人，寻一样东西都要找老师，只有经过了这种训练的人，才不需要找老师，自己去找。没有经过训练的人，不知道要找的东西在哪儿。图书馆有很多的材料，你去找什么？找这些资料有一套办法，将来我们请图书馆的同志讲寻找资料的办法，那是很具体的。现在有计算机光盘，实际上比我们当年念书时容易得多。我们那时是用手工的，可也得找啊。从近到远，从最近发生的问题到过去几十年甚至上百年的，我们都要看过。但要注意也有一些通俗的言论不一定对。譬如牛顿看见苹果掉下来，才发现了对地球引力的理解。这种说法是故事，而事实不是这样的。牛顿以前八九百年就已经有人在研究这个问题了，各种研究得到了各种结论，有很多很大的差别。牛顿只不过是综合了各种矛盾的结论，在里面抽出最关键的东西来，这是他的功劳。他是站在人家的肩膀上得到的结论。以后一直到了1902年、1903年，他还是独一无二的，所以牛顿的贡献就在这里。可现在我们又知道牛顿的理论是在一定范围内成立的，超出这个范围他的理论就不符合实际了。这是爱因斯坦的贡献。爱因斯坦的理论是怎么来的？也不是凭空想出来的，是经过反反复复的过程才总结出来的。现在相对论的许多结论开始时很多人不相信，从1918年、1924年、1928年，一直到1936年，原子能出来了，才完全证实了他的推论。爱因斯坦是从已有的众多现象里仔细观察以后，用严格的分析推理得到了许多结论。这种过程就是锻炼我们处理问题的过程，所以我们要看很多的资料。看资料是我们研究生阶段特别重要的，不要轻视了。&lt;/p&gt;
+        &lt;p&gt;寻找信息的训练、搜集资料的训练、阅读资料的训练，绝大部分是自学的。比如阅读文献是一个很重要的部分，因为你们要自己寻找来阅读。没有经过训练的人，寻一样东西都要找老师，只有经过了这种训练的人，才不需要找老师，自己去找。没有经过训练的人，不知道要找的东西在哪儿。图书馆有很多的材料，你去找什么？找这些资料有一套办法，将来我们请图书馆的同志讲寻找资料的办法，那是很具体的。现在有计算机光盘，实际上比我们当年念书时容易得多。我们那时是用手工的，可也得找啊。从近到远，从最近发生的问题到过去几十年甚至上百年的，我们都要看过。但要注意也有一些通俗的言论不一定对。譬如牛顿看见苹果掉下来，才发现了对地球引力的理解。这种说法是故事，而事实不是这样的。牛顿以前八九百年就已经有人在研究这个问题了，各种研究得到了各种结论，有很多很大的差别。牛顿只不过是综合了各种矛盾的结论，在里面抽出最关键的东西来，这是他的功劳。他是站在人家的肩膀上得到的结论。以后一直到了1902年、1903年，他还是独一无二的，所以牛顿的贡献就在这里。可现在我们又知道牛顿的理论是在一定范围内成立的，超出这个范围他的理论就不符合实际了。这是爱因斯坦的贡献。爱因斯坦的理论是怎么来的？也不是凭空想出来的，是经过反反复复的过程才总结出来的。现在相对论的许多结论开始时很多人不相信，从1918年、1924年、1928年，一直到1936年，原子能出来了，才完全证实了他的推论。爱因斯坦是从已有的众多现象里仔细观察以后，用严格的分析推理得到了许多结论。这种过程就是锻炼我们处理问题的过程，所以我们要看很多的资料。看资料是我们研究生阶段特别重要的，不要轻视了。&lt;/p&gt;
 
-&lt;p&gt;我们这里还有一些教师并不理解这个，因为他们没有经过研究生的训练，而是经过大学本科训练后担任助教，以后由讲师到副教授这么上来的，他没有经过很多的科研。因为在一段时间里，我们教育界有个错误认识，即认为科研和教学应该是分开的，科学院搞科研，我们学校搞教学。邓小平在1979年提出学校里应该有两个中心，既要搞科研，又要搞教学，才把它弥补过来。所以邓小平把这样一个教育的方向问题扭了过来，是对我们国家的大贡献，以后就恢复了研究生制度，建立了学位制。没有他的扭转，你们研究生也就不存在了。对社会而言，是要求你们更好地推动科学进步，承担第一线的任务。对学校而言也是培养将来学校中的教师骨干。所以我们现在要提出要求来，以后学校里的教师必须通过研究生训练。过去大学毕业出来就留校工作，这是“近亲繁殖”。现在培养研究生，就是培养你们要勇于拓宽科技新领域，到第一线去干，这一步是很难的，你们不要轻视了。首先你们要逐步学会怎样找到材料。资料拿来，你们要分析哪些是对的，哪些是错的，然后得出自己的结论。研究生的培养分两个阶段，一个阶段还要给你们讲些课，让你们习惯，全部不讲课也是不行的。因为你们习惯于听课，不听课好像学不到东西，而且还规定怎么听，有多少学分，但分量必须大大减少，把阅读文献提到重要的地位。第一阶段是一步一步把你们引入庙堂，可还有一条腿在庙堂外头，还在过去“先生不讲不懂”的阶段。第二阶段是研究生的做论文阶段，这就完全不一样了，主要依靠你们自己去做论文。我们对这个也有不同的要求。硕士生论文，总是结合老师在做的工作进行，这样带一带路是可以的。博士生应该是自己去找题目，导师给你判断题目是否合适。不能找一个题目用十年八年做不出来，有的题目太脱离实际，实际不能做到也不行。根据你们的能力，各人从各自不同的条件出发，从你们现有的知识出发，根据自己阅读文献、分析问题、解决问题的能力，自己提课题，导师来审定，然后你们自己搞调查、找材料。&lt;/p&gt;
+        &lt;p&gt;我们这里还有一些教师并不理解这个，因为他们没有经过研究生的训练，而是经过大学本科训练后担任助教，以后由讲师到副教授这么上来的，他没有经过很多的科研。因为在一段时间里，我们教育界有个错误认识，即认为科研和教学应该是分开的，科学院搞科研，我们学校搞教学。邓小平在1979年提出学校里应该有两个中心，既要搞科研，又要搞教学，才把它弥补过来。所以邓小平把这样一个教育的方向问题扭了过来，是对我们国家的大贡献，以后就恢复了研究生制度，建立了学位制。没有他的扭转，你们研究生也就不存在了。对社会而言，是要求你们更好地推动科学进步，承担第一线的任务。对学校而言也是培养将来学校中的教师骨干。所以我们现在要提出要求来，以后学校里的教师必须通过研究生训练。过去大学毕业出来就留校工作，这是“近亲繁殖”。现在培养研究生，就是培养你们要勇于拓宽科技新领域，到第一线去干，这一步是很难的，你们不要轻视了。首先你们要逐步学会怎样找到材料。资料拿来，你们要分析哪些是对的，哪些是错的，然后得出自己的结论。研究生的培养分两个阶段，一个阶段还要给你们讲些课，让你们习惯，全部不讲课也是不行的。因为你们习惯于听课，不听课好像学不到东西，而且还规定怎么听，有多少学分，但分量必须大大减少，把阅读文献提到重要的地位。第一阶段是一步一步把你们引入庙堂，可还有一条腿在庙堂外头，还在过去“先生不讲不懂”的阶段。第二阶段是研究生的做论文阶段，这就完全不一样了，主要依靠你们自己去做论文。我们对这个也有不同的要求。硕士生论文，总是结合老师在做的工作进行，这样带一带路是可以的。博士生应该是自己去找题目，导师给你判断题目是否合适。不能找一个题目用十年八年做不出来，有的题目太脱离实际，实际不能做到也不行。根据你们的能力，各人从各自不同的条件出发，从你们现有的知识出发，根据自己阅读文献、分析问题、解决问题的能力，自己提课题，导师来审定，然后你们自己搞调查、找材料。&lt;/p&gt;
 
-&lt;p&gt;文献是调查的一方面，而且在学习上文献是一个重要的方面，国际上也习惯于这样做。理论工作出来要有论文，论文记载了一个研究课题的过程和结论，达到了什么阶段，怎样达到的。论文是记载你工作的过程，给后来人接班。每一个人的科研工作都是在前人的基础上进行的。正如牛顿所说的他是站在人家的肩膀上爬上去的一样，人类社会所取得的任何成果都不是从天上掉下来的，而是一步一步地取得的，我们在接人家的班，比人家爬得更高，那么你也应准备别人来爬你的肩膀，所以你要发表论文，提供肩膀。发表论文不是为了名，更不是为了利。&lt;/p&gt;
+        &lt;p&gt;文献是调查的一方面，而且在学习上文献是一个重要的方面，国际上也习惯于这样做。理论工作出来要有论文，论文记载了一个研究课题的过程和结论，达到了什么阶段，怎样达到的。论文是记载你工作的过程，给后来人接班。每一个人的科研工作都是在前人的基础上进行的。正如牛顿所说的他是站在人家的肩膀上爬上去的一样，人类社会所取得的任何成果都不是从天上掉下来的，而是一步一步地取得的，我们在接人家的班，比人家爬得更高，那么你也应准备别人来爬你的肩膀，所以你要发表论文，提供肩膀。发表论文不是为了名，更不是为了利。&lt;/p&gt;
 
-&lt;p&gt;我们科研工作者是为人类向自然界进攻的一支大队伍，这支队伍通过论文组织起来，所以你有什么研究成果和思想，一般地不应该保密，应发表出来，希望人家站在你的肩膀上上去，为人类作贡献。每个人都应有责任感，责任感就是千军万马在往前走，你是中间一分子，不能掉队。最近在北京召开的第二届国际非线性力学会议，与会者中有许多很有名的人，前苏联的谢道夫被称为“人造卫星之父”，他就是这样的观点。所以我们希望中国的科技工作者队伍大大扩大，要不然我们前进不了。这个队伍是一个突击队伍，代表着我们的民族在前进、在突击。你们每个人的工作好像是一个很具体的工作，实际上结合在一起是一项很大的工程，是一个很大的配合。我们说2000年以后，世界上要把经济重心移到亚洲来，经济中心主要还要靠科技中心。现在，国家很重视研究生的培养，让你们有更好的工作条件，利用这个研究生阶段，在开始工作前让你们再学点，教你们工作，教到你们能够自主，将来出来都有独立的主张。同时，你们也要懂得跟别人联系，而联系的办法就是懂得写论文，懂得在人家肩膀上上去，懂得把自己所得教给人家。论文必须具名，你应该负责，而不能胡扯。我们过去有个研究生，他搞了一些软件，可人家使用他的软件都不能用，是骗人的。骗人只能骗一天而不能骗一辈子，所以工作都要老老实实地去做。&lt;/p&gt;
+        &lt;p&gt;我们科研工作者是为人类向自然界进攻的一支大队伍，这支队伍通过论文组织起来，所以你有什么研究成果和思想，一般地不应该保密，应发表出来，希望人家站在你的肩膀上上去，为人类作贡献。每个人都应有责任感，责任感就是千军万马在往前走，你是中间一分子，不能掉队。最近在北京召开的第二届国际非线性力学会议，与会者中有许多很有名的人，前苏联的谢道夫被称为“人造卫星之父”，他就是这样的观点。所以我们希望中国的科技工作者队伍大大扩大，要不然我们前进不了。这个队伍是一个突击队伍，代表着我们的民族在前进、在突击。你们每个人的工作好像是一个很具体的工作，实际上结合在一起是一项很大的工程，是一个很大的配合。我们说2000年以后，世界上要把经济重心移到亚洲来，经济中心主要还要靠科技中心。现在，国家很重视研究生的培养，让你们有更好的工作条件，利用这个研究生阶段，在开始工作前让你们再学点，教你们工作，教到你们能够自主，将来出来都有独立的主张。同时，你们也要懂得跟别人联系，而联系的办法就是懂得写论文，懂得在人家肩膀上上去，懂得把自己所得教给人家。论文必须具名，你应该负责，而不能胡扯。我们过去有个研究生，他搞了一些软件，可人家使用他的软件都不能用，是骗人的。骗人只能骗一天而不能骗一辈子，所以工作都要老老实实地去做。&lt;/p&gt;
 
-&lt;p&gt;我们中国人并不笨，但是要学会一套科学的工作步骤。我们学校找文献的条件优于国内许多学校，我们学校图书馆里国际期刊的数量在全国也是数一数二的，够你们用的了。所以，你们要着眼于现实，获取当代世界科技最前沿的知识与信息，要学会使用这些材料。有些老师因为没有经过这样的训练，不懂得利用现代科技资料，就只抱着一本教科书。有的老师1989年出了一本教科书，用了一些新材料和从前的不一样，他以为这样就成功了，而实际上又落后了。1989年出版的教科书，都是1985、1986年前的东西，已经晚了三年，再加上印刷翻译又晚了两年，总是差了五到十年。所以要求大家学外文，学外文不是为了留学、吃洋面包去，而是为了能争取时间直接从人家那里拿来东西。所以，首先我们外文的训练是着眼于阅读专业的文献，自己能写一些简单的报告和论文。这个要求，我现在发现也是不够的，作为研究生，还要参与国际学术交流，因而口语训练也是相当重要的。有两位我们的博士毕业生在最近一次国际学术会议的大会上作了报告，那两篇论文在当前世界上是属研究前沿的东西，很受重视，可他们的英文不行，怎么讲也讲不明白。到后来，大家只能一边看一边听，他讲的没有写的清楚，这就吃亏了。所以应该注意这个问题，以后要想办法，研究生也要作口语训练。&lt;/p&gt;
+        &lt;p&gt;我们中国人并不笨，但是要学会一套科学的工作步骤。我们学校找文献的条件优于国内许多学校，我们学校图书馆里国际期刊的数量在全国也是数一数二的，够你们用的了。所以，你们要着眼于现实，获取当代世界科技最前沿的知识与信息，要学会使用这些材料。有些老师因为没有经过这样的训练，不懂得利用现代科技资料，就只抱着一本教科书。有的老师1989年出了一本教科书，用了一些新材料和从前的不一样，他以为这样就成功了，而实际上又落后了。1989年出版的教科书，都是1985、1986年前的东西，已经晚了三年，再加上印刷翻译又晚了两年，总是差了五到十年。所以要求大家学外文，学外文不是为了留学、吃洋面包去，而是为了能争取时间直接从人家那里拿来东西。所以，首先我们外文的训练是着眼于阅读专业的文献，自己能写一些简单的报告和论文。这个要求，我现在发现也是不够的，作为研究生，还要参与国际学术交流，因而口语训练也是相当重要的。有两位我们的博士毕业生在最近一次国际学术会议的大会上作了报告，那两篇论文在当前世界上是属研究前沿的东西，很受重视，可他们的英文不行，怎么讲也讲不明白。到后来，大家只能一边看一边听，他讲的没有写的清楚，这就吃亏了。所以应该注意这个问题，以后要想办法，研究生也要作口语训练。&lt;/p&gt;
 
-&lt;p&gt;自己要研究问题，获得知识，就要有语言文字的表达能力，所以应当重视口语，口语没有是不行的。我们有的老师口语也很差，所以我们也得慢慢想办法改变一下。这都是历史问题，并不是我们的民族不行。要美国人念中文，他也不行。所以我对大家寄予极大的希望。&lt;/p&gt;
+        &lt;p&gt;自己要研究问题，获得知识，就要有语言文字的表达能力，所以应当重视口语，口语没有是不行的。我们有的老师口语也很差，所以我们也得慢慢想办法改变一下。这都是历史问题，并不是我们的民族不行。要美国人念中文，他也不行。所以我对大家寄予极大的希望。&lt;/p&gt;
 
-&lt;p&gt;我跟大家谈了对研究生的理解，是要培养一个能够独立地到一个未知领域里工作的人，因为我们面向的都是未知的领域。现在即使做干部也不容易，在经济改革中，许多问题也都是未知的。你们将来都将面向一种未知的没有现成经验的领域，因此现在必须接受严格的锻炼。&lt;/p&gt;
+        &lt;p&gt;我跟大家谈了对研究生的理解，是要培养一个能够独立地到一个未知领域里工作的人，因为我们面向的都是未知的领域。现在即使做干部也不容易，在经济改革中，许多问题也都是未知的。你们将来都将面向一种未知的没有现成经验的领域，因此现在必须接受严格的锻炼。&lt;/p&gt;
 
-&lt;p&gt;你们中将来有一批人留在学校，你们要有这个能力进入未知领域，而不是抱着一本书讲100次。我对你们寄予极大的希望，国家对你们也寄予极大的希望。研究生要算国家与民族的大账，而不能沉湎于一己之私，要有远大的理想和抱负。&lt;/p&gt;
+        &lt;p&gt;你们中将来有一批人留在学校，你们要有这个能力进入未知领域，而不是抱着一本书讲100次。我对你们寄予极大的希望，国家对你们也寄予极大的希望。研究生要算国家与民族的大账，而不能沉湎于一己之私，要有远大的理想和抱负。&lt;/p&gt;
 
-&lt;p&gt;大家应该有自尊心，有民族自尊心。我们是有能力的，我们的国家是有发展潜力的。我们搞原子能，美国并没有给我们什么，前苏联也没有给我们什么，我们不依靠别人自己都搞起来了。所以我想把我老师赵忠尧教授的回忆录印出来发给大家，看看老一辈科学家当年是怎样为祖国的科学事业而发奋进取的。赵忠尧教授是中国有名的搞原子能的前辈。我们要有老一辈科学家那种献身祖国、献身科学的精神，我们能比别人搞得都好，这才真正是21世纪形成的“亚洲的世纪”。那不是口号，那是要去做的， 世纪中华的腾飞要靠你们，我们要走到前头去，希望大家共同努力。&lt;/p&gt;
+        &lt;p&gt;大家应该有自尊心，有民族自尊心。我们是有能力的，我们的国家是有发展潜力的。我们搞原子能，美国并没有给我们什么，前苏联也没有给我们什么，我们不依靠别人自己都搞起来了。所以我想把我老师赵忠尧教授的回忆录印出来发给大家，看看老一辈科学家当年是怎样为祖国的科学事业而发奋进取的。赵忠尧教授是中国有名的搞原子能的前辈。我们要有老一辈科学家那种献身祖国、献身科学的精神，我们能比别人搞得都好，这才真正是21世纪形成的“亚洲的世纪”。那不是口号，那是要去做的， 世纪中华的腾飞要靠你们，我们要走到前头去，希望大家共同努力。&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 
 &lt;h2 id=&quot;id-section-1&quot;&gt;给研究生的一些建议&lt;/h2&gt;
 
@@ -502,763 +538,6 @@
       </item>
     
       <item>
-        <title>Markdown语法说明</title>
-        <description>&lt;p&gt;Markdown是一种轻量级的「标记语言」，使用特殊的Markdown文档处理器将Markdown语法翻译成预设的文档格式、标题大小等，一般用于展示时输出的是HTML，也可以十分方便的导出PDF格式。它的优点很多，目前也被越来越多的写作爱好者、撰稿者广泛使用。Markdown的目标是实现「易读易写」，相对于更为复杂的HTML标记语言来说，Markdown可谓十分轻量，学习成本也不需要太多，且一旦熟悉这种语法规则，会有一劳永逸的效果。&lt;/p&gt;
-
-&lt;p&gt;从这个博客搭建开始，我就使用Markdown写文章，遇到需要的功能都是直接搜索，一直没有系统的学习过，常用的命令也就那么几个。有时候想排版的更好，但不知道怎么实现，那就趁现在好好学习一下Markdown的语法吧，也供自己今后参考。&lt;/p&gt;
-
-&lt;h2 id=&quot;id-markdown-&quot;&gt;Markdown 官方文档&lt;/h2&gt;
-&lt;blockquote&gt;
-  &lt;ul&gt;
-    &lt;li&gt;&lt;a href=&quot;http://daringfireball.net/projects/markdown/syntax&quot;&gt;创始人 John Gruber 的 Markdown 语法说明&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;http://wowubuntu.com/markdown/#list&quot;&gt;Markdown 中文版语法说明&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;id-section&quot;&gt;本文参考文档&lt;/h2&gt;
-&lt;blockquote&gt;
-  &lt;ul&gt;
-    &lt;li&gt;&lt;a href=&quot;http://www.applecho.com/markdown/&quot;&gt;Markdown 语法说明&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;http://www.jianshu.com/p/1e402922ee32/&quot;&gt;Markdown——入门指南&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;id-markdown&quot;&gt;Markdown概述&lt;/h2&gt;
-
-&lt;h3 id=&quot;id-section-1&quot;&gt;宗旨&lt;/h3&gt;
-
-&lt;p&gt;Markdown的目标是实现「易读易写」。&lt;/p&gt;
-
-&lt;p&gt;可读性，无论如何，都是最重要的。一份使用 Markdown格式撰写的文件应该可以直接以纯文本发布，并且看起来不会像是由许多标签或是格式指令所构成。Markdown语法受到一些既有text-to-HTML格式的影响，包括 Setext、atx、Textile、reStructuredText、Grutatext和EtText，而最大灵感来源其实是纯文本电子邮件的格式。&lt;/p&gt;
-
-&lt;p&gt;总之， Markdown的语法全由一些符号所组成，这些符号经过精挑细选，其作用一目了然。比如：在文字两旁加上星号，看起来就像&lt;em&gt;强调&lt;/em&gt;。Markdown的列表看起来，嗯，就是列表。Markdown 的区块引用看起来就真的像是引用一段文字，就像你曾在电子邮件中见过的那样。&lt;/p&gt;
-
-&lt;h3 id=&quot;id-html&quot;&gt;兼容 HTML&lt;/h3&gt;
-
-&lt;p&gt;Markdown语法的目标是：成为一种适用于网络的书写语言。&lt;/p&gt;
-
-&lt;p&gt;Markdown并不是想取代HTML的地位，甚至接近它。它的语法种类很少，只对应HTML标记的一小部分。Markdown的构想不是要使得HTML文档更容易书写。在我看来， HTML 已经很容易写了。Markdown的理念是，能让文档更容易读、写和随意改。HTML是一种发布的格式，Markdown是一种书写的格式。就这样，Markdown的格式语法只涵盖纯文本可以涵盖的范围。&lt;/p&gt;
-
-&lt;p&gt;不在Markdown涵盖范围之内的标签，都可以直接在文档里面用HTML撰写。不需要额外标注这是HTML或是Markdown，只要直接加标签就可以了。&lt;/p&gt;
-
-&lt;p&gt;要制约的只有一些HTML区块元素――比如 &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;、&lt;code&gt;&amp;lt;table&amp;gt;&lt;/code&gt;、&lt;code&gt;&amp;lt;pre&amp;gt;&lt;/code&gt;、&lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;等标签，必须在前后加上空行与其它内容区隔开，还要求它们的开始标签与结尾标签不能用制表符或空格来缩进。Markdown的生成器有足够智能，不会在HTML区块标签外加上不必要的&lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;标签。&lt;/p&gt;
-
-&lt;p&gt;例子如下，在 Markdown文件里加上一段HTML表格：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;这是一个普通段落。
-
-&amp;lt;table&amp;gt;
-    &amp;lt;tr&amp;gt;
-        &amp;lt;td&amp;gt;Foo&amp;lt;/td&amp;gt;
-    &amp;lt;/tr&amp;gt;
-&amp;lt;/table&amp;gt;
-
-这是另一个普通段落。
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;请注意，在HTML区块标签间的Markdown格式语法将不会被处理。比如，你在HTML区块内使用Markdown样式的&lt;code&gt;*强调*&lt;/code&gt;会没有效果。&lt;/p&gt;
-
-&lt;p&gt;HTML的区段（行内）标签如&lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt;、&lt;code&gt;&amp;lt;cite&amp;gt;&lt;/code&gt;、&lt;code&gt;&amp;lt;del&amp;gt;&lt;/code&gt;可以在Markdown的段落、列表或是标题里随意使用。依照个人习惯，甚至可以不用Markdown格式，而直接采用HTML标签来格式化。举例说明：如果比较喜欢HTML的&lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt;或&lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt;标签，可以直接使用这些标签，而不用Markdown提供的链接或是图像标签语法。&lt;/p&gt;
-
-&lt;p&gt;和处在HTML区块标签间不同，Markdown语法在HTML区段标签间是有效的。&lt;/p&gt;
-
-&lt;h3 id=&quot;id-section-2&quot;&gt;特殊字符自动转换&lt;/h3&gt;
-
-&lt;p&gt;在HTML文件中，有两个字符需要特殊处理：&lt;code&gt;&amp;lt;&lt;/code&gt;和&lt;code&gt;&amp;amp;&lt;/code&gt;。&lt;code&gt;&amp;lt;&lt;/code&gt;符号用于起始标签，&lt;code&gt;&amp;amp;&lt;/code&gt;符号则用于标记HTML实体，如果你只是想要显示这些字符的原型，你必须要使用实体的形式，像是&lt;code&gt;&amp;amp;lt&lt;/code&gt;; 和&lt;code&gt;&amp;amp;amp&lt;/code&gt;;。&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;&amp;amp;&lt;/code&gt;字符尤其让网络文档编写者受折磨，如果你要打&lt;code&gt;「AT&amp;amp;T」&lt;/code&gt;，你必须要写成&lt;code&gt;「AT&amp;amp;amp;T」&lt;/code&gt;。而网址中的&lt;code&gt;&amp;amp;&lt;/code&gt;字符也要转换。比如你要链接到：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;http://images.google.com/images?num=30&amp;amp;q=larry+bird
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;你必须要把网址转换写为：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;http://images.google.com/images?num=30&amp;amp;amp;q=larry+bird
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;才能放到链接标签的&lt;code&gt;href&lt;/code&gt;属性里。不用说也知道这很容易忽略，这也可能是&lt;code&gt;HTML&lt;/code&gt;标准检验所检查到的错误中，数量最多的。&lt;/p&gt;
-
-&lt;p&gt;Markdown让你可以自然地书写字符，需要转换的由它来处理好了。如果你使用的&lt;code&gt;&amp;amp;&lt;/code&gt;字符是HTML字符实体的一部分，它会保留原状，否则它会被转换成&lt;code&gt;&amp;amp;amp;&lt;/code&gt;。&lt;/p&gt;
-
-&lt;p&gt;所以你如果要在文档中插入一个版权符号&lt;code&gt;©&lt;/code&gt;，你可以这样写：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;amp;copy;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Markdown 会保留它不动。而若你写：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;AT&amp;amp;T
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Markdown 就会将它转为&lt;code&gt;AT&amp;amp;amp;T&lt;/code&gt;。&lt;/p&gt;
-
-&lt;p&gt;类似的状况也会发生在&lt;code&gt;&amp;lt;&lt;/code&gt;符号上，因为Markdown允许兼容HTML，如果你是把&lt;code&gt;&amp;lt;&lt;/code&gt;符号作为HTML标签的定界符使用，那Markdown也不会对它做任何转换，但是如果你写：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;4 &amp;lt; 5
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Markdown 将会把它转换为&lt;code&gt;4 &amp;amp;lt; 5&lt;/code&gt;。&lt;/p&gt;
-
-&lt;p&gt;不过需要注意的是，code范围内，不论是行内还是区块，&lt;code&gt;&amp;lt;&lt;/code&gt;和&lt;code&gt;&amp;amp;&lt;/code&gt;两个符号都一定会被转换成HTML实体，这项特性让你可以很容易地用Markdown写HTML code（和HTML相对而言，HTML语法中，你要把所有的&lt;code&gt;&amp;lt;&lt;/code&gt;和&lt;code&gt;&amp;amp;&lt;/code&gt;都转换为HTML实体，才能在HTML文件里面写出HTML code。）&lt;/p&gt;
-
-&lt;h2 id=&quot;id-section-3&quot;&gt;区块元素&lt;/h2&gt;
-
-&lt;h3 id=&quot;id-section-4&quot;&gt;段落和换行&lt;/h3&gt;
-
-&lt;p&gt;一个Markdown段落是由一个或多个连续的文本行组成，它的前后要有一个以上的空行（空行的定义是显示上看起来像是空的，便会被视为空行。比方说，若某一行只包含空格和制表符，则该行也会被视为空行）。普通段落不该用空格或制表符来缩进。&lt;/p&gt;
-
-&lt;p&gt;「由一个或多个连续的文本行组成」这句话其实暗示了Markdown允许段落内的强迫换行（插入换行符），这个特性和其他大部分的text-to-HTML格式不一样（包括Movable Type的「Convert Line Breaks」选项），其它的格式会把每个换行符都转成&lt;code&gt;&amp;lt;br /&amp;gt;&lt;/code&gt;标签。&lt;/p&gt;
-
-&lt;p&gt;如果你确实想要依赖Markdown来插入&lt;code&gt;&amp;lt;br /&amp;gt;&lt;/code&gt;标签的话，在插入处先按入两个以上的空格然后回车。&lt;/p&gt;
-
-&lt;p&gt;的确，需要多费点事（多加空格）来产生&lt;code&gt;&amp;lt;br /&amp;gt;&lt;/code&gt;，但是简单地「每个换行都转换为&lt;code&gt;&amp;lt;br /&amp;gt;&lt;/code&gt;」的方法在Markdown中并不适合，Markdown中email式的区块引用和多段落的列表 在使用换行来排版的时候，不但更好用，还更方便阅读。&lt;/p&gt;
-
-&lt;h3 id=&quot;id-section-5&quot;&gt;标题&lt;/h3&gt;
-
-&lt;p&gt;Markdown支持两种标题的语法，类Setext和类atx形式。&lt;/p&gt;
-
-&lt;p&gt;类Setext形式是用底线的形式，利用&lt;code&gt;=&lt;/code&gt;（最高阶标题）和&lt;code&gt;-&lt;/code&gt;（第二阶标题），例如：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;This is an H1
-=============
-
-This is an H2
--------------
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;任何数量的&lt;code&gt;=&lt;/code&gt;和&lt;code&gt;-&lt;/code&gt;都可以有效果。&lt;/p&gt;
-
-&lt;p&gt;类Atx形式则是在行首插入1到6个&lt;code&gt;#&lt;/code&gt;，对应到标题1到6阶，例如：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# 这是 H1
-
-## 这是 H2
-
-###### 这是 H6
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;你可以选择性地「闭合」类atx样式的标题，这纯粹只是美观用的，若是觉得这样看起来比较舒适，你就可以在行尾加上&lt;code&gt;#&lt;/code&gt;，而行尾的&lt;code&gt;#&lt;/code&gt;数量也不用和开头一样（行首的井字符数量决定标题的阶数）：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# 这是 H1 #
-
-## 这是 H2 ##
-
-### 这是 H3 ######
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&quot;id-blockquotes&quot;&gt;区块引用 Blockquotes&lt;/h3&gt;
-
-&lt;p&gt;Markdown标记区块引用是使用类似email中用&lt;code&gt;&amp;gt;&lt;/code&gt;的引用方式。如果你还熟悉在email信件中的引言部分，你就知道怎么在Markdown文件中建立一个区块引用，那会看起来像是你自己先断好行，然后在每行的最前面加上&lt;code&gt;&amp;gt;&lt;/code&gt;：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
-&amp;gt; consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
-&amp;gt; Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-&amp;gt;
-&amp;gt; Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
-&amp;gt; id sem consectetuer libero luctus adipiscing.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Markdown 也允许你偷懒只在整个段落的第一行最前面加上&lt;code&gt;&amp;gt;&lt;/code&gt;：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
-consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
-Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-
-&amp;gt; Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
-id sem consectetuer libero luctus adipiscing.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;区块引用可以嵌套（例如：引用内的引用），只要根据层次加上不同数量的&lt;code&gt;&amp;gt;&lt;/code&gt;：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;gt; This is the first level of quoting.
-&amp;gt;
-&amp;gt; &amp;gt; This is nested blockquote.
-&amp;gt;
-&amp;gt; Back to the first level.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;引用的区块内也可以使用其他的Markdown语法，包括标题、列表、代码区块等：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;gt; ## 这是一个标题。
-&amp;gt;
-&amp;gt; 1.   这是第一行列表项。
-&amp;gt; 2.   这是第二行列表项。
-&amp;gt;
-&amp;gt; 给出一些例子代码：
-&amp;gt;
-&amp;gt;     return shell_exec(&quot;echo $input | $markdown_script&quot;);
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;任何像样的文本编辑器都能轻松地建立email型的引用。例如在BBEdit中，你可以选取文字后然后从选单中选择增加引用阶层。&lt;/p&gt;
-
-&lt;h3 id=&quot;id-section-6&quot;&gt;列表&lt;/h3&gt;
-
-&lt;p&gt;Markdown支持有序列表和无序列表。&lt;/p&gt;
-
-&lt;p&gt;无序列表使用星号、加号或是减号作为列表标记：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;*   Red
-*   Green
-*   Blue
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;等同于：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;+   Red
-+   Green
-+   Blue
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;也等同于：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;-   Red
--   Green
--   Blue
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;有序列表则使用数字接着一个英文句点：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;1.  Bird
-2.  McHale
-3.  Parish
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;很重要的一点是，你在列表标记上使用的数字并不会影响输出的 HTML 结果，上面的列表所产生的 HTML 标记为：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;ol&amp;gt;
-&amp;lt;li&amp;gt;Bird&amp;lt;/li&amp;gt;
-&amp;lt;li&amp;gt;McHale&amp;lt;/li&amp;gt;
-&amp;lt;li&amp;gt;Parish&amp;lt;/li&amp;gt;
-&amp;lt;/ol&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;如果你的列表标记写成：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;1.  Bird
-1.  McHale
-1.  Parish
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;或甚至是：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;3. Bird
-1. McHale
-8. Parish
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;你都会得到完全相同的HTML输出。重点在于，你可以让Markdown文件的列表数字和输出的结果相同，或是你懒一点，你可以完全不用在意数字的正确性。&lt;/p&gt;
-
-&lt;p&gt;如果你使用懒惰的写法，建议第一个项目最好还是从&lt;code&gt;1.&lt;/code&gt;开始，因为Markdown未来可能会支持有序列表的start属性。&lt;/p&gt;
-
-&lt;p&gt;列表项目标记通常是放在最左边，但是其实也可以缩进，最多3个空格，项目标记后面则一定要接着至少一个空格或制表符。&lt;/p&gt;
-
-&lt;p&gt;要让列表看起来更漂亮，你可以把内容用固定的缩进整理好：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-    Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
-    viverra nec, fringilla in, laoreet vitae, risus.
-*   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
-    Suspendisse id sem consectetuer libero luctus adipiscing.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;但是如果你懒，那也行：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
-viverra nec, fringilla in, laoreet vitae, risus.
-*   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
-Suspendisse id sem consectetuer libero luctus adipiscing.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;如果列表项目间用空行分开，在输出HTML时Markdown就会将项目内容用&lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;标签包起来，举例来说：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;*   Bird
-*   Magic
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;会被转换为：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;ul&amp;gt;
-&amp;lt;li&amp;gt;Bird&amp;lt;/li&amp;gt;
-&amp;lt;li&amp;gt;Magic&amp;lt;/li&amp;gt;
-&amp;lt;/ul&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;但是这个：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;*   Bird
-
-*   Magic
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;会被转换为：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;ul&amp;gt;
-&amp;lt;li&amp;gt;&amp;lt;p&amp;gt;Bird&amp;lt;/p&amp;gt;&amp;lt;/li&amp;gt;
-&amp;lt;li&amp;gt;&amp;lt;p&amp;gt;Magic&amp;lt;/p&amp;gt;&amp;lt;/li&amp;gt;
-&amp;lt;/ul&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;列表项目可以包含多个段落，每个项目下的段落都必须缩进4个空格或是1个制表符：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;1.  This is a list item with two paragraphs. Lorem ipsum dolor
-    sit amet, consectetuer adipiscing elit. Aliquam hendrerit
-    mi posuere lectus.
-
-    Vestibulum enim wisi, viverra nec, fringilla in, laoreet
-    vitae, risus. Donec sit amet nisl. Aliquam semper ipsum
-    sit amet velit.
-
-2.  Suspendisse id sem consectetuer libero luctus adipiscing.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;如果你每行都有缩进，看起来会看好很多，当然，再次地，如果你很懒惰，Markdown也允许：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;*   This is a list item with two paragraphs.
-
-    This is the second paragraph in the list item. You&#39;re
-only required to indent the first line. Lorem ipsum dolor
-sit amet, consectetuer adipiscing elit.
-
-*   Another item in the same list.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;如果要在列表项目内放进引用，那&lt;code&gt;&amp;gt;&lt;/code&gt;就需要缩进：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;*   A list item with a blockquote:
-
-    &amp;gt; This is a blockquote
-    &amp;gt; inside a list item.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;如果要放代码区块的话，该区块就需要缩进两次，也就是8个空格或是2个制表符：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;*   一列表项包含一个列表区块：
-
-        &amp;lt;代码写在这&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;当然，项目列表很可能会不小心产生，像是下面这样的写法：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;1986. What a great season.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;换句话说，也就是在行首出现数字-句点-空白，要避免这样的状况，你可以在句点前面加上反斜杠。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;1986\. What a great season.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&quot;id-section-7&quot;&gt;代码区块&lt;/h3&gt;
-
-&lt;p&gt;和程序相关的写作或是标签语言原始码通常会有已经排版好的代码区块，通常这些区块我们并不希望它以一般段落文件的方式去排版，而是照原来的样子显示，Markdown会用&lt;code&gt;&amp;lt;pre&amp;gt;&lt;/code&gt;和&lt;code&gt;&amp;lt;code&amp;gt;&lt;/code&gt;标签来把代码区块包起来。&lt;/p&gt;
-
-&lt;p&gt;要在Markdown中建立代码区块很简单，只要简单地缩进4个空格或是1个制表符就可以，例如，下面的输入：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;这是一个普通段落：
-
-    这是一个代码区块。
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Markdown 会转换成：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;这是一个普通段落：&amp;lt;/p&amp;gt;
-
-&amp;lt; pre&amp;gt;&amp;lt;code&amp;gt;这是一个代码区块。
-&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;这个每行一阶的缩进（4个空格或是1个制表符），都会被移除，例如：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Here is an example of AppleScript:
-
-    tell application &quot;Foo&quot;
-        beep
-    end tell
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;会被转换为：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;Here is an example of AppleScript:&amp;lt;/p&amp;gt;
-
-&amp;lt; pre&amp;gt;&amp;lt;code&amp;gt;tell application &quot;Foo&quot;
-    beep
-end tell
-&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;一个代码区块会一直持续到没有缩进的那一行（或是文件结尾）。&lt;/p&gt;
-
-&lt;p&gt;在代码区块里面，&lt;code&gt;&amp;amp;&lt;/code&gt;、&lt;code&gt;&amp;lt;&lt;/code&gt;和&lt;code&gt;&amp;gt;&lt;/code&gt;会自动转成HTML实体，这样的方式让你非常容易使用Markdown插入范例用的HTML原始码，只需要复制贴上，再加上缩进就可以了，剩下的Markdown都会帮你处理，例如：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&quot;footer&quot;&amp;gt;
-    &amp;amp;copy; 2004 Foo Corporation
-&amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;会被转换为：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;pre&amp;gt;&amp;lt;code&amp;gt;&amp;amp;lt;div class=&quot;footer&quot;&amp;amp;gt;
-    &amp;amp;amp;copy; 2004 Foo Corporation
-&amp;amp;lt;/div&amp;amp;gt;
-&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;代码区块中，一般的Markdown语法不会被转换，像是星号便只是星号，这表示你可以很容易地以 Markdown法撰写Markdown语法相关的文件。&lt;/p&gt;
-
-&lt;h3 id=&quot;id-section-8&quot;&gt;分隔线&lt;/h3&gt;
-
-&lt;p&gt;你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。下面每种写法都可以建立分隔线：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;* * *
-
-***
-
-*****
-
-- - -
-
----------------------------------------
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&quot;id-section-9&quot;&gt;区段元素&lt;/h2&gt;
-
-&lt;h3 id=&quot;id-section-10&quot;&gt;链接&lt;/h3&gt;
-
-&lt;p&gt;Markdown支持两种形式的链接语法：行内式和参考式两种形式。&lt;/p&gt;
-
-&lt;p&gt;不管是哪一种，链接文字都是用 [方括号] 来标记。&lt;/p&gt;
-
-&lt;p&gt;要建立一个行内式的链接，只要在方块括号后面紧接着圆括号并插入网址链接即可，如果你还想要加上链接的title文字，只要在网址后面，用双引号把title文字包起来即可，例如：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;This is [an example](http://example.com/ &quot;Title&quot;) inline link.
-
-[This link](http://example.net/) has no title attribute.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;会产生：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;This is &amp;lt;a href=&quot;http://example.com/&quot; title=&quot;Title&quot;&amp;gt;
-an example&amp;lt;/a&amp;gt; inline link.&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;&amp;lt;a href=&quot;http://example.net/&quot;&amp;gt;This link&amp;lt;/a&amp;gt; has no
-title attribute.&amp;lt;/p&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;如果你是要链接到同样主机的资源，你可以使用相对路径：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;See my [About](/about/) page for details.   
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;参考式的链接是在链接文字的括号后面再接上另一个方括号，而在第二个方括号里面要填入用以辨识链接的标记：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;This is [an example][id] reference-style link.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;你也可以选择性地在两个方括号中间加上一个空格：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;This is [an example] [id] reference-style link.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;接着，在文件的任意处，你可以把这个标记的链接内容定义出来：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[id]: http://example.com/  &quot;Optional Title Here&quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;链接内容定义的形式为：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;方括号（前面可以选择性地加上至多三个空格来缩进），里面输入链接文字&lt;/li&gt;
-  &lt;li&gt;接着一个冒号&lt;/li&gt;
-  &lt;li&gt;接着一个以上的空格或制表符&lt;/li&gt;
-  &lt;li&gt;接着链接的网址&lt;/li&gt;
-  &lt;li&gt;选择性地接着title内容，可以用单引号、双引号或是括弧包着&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;下面这三种链接的定义都是相同：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[foo]: http://example.com/  &quot;Optional Title Here&quot;
-[foo]: http://example.com/  &#39;Optional Title Here&#39;
-[foo]: http://example.com/  (Optional Title Here)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;请注意&lt;/strong&gt;：有一个已知的问题是 Markdown.pl 1.0.1会忽略单引号包起来的链接title。&lt;/p&gt;
-
-&lt;p&gt;链接网址也可以用尖括号包起来：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[id]: &amp;lt;http://example.com/&amp;gt;  &quot;Optional Title Here&quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;你也可以把title属性放到下一行，也可以加一些缩进，若网址太长的话，这样会比较好看：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[id]: http://example.com/longish/path/to/resource/here
-    &quot;Optional Title Here&quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;网址定义只有在产生链接的时候用到，并不会直接出现在文件之中。&lt;/p&gt;
-
-&lt;p&gt;链接辨别标签可以有字母、数字、空白和标点符号，但是并不区分大小写，因此下面两个链接是一样的：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[link text][a]
-[link text][A]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;隐式链接标记功能让你可以省略指定链接标记，这种情形下，链接标记会视为等同于链接文字，要用隐式链接标记只要在链接文字后面加上一个空的方括号，如果你要让”Google”链接到google.com，你可以简化成：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[Google][]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;然后定义链接内容：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[Google]: http://google.com/
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;由于链接文字可能包含空白，所以这种简化型的标记内也许包含多个单词：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Visit [Daring Fireball][] for more information.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;然后接着定义链接：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[Daring Fireball]: http://daringfireball.net/
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;链接的定义可以放在文件中的任何一个地方，我比较偏好直接放在链接出现段落的后面，你也可以把它放在文件最后面，就像是注解一样。&lt;/p&gt;
-
-&lt;p&gt;下面是一个参考式链接的范例：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;I get 10 times more traffic from [Google] [1] than from
-[Yahoo] [2] or [MSN] [3].
-
-  [1]: http://google.com/        &quot;Google&quot;
-  [2]: http://search.yahoo.com/  &quot;Yahoo Search&quot;
-  [3]: http://search.msn.com/    &quot;MSN Search&quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;如果改成用链接名称的方式写：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;I get 10 times more traffic from [Google][] than from
-[Yahoo][] or [MSN][].
-
-  [google]: http://google.com/        &quot;Google&quot;
-  [yahoo]:  http://search.yahoo.com/  &quot;Yahoo Search&quot;
-  [msn]:    http://search.msn.com/    &quot;MSN Search&quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;上面两种写法都会产生下面的HTML。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;I get 10 times more traffic from &amp;lt;a href=&quot;http://google.com/&quot;
-title=&quot;Google&quot;&amp;gt;Google&amp;lt;/a&amp;gt; than from
-&amp;lt;a href=&quot;http://search.yahoo.com/&quot; title=&quot;Yahoo Search&quot;&amp;gt;Yahoo&amp;lt;/a&amp;gt;
-or &amp;lt;a href=&quot;http://search.msn.com/&quot; title=&quot;MSN Search&quot;&amp;gt;MSN&amp;lt;/a&amp;gt;.&amp;lt;/p&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;下面是用行内式写的同样一段内容的Markdown文件，提供作为比较之用：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;I get 10 times more traffic from [Google](http://google.com/ &quot;Google&quot;)
-than from [Yahoo](http://search.yahoo.com/ &quot;Yahoo Search&quot;) or
-[MSN](http://search.msn.com/ &quot;MSN Search&quot;).
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;参考式的链接其实重点不在于它比较好写，而是它比较好读，比较一下上面的范例，使用参考式的文章本身只有81个字符，但是用行内形式的却会增加到176个字元，如果是用纯HTML格式来写，会有234个字元，在HTML格式中，标签比文本还要多。&lt;/p&gt;
-
-&lt;p&gt;使用Markdown的参考式链接，可以让文件更像是浏览器最后产生的结果，让你可以把一些标记相关的元数据移到段落文字之外，你就可以增加链接而不让文章的阅读感觉被打断。&lt;/p&gt;
-
-&lt;h3 id=&quot;id-section-11&quot;&gt;强调&lt;/h3&gt;
-
-&lt;p&gt;Markdown使用星号（&lt;code&gt;*&lt;/code&gt;）和底线（&lt;code&gt;_&lt;/code&gt;）作为标记强调字词的符号，被&lt;code&gt;*&lt;/code&gt;或&lt;code&gt;_&lt;/code&gt;包围的字词会被转成用&lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt;标签包围，用两个&lt;code&gt;*&lt;/code&gt;或&lt;code&gt;_&lt;/code&gt;包起来的话，则会被转成&lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt;，例如：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;*single asterisks*
-
-_single underscores_
-
-**double asterisks**
-
-__double underscores__
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;会转成：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;em&amp;gt;single asterisks&amp;lt;/em&amp;gt;
-
-&amp;lt;em&amp;gt;single underscores&amp;lt;/em&amp;gt;
-
-&amp;lt;strong&amp;gt;double asterisks&amp;lt;/strong&amp;gt;
-
-&amp;lt;strong&amp;gt;double underscores&amp;lt;/strong&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;你可以随便用你喜欢的样式，唯一的限制是，你用什么符号开启标签，就要用什么符号结束。&lt;/p&gt;
-
-&lt;p&gt;强调也可以直接插在文字中间：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;un*frigging*believable
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;但是如果你的&lt;code&gt;*&lt;/code&gt;和&lt;code&gt;_&lt;/code&gt;两边都有空白的话，它们就只会被当成普通的符号。&lt;/p&gt;
-
-&lt;p&gt;如果要在文字前后直接插入普通的星号或底线，你可以用反斜线：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;\*this text is surrounded by literal asterisks\*
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&quot;id-section-12&quot;&gt;代码&lt;/h3&gt;
-
-&lt;p&gt;如果要标记一小段行内代码，你可以用反引号把它包起来（），例如：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Use the `printf()` function.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;会产生：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;Use the &amp;lt; code&amp;gt;printf()&amp;lt;/code&amp;gt; function.&amp;lt;/p&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;如果要在代码区段内插入反引号，你可以用多个反引号来开启和结束代码区段：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;``There is a literal backtick (`) here.``
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;这段语法会产生：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;&amp;lt;code&amp;gt;There is a literal backtick (`) here.&amp;lt;/code&amp;gt;&amp;lt;/p&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;代码区段的起始和结束端都可以放入一个空白，起始端后面一个，结束端前面一个，这样你就可以在区段的一开始就插入反引号：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;A single backtick in a code span: `` ` ``
-
-A backtick-delimited string in a code span: `` `foo` ``
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;会产生：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;A single backtick in a code span: &amp;lt; code&amp;gt;`&amp;lt;/code&amp;gt;&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;A backtick-delimited string in a code span: &amp;lt;code&amp;gt;`foo`&amp;lt;/code&amp;gt;&amp;lt;/p&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;在代码区段内，&lt;code&gt;&amp;amp;&lt;/code&gt;和尖括号都会被自动地转成HTML实体，这使得插入HTML原始码变得很容易，Markdown会把下面这段：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Please don&#39;t use any `&amp;lt;blink&amp;gt;` tags.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;转为：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;Please don&#39;t use any &amp;lt;code&amp;gt;&amp;amp;lt;blink&amp;amp;gt;&amp;lt;/code&amp;gt; tags.&amp;lt;/p&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;你也可以这样写：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;`&amp;amp;#8212;` is the decimal-encoded equivalent of `&amp;amp;mdash;`.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;以产生：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;&amp;lt;code&amp;gt;&amp;amp;amp;#8212;&amp;lt;/code&amp;gt; is the decimal-encoded
-equivalent of &amp;lt;code&amp;gt;&amp;amp;amp;mdash;&amp;lt;/code&amp;gt;.&amp;lt;/p&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&quot;id-section-13&quot;&gt;图片&lt;/h3&gt;
-
-&lt;p&gt;很明显地，要在纯文字应用中设计一个「自然」的语法来插入图片是有一定难度的。&lt;/p&gt;
-
-&lt;p&gt;Markdown使用一种和链接很相似的语法来标记图片，同样也允许两种样式： 行内式和参考式。&lt;/p&gt;
-
-&lt;p&gt;行内式的图片语法看起来像是：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;![Alt text](/path/to/img.jpg)
-
-![Alt text](/path/to/img.jpg &quot;Optional title&quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;详细叙述如下：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;一个惊叹号&lt;code&gt;!&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;接着一个方括号，里面放上图片的替代文字&lt;/li&gt;
-  &lt;li&gt;接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上 选择性的’title’文字。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;参考式的图片语法则长得像这样：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;![Alt text][id]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;「id」是图片参考的名称，图片参考的定义方式则和连结参考一样：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[id]: url/to/image  &quot;Optional title attribute&quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;到目前为止，Markdown还没有办法指定图片的宽高，如果你需要的话，你可以使用普通的&lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt;标签。&lt;/p&gt;
-
-&lt;h2 id=&quot;id-section-14&quot;&gt;其它&lt;/h2&gt;
-
-&lt;h3 id=&quot;id-section-15&quot;&gt;自动链接&lt;/h3&gt;
-
-&lt;p&gt;Markdown支持以比较简短的自动链接形式来处理网址和电子邮件信箱，只要是用尖括号包起来，Markdown就会自动把它转成链接。一般网址的链接文字就和链接地址一样，例如：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;http://example.com/&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Markdown会转为：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;a href=&quot;http://example.com/&quot;&amp;gt;http://example.com/&amp;lt;/a&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;邮址的自动链接也很类似，只是Markdown会先做一个编码转换的过程，把文字字符转成16进位码的HTML实体，这样的格式可以糊弄一些不好的邮址收集机器人，例如：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;address@example.com&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Markdown会转成：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;a href=&quot;&amp;amp;#x6D;&amp;amp;#x61;i&amp;amp;#x6C;&amp;amp;#x74;&amp;amp;#x6F;:&amp;amp;#x61;&amp;amp;#x64;&amp;amp;#x64;&amp;amp;#x72;&amp;amp;#x65;
-&amp;amp;#115;&amp;amp;#115;&amp;amp;#64;&amp;amp;#101;&amp;amp;#120;&amp;amp;#x61;&amp;amp;#109;&amp;amp;#x70;&amp;amp;#x6C;e&amp;amp;#x2E;&amp;amp;#99;&amp;amp;#111;
-&amp;amp;#109;&quot;&amp;gt;&amp;amp;#x61;&amp;amp;#x64;&amp;amp;#x64;&amp;amp;#x72;&amp;amp;#x65;&amp;amp;#115;&amp;amp;#115;&amp;amp;#64;&amp;amp;#101;&amp;amp;#120;&amp;amp;#x61;
-&amp;amp;#109;&amp;amp;#x70;&amp;amp;#x6C;e&amp;amp;#x2E;&amp;amp;#99;&amp;amp;#111;&amp;amp;#109;&amp;lt;/a&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;在浏览器里面，这段字串（其实是&lt;code&gt;&amp;lt;a href=&quot;mailto:address@example.com&quot;&amp;gt;address@example.com&amp;lt;/a&amp;gt;&lt;/code&gt;）会变成一个可以点击的「address@example.com」链接。&lt;/p&gt;
-
-&lt;p&gt;（这种作法虽然可以糊弄不少的机器人，但并不能全部挡下来，不过总比什么都不做好些。不管怎样，公开你的信箱终究会引来广告信件的。）&lt;/p&gt;
-
-&lt;h3 id=&quot;id-section-16&quot;&gt;反斜杠&lt;/h3&gt;
-
-&lt;p&gt;Markdown可以利用反斜杠来插入一些在语法中有其它意义的符号，例如：如果你想要用星号加在文字旁边的方式来做出强调效果（但不用&lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt;标签），你可以在星号的前面加上反斜杠：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;\*literal asterisks\*
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Markdown支持以下这些符号前面加上反斜杠来帮助插入普通的符号：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;\   反斜线
-`   反引号
-*   星号
-_   底线
-{}  花括号
-[]  方括号
-()  括弧
-#   井字号
-+   加号
--   减号
-.   英文句点
-!   惊叹号
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;: This is Simplelified Chinese Edition Document of Markdown Syntax. If you are seeking for English Edition Document. Please refer to &lt;a href=&quot;http://daringfireball.net/projects/markdown/syntax&quot;&gt;Markdown: Syntax&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 07 Dec 2015 00:00:00 +0800</pubDate>
-        <link>http://www.flinhong.com/design/2015/12/07/markdown-guide/</link>
-        <guid isPermaLink="true">http://www.flinhong.com/design/2015/12/07/markdown-guide/</guid>
-        
-        <category>Markdown</category>
-        
-        
-        <category>design</category>
-        
-      </item>
-    
-      <item>
         <title>自己也曾经写作过，读一读“一碗小馄饨”</title>
         <description>&lt;p&gt;今天看豆瓣上一篇散文，抑或随笔，深深勾起自己写作的欲望。我不是一个好的写手，但我是一个认真的读者，总有那么一点点冲动往自己想要的地方伸展，点点滴滴地总会有些变化吧。&lt;/p&gt;
 
@@ -1643,6 +922,651 @@ _   底线
         
         
         <category>study</category>
+        
+      </item>
+    
+      <item>
+        <title>Atom中为markdown自定义snippets</title>
+        <description>&lt;p&gt;Snippets在书写代码的时候非常有用，当然写文章的时候也可以借用。换到Atom之后，也想在markdown文件中使用自定义的snippets，主要还是为了给自己的Jekyll Blog文章添加YAML信息。今天自己尝试了一下，管用！&lt;/p&gt;
+
+&lt;p&gt;当然，根据官方&lt;a href=&quot;https://atom.io/docs/latest/using-atom-snippets&quot;&gt;Snippets&lt;/a&gt;指南，还是比较容易学懂的。对于markdown来说，可能需要注意它的source格式是&lt;code&gt;source.gfm&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i68.tinypic.com/js0ro6.png&quot; alt=&quot;gfm&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;由于我常用的YAML信息是：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;---
+layout:
+title:
+category:
+tags:
+image:
+description:
+---
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;所以，在&lt;code&gt;.atom/snippets.cson&lt;/code&gt;（可通过&lt;code&gt;File &amp;gt; Open Your Snippets&lt;/code&gt;打开）中的配置如下：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&#39;.source.gfm&#39;:
+  &#39;yaml&#39;:
+    &#39;prefix&#39;: &#39;yaml&#39;
+    &#39;body&#39;: &quot;&quot;&quot;
+      ---
+      layout: $1
+      title: $2
+      category: $3
+      tags: $4
+      image: $5
+      description: $6
+      ---
+
+      $7
+    &quot;&quot;&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后保存就可以了。&lt;/p&gt;
+
+&lt;p&gt;这样，我在新建markdown格式的文件中，直接使用&lt;code&gt;yaml&lt;/code&gt;+&lt;code&gt;tab&lt;/code&gt;就能快速填充YAML信息了。其中的&lt;code&gt;$1&lt;/code&gt;、&lt;code&gt;$2&lt;/code&gt;这些是下一个光标停留的位置，鼠标直接点过去就行了。&lt;/p&gt;
+</description>
+        <pubDate>Tue, 03 Nov 2015 00:00:00 +0800</pubDate>
+        <link>http://www.flinhong.com/design/2015/11/03/custom-snippet-for-markdown-in-atom/</link>
+        <guid isPermaLink="true">http://www.flinhong.com/design/2015/11/03/custom-snippet-for-markdown-in-atom/</guid>
+        
+        <category>Atom</category>
+        
+        <category>snippets</category>
+        
+        
+        <category>design</category>
+        
+      </item>
+    
+      <item>
+        <title>没有错过的大坑舞火龙</title>
+        <description>&lt;p&gt;中秋节，除了月饼和灯谜，在香港还有一种特别的中秋庆祝方式——舞火龙，而且今年，我没有错过。&lt;/p&gt;
+
+&lt;p&gt;2011年的时候，舞火龙已经成为第三批国家级非物质文化遗产，那么就先来介绍介绍一下这项习俗吧。&lt;/p&gt;
+
+&lt;h2 id=&quot;id-section&quot;&gt;习俗起源&lt;/h2&gt;
+
+&lt;p&gt;每年农历八月十四、十五、十六日，也就是中秋节迎月、赏月、追月三日，位于香港岛大大坑村都会举行盛大的舞火龙庆典。这项庆祝活动开始于1880年（维基百科上说最早于19世纪末出现，实际上由何时开始则无从稽考）。当时大坑一带聚居不少客家农民。村民多以务农、打猎为生，生活十分简朴。据闻中秋节前夕的一晚，台风吹袭大坑村，有一条大蟒蛇吞食村里的家畜，给村民合力打死于破屋内。翌日，台风过后，大蟒蛇尸体失踪。不久之后，大坑一带发生瘟疫，死人无数，村民感到惶恐不安。后来村中有道士说此大蟒蛇原本是龙王之儿子，因此要降疫症惩罚该村，报复杀子之仇恨，而村中又有一位老翁，声称有神仙打救报梦，表示必须在中秋节前后三天舞动火龙绕村巡游，并燃烧炮竹，这样便能驱除瘟疫，确保平安。自始便形成了大坑从每年举行舞火龙的习俗。于此同时，亦是香港在中秋节期间，一项非常独特的民间风俗。&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;id-section-1&quot;&gt;火龙的诞生&lt;/h2&gt;
+
+&lt;p&gt;舞龙是中国固有的传统，但大坑龙与众不同之处在于它的名副其实，它确实是一条火龙，是由一点一点的香火汇聚而成。火龙的龙头、龙身、龙尾，以及两颗龙珠，都插满了由大坑居民特制的长寿香，点点香火使火龙在晚间舞动起来，气魄逼人。一般舞龙，是由人躲到布后，但火龙又岂能这样？火龙是由草扎作而成，然后再插上一束又一束的香。干草易碎，是什么能支持这巨大火龙活灵活现跃然街中？它的秘密是珍珠草。&lt;/p&gt;
+
+&lt;p&gt;不要以为珍珠草是什么稀世奇珍，过往，香港有很多珍珠草，或香港岛或九龙或新界都是四处可见，珍珠草唾手可得。只是随着社会发展，空地减少，珍珠草变得芳踪难觅。它不是绝迹香江，只是数目太少，不足用以扎作。大坑弟子四处寻访，就在大潭道的两条水坝找到几十颗珍珠草，但扎成火龙要的是上百担草，这几十颗根本不够。加上珍珠草分散香港各地，实在难以寻得。因此，近十几年，辉哥&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;透过中联办在内地觅得扎龙的材料，从东莞、石门一带运来珍珠草。&lt;/p&gt;
+
+&lt;p&gt;然而，不是找到珍珠草就已经万事俱备，还要留意天气和时间。辉哥说：&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;扎龙前还要看天气。如果下雨，而时间又太过紧迫，我们便会把草先割回来，铺在地上吹干或晒干。用来扎龙的草不能太湿，若用了湿了的草扎龙，在舞龙时水分便会干，干了便会缩，缩便会松，松便容易散。若没有太阳，时间又太紧迫，迫于无奈下，通宵扎龙也试过。故此，配合时间扎龙也是非常重要的。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;龙头由藤条屈曲为骨架；龙牙以锯齿的铁片造成；双眼是手电筒；舌头是漆红的木片。带引舞龙的珠球是个插满线香的沙田柚，一共两个。&lt;/p&gt;
+
+&lt;h2 id=&quot;id-section-2&quot;&gt;舞火龙盛况&lt;/h2&gt;
+
+&lt;p&gt;农历八月十四日晚上七时，过百名舞龙健儿举着整条龙（还没有插上长寿香）到莲花宫&lt;sup id=&quot;fnref:3&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;，向观音菩萨参拜，并举行开光仪式。开光时，只有龙头被带到庙内。&lt;/p&gt;
+
+&lt;p&gt;火龙每次起舞前，都必先在此经过“点睛”、“簪花”和“挂红”的仪式。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;首先，必须为火龙点睛。然后是簪花，簪花时可能簪几种不同的花。再之后是挂青，最后是挂长红。原则上，除了这几样外，我们会让一些官员致辞，之后剪裁，接着便起龙。传统上，仪式的主持人必须由客家人担任，禀神内容也须用客家话说出来。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;鼓声一响，每人向空中发射五彩缤纷的纸彩炮，之后健儿便马上舞动虎虎生威的龙头。顿时，全场气氛热血沸腾，各人手舞足蹈，准备迎接火龙。而在庙外的其余三十二节龙身体，亦紧接被带进庙内绕过神坛，再往浣纱街方向走去。当火龙舞动到街外后，各健儿马上把两万五千枝长寿香插在整条龙身上，之后，舞火龙的仪式才能正式开始。与此同时，一些可爱的小女孩身穿美丽夺目的唐装，个人手持一个粉红色的莲花灯表演莲花舞。当长寿香点满在火龙身上时，亦是整晚活动的高潮，各健儿舞动全长六十七米的金色大火龙，穿梭于大坑一带的大街小巷。在场的数千名市民不断欢呼鼓掌，同时亦忙于拍下此难得的盛会。&lt;/p&gt;
+
+&lt;p&gt;第一、二天，舞火龙约十时半便会结束，而最后一晚，则是大概十时十五分。传统火龙将会反始终方向行大坑一圈，表示行大运、祝合境平安。&lt;/p&gt;
+
+&lt;p&gt;农历十六晚的舞火龙仪式结束后，健儿们把火龙送到铜锣湾的避风塘，并举行祭祀神灵仪式，之后便把火龙送到海上&lt;sup id=&quot;fnref:4&quot;&gt;&lt;a href=&quot;#fn:4&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;，寓意“龙归沧海”。最后大会派发龙饼给街坊，祝福各人丰衣足食。&lt;/p&gt;
+
+&lt;h2 id=&quot;id-section-3&quot;&gt;这是我看到的&lt;/h2&gt;
+
+&lt;p&gt;看完别人的介绍，还是看看我所见到的吧。&lt;/p&gt;
+
+&lt;p&gt;去的时候有些晚了（说是8点15开始，到的时候差不多8点半了），人超多，根本挤不进去，索性就不挤了。下面是刚从天后站出来遇到的第一个指示牌和围观火龙的人群。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://c1.staticflickr.com/1/637/21766315075_8a97c96f9b_b.jpg&quot; alt=&quot;接口指示牌&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://c1.staticflickr.com/1/586/21766405475_55d68a02fe_b.jpg&quot; alt=&quot;人群&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;没成想，刚从人群里面出来，就遇到舞龙队朝着自己的方向走来，原来是到旁边的商家那里取悬挂的生菜和红包。运气真好，呵呵。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://c1.staticflickr.com/1/585/21578491400_edc487c77e_b.jpg&quot; alt=&quot;舞龙队&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;之后舞龙队就往后面的街道继续巡游去了。人群过于壮观也就没跟着过去了。到了一条叫火龙径的地方拍照。这条街直接通往维多利亚公园，待会在那里还会有舞龙表演。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://c1.staticflickr.com/1/610/21754989712_7690fd323f_b.jpg&quot; alt=&quot;彩带&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://c1.staticflickr.com/1/636/21766744405_b0fac889fc_b.jpg&quot; alt=&quot;摄影师&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;到了维多利亚公园，先看看彩灯展，一顿拍，可是没一个拍好的~然后找个前排的位置等10点半的主角戏——舞龙表演。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://c2.staticflickr.com/6/5692/21766888735_5025e1448a_b.jpg&quot; alt=&quot;彩灯&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;等了好久，终于开始了。不过，先等等，苏格兰风笛表演先给大家暖暖场。然后是火龙进场，“点睛”、“簪花”和“挂红”来一遍，再是少不了的官员致辞。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://c1.staticflickr.com/1/633/21755326542_db7f6186a0_b.jpg&quot; alt=&quot;苏格兰风笛&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;最后才是正式的舞火龙了。整个仪式果真是按照整“火龙过桥”、“火龙缠双柱”、“彩灯火龙结团圆”三部分来的。随手拍拍，莫要介意。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://c1.staticflickr.com/1/715/21767170815_5363b8637f_b.jpg&quot; alt=&quot;舞火龙1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://c1.staticflickr.com/1/639/21767248015_cca10b1bf6_b.jpg&quot; alt=&quot;舞火龙2&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;何辉生：《香港风俗及节令文化》。香港：明报出版社有限公司，2006年。 &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;陈素怡、李智浩：&amp;lt;大坑舞火龙：神话与凡俗&amp;gt;，《故园故事》。湾仔区议会，2007年。 &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:3&quot;&gt;
+      &lt;p&gt;莲花宫，位于铜锣湾大坑莲花宫西街街尾，创建于清同治三年（1864年），奉祀观音。 &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:4&quot;&gt;
+      &lt;p&gt;近年为免污染海水，于深夜用货车送到焚化炉去，变作“飞龙在天”。 &lt;a href=&quot;#fnref:4&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Mon, 28 Sep 2015 00:00:00 +0800</pubDate>
+        <link>http://www.flinhong.com/journal/2015/09/28/tai-hang-fire-dragon/</link>
+        <guid isPermaLink="true">http://www.flinhong.com/journal/2015/09/28/tai-hang-fire-dragon/</guid>
+        
+        <category>Hong Kong</category>
+        
+        
+        <category>journal</category>
+        
+      </item>
+    
+      <item>
+        <title>为Jekyll文章添加二维码</title>
+        <description>&lt;p&gt;看到别人这么做，自己也试了下，确实可以。不过还是用分享按钮里面现成的吧。&lt;/p&gt;
+
+&lt;p&gt;GitHub上有个现成的&lt;a href=&quot;https://github.com/jeromeetienne/jquery-qrcode&quot;&gt;jquery-qrcode.js&lt;/a&gt;，按照里面的说明很容易就能为文章生成一个二维码了。&lt;/p&gt;
+
+&lt;p&gt;首先去GitHub上clone这个js（&lt;a href=&quot;https://github.com/jeromeetienne/jquery-qrcode.git&quot;&gt;https://github.com/jeromeetienne/jquery-qrcode.git&lt;/a&gt;），放到合适的地方，在需要生成二维码的地方引用：&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;jquery.qrcode.min.js&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;然后创建任意一个元素来包含所生成的二维码图片，比如说一个&lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;：&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;qrcode&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;2&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;4&lt;/span&gt;   &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;#code&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;qrcode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;5&lt;/span&gt;     &lt;span class=&quot;nx&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;150&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;6&lt;/span&gt;     &lt;span class=&quot;nx&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;150&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;7&lt;/span&gt;     &lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;http://www.flinhong.com/design/2015/09/28/qr-code-to-post-with-jekyll/&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;8&lt;/span&gt;   &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;9&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;其中的text部分按照自己需要修改就可以。长宽也可以自定义。这样就可以任意生成二维码了。&lt;/p&gt;
+
+&lt;p&gt;jQuery-qrcode的作者有个完整的&lt;a href=&quot;https://github.com/jeromeetienne/jquery-qrcode/blob/master/examples/basic.html&quot;&gt;示例&lt;/a&gt;，也许更有帮助。&lt;/p&gt;
+</description>
+        <pubDate>Mon, 28 Sep 2015 00:00:00 +0800</pubDate>
+        <link>http://www.flinhong.com/design/2015/09/28/qr-code-to-post-with-jekyll/</link>
+        <guid isPermaLink="true">http://www.flinhong.com/design/2015/09/28/qr-code-to-post-with-jekyll/</guid>
+        
+        <category>jekyll</category>
+        
+        <category>QRcode</category>
+        
+        
+        <category>design</category>
+        
+      </item>
+    
+      <item>
+        <title>The Paper Menagerie - 纸异兽</title>
+        <description>&lt;p&gt;我也是看豆瓣上中文译文才深深地被这个故事吸引并感动着。&lt;/p&gt;
+
+&lt;p&gt;The Paper Menagerie原文发表在 &lt;em&gt;Fantasy &amp;amp; Science Fiction&lt;/em&gt; 上，&lt;a href=&quot;http://io9.com/5958919/read-ken-lius-amazing-story-that-swept-the-hugo-nebula-and-world-fantasy-awards&quot;&gt;io9&lt;/a&gt;有原文的转载。&lt;/p&gt;
+
+&lt;p&gt;作者Ken Liu，译名是&lt;strong&gt;刘宇昆&lt;/strong&gt;。该作品获得过 the Hugo, the Nebula and the World Fantasy Award 三个主要奖项。&lt;/p&gt;
+
+&lt;p&gt;以下是从&lt;a href=&quot;http://www.douban.com/group/topic/32678413/&quot;&gt;豆瓣&lt;/a&gt;上转载过来的译文，也感谢译文作者精到的翻译。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;我最早的记忆之一，是以我的啜泣开头的。不管爸爸妈妈怎么哄我，我都不肯消停。&lt;/p&gt;
+
+&lt;p&gt;爸爸无奈的离开了我的床边，而妈妈把我带到厨房，把我安坐在餐桌旁。&lt;/p&gt;
+
+&lt;p&gt;“汗，汗，” 她边说边从冰箱顶上抽出一张礼品包装纸。一年又一年，妈妈小心翼翼的裁开圣诞礼物上的包装纸，再收好到冰箱顶上，攒了厚厚一沓。&lt;/p&gt;
+
+&lt;p&gt;她把纸平铺开，没有图案的一面向上，然后折了一下。我停止了哭闹，好奇地望着她。&lt;/p&gt;
+
+&lt;p&gt;她把纸翻了一面，又折了一下。她折、捏、掖、卷、揉……直到纸的原形在她合拢的双掌里消失。她将那折起的小团举向嘴边，往里吹气，像吹一个气球。&lt;/p&gt;
+
+&lt;p&gt;“汗，”她说，“老辅。”她把手低向桌面，摊开双掌。&lt;/p&gt;
+
+&lt;p&gt;一只小小的纸老虎站在桌上，像两只握紧的拳头一块儿那么大。虎皮是包装纸的图案，银白的底色，排布着红色的棒棒糖和绿色的圣诞树。&lt;/p&gt;
+
+&lt;p&gt;我把手伸向妈妈的创作。它的尾巴晃了晃，欢快地蹦向我的手指。“嗷~沙~”它吼道，像是介于猫儿的喵呜和翻报纸的沙沙作响之间的某种声音。&lt;/p&gt;
+
+&lt;p&gt;“则叫则子。”妈妈说——这叫折纸。&lt;/p&gt;
+
+&lt;p&gt;我那时还不知道：妈妈的折纸与别人的不同。她对折纸吹入生气，因而它们分享了她的呼吸，与她的生命共舞。这是她的秘法。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;爸爸是从一本目录里挑中妈妈的。&lt;/p&gt;
+
+&lt;p&gt;有一次，当我上高中的时候，我问了爸爸详情。他那时正努力让我乐意再和妈妈说话。&lt;/p&gt;
+
+&lt;p&gt;1973年的春天，他签约了婚介服务。他有条不紊地翻着名录，一页不过瞄上几秒，直到妈妈的相片映入眼帘。&lt;/p&gt;
+
+&lt;p&gt;我从来也没见过这张照片，爸爸这样描述它：妈妈坐在一张椅子上，侧身对着相机，穿着一件贴身的绿色旗袍。她把头转过来正对镜头，一头乌黑长发于是滩过肩膀，瀑落胸前，如诗如画。她从照片里看着他，用宁静的稚子般的眼睛。&lt;/p&gt;
+
+&lt;p&gt;“我再也没有多翻一页。”他说。&lt;/p&gt;
+
+&lt;p&gt;目录上说她十八岁，能歌善舞，英语流利，因为她来自香港。这些没有一样是真的。&lt;/p&gt;
+
+&lt;p&gt;他给她写信，婚介公司帮他俩来回通讯。最终，他飞到香港去见她。&lt;/p&gt;
+
+&lt;p&gt;“她的回信都是公司的人写的。除了’你好’和’再见’，她一句英文也不会。”爸爸说。&lt;/p&gt;
+
+&lt;p&gt;什么样的女人才会把自己放进一个可以待价而沽的商品目录里？——高中生的我觉得自己什么都懂。轻蔑的感觉不错，就像酒一样。&lt;br /&gt;
+爸爸没有选择怒冲冲地找婚介公司算账，他就地在宾馆的餐厅雇来一位女服务生，为他们当翻译。&lt;/p&gt;
+
+&lt;p&gt;“当我说话的时候她会看着我，眼神一半是畏惧，一半是期待。当那个女孩开始翻译我说的话时，她就渐渐地微笑起来。”&lt;/p&gt;
+
+&lt;p&gt;他飞回康涅狄格，开始申办让她来他身边的手续。一年后我出生了，在虎年。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;在我的要求下，妈妈又用礼品包装纸给我做了一只山羊、一只小鹿和一头水牛。它们会绕着客厅跑来跑去，被老辅咆哮着追逐。当他抓住它们的时候，他会狠狠扑倒它们，直到它们肚子里的气都被挤了出来，压成了平平的纸片。我就得重新给它们吹满气，这样它们又能多跑一阵子。&lt;/p&gt;
+
+&lt;p&gt;有时候，这些动物也会陷入麻烦。有一次，小水牛在我们晚餐时跳进了一碟酱油里（他想戏水，跟真的水牛一样）。我飞快地把他拣了出来，但毛细效应已经使得深色的酱汁高高浸湿了他的腿。湿软的四肢撑不起他的身体，他瘫倒在桌上。我把他放在太阳下晒干，可是他的腿不再平整，自此便一瘸一拐地跑来跑去。终于，妈妈把他的腿用玻璃纸包好，这样他就可以想怎么玩水就怎么玩水了（酱油除外）。&lt;/p&gt;
+
+&lt;p&gt;还有，和我在后院一起玩耍的时候，老辅喜欢忽然纵身一跃扑向麻雀。可是有一次，一只走投无路的鸟儿奋起反击，啄烂了他的耳朵。妈妈用透明带粘好他的耳朵时，他在我怀中呲牙咧嘴地哀号。从此他都离鸟儿远远的。&lt;/p&gt;
+
+&lt;p&gt;之后一天，我在电视上看到一部讲鲨鱼的科教片，便叫妈妈也给我做一条。她折了一条小鲨鱼，但他难受地在桌面上蹦跶。我给水箱灌足水，把他放了进去。他快活地游了一圈又一圈，渐渐地沉到底，散了架。我伸手想救他，却只捞上来一片湿漉漉的纸。&lt;br /&gt;
+老辅把前爪搭在水箱边沿，头埋进爪子里。耳朵耷拉着，喉咙里发出低沉的嘶吼，那声音令我内疚。&lt;/p&gt;
+
+&lt;p&gt;妈妈又给我折了一条鲨鱼，这次是用锡纸折的。这条鲨鱼在一个大金鱼缸里快活地生活。老辅和我喜欢坐在一旁看着锡纸鲨鱼追逐着鱼缸里的金鱼，老辅把脸贴在鱼缸的壁上，在另一边的我看见他的眼睛——被玻璃放大得像咖啡杯底那么大，从鱼缸对面瞪着我。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;当我十岁的时候，我们搬进了镇上另一边的新家。两个女邻居造访来表示欢迎。爸爸给她们端茶倒水，并且为必须离家赶去水电公司以肃清前任房主的账单表示歉意。“请您自便吧，我妻子不太会说英语。所以如果她没来和您打招呼，请别怪她待客不周。”&lt;/p&gt;
+
+&lt;p&gt;当我在餐厅看书的时候，妈妈在厨房拾掇。邻居在客厅聊天，丝毫没有说悄悄话的意思。&lt;/p&gt;
+
+&lt;p&gt;“他看起来是个挺正常的男人呀，为什么会做那种事呢？”&lt;/p&gt;
+
+&lt;p&gt;“混血么，总是哪儿有点不对劲。那个孩子就像残品一样，窄长的亚洲人的眼睛，白种人的面孔。啧啧，小怪物。”&lt;/p&gt;
+
+&lt;p&gt;“你觉得他能说英语吗？”&lt;/p&gt;
+
+&lt;p&gt;那个女人顿了顿。一会儿，她们走进餐厅。&lt;/p&gt;
+
+&lt;p&gt;“乖！你叫什么名字？”&lt;/p&gt;
+
+&lt;p&gt;“杰克。”我说。&lt;/p&gt;
+
+&lt;p&gt;“这听起来并不很中国佬嘛。”&lt;/p&gt;
+
+&lt;p&gt;接着妈妈走进了餐厅。她对着那个女人笑了笑。三个人围着我站成一个三角形，彼此点头微笑，无话可说，直到爸爸回家。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;马克，邻居家的小孩之一，带着他的《星球大战》动作玩偶来找我玩儿。当欧比旺的光剑闪亮的时候，他还能挥舞手臂，用细细的声音说：“原力在上！”。我压根不觉得这个玩偶看起有多像真正的欧比旺。&lt;/p&gt;
+
+&lt;p&gt;我俩一起看着他在咖啡桌上做了五次一样的表演，然后我问道：“他还能干点别的吗？”&lt;/p&gt;
+
+&lt;p&gt;马克被问得恼了，“仔细看呀。”他说。&lt;/p&gt;
+
+&lt;p&gt;我仔细的看了看，不知道接下来该说些什么。&lt;/p&gt;
+
+&lt;p&gt;马克对我的反应很失望，“给我看看你的玩具呗。”他说。&lt;/p&gt;
+
+&lt;p&gt;除了我的纸动物们，我什么玩具也没有。我从卧室把老辅拿了出来，那时候，他已经十分陈旧，身上布满了胶水和透明胶带——多年来我和妈妈修补他留下的痕迹。他再也无法像以前那样轻灵矫健。我把他安坐在咖啡桌上，我能听见他身后跟来的其他动物们细碎匆忙的步伐，怯怯地从门廊里向客厅探视。&lt;/p&gt;
+
+&lt;p&gt;“小老辅，”我说，又停下，换成英语，“这是老虎。”警觉地，老辅迈步向前，轻声低唤，嗅着马克的手。&lt;/p&gt;
+
+&lt;p&gt;马克检视了老辅身上的包装纸的圣诞图案，道：“这压根不像老虎。你妈妈都是用垃圾给你做玩具的吗？”&lt;/p&gt;
+
+&lt;p&gt;我从未有过老辅是垃圾的念头，垃圾？可是看着他，他的确只是一张包装纸而已。&lt;/p&gt;
+
+&lt;p&gt;马克又按了一下欧比旺的头，光剑闪亮，他上下挥舞手臂：“原力在上！”&lt;/p&gt;
+
+&lt;p&gt;老辅转身一跃，把塑料玩偶撞下了桌子。他掉在地板上，摔裂了，欧比旺的头滚到了沙发底下。“嗷~~~”老辅笑了。我跟着笑了。&lt;/p&gt;
+
+&lt;p&gt;马克狠狠给了我一拳，大喊大叫：“这很贵的！现在商店里都买不着了！恐怕比你爸买你妈花的钱都多！”&lt;/p&gt;
+
+&lt;p&gt;我失衡摔倒在地，老辅咆哮着，朝着马克的脸扑了过去。&lt;/p&gt;
+
+&lt;p&gt;马克尖叫起来，害怕多于疼痛。毕竟，老辅只是纸做的老虎。&lt;/p&gt;
+
+&lt;p&gt;马克一把抓住老辅，老辅的怒吼戛然而止——他被马克捏坏在手，撕成两半。马克把两片纸揉成一团扔给我，“还你的又蠢又贱的中国垃圾。”&lt;/p&gt;
+
+&lt;p&gt;马克走了之后，我花了很久很久，屡败屡战地，试图把碎纸片粘回来，把纸张整平，顺着原来的折痕把老辅折回来。渐渐地，别的动物也进入了客厅，围拢我们——我，还有那曾经是老辅的，撕碎的纸片。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;我和马克的争斗并没有到此结束。马克在学校里是人气王。我一点儿也不愿去回想之后的两周是怎么过的。&lt;/p&gt;
+
+&lt;p&gt;在那两周末尾的周五，我放学回家。“学叫好吗？”妈妈问我。我一言不发的走进了浴室，我看着镜子里的自己——我一点也不像她，不像！&lt;/p&gt;
+
+&lt;p&gt;晚饭时我问爸爸：“我有一张中国崽的脸吗？”&lt;/p&gt;
+
+&lt;p&gt;爸爸放下他的筷子，即使我从未告诉他学校里发生过什么，他似乎明白状况。他闭上眼，摩挲着鼻梁，说道：“不，你没有。”&lt;/p&gt;
+
+&lt;p&gt;妈妈看看爸爸，一脸迷茫。她又看看我，问：“森么似中国崽？”&lt;/p&gt;
+
+&lt;p&gt;“英语，”我说，“说英语。”&lt;/p&gt;
+
+&lt;p&gt;她努力尝试着：“生发了什么？”&lt;/p&gt;
+
+&lt;p&gt;我把面前的碗筷远远推倒一边：青椒炒五香牛肉。“我们应该吃美国菜。”&lt;/p&gt;
+
+&lt;p&gt;爸爸试着讲理：“很多家庭都会不时做点中国菜吃。”&lt;/p&gt;
+
+&lt;p&gt;“我们不是别人。”我看着他。别人的家庭里没有一个不属于这儿的妈妈。&lt;/p&gt;
+
+&lt;p&gt;他的目光转向别处。接着，他一只手搭上妈妈的肩：“我会给你买本烹饪书。”&lt;/p&gt;
+
+&lt;p&gt;妈妈转向我：“不好次？”&lt;/p&gt;
+
+&lt;p&gt;“英语，”我说，声音愈来愈高，“说英语。”&lt;/p&gt;
+
+&lt;p&gt;妈妈伸出手，触向我的额头，感觉到我上升的体温：“发扫了？”&lt;/p&gt;
+
+&lt;p&gt;我挥走她的手，“我没事。说英语！”我已经在吼了。&lt;/p&gt;
+
+&lt;p&gt;“跟他说英语吧，”爸爸对妈妈说，“你早该料到会有这一天。你指望什么呢？”&lt;/p&gt;
+
+&lt;p&gt;妈妈双手垂在身侧。她坐着，从爸爸看向我，又回望爸爸。她想说点什么，却无法开口，又试着说点什么，又沉默。&lt;/p&gt;
+
+&lt;p&gt;“你不得不，”爸爸说，“我待你一直太宽松了。而杰克需要融入”&lt;/p&gt;
+
+&lt;p&gt;妈妈看了看他，“如果我说‘Love’，我的感觉在这儿，”&lt;/p&gt;
+
+&lt;p&gt;她指了指她的唇，“如果我说「爱」，我的感觉在这儿。”她把手扣在心口。&lt;/p&gt;
+
+&lt;p&gt;爸爸摇了摇头：“你在美国。”&lt;/p&gt;
+
+&lt;p&gt;妈妈蜷在椅子上，看起来就像那头被老辅扑倒压扁，把生气挤尽的小水牛。&lt;/p&gt;
+
+&lt;p&gt;“还有，我想要新玩具。”&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;爸爸给我买了《星球大战》全套的动作玩偶，我把欧比旺那个给了马克。&lt;/p&gt;
+
+&lt;p&gt;我把纸异兽收拾进一个大大的鞋盒子里，把盒子藏到床底下。&lt;/p&gt;
+
+&lt;p&gt;次日早晨，这些动物纷纷逃了出来，占领了我房间里他们各自惯待的据点。我把他们统统抓住，放回鞋盒，再用胶带封紧。而这些动物吵吵嚷嚷，一刻也不肯消停，以致于我不得不把他们扔到离我房间最远的阁楼的角落。&lt;/p&gt;
+
+&lt;p&gt;只要妈妈用中文和我说话，我就不理她。一段时间后，她开始对我多说英语。但她糟糕的口音和的遣词造句令我窘迫。我每每试着纠正她。终于，只要我在，她便什么话也不再说了。&lt;/p&gt;
+
+&lt;p&gt;妈妈开始像哑语一样指东指西，当她必需要告诉我些什么的时候。她试着拥抱我，就像她在电视里看到的美国妈妈们拥抱孩子的样子。可是我觉得她的动作矫揉造作、忐忑不安、滑稽可笑而且一点也不优雅。她看到了我脸上的不耐烦，从此停止。&lt;/p&gt;
+
+&lt;p&gt;“你不该这么对你妈妈。”爸爸说。但他无法直视着我的眼镜说这句话。心底深处，他也一定意识到：把一个中国农民的女儿硬塞到康涅狄格的郊区是个错误。&lt;/p&gt;
+
+&lt;p&gt;妈妈学会了烹饪美国菜式。我开始玩电子游戏，还有学习法语。&lt;/p&gt;
+
+&lt;p&gt;每过一段时间，我就会看到妈妈坐在厨房的餐桌旁，全神贯注地看着一张礼品包装纸没有图案的一面。不久，一个新的折纸动物就会在我的床头柜上出现，跃跃欲试地想要抱抱我。我会一把抓住它们，挤尽它们身体里的最后一丝生气，然后把它们塞进阁楼上的鞋盒里。&lt;/p&gt;
+
+&lt;p&gt;当我上高中的时候，妈妈终于停止了折新的小动物。那时她的英语变好了很多，可我也已经到了她说什么我都无所谓的叛逆期，管她用什么语言呢。&lt;/p&gt;
+
+&lt;p&gt;有时候，当我回到家里，看到她娇小的身形在厨房里一边忙碌着，一边哼着中文歌，我实在难以相信这就是生下我的女人。我们毫无共同之处。她没准是月球上来的。我快步走回房间，继续追寻我的纯正的美国式幸福。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;爸爸和我一人立在妈妈一侧，她躺在医院的病床上。她还不到四十岁，可她看上去要比她的年纪老得多。&lt;/p&gt;
+
+&lt;p&gt;多年来，她都不肯为腹痛去看医生，她总是说没事、没什么的。直到有一天救护车把她送进了医院，而癌症已经病入膏肓。&lt;/p&gt;
+
+&lt;p&gt;我人在病房里，心却在别处。现在正是校园招聘的高峰季，我全心全意地准备着简历、档案还有按部就班规划好的面试。我算计着该怎么更好地粉饰夸口才能忽悠着面试官。我的理性告诉我：这不是你的妈妈卧病濒危时该想的事情。可是理性扭转不了我的感觉。&lt;/p&gt;
+
+&lt;p&gt;她还很清醒。爸爸用双手小心地捧起她的左手，低身吻了吻她的额头。他显出的苍老和虚弱忽然震惊了我。我意识到，我对爸爸的了解，几乎和我对妈妈的了解一样少。&lt;/p&gt;
+
+&lt;p&gt;妈妈朝他笑了笑：“我没事。”&lt;/p&gt;
+
+&lt;p&gt;她对爸爸低语了几句，他点点头，离开病房。&lt;/p&gt;
+
+&lt;p&gt;她转向我，依然笑着：“我知道你得回学校，”她的声音低弱，模糊在连着她的身体的医疗机器的嗡鸣中，“去吧。不用担心我。没什么的。好好学习。”&lt;/p&gt;
+
+&lt;p&gt;我伸手去握她的手，因为我似乎应该那么做。我一下子放松了，满脑子都是回程的航班，还有加州明亮的阳光。&lt;/p&gt;
+
+&lt;p&gt;“杰克，如果——”她猛地咳起来，好一阵子说不成话，“如果我—— 没挺过这次，千万别因为伤心坏了身子。好好过你自己的生活。只是保管好你放在阁楼上的那个盒子，每年，清明的那天，把它搬出来，想想我。我一直都会在你身边。”&lt;/p&gt;
+
+&lt;p&gt;清明是中国祭祀死人的节日。当我很小的时候，妈妈总是在清明那天给她死去的父母写一封信，告诉他们去年一年她在美国的幸福生活。她会大声把信念给我听，如果我评论了点什么，她会把我的话一起写在信里。然后她会把信折成一只纸鹤，朝着西方放开它。我们就一起看着，看着纸鹤扇动翅膀清脆作响，飞向太平洋，飞向中国，飞往妈妈的家乡。&lt;/p&gt;
+
+&lt;p&gt;上次我们一起过清明，已经是很多年前的事了。&lt;/p&gt;
+
+&lt;p&gt;“我完全不知道中国的日历是怎么算的，”我说，“妈，你就休息吧。”&lt;/p&gt;
+
+&lt;p&gt;“那就保管好那个盒子，隔段时间打开它一下。就打开一下——”她又开始咳了。&lt;/p&gt;
+
+&lt;p&gt;“没事的，妈。”我别扭地拍着她的背。&lt;/p&gt;
+
+&lt;p&gt;“伢仔，姆妈「爱」你——”她的咳嗽又占了上风。一幅陈旧发黄的画面忽然闪过我的脑海：妈妈说着「爱」这个字，把手扣在心口。&lt;br /&gt;
+“好了，妈，别说话了。”&lt;/p&gt;
+
+&lt;p&gt;爸爸回到了病房，我告诉他我需要早点赶去机场，免得错过航班。&lt;/p&gt;
+
+&lt;p&gt;她死了，当我的飞机在涅华达某处上空的时候。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;妈妈死后，爸爸老得特别快。原来的独屋对爸爸一个人来说实在太大，他决定卖了它。我和女朋友苏珊一起去帮他收拾打扫。&lt;/p&gt;
+
+&lt;p&gt;苏珊在阁楼里找出了那个鞋盒子。那些纸异兽，长期深藏在不见天日的阴暗阁楼中，已经又软又脆，原来礼品包装纸上色彩斑斓的图案亦退色暗淡。&lt;/p&gt;
+
+&lt;p&gt;“我从没见过这样的折纸，”苏珊惊叹，“你妈妈是个了不起的艺术家。”&lt;/p&gt;
+
+&lt;p&gt;那些折纸动物一动不动。也许不管是什么曾驱动他们的魔法，都和妈妈一起死去了。也许他们曾经的活蹦乱跳，从头到尾只是我的幻想罢了，小孩子的记忆怎么可信呢？&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;那是四月的第一个周末，妈妈过世两年后。大忙人咨询师苏珊又出差了，我待在家里，懒洋洋地换着电视频道。&lt;/p&gt;
+
+&lt;p&gt;我停在一个放着鲨鱼科教片的节目。忽然间，我的眼前浮现了妈妈的双手，巧手翻覆，折出一只小小的锡纸鲨鱼，老辅和我在一旁全神看着。&lt;/p&gt;
+
+&lt;p&gt;窸窣一声。我抬起头，看到一团黏着破胶带的礼品包装纸在书架脚边的地板上抖动。我走过去，想把它扔到垃圾筒里。&lt;/p&gt;
+
+&lt;p&gt;那团废纸倏忽撑高，自己塑出形来。我看见了老辅，原来是被我遗忘多时的老辅。“嗷~沙~”&lt;/p&gt;
+
+&lt;p&gt;当年我放弃他之后，一定是妈妈又把他收起来了。&lt;/p&gt;
+
+&lt;p&gt;他比我记忆中的要小。或者，只是当年我自己的拳头比较小吧。&lt;/p&gt;
+
+&lt;p&gt;苏珊把折纸动物左一处右一处地摆在公寓里，作为装饰。估计因为老辅看起来太破烂了，所以被她搁在了隐蔽的角落。&lt;/p&gt;
+
+&lt;p&gt;我坐在地板上，向他伸出一只手指。老辅的尾巴摇了摇，快活地蹦了过来。我哈哈笑着，摩着他的后背，老辅在我掌下轻声低唤。&lt;br /&gt;
+“你过得怎样，老伙计？”&lt;/p&gt;
+
+&lt;p&gt;老辅停下了玩闹。他立起身，轻灵一跃到我的腿上，接着自行铺展开来。&lt;/p&gt;
+
+&lt;p&gt;现在，我的腿上是一张折旧了的包装纸，没有图案的一面朝上。纸上写遍布着密密的中文汉字。我从来也没好好学过认字，但我认识“儿子”这两个汉字。它们在最上角，那个应该是写着收信人的地方，用妈妈别扭的、孩子气的笔迹。&lt;/p&gt;
+
+&lt;p&gt;我走到电脑前，打开网页：今天是清明节。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;我带着那封信冲到了市中心，中国游客的大巴常驻的地方。我拦下每个游客，问着：“哩会读宗文吗？”——你会读中文吗？我太久没有说过中文，不知道对方听懂了没有。&lt;/p&gt;
+
+&lt;p&gt;一个年轻女子答应帮我。我们在一同在一张长椅坐下，她大声对我读出信的内容。那门多年来我一直试图遗忘的语言又回来了，一字一句，浸入我的皮肤，穿透骨髓，紧紧攥住我的心。&lt;/p&gt;
+
+&lt;p&gt;儿子，&lt;/p&gt;
+
+&lt;p&gt;我们好久没有说过话了。我害怕每当我想要碰触你时你恼火的样子。还有，我一直都有的腹痛，现在可能是个事了。&lt;/p&gt;
+
+&lt;p&gt;所以我决定给你写信。我会把信写在这些我给你折的纸动物里，你以前多喜欢他们呢。&lt;/p&gt;
+
+&lt;p&gt;当我停止呼吸的时候，这些动物也不会动了。但是如果我用全部的真心给你写信，我就能留存一点点的自我在这张纸上，在这些文字中。那么，如果你在清明节想起我，在逝者的魂灵得允回访亲人的日子，你能让这些余下的一部分的我又重新活起来。我为你折的这些造物又会再次奔跑跳跃，也许，那时你就能看见这些文字了。&lt;/p&gt;
+
+&lt;p&gt;因为我必须全心全意给你写信，我得用中文。&lt;/p&gt;
+
+&lt;p&gt;一直以来，我都没有告诉过你我的身世。当你还小的时候，我总是想，等你大一点懂事了再说吧。可是，我就再没有开口的机会了。&lt;/p&gt;
+
+&lt;p&gt;我1957年出生在河北的四轱辘村。你的外公外婆都来自人丁稀落的贫农家庭。我出生没几年，饿死了三千万人的大饥荒席卷中国。我最初的的记忆便是，我的母亲吃着泥巴充饥，为了能省下最后一点面粉喂给我。&lt;/p&gt;
+
+&lt;p&gt;之后的生活渐渐好起来，四轱辘村以它的折纸手艺而闻名，我的母亲教会了我怎么折纸动物，再让它们活起来。这是村里传承的秘法。我们折纸鸟儿驱除田地里的害虫，折纸老虎赶走屋里的耗子。在中国春节，我和朋友们一起折赤红的纸龙。我永远也不会忘记那画面：一条条小小的纸龙在头顶的空中蜷舒，抓起一串串噼啪炸响的爆竹，送走旧岁。如果你看见，也一定会喜欢的。&lt;/p&gt;
+
+&lt;p&gt;然后，1966年，文革来了。邻里反目，兄弟阋 墙。有人想起了我的舅舅，他1946年去了香港，在那儿经商定居。有个在香港的亲戚就意味着我们是间谍、是人民的敌人，我们只能在夹缝中求生。你苦命的外婆——她无法忍受种种凌虐，跳井了。接着有一天，一群带着土猎枪的小伙子把你外公拽进一片小树林，他再也没有回来。&lt;/p&gt;
+
+&lt;p&gt;剩下我，一个10岁的孤儿。我仅存的亲人只有在香港的舅舅。一天夜里，我逃走了，搭上了一趟南下的货运火车。&lt;/p&gt;
+
+&lt;p&gt;数日后的广东，几个男人逮住了正在偷东西吃的我。听说我想去香港的时候，他们大笑： “今天是你的吉日，我们做的就是带女仔去香港的生意。”&lt;/p&gt;
+
+&lt;p&gt;他们把我和别的小女孩一起藏在一辆卡车底部，带我们偷渡过境。&lt;/p&gt;
+
+&lt;p&gt;我们被带到一处地下室，按他们说的站直、打起精神，好讨买家欢心。光顾的家庭付给仓库一笔钱，过来打量挑选出我们中的一个“领养”。&lt;/p&gt;
+
+&lt;p&gt;秦家选中了我来照看家里的两个男孩。我每天早晨4点起床准备早餐，给两个少爷喂饭洗澡，还有买菜，洗衣，拖地。我跟着他们，唯命是从。晚上我被锁在厨房的碗柜里睡觉。动作慢了或者做错事了我会挨打，少爷做错事了我会挨打，如果他们抓住我试图学点英文，我也会挨打。&lt;/p&gt;
+
+&lt;p&gt;“你为什么想学英文？”秦先生问我，“你想去警察局吗？我们会跟警察举报你这个非法居留的大陆妹。他们会很乐意把你关进监狱里的。”&lt;/p&gt;
+
+&lt;p&gt;整整六年，我都是这样过的。有一天，一个早市卖鱼的老妇悄悄把我拉到一边。&lt;/p&gt;
+
+&lt;p&gt;“我见过不少像你这样的女孩子。你多大了，十六？有一天，你的男主人会喝多，然后他会盯着你，再一把拉住你……你没法反抗，直到有一天被你的女主人发觉，那时候，你才知道什么叫人间地狱。你得摆脱那种人生。我认识人能帮你。”&lt;/p&gt;
+
+&lt;p&gt;她给我讲了许多想讨个亚洲老婆的美国男人的故事。只要我能烧饭，打扫，照顾我的美国丈夫，他就能给我个好日子过。那是我当时唯一的希望。这就是我怎么登上那本满是假话的目录，遇到你爸爸的经过。这不是一个浪漫的故事，但，这就是我的故事。&lt;/p&gt;
+
+&lt;p&gt;在康涅狄格的郊区，我很孤独。你爸爸对我温柔又诚挚，我很感激他。但是没人懂我，我也什么都不懂。&lt;/p&gt;
+
+&lt;p&gt;然后你出生了！当我看到你的脸，看见我的父亲、母亲、还有我自己的影子，我是多么的幸福。我失去了整个家，四轱辘的所有，我曾经熟悉过、深爱过的一切。可是，我有了你，你的脸就是证明，它如此真实。这不是梦。&lt;/p&gt;
+
+&lt;p&gt;现在我有了说话的人。我会教你我的语言，我将和你一起，一点点的拼凑起我曾经爱过又失去了的一切。当你第一次开口说话，用中文，用我和我的母亲一样的口音，我哭了好久好久。当我给你做好第一只折纸动物，你破涕为笑的那一刻，仿佛全世界的忧虑都一扫而空。&lt;/p&gt;
+
+&lt;p&gt;你又长大了一点，现在甚至都能当爸爸和我之间的小翻译了。我才真正有了家的感觉。我终于过上了好日子。我多希望我的父母也在这儿，我能给他们烧饭端菜，让他们也过上好日子。可我的父母早已不在了。你知道中国人心中最为悲哀的事是什么？树欲静而风不止，子欲养而亲不待。&lt;/p&gt;
+
+&lt;p&gt;儿子，我知道你不喜欢你的中国眼睛，那是我的眼睛。我知道你不喜欢你的中国头发，那是我的头发。可是你知道吗，仅仅是你的存在本身，就带给了我数不尽的喜悦？你又能否明白，当你不再和我说话，也不准我和你说中文的时候，我是什么感觉？我觉得，我再次失去了一切。&lt;/p&gt;
+
+&lt;p&gt;儿子，为什么你不肯和我说话？我痛得写不下去了。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;年轻女子把那张纸交还给我，我不敢面对她的眼神。&lt;/p&gt;
+
+&lt;p&gt;低着头，我请求她帮忙把妈妈信中的「爱」都划出来。我反复在那张纸上描着这个字，用笔触抚摩她的字迹，一遍又一遍。&lt;/p&gt;
+
+&lt;p&gt;年轻女子伸出手，拍拍我的肩。然后她起身离去，剩下我一个人，和妈妈的思念。&lt;/p&gt;
+
+&lt;p&gt;顺着折痕，我把那张纸折回成老辅。我把他兜在怀中，他轻声低唤着，同我一起回家去。&lt;/p&gt;
+
+&lt;p&gt;■（全文完）&lt;/p&gt;
+</description>
+        <pubDate>Sat, 26 Sep 2015 00:00:00 +0800</pubDate>
+        <link>http://www.flinhong.com/reading/2015/09/26/the-paper-menagerie/</link>
+        <guid isPermaLink="true">http://www.flinhong.com/reading/2015/09/26/the-paper-menagerie/</guid>
+        
+        <category>reading</category>
+        
+        
+        <category>reading</category>
+        
+      </item>
+    
+      <item>
+        <title>HTML 相对路径和绝对路径区别分析</title>
+        <description>&lt;p&gt;HTML初学者会经常遇到这样一个问题，如何正确引用一个文件。比如，怎样在一个HTML网页中引用另外一个HTML网页作为超链接(hyperlink)？怎样在一个网页中插入一张图片。如果你在引用文件时(如加入超链接，或者插入图片等)，使用了错误的文件路径，就会导致引用失效(无法浏览链接文件，或无法显示插入的图片等)。&lt;/p&gt;
+
+&lt;p&gt;为了避免这些错误，正确地引用文件，我们需要学习一下HTML路径。&lt;/p&gt;
+
+&lt;p&gt;HTML有2种路径的写法：相对路径和绝对路径。&lt;/p&gt;
+
+&lt;h2 id=&quot;id-htmlrelative-path&quot;&gt;HTML相对路径(Relative Path)&lt;/h2&gt;
+
+&lt;h3 id=&quot;id-section&quot;&gt;同一个目录的文件引用&lt;/h3&gt;
+
+&lt;p&gt;如果源文件和引用文件在同一个目录里，直接写引用文件名即可。&lt;/p&gt;
+
+&lt;p&gt;我们现在建一个源文件info.html，在info.html里要引用index.html文件作为超链接。&lt;/p&gt;
+
+&lt;p&gt;假设info.html路径是：&lt;code&gt;c:\Inetpub\wwwroot\sites\blabla\info.html&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;假设index.html路径是：&lt;code&gt;c:\Inetpub\wwwroot\sites\blabla\index.html&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;在info.html加入index.html超链接的代码应该这样写：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;a href = &quot;index.html&quot;&amp;gt;index.html&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;id-section-1&quot;&gt;如何表示上级目录&lt;/h3&gt;
+
+&lt;p&gt;../表示源文件所在目录的上一级目录，../../表示源文件所在目录的上上级目录，以此类推。&lt;/p&gt;
+
+&lt;p&gt;假设info.html路径是：&lt;code&gt;c:\Inetpub\wwwroot\sites\blabla\info.html&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;假设index.html路径是：&lt;code&gt;c:\Inetpub\wwwroot\sites\index.html&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;在info.html加入index.html超链接的代码应该这样写：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;a href = &quot;../index.html&quot;&amp;gt;index.html&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;假设info.html路径是：&lt;code&gt;c:\Inetpub\wwwroot\sites\blabla\info.html&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;假设index.html路径是：&lt;code&gt;c:\Inetpub\wwwroot\index.html&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;在info.html加入index.html超链接的代码应该这样写：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;a href = &quot;../../index.html&quot;&amp;gt;index.html&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;假设info.html路径是：&lt;code&gt;c:\Inetpub\wwwroot\sites\blabla\info.html&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;假设index.html路径是：&lt;code&gt;c:\Inetpub\wwwroot\sites\wowstory\index.html&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;在info.html加入index.html超链接的代码应该这样写：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;a href = &quot;../wowstory/index.html&quot;&amp;gt;index.html&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;id-section-2&quot;&gt;如何表示下级目录&lt;/h3&gt;
+
+&lt;p&gt;引用下级目录的文件，直接写下级目录文件的路径即可。&lt;/p&gt;
+
+&lt;p&gt;假设info.html路径是：&lt;code&gt;c:\Inetpub\wwwroot\sites\blabla\info.html&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;假设index.html路径是：&lt;code&gt;c:\Inetpub\wwwroot\sites\blabla\html\index.html&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;在info.html加入index.html超链接的代码应该这样写：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;a href = &quot;html/index.html&quot;&amp;gt;index.html&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;假设info.html路径是：&lt;code&gt;c:\Inetpub\wwwroot\sites\blabla\info.html&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;假设index.html路径是：&lt;code&gt;c:\Inetpub\wwwroot\sites\blabla\html\tutorials\index.html&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;在info.html加入index.html超链接的代码应该这样写：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;a href = &quot;html/tutorials/index.html&quot;&amp;gt;index.html&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;id-htmlabsolute-path&quot;&gt;HTML绝对路径(Absolute Path)&lt;/h2&gt;
+
+&lt;p&gt;HTML绝对路径(absolute path)指带域名的文件的完整路径。&lt;/p&gt;
+
+&lt;p&gt;假设我有一个域名&lt;a href=&quot;http://flinhong.github.io&quot;&gt;flinhong.github.io&lt;/a&gt;，并使用GitHub Pages，那么这个域名就是网站的根目录。&lt;/p&gt;
+
+&lt;p&gt;假设在根目录下放了一个文件index.html，这个文件的绝对路径就是： &lt;code&gt;http://flinhong.github.io/index.html&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;假设在根目录下建了一个目录叫html_tutorials，然后在该目录下放了一个文件index.html，这个文件的绝对路径就是&lt;code&gt;http://flinhong.github.io/html_tutorials/index.html&lt;/code&gt;。&lt;/p&gt;
+</description>
+        <pubDate>Sat, 26 Sep 2015 00:00:00 +0800</pubDate>
+        <link>http://www.flinhong.com/tips/2015/09/26/relative-path-in-html/</link>
+        <guid isPermaLink="true">http://www.flinhong.com/tips/2015/09/26/relative-path-in-html/</guid>
+        
+        <category>html</category>
+        
+        <category>path</category>
+        
+        
+        <category>tips</category>
         
       </item>
     
