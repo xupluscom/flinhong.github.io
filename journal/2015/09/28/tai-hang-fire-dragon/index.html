@@ -200,6 +200,7 @@ $.get("http://ipinfo.io", function (response) {
                 <li><a href="/categories/">Categories</a></li>
                 <li><a href="/shortcodes/">Shortcodes</a></li>
                 <li><a href="/archieves/">Blog Archieve</a></li>
+                <!-- <li><a href="/posts/">Blog Posts</a></li> -->
             </ul>
         </li>
         <li><a href="/shortcodes/">Shortcodes</a></li>
@@ -237,6 +238,16 @@ $.get("http://ipinfo.io", function (response) {
 <div class="widget">
   <div class="widget_title"><h3>Timeline</h3></div>
   <div class="tb_widget_timeline clearfix">
+    
+      <!-- Article -->
+      <article>
+        <span class="date">01/01/2016</span>
+        <span class="time">Frank Lin</span>
+        <div class="timeline_content">
+          <i class="fa fa-clock-o" jQuery></i>
+          <h3><a href="/journal/2016/01/01/happy-new-year-2016/">新年快乐</a></h3>
+        </div>
+      </article><!-- End Article -->
     
       <!-- Article -->
       <article>
@@ -288,16 +299,6 @@ $.get("http://ipinfo.io", function (response) {
         </div>
       </article><!-- End Article -->
     
-      <!-- Article -->
-      <article>
-        <span class="date">11/23/2015</span>
-        <span class="time">Frank Lin</span>
-        <div class="timeline_content">
-          <i class="fa fa-clock-o" jQuery></i>
-          <h3><a href="/app/2015/11/23/sharex/">我最喜欢的截图软件——ShareX</a></h3>
-        </div>
-      </article><!-- End Article -->
-    
   </div>
 </div><!-- End Timeline widet -->
 
@@ -305,6 +306,27 @@ $.get("http://ipinfo.io", function (response) {
 <div class="widget">
   <div class="widget_title"><h3>Recent posts</h3></div>
   <div class="tb_widget_recent_list clearfix">
+    
+    <!-- Post item -->
+    <div class="item clearfix">
+      <div class="item_thumb">
+        <div class="thumb_icon">
+          <a href="/reading/2016/01/04/the-dumpling-emoji/" jQuery><i class="fa fa-copy"></i></a>
+        </div>
+        
+        <div class="thumb_hover">
+          <a href="/reading/2016/01/04/the-dumpling-emoji/"><img src="http://i66.tinypic.com/k2y1xd.jpg" alt="饺子还没有官方emoji？不过快了"></a>
+        </div>
+        
+      </div>
+      <div class="item_content">
+        <h4><a href="/reading/2016/01/04/the-dumpling-emoji/">饺子还没有官方emoji？不过快了</a></h4>
+        <div class="item_meta clearfix">
+            <span class="meta_date">Jan 4, 2016</span>
+            <span class="meta_author"><a href="/reading/2016/01/04/the-dumpling-emoji/">Frank Lin</a></span>
+        </div>
+      </div>
+    </div><!-- End Post item -->
     
     <!-- Post item -->
     <div class="item clearfix">
@@ -369,27 +391,6 @@ $.get("http://ipinfo.io", function (response) {
       </div>
     </div><!-- End Post item -->
     
-    <!-- Post item -->
-    <div class="item clearfix">
-      <div class="item_thumb">
-        <div class="thumb_icon">
-          <a href="/tips/2015/12/30/duoshuo-css/" jQuery><i class="fa fa-copy"></i></a>
-        </div>
-        
-        <div class="thumb_hover">
-          <a href="/tips/2015/12/30/duoshuo-css/"><img src="http://i68.tinypic.com/2wnbneq.jpg" alt="多说评论框自定义CSS优化"></a>
-        </div>
-        
-      </div>
-      <div class="item_content">
-        <h4><a href="/tips/2015/12/30/duoshuo-css/">多说评论框自定义CSS优化</a></h4>
-        <div class="item_meta clearfix">
-            <span class="meta_date">Dec 30, 2015</span>
-            <span class="meta_author"><a href="/tips/2015/12/30/duoshuo-css/">Frank Lin</a></span>
-        </div>
-      </div>
-    </div><!-- End Post item -->
-    
   </div>
 </div><!-- End Recent posts -->
 
@@ -399,19 +400,19 @@ $.get("http://ipinfo.io", function (response) {
   <div class="tb_widget_categories">
     <ul>
       
-      <li><a href="/categories/#tips">tips</a> (4)</li>
+      <li><a href="/categories/#tips">Tips</a> (4)</li>
       
-      <li><a href="/categories/#design">design</a> (3)</li>
+      <li><a href="/categories/#design">Design</a> (3)</li>
       
-      <li><a href="/categories/#reading">reading</a> (1)</li>
+      <li><a href="/categories/#reading">Reading</a> (2)</li>
       
-      <li><a href="/categories/#journal">journal</a> (3)</li>
+      <li><a href="/categories/#journal">Journal</a> (3)</li>
       
-      <li><a href="/categories/#study">study</a> (3)</li>
+      <li><a href="/categories/#study">Study</a> (3)</li>
       
-      <li><a href="/categories/#app">app</a> (1)</li>
+      <li><a href="/categories/#app">App</a> (1)</li>
       
-      <li><a href="/categories/#media">media</a> (2)</li>
+      <li><a href="/categories/#media">Media</a> (2)</li>
       
     </ul>
   </div>
@@ -856,6 +857,20 @@ ds.charset = 'UTF-8';
     <!-- Post item -->
     <div class="item clearfix">
       <div class="item_thumb clearfix">
+        <a href="/reading/2016/01/04/the-dumpling-emoji/"><img src="http://i66.tinypic.com/k2y1xd.jpg" alt="饺子还没有官方emoji？不过快了" class="visible animated"></a>
+      </div>
+      <div class="item_content">
+        <div class="item_meta clearfix">
+          <span class="meta_date">Jan 4, 2016</span>
+        </div>
+        <h4><a href="/reading/2016/01/04/the-dumpling-emoji/">饺子还没有官方emoji？不过快了</a></h4>
+      </div>
+      <div class="order">&#9812;</div>
+    </div><!-- End Post item -->
+  
+    <!-- Post item -->
+    <div class="item clearfix">
+      <div class="item_thumb clearfix">
         <a href="/media/2016/01/03/Benjamin-Francis-Leftwich-Shine-remixed-by-Kygo/"><img src="/demo/500x500.jpg" alt="Benjamin Francis Leftwich - Shine (Kygo Remix)" class="visible animated"></a>
       </div>
       <div class="item_content">
@@ -877,20 +892,6 @@ ds.charset = 'UTF-8';
           <span class="meta_date">Jan 2, 2016</span>
         </div>
         <h4><a href="/study/2016/01/02/on-becoming-a-better-graduate-students/">怎样当一名研究生，以及给研究生的一些建议</a></h4>
-      </div>
-      <div class="order">&#9812;</div>
-    </div><!-- End Post item -->
-  
-    <!-- Post item -->
-    <div class="item clearfix">
-      <div class="item_thumb clearfix">
-        <a href="/journal/2016/01/01/happy-new-year-2016/"><img src="http://i65.tinypic.com/2rnkjsx.jpg" alt="新年快乐" class="visible animated"></a>
-      </div>
-      <div class="item_content">
-        <div class="item_meta clearfix">
-          <span class="meta_date">Jan 1, 2016</span>
-        </div>
-        <h4><a href="/journal/2016/01/01/happy-new-year-2016/">新年快乐</a></h4>
       </div>
       <div class="order">&#9812;</div>
     </div><!-- End Post item -->
@@ -920,7 +921,7 @@ ds.charset = 'UTF-8';
             <li><a href="/feed.xml">Feeds</a> <i class="fa fa-rss"></i></li>
             <li><a href="/atom.xml">Atom Feeds</a> <i class="fa fa-rss-square"></i></li>
             <li><a href="https://github.com/flinhong">GitHub</a> <i class="fa fa-github-square"></i></li>
-            <li><a href="/archieves/">Blog Archieve</a> <i class="fa fa-archive"></i></li>
+            <li><a href="/posts/">Sitemap for Reader</a> <i class="fa fa-archive"></i></li>
           </ul>
         </div>
       </div>
