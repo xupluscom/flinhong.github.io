@@ -5,15 +5,9 @@
     <description>This personal blog was built with ❤️ by Frank Lin. Thanks to GitHub (GitCafe) and Jekyll for the technical supports.</description>
     <link>http://www.flinhong.com/</link>
     <atom:link href="http://www.flinhong.com/feed.xml" rel="self" type="application/rss+xml" />
-<<<<<<< HEAD
-    <pubDate>Mon, 04 Jan 2016 23:08:43 +0800</pubDate>
-    <lastBuildDate>Mon, 04 Jan 2016 23:08:43 +0800</lastBuildDate>
-    <generator>Jekyll v2.4.0</generator>
-=======
-    <pubDate>Mon, 04 Jan 2016 20:22:34 +0800</pubDate>
-    <lastBuildDate>Mon, 04 Jan 2016 20:22:34 +0800</lastBuildDate>
+    <pubDate>Tue, 05 Jan 2016 11:46:56 +0800</pubDate>
+    <lastBuildDate>Tue, 05 Jan 2016 11:46:56 +0800</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
->>>>>>> origin/master
     
       <item>
         <title>饺子还没有官方emoji？不过快了</title>
