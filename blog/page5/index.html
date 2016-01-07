@@ -2,14 +2,14 @@
 <html>
 <head>
   
-  <title>HTML 相对路径和绝对路径区别分析 - Frank's Blog</title>
+  <title>Blog Index - Frank's Blog</title>
   
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <!-- Post Propertites -->
-  <link rel="canonical" href="http://www.flinhong.com/tips/2015/09/26/relative-path-in-html/">
-  <meta name="description" content="HTML初学者会经常遇到这样一个问题，如何正确引用一个文件。比如，怎样在一个HTML网页中引用另外一个HTML网页作为超链接(hyperlink)？怎样在一个网页中插入一张图片。如果你在引用文件时(如加入超链接，或者插入图片等)，使用了错误的文件路径，就会导致引用失效(无法浏览链接文件，或无法显示插入的图片等)。">
+  <link rel="canonical" href="http://www.flinhong.com/blog/page5/">
+  <meta name="description" content="This personal blog was built with ❤️ by Frank Lin. Thanks to GitHub (GitCafe) and Jekyll for the technical supports.">
   <meta name="author" content="Frank Lin">
 
   <!-- Webmaster tools verification -->
@@ -162,14 +162,14 @@ $.get("http://ipinfo.io", function (response) {
       var screenWidth = jWindow.width();
       var postHeight = $('#post_content').height() + 150;
       var footerHeight = $('#footer').height();
-      if(scrollHeight > 600 && scrollHeight < postHeight && screenWidth > 1200){
-        $('#fixtoc').css({
+      if(scrollHeight > 1200 && screenWidth > 1200){
+        $('#fixed_search').css({
           'position':'fixed',
           'top':'75px',
           'z-index': '0'
         });
       }else{
-        $('#fixtoc').css({
+        $('#fixed_search').css({
           'position':'static'
         });
       }
@@ -182,7 +182,6 @@ $.get("http://ipinfo.io", function (response) {
       jWindow.trigger('scroll');
     });
     </script>
-
     
     <!-- End postion detection -->
 
@@ -501,223 +500,105 @@ ds.charset = 'UTF-8';
           <div class="row"><!--  row -->
             <!-- Main content -->
             <div class="col col_9_of_12">
-              <!-- Post -->
-              <article class="post" id="post_content">
-                <!-- Media -->
-                
-                <div class="entry_media">
-                  <a href="http://i66.tinypic.com/15e921f.png" class="popup_link"><img src="http://i66.tinypic.com/15e921f.png" alt="HTML 相对路径和绝对路径区别分析"></a>
-                </div>
-                
-                
-                
-                <!-- End Media -->
-                <!-- Full meta -->
-                <div class="full_meta clearfix">
-                  <span class="meta_format"><i class="fa fa-file-text"></i></span>
-                  <span class="meta_date">Sep 26, 2015</span>
-                  <span class="meta_author">Frank Lin</span>
-                  
-                  <span class="meta_tags"> <u>html</u> <u>path</u> 
-                  
-                </div><!-- End Full meta -->
-                <!-- Entry content -->
-                <div class="entry_content">
-                  <!-- Entry title -->
-                  <h1 class="entry_title">HTML 相对路径和绝对路径区别分析</h1><!-- End Entry title -->
-                  <p>HTML初学者会经常遇到这样一个问题，如何正确引用一个文件。比如，怎样在一个HTML网页中引用另外一个HTML网页作为超链接(hyperlink)？怎样在一个网页中插入一张图片。如果你在引用文件时(如加入超链接，或者插入图片等)，使用了错误的文件路径，就会导致引用失效(无法浏览链接文件，或无法显示插入的图片等)。</p>
-
-<p>为了避免这些错误，正确地引用文件，我们需要学习一下HTML路径。</p>
-
-<p>HTML有2种路径的写法：相对路径和绝对路径。</p>
-
-<h2 id="id-htmlrelative-path">HTML相对路径(Relative Path)</h2>
-
-<h3 id="id-section">同一个目录的文件引用</h3>
-
-<p>如果源文件和引用文件在同一个目录里，直接写引用文件名即可。</p>
-
-<p>我们现在建一个源文件info.html，在info.html里要引用index.html文件作为超链接。</p>
-
-<p>假设info.html路径是：<code>c:\Inetpub\wwwroot\sites\blabla\info.html</code></p>
-
-<p>假设index.html路径是：<code>c:\Inetpub\wwwroot\sites\blabla\index.html</code></p>
-
-<p>在info.html加入index.html超链接的代码应该这样写：</p>
-
-<pre><code>&lt;a href = "index.html"&gt;index.html&lt;/a&gt;
-</code></pre>
-
-<h3 id="id-section-1">如何表示上级目录</h3>
-
-<p>../表示源文件所在目录的上一级目录，../../表示源文件所在目录的上上级目录，以此类推。</p>
-
-<p>假设info.html路径是：<code>c:\Inetpub\wwwroot\sites\blabla\info.html</code></p>
-
-<p>假设index.html路径是：<code>c:\Inetpub\wwwroot\sites\index.html</code></p>
-
-<p>在info.html加入index.html超链接的代码应该这样写：</p>
-
-<pre><code>&lt;a href = "../index.html"&gt;index.html&lt;/a&gt;
-</code></pre>
-
-<p>假设info.html路径是：<code>c:\Inetpub\wwwroot\sites\blabla\info.html</code></p>
-
-<p>假设index.html路径是：<code>c:\Inetpub\wwwroot\index.html</code></p>
-
-<p>在info.html加入index.html超链接的代码应该这样写：</p>
-
-<pre><code>&lt;a href = "../../index.html"&gt;index.html&lt;/a&gt;
-</code></pre>
-
-<p>假设info.html路径是：<code>c:\Inetpub\wwwroot\sites\blabla\info.html</code></p>
-
-<p>假设index.html路径是：<code>c:\Inetpub\wwwroot\sites\wowstory\index.html</code></p>
-
-<p>在info.html加入index.html超链接的代码应该这样写：</p>
-
-<pre><code>&lt;a href = "../wowstory/index.html"&gt;index.html&lt;/a&gt;
-</code></pre>
-
-<h3 id="id-section-2">如何表示下级目录</h3>
-
-<p>引用下级目录的文件，直接写下级目录文件的路径即可。</p>
-
-<p>假设info.html路径是：<code>c:\Inetpub\wwwroot\sites\blabla\info.html</code></p>
-
-<p>假设index.html路径是：<code>c:\Inetpub\wwwroot\sites\blabla\html\index.html</code></p>
-
-<p>在info.html加入index.html超链接的代码应该这样写：</p>
-
-<pre><code>&lt;a href = "html/index.html"&gt;index.html&lt;/a&gt;
-</code></pre>
-
-<p>假设info.html路径是：<code>c:\Inetpub\wwwroot\sites\blabla\info.html</code></p>
-
-<p>假设index.html路径是：<code>c:\Inetpub\wwwroot\sites\blabla\html\tutorials\index.html</code></p>
-
-<p>在info.html加入index.html超链接的代码应该这样写：</p>
-
-<pre><code>&lt;a href = "html/tutorials/index.html"&gt;index.html&lt;/a&gt;
-</code></pre>
-
-<h2 id="id-htmlabsolute-path">HTML绝对路径(Absolute Path)</h2>
-
-<p>HTML绝对路径(absolute path)指带域名的文件的完整路径。</p>
-
-<p>假设我有一个域名<a href="http://flinhong.github.io">flinhong.github.io</a>，并使用GitHub Pages，那么这个域名就是网站的根目录。</p>
-
-<p>假设在根目录下放了一个文件index.html，这个文件的绝对路径就是： <code>http://flinhong.github.io/index.html</code>。</p>
-
-<p>假设在根目录下建了一个目录叫html_tutorials，然后在该目录下放了一个文件index.html，这个文件的绝对路径就是<code>http://flinhong.github.io/html_tutorials/index.html</code>。</p>
-
-                </div><!-- End entry content -->
-                <div class="bottom_wrapper"><!-- bottom tags and categories -->
-                  <!-- Entry tags -->
-                  <div class="entry_tags">
-                    <span><i class="fa fa-tags"></i> Tags</span>
-                    
-                    
-                    <a href="/tags/#html">html</a>
-                    
-                    <a href="/tags/#path">path</a>
-                    
-                    
-                  </div><!-- End Entry tags -->
-                  <!-- Entry categories -->
-                  <div class="entry_tags categories">
-                    <span><i class="fa fa-folder-open"></i> Category</span>
-                    
-                    <a href="/categories/#Tips">Tips</a>
-                    
-                  </div><!-- End Entry categories -->
-                </div><!-- end bottom tags and categories -->
-              </article><!-- End Post -->
-              <!-- Baidu Share-->
-<div class="widget">
-<div class="widget_title"><h3>Share this post</h3></div>
-<div class="tb_widget_weibo clearfix">
-  <!-- Duoshuo Share Buttons -->
-  <div class="ds-share flat" data-thread-key="flinhong/tips/2015/09/26/relative-path-in-html" data-title="HTML 相对路径和绝对路径区别分析" data-images="http://i66.tinypic.com/15e921f.png" data-content="HTML初学者会经常遇到这样一个问题，如何正确引用一个文件。比如，怎样在一个HTML网页中引用另外一个HTML网页作为超链接(hyperlink)？怎样在一个网页中插入一张图片。如果你在引用文件时(如加入超链接，或者插入图片等)，使用了错误的文件路径，就会导致引用失效(无法浏览链接文件，或无法显示插入的图片等)。" data-url="http://www.flinhong.com/tips/2015/09/26/relative-path-in-html/">
-      <div class="ds-share-inline alignleft">
-        <ul  class="ds-share-icons-16">
-
-          <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
-          <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">新浪微博</a></li>
-          <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
-          <li><a class="ds-twitter" href="javascript:void(0);" data-service="twitter">Twitter</a></li>
-          <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
-          <li><a class="ds-douban" href="javascript:void(0);" data-service="douban">豆瓣网</a></li>
-          <li> <a class="ds-facebook" href="javascript:void(0);" data-service="facebook">Facebook</a></li>
-
-        </ul>
-        <div class="ds-share-icons-more">
-        </div>
+              <!-- Row -->
+<div class="row">
+  
+  <div class="col col_12_of_12">
+    <!-- Layout post -->
+    <div class="layout_post_1">
+      <div class="item_content">
+          <div class="head_title"><h2><a href="/tips/2015/09/16/360wifi2-in-ubuntu/">Install 360 Wifi2 (MT7601U) driver in Ubuntu</a></h2></div>
       </div>
-   </div>
-  <!-- End Duoshuo Share Buttons -->
+      
+      <div class="item_thumb">
+        <div class="thumb_icon">
+          <a href="/tips/2015/09/16/360wifi2-in-ubuntu/" jQuery><i class="fa fa-link"></i></a>
+        </div>
+        <div class="thumb_hover">
+          <a href="/tips/2015/09/16/360wifi2-in-ubuntu/"><img src="http://i63.tinypic.com/zlc7t.png" alt="Install 360 Wifi2 (MT7601U) driver in Ubuntu"></a>
+        </div>
+        <!-- <div class="thumb_meta">
+          <span class="category" jQuery><a href="/blog/">Tips</a></span>
+          <span class="comments"><a href="/tips/2015/09/16/360wifi2-in-ubuntu/">Sep 16, 2015</a></span>
+        </div> -->
+      </div>
+      <!-- Full meta -->
+      <div class="full_meta clearfix">
+        <span class="meta_format"><i class="fa fa-file-text"></i></span>
+        <span class="meta_date">Sep 16, 2015</span>
+        <span class="meta_author">Frank Lin</span>
+        
+        <span class="meta_tags"> <u>360wifi2</u> <u>Ubuntu</u> 
+        
+      </div><!-- End Full meta -->
+      
+      <div class="item_content">
+        <p><p>简单几步，让你的360 Wifi2在Ubuntu中工作。这得感谢GitHub上的大神的辛勤工作。</p></p>
+        <p><!-- Duoshuo Share Buttons -->
+<div class="ds-share flat" data-thread-key="flinhong/tips/2015/09/16/360wifi2-in-ubuntu" data-title="Install 360 Wifi2 (MT7601U) driver in Ubuntu" data-images="http://i63.tinypic.com/zlc7t.png" data-content="简单几步，让你的360 Wifi2在Ubuntu中工作。这得感谢GitHub上的大神的辛勤工作。" data-url="http://www.flinhong.com/tips/2015/09/16/360wifi2-in-ubuntu/">
+    <div class="ds-share-inline alignleft">
+      <ul  class="ds-share-icons-16">
 
-  <!-- Baidu share buttons -->
-  <div class="bdsharebuttonbox alignright" data-tag="share_1">
-  	<a class="bds_tsina" data-cmd="tsina"></a>
-    <a class="bds_qzone" data-cmd="qzone" href="#"></a>
-  	<a class="bds_douban" data-cmd="douban"></a>
-    <a class="bds_weixin" data-cmd="weixin"></a>
-    <a class="bds_fbook" data-cmd="fbook"></a>
-    <a class="bds_twi" data-cmd="twi"></a>
-    <a class="bds_evernotecn" data-cmd="evernotecn"></a>
-  	<a class="bds_more" data-cmd="more">更多</a>
-  	<a class="bds_count" data-cmd="count"></a>
-  </div>
-  <script>
-  	window._bd_share_config = {
-  		common : {
-  			bdText : 'HTML 相对路径和绝对路径区别分析',
-  			bdDesc : 'HTML初学者会经常遇到这样一个问题，如何正确引用一个文件。比如，怎样在一个HTML网页中引用另外一个HTML网页作为超链接(hyperlink)？怎样在一个网页中插入一张图片。如果你在引用文件时(如加入超链接，或者插入图片等)，使用了错误的文件路径，就会导致引用失效(无法浏览链接文件，或无法显示插入的图片等)。',
-  			bdUrl : 'http://www.flinhong.com/tips/2015/09/26/relative-path-in-html/',
-  			bdPic : 'http://i66.tinypic.com/15e921f.png'
-  		},
-  		share : [{
-  			"bdSize" : 16
-  		}]
-  	}
-  	with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
-  </script>
-  <!-- End Baidu Share Buttons -->
-  <hr>
-</div>
+        <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+        <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">&nbsp;</a></li>
+        <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">&nbsp;</a></li>
+        <li><a class="ds-twitter" href="javascript:void(0);" data-service="twitter">&nbsp;</a></li>
+        <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">&nbsp;</a></li>
+        <li><a class="ds-douban" href="javascript:void(0);" data-service="douban">&nbsp;</a></li>
 
-<!-- Page pagination -->
-<div class="tb_widget_weibo clearfix">
-  
-    <a class="alignleft" href="/design/2015/09/25/code-highlighting-in-jekyll/"><i class="fa fa-chevron-left"></i> 上一篇：Jekyll-based 博客中实现代码高亮</a>
-  
-  
-    <a class="alignright" href="/reading/2015/09/26/the-paper-menagerie/">下一篇：The Paper Menagerie - 纸异兽 <i class="fa fa-chevron-right"></i></a>
-  
-</div>
-</div>
-
-              <!-- Comments -->
-<div id="comments">
-  <div class="panel_title">
-    <div>
-      <h4>Comments</h4>
+      </ul>
+      <div class="ds-share-icons-more">
+      </div>
     </div>
+ </div>
+<!-- End Duoshuo Share Buttons -->
+
+        <a class="alignright" href="/tips/2015/09/16/360wifi2-in-ubuntu/"> Continue Reading <i class="fa fa-angle-double-right"></i></a><br><br></p>
+      </div>
+    </div><!-- End Layout post -->
   </div>
+  
+</div>
+<!-- Pagination -->
+<ul class="page-numbers">
+  
+    
+      <li><span class="page-numbers current"><a href="/blog/page4"><i class="fa fa-chevron-left"></i></a></span></li>
+    
 
-  <!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="flinhong/tips/2015/09/26/relative-path-in-html" data-title="HTML 相对路径和绝对路径区别分析" data-url="http://www.flinhong.com/tips/2015/09/26/relative-path-in-html/"></div>
-<!-- 多说评论框 end -->
+    
+      
+      <li><span class="page-numbers current"><a href="/">1</a></span></li>
+      
+    
+      
+      <li><a class="page-numbers" href="/blog/page2">2</a></li>
+      
+    
+      
+      <li><a class="page-numbers" href="/blog/page3">3</a></li>
+      
+    
+      
+      <li><a class="page-numbers" href="/blog/page4">4</a></li>
+      
+    
+      
+      <li><span class="page-numbers current">5</span></li>
+      
+    
 
-
-</div><!-- End Comments -->
+    
+      <li><span class="page-numbers current"><i class="fa fa-chevron-right"></i></span></li>
+    
+  
+</ul><!-- End Pagination -->
+<!-- End Row -->
 
             </div><!-- Main content End -->
             <!-- Sidebar -->
 <div class="col col_3_of_12">
   <!-- Widget Search widget -->
-  <div id="fixed_search">
   <div class="widget">
     <div class="widget_title"><h3>Search widget</h3></div>
     <div class="tb_widget_search">
@@ -727,10 +608,7 @@ ds.charset = 'UTF-8';
       </form>
     </div>
   </div><!-- End Widget Search widget -->
-  </div>
-
-  
-    <!-- Widget Social widget -->
+  <!-- Widget Social widget -->
 <div class="widget" id="socialize">
   <div class="widget_title"><h3>Socialize</h3></div>
   <div class="tb_widget_socialize clearfix">
@@ -753,7 +631,48 @@ ds.charset = 'UTF-8';
   </div>
 </div><!-- End Widget Social widget -->
 
-    <!-- Tags -->
+  <!-- Widget Weibo-->
+<div class="widget">
+<div class="widget_title"><h3>Recent Weibo</h3></div>
+<div class="tb_widget_weibo clearfix">
+<iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=1&ptype=0&speed=0&skin=1&isTitle=0&noborder=1&isWeibo=1&isFans=0&uid=1377982172&verifier=abd54ad9&dpc=1"></iframe>
+</div>
+</div><!-- End Widget Weibo -->
+
+  <!-- Recent Comments -->
+<div class="widget">
+  <div class="widget_title"><h3>Recent Comments</h3></div>
+    <!-- 多说最新评论 start -->
+    	<div class="ds-recent-comments" data-num-items="5" data-show-avatars="1" data-show-time="1" data-show-title="1" data-show-admin="1" data-excerpt-length="70"></div>
+    <!-- 多说最新评论 end -->
+</div>
+<!-- End Recent Comments -->
+
+  <!-- Flickr Banners -->
+<div class="widget">
+  <div class="widget_title"><h3><a href="https://www.flickr.com/photos/frankhlin/">Flickr</a></h3></div>
+  <!-- Fickr Feeds -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script src="/js/jflickrfeed/jflickrfeed.js"></script>
+  <script>
+    jQuery(document).ready(function($){
+      //you can now use $ as your jQuery object.
+      $('#bannerflickr1').jflickrfeed({
+    		limit: 8,
+    		qstrings: {
+    			id: '106195235@N05'
+    		},
+        useTemplate: false,
+    		itemCallback: function(item){
+    			$(this).append("<a href='" + item.image_b + "'><img src='" + item.image_m + "' alt=''/></a>");
+    		}
+    	});
+    });
+  </script>
+  <div id="bannerflickr1" class="tb_widget_banner_125 clearfix"></div>
+</div><!-- End Banners -->
+
+  <!-- Tags -->
 <div class="widget">
   <div class="widget_title"><h3>Tags</h3></div>
   <div class="tb_widget_tagcloud clearfix">
@@ -801,17 +720,6 @@ ds.charset = 'UTF-8';
   </div>
 </div>
 <!-- End Tags -->
-
-    <!-- Toc -->
-<div class="widget">
-  <div id="fixtoc">
-    <div id="toc"></div>
-    <!-- Related to the end of js.html -->
-  </div>
-</div>
-<!-- End Toc -->
-
-  
 
 </div><!-- End Sidebar -->
 
@@ -943,17 +851,6 @@ ds.charset = 'UTF-8';
 <script type="text/javascript" src="/js/init.js"></script>
 <!-- <script id="dsq-count-scr" src="//flinhong.disqus.com/count.js" async></script> -->
 
-
-<script type="text/javascript" src="/js/toc.js"></script>
-<script>
-$(document).ready(function() {
-  // $('#toc').toc();
-  // $('#toc').toc({ noBackToTopLinks: true });
-  $('#toc').toc({ headers: '.entry_content h1, .entry_content h2, .entry_content h3, .entry_content h4, .entry_content h5, .entry_content h6'});
-  // $('#').sticky();
-  // $("#post_side_widget").stick_in_parent();
-});
-</script>
 
 
   </body>

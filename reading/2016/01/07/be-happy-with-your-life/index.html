@@ -2,14 +2,14 @@
 <html>
 <head>
   
-  <title>HTML 相对路径和绝对路径区别分析 - Frank's Blog</title>
+  <title>三毛《什么都快乐》 - Frank's Blog</title>
   
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <!-- Post Propertites -->
-  <link rel="canonical" href="http://www.flinhong.com/tips/2015/09/26/relative-path-in-html/">
-  <meta name="description" content="HTML初学者会经常遇到这样一个问题，如何正确引用一个文件。比如，怎样在一个HTML网页中引用另外一个HTML网页作为超链接(hyperlink)？怎样在一个网页中插入一张图片。如果你在引用文件时(如加入超链接，或者插入图片等)，使用了错误的文件路径，就会导致引用失效(无法浏览链接文件，或无法显示插入的图片等)。">
+  <link rel="canonical" href="http://www.flinhong.com/reading/2016/01/07/be-happy-with-your-life/">
+  <meta name="description" content="最近被自己折磨得不行，睡眠一直没能调整好，该睡觉的时候却不困，该工作时却萎靡不振。都是前段时间自己不断推迟睡眠造成的，身体都快适应那些做夜猫子的时光了。当然，我要改回来！不能把自己生活想得太悲观了，乐观的看看，积极的生活。">
   <meta name="author" content="Frank Lin">
 
   <!-- Webmaster tools verification -->
@@ -162,14 +162,14 @@ $.get("http://ipinfo.io", function (response) {
       var screenWidth = jWindow.width();
       var postHeight = $('#post_content').height() + 150;
       var footerHeight = $('#footer').height();
-      if(scrollHeight > 600 && scrollHeight < postHeight && screenWidth > 1200){
-        $('#fixtoc').css({
+      if(scrollHeight > 1200 && screenWidth > 1200){
+        $('#fixed_search').css({
           'position':'fixed',
           'top':'75px',
           'z-index': '0'
         });
       }else{
-        $('#fixtoc').css({
+        $('#fixed_search').css({
           'position':'static'
         });
       }
@@ -182,7 +182,6 @@ $.get("http://ipinfo.io", function (response) {
       jWindow.trigger('scroll');
     });
     </script>
-
     
     <!-- End postion detection -->
 
@@ -506,7 +505,7 @@ ds.charset = 'UTF-8';
                 <!-- Media -->
                 
                 <div class="entry_media">
-                  <a href="http://i66.tinypic.com/15e921f.png" class="popup_link"><img src="http://i66.tinypic.com/15e921f.png" alt="HTML 相对路径和绝对路径区别分析"></a>
+                  <a href="/images/happy cat.jpg" class="popup_link"><img src="/images/happy cat.jpg" alt="三毛《什么都快乐》"></a>
                 </div>
                 
                 
@@ -515,101 +514,67 @@ ds.charset = 'UTF-8';
                 <!-- Full meta -->
                 <div class="full_meta clearfix">
                   <span class="meta_format"><i class="fa fa-file-text"></i></span>
-                  <span class="meta_date">Sep 26, 2015</span>
+                  <span class="meta_date">Jan 7, 2016</span>
                   <span class="meta_author">Frank Lin</span>
                   
-                  <span class="meta_tags"> <u>html</u> <u>path</u> 
+                  <span class="meta_tags"> <u>reading</u> 
                   
                 </div><!-- End Full meta -->
                 <!-- Entry content -->
                 <div class="entry_content">
                   <!-- Entry title -->
-                  <h1 class="entry_title">HTML 相对路径和绝对路径区别分析</h1><!-- End Entry title -->
-                  <p>HTML初学者会经常遇到这样一个问题，如何正确引用一个文件。比如，怎样在一个HTML网页中引用另外一个HTML网页作为超链接(hyperlink)？怎样在一个网页中插入一张图片。如果你在引用文件时(如加入超链接，或者插入图片等)，使用了错误的文件路径，就会导致引用失效(无法浏览链接文件，或无法显示插入的图片等)。</p>
+                  <h1 class="entry_title">三毛《什么都快乐》</h1><!-- End Entry title -->
+                  <p>最近被自己折磨得不行，睡眠一直没能调整好，该睡觉的时候却不困，该工作时却萎靡不振。都是前段时间自己不断推迟睡眠造成的，身体都快适应那些做夜猫子的时光了。当然，我要改回来！不能把自己生活想得太悲观了，乐观的看看，积极的生活。</p>
 
-<p>为了避免这些错误，正确地引用文件，我们需要学习一下HTML路径。</p>
+<p>下面和大家分享的这篇《什么都快乐》是三毛还快乐的时候留下的，接连20个不亦乐乎，岂能不快。趁现在自己还能无忧无虑快乐的时候，怎么能荒废呢，好好享受不亦乐乎的生活吧！少年……</p>
 
-<p>HTML有2种路径的写法：相对路径和绝对路径。</p>
+<hr />
 
-<h2 id="id-htmlrelative-path">HTML相对路径(Relative Path)</h2>
+<p>清晨起床，喝冷茶一杯，慢打太极拳数分钟，打到一半，忘记如何续下去，从头再打，依然打不下去，干脆停止，深呼吸数十下，然后对自己说：“打好了！”再喝茶一杯，晨课结束，不亦乐乎！</p>
 
-<h3 id="id-section">同一个目录的文件引用</h3>
+<p>静室写毛笔字，磨墨太专心，墨成一缸，而字未写一个，已腰酸背痛。凝视字贴十分钟，对自己说：“已经写过了！”绕室散步数圈，擦笔收纸，不亦乐乎！</p>
 
-<p>如果源文件和引用文件在同一个目录里，直接写引用文件名即可。</p>
+<p>枯坐会议室中，满堂学者高人，神情俨然。偷看手表指针几乎凝固不动，耳旁演讲欲听无心，度日如年。突见案上会议程式数张，悄悄移来折纸船，船好，轻放桌上推来推去玩耍，再看腕表，分针又移两格，不亦乐乎！</p>
 
-<p>我们现在建一个源文件info.html，在info.html里要引用index.html文件作为超链接。</p>
+<p>山居数日，不读报，不听收音机，不拆信，不收信，下山一看，世界没有什么变化，依然如我，不亦乐乎！</p>
 
-<p>假设info.html路径是：<code>c:\Inetpub\wwwroot\sites\blabla\info.html</code></p>
+<p>数日前与朋友约定会面，数日后完全忘却，惊觉时日已过，急打电话道歉，发觉对方亦已忘怀，两不相欠，亦不再约，不亦乐乎！</p>
 
-<p>假设index.html路径是：<code>c:\Inetpub\wwwroot\sites\blabla\index.html</code></p>
+<p>雨夜开车，见公路上一男子淋雨狂奔，煞车请问路人：“上不上来，可以送你？”那人见状狂奔更急，如夜行遇鬼。车远再回头，雨地里那人依旧神情惶然，见车停，那人步子又停并做戒备状，不亦乐乎！</p>
 
-<p>在info.html加入index.html超链接的代码应该这样写：</p>
+<p>四日不见父母手足，回家小聚，时光飞逝，再上山来，惊见孤灯独对，一室寂然，山风摇窗，野狗哭夜，而又不肯再下山去，不亦乐乎！</p>
 
-<pre><code>&lt;a href = "index.html"&gt;index.html&lt;/a&gt;
-</code></pre>
+<p>逛街一整日，购衣不到半件，空手而回。回家看见旧衣，倍觉件件得来不易，而小偷竟连一件也未偷去，心中欢喜。不亦乐乎！</p>
 
-<h3 id="id-section-1">如何表示上级目录</h3>
+<p>夜深人静叩窗声不停，初醒以为灵魂来访，再醒确定是不识灵魂，心中惶然，起床轻轻呼唤，说：“别来了！不认得你。”窗上立即寂然，蒙头再睡，醒来阳光普照，不亦乐乎！</p>
 
-<p>../表示源文件所在目录的上一级目录，../../表示源文件所在目录的上上级目录，以此类推。</p>
+<p>匆忙出门，用力绑鞋带，鞋带断了，丢在墙角。回家来，发觉鞋带可以系辫子，于是再将另一只拉断，得新头绳一付，不亦乐乎！</p>
 
-<p>假设info.html路径是：<code>c:\Inetpub\wwwroot\sites\blabla\info.html</code></p>
+<p>厌友打电话来，喋喋不休，突闻一声铃响，知道此友居然打公用电话，断话之前，对方急说：“我再打来，你接！”电话断，赶紧将话筒搁在桌上，离开很久，不再理会。二十分钟后，放回电话，凝视数秒，厌友已走，不再打来，不亦乐乎！</p>
 
-<p>假设index.html路径是：<code>c:\Inetpub\wwwroot\sites\index.html</code></p>
+<p>上课两小时，学生不提问题，一请二请三请，满室肃然。偷看腕表，只一分钟便将下课，于是笑对学生说：“在大学里，学生对于枯燥的课，常常会逃。现在反过来了，老师对于不发问的学生，也想逃逃课，现在老师逃了，再见！”收拾书籍，大步迈出教室，正好下课铃响，不亦乐乎！</p>
 
-<p>在info.html加入index.html超链接的代码应该这样写：</p>
+<p>黄昏散步山区，见老式红砖房一幢孤立林间，再闻摩托车声自背后羊肠小径而来。主人下车，见陌生人凝视炊烟，不知如何以对，便说：“来呷蓬！”客笑摇头，主人再说：“免客气，来坐，来呷蓬！”陌生客居然一点头，说：“好，麻烦你！”举步做入室状。主人大惊，客始微笑而去，不亦乐乎！</p>
 
-<pre><code>&lt;a href = "../index.html"&gt;index.html&lt;/a&gt;
-</code></pre>
+<p>每日借邻居白狗一同散步，散完将狗送回，不必喂食，不亦乐乎！交稿死期已过，深夜犹看红楼梦。想到“今日事今日毕”格言，看看案头闹钟已指清晨三时半，发觉原来今日刚刚开始，交稿事来日方长，心头舒坦，不亦乐乎！</p>
 
-<p>假设info.html路径是：<code>c:\Inetpub\wwwroot\sites\blabla\info.html</code></p>
+<p>晨起闻钟声，见校方同学行色匆匆赶赴教室，惊觉自己已不再是学生，安然浇花弄草梳头打扫，不亦乐乎！</p>
 
-<p>假设index.html路径是：<code>c:\Inetpub\wwwroot\index.html</code></p>
+<p>每周山居日子断食数日，神智清明。下山回家母亲看不出来，不亦乐乎！</p>
 
-<p>在info.html加入index.html超链接的代码应该这样写：</p>
+<p>求婚者越洋电话深夜打到父母家，恰好接听，答以：“谢谢，不，不能嫁，不要等！”挂完电话蒙头再睡，电话又来，又答，答完心中快乐，静等第三回，再答。又等数小时，而电话不再来，不亦乐乎！</p>
 
-<pre><code>&lt;a href = "../../index.html"&gt;index.html&lt;/a&gt;
-</code></pre>
+<p>有录音带而无录音机，静观音带小匣子，音乐由脑中自然流出来，不必机器，不亦乐乎！</p>
 
-<p>假设info.html路径是：<code>c:\Inetpub\wwwroot\sites\blabla\info.html</code></p>
+<p>回京翻储藏室，见童年时玻璃动物玩具满满一群安然无恙，省视自己已过中年，而手脚俱全，不亦乐乎！</p>
 
-<p>假设index.html路径是：<code>c:\Inetpub\wwwroot\sites\wowstory\index.html</code></p>
+<p>归国定居，得宿舍一间，不置冰箱，不备电视，不装音响，不申请电话。早晨起床，打开水笼头，发觉清水涌流，深夜回室，又见灯火满室，欣喜感激，但觉富甲天下，日日如此，不亦乐乎！</p>
 
-<p>在info.html加入index.html超链接的代码应该这样写：</p>
+<p>■ 全文完</p>
 
-<pre><code>&lt;a href = "../wowstory/index.html"&gt;index.html&lt;/a&gt;
-</code></pre>
+<hr />
 
-<h3 id="id-section-2">如何表示下级目录</h3>
-
-<p>引用下级目录的文件，直接写下级目录文件的路径即可。</p>
-
-<p>假设info.html路径是：<code>c:\Inetpub\wwwroot\sites\blabla\info.html</code></p>
-
-<p>假设index.html路径是：<code>c:\Inetpub\wwwroot\sites\blabla\html\index.html</code></p>
-
-<p>在info.html加入index.html超链接的代码应该这样写：</p>
-
-<pre><code>&lt;a href = "html/index.html"&gt;index.html&lt;/a&gt;
-</code></pre>
-
-<p>假设info.html路径是：<code>c:\Inetpub\wwwroot\sites\blabla\info.html</code></p>
-
-<p>假设index.html路径是：<code>c:\Inetpub\wwwroot\sites\blabla\html\tutorials\index.html</code></p>
-
-<p>在info.html加入index.html超链接的代码应该这样写：</p>
-
-<pre><code>&lt;a href = "html/tutorials/index.html"&gt;index.html&lt;/a&gt;
-</code></pre>
-
-<h2 id="id-htmlabsolute-path">HTML绝对路径(Absolute Path)</h2>
-
-<p>HTML绝对路径(absolute path)指带域名的文件的完整路径。</p>
-
-<p>假设我有一个域名<a href="http://flinhong.github.io">flinhong.github.io</a>，并使用GitHub Pages，那么这个域名就是网站的根目录。</p>
-
-<p>假设在根目录下放了一个文件index.html，这个文件的绝对路径就是： <code>http://flinhong.github.io/index.html</code>。</p>
-
-<p>假设在根目录下建了一个目录叫html_tutorials，然后在该目录下放了一个文件index.html，这个文件的绝对路径就是<code>http://flinhong.github.io/html_tutorials/index.html</code>。</p>
+<p>转自<a href="http://www.douban.com/group/topic/82853293/">豆瓣经典短篇阅读</a>，我最爱的小组哦。</p>
 
                 </div><!-- End entry content -->
                 <div class="bottom_wrapper"><!-- bottom tags and categories -->
@@ -618,9 +583,7 @@ ds.charset = 'UTF-8';
                     <span><i class="fa fa-tags"></i> Tags</span>
                     
                     
-                    <a href="/tags/#html">html</a>
-                    
-                    <a href="/tags/#path">path</a>
+                    <a href="/tags/#reading">reading</a>
                     
                     
                   </div><!-- End Entry tags -->
@@ -628,7 +591,7 @@ ds.charset = 'UTF-8';
                   <div class="entry_tags categories">
                     <span><i class="fa fa-folder-open"></i> Category</span>
                     
-                    <a href="/categories/#Tips">Tips</a>
+                    <a href="/categories/#Reading">Reading</a>
                     
                   </div><!-- End Entry categories -->
                 </div><!-- end bottom tags and categories -->
@@ -638,7 +601,7 @@ ds.charset = 'UTF-8';
 <div class="widget_title"><h3>Share this post</h3></div>
 <div class="tb_widget_weibo clearfix">
   <!-- Duoshuo Share Buttons -->
-  <div class="ds-share flat" data-thread-key="flinhong/tips/2015/09/26/relative-path-in-html" data-title="HTML 相对路径和绝对路径区别分析" data-images="http://i66.tinypic.com/15e921f.png" data-content="HTML初学者会经常遇到这样一个问题，如何正确引用一个文件。比如，怎样在一个HTML网页中引用另外一个HTML网页作为超链接(hyperlink)？怎样在一个网页中插入一张图片。如果你在引用文件时(如加入超链接，或者插入图片等)，使用了错误的文件路径，就会导致引用失效(无法浏览链接文件，或无法显示插入的图片等)。" data-url="http://www.flinhong.com/tips/2015/09/26/relative-path-in-html/">
+  <div class="ds-share flat" data-thread-key="flinhong/reading/2016/01/07/be-happy-with-your-life" data-title="三毛《什么都快乐》" data-images="/images/happy cat.jpg" data-content="最近被自己折磨得不行，睡眠一直没能调整好，该睡觉的时候却不困，该工作时却萎靡不振。都是前段时间自己不断推迟睡眠造成的，身体都快适应那些做夜猫子的时光了。当然，我要改回来！不能把自己生活想得太悲观了，乐观的看看，积极的生活。" data-url="http://www.flinhong.com/reading/2016/01/07/be-happy-with-your-life/">
       <div class="ds-share-inline alignleft">
         <ul  class="ds-share-icons-16">
 
@@ -672,10 +635,10 @@ ds.charset = 'UTF-8';
   <script>
   	window._bd_share_config = {
   		common : {
-  			bdText : 'HTML 相对路径和绝对路径区别分析',
-  			bdDesc : 'HTML初学者会经常遇到这样一个问题，如何正确引用一个文件。比如，怎样在一个HTML网页中引用另外一个HTML网页作为超链接(hyperlink)？怎样在一个网页中插入一张图片。如果你在引用文件时(如加入超链接，或者插入图片等)，使用了错误的文件路径，就会导致引用失效(无法浏览链接文件，或无法显示插入的图片等)。',
-  			bdUrl : 'http://www.flinhong.com/tips/2015/09/26/relative-path-in-html/',
-  			bdPic : 'http://i66.tinypic.com/15e921f.png'
+  			bdText : '三毛《什么都快乐》',
+  			bdDesc : '最近被自己折磨得不行，睡眠一直没能调整好，该睡觉的时候却不困，该工作时却萎靡不振。都是前段时间自己不断推迟睡眠造成的，身体都快适应那些做夜猫子的时光了。当然，我要改回来！不能把自己生活想得太悲观了，乐观的看看，积极的生活。',
+  			bdUrl : 'http://www.flinhong.com/reading/2016/01/07/be-happy-with-your-life/',
+  			bdPic : '/images/happy cat.jpg'
   		},
   		share : [{
   			"bdSize" : 16
@@ -690,10 +653,10 @@ ds.charset = 'UTF-8';
 <!-- Page pagination -->
 <div class="tb_widget_weibo clearfix">
   
-    <a class="alignleft" href="/design/2015/09/25/code-highlighting-in-jekyll/"><i class="fa fa-chevron-left"></i> 上一篇：Jekyll-based 博客中实现代码高亮</a>
+    <a class="alignleft" href="/reading/2016/01/06/chen-huan-sheng-shang-cheng/"><i class="fa fa-chevron-left"></i> 上一篇：高晓声《陈奂生上城》</a>
   
   
-    <a class="alignright" href="/reading/2015/09/26/the-paper-menagerie/">下一篇：The Paper Menagerie - 纸异兽 <i class="fa fa-chevron-right"></i></a>
+    <a class="alignright" href="/tips/2016/01/07/how-to-choose-a-license/">下一篇：如何选择合适的开源许可证？ <i class="fa fa-chevron-right"></i></a>
   
 </div>
 </div>
@@ -707,7 +670,7 @@ ds.charset = 'UTF-8';
   </div>
 
   <!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="flinhong/tips/2015/09/26/relative-path-in-html" data-title="HTML 相对路径和绝对路径区别分析" data-url="http://www.flinhong.com/tips/2015/09/26/relative-path-in-html/"></div>
+	<div class="ds-thread" data-thread-key="flinhong/reading/2016/01/07/be-happy-with-your-life" data-title="三毛《什么都快乐》" data-url="http://www.flinhong.com/reading/2016/01/07/be-happy-with-your-life/"></div>
 <!-- 多说评论框 end -->
 
 
@@ -752,6 +715,30 @@ ds.charset = 'UTF-8';
     </a>
   </div>
 </div><!-- End Widget Social widget -->
+
+    <!-- Flickr Banners -->
+<div class="widget">
+  <div class="widget_title"><h3><a href="https://www.flickr.com/photos/frankhlin/">Flickr</a></h3></div>
+  <!-- Fickr Feeds -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script src="/js/jflickrfeed/jflickrfeed.js"></script>
+  <script>
+    jQuery(document).ready(function($){
+      //you can now use $ as your jQuery object.
+      $('#bannerflickr1').jflickrfeed({
+    		limit: 8,
+    		qstrings: {
+    			id: '106195235@N05'
+    		},
+        useTemplate: false,
+    		itemCallback: function(item){
+    			$(this).append("<a href='" + item.image_b + "'><img src='" + item.image_m + "' alt=''/></a>");
+    		}
+    	});
+    });
+  </script>
+  <div id="bannerflickr1" class="tb_widget_banner_125 clearfix"></div>
+</div><!-- End Banners -->
 
     <!-- Tags -->
 <div class="widget">
@@ -801,15 +788,6 @@ ds.charset = 'UTF-8';
   </div>
 </div>
 <!-- End Tags -->
-
-    <!-- Toc -->
-<div class="widget">
-  <div id="fixtoc">
-    <div id="toc"></div>
-    <!-- Related to the end of js.html -->
-  </div>
-</div>
-<!-- End Toc -->
 
   
 
@@ -943,17 +921,6 @@ ds.charset = 'UTF-8';
 <script type="text/javascript" src="/js/init.js"></script>
 <!-- <script id="dsq-count-scr" src="//flinhong.disqus.com/count.js" async></script> -->
 
-
-<script type="text/javascript" src="/js/toc.js"></script>
-<script>
-$(document).ready(function() {
-  // $('#toc').toc();
-  // $('#toc').toc({ noBackToTopLinks: true });
-  $('#toc').toc({ headers: '.entry_content h1, .entry_content h2, .entry_content h3, .entry_content h4, .entry_content h5, .entry_content h6'});
-  // $('#').sticky();
-  // $("#post_side_widget").stick_in_parent();
-});
-</script>
 
 
   </body>
