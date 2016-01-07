@@ -2,14 +2,14 @@
 <html>
 <head>
   
-  <title>我的豆瓣 - Frank's Blog</title>
+  <title>如何选择合适的开源许可证？ - Frank's Blog</title>
   
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <!-- Post Propertites -->
-  <link rel="canonical" href="http://www.flinhong.com/douban/">
-  <meta name="description" content="This personal blog was built with ❤️ by Frank Lin. Thanks to GitHub (GitCafe) and Jekyll for the technical supports.">
+  <link rel="canonical" href="http://www.flinhong.com/tips/2016/01/07/how-to-choose-a-license/">
+  <meta name="description" content="将项目与代码开源，可以让更多的人与你共享代码，协同合作，让产品质量更高，更加适应社会的需求。然而，这并不代表该项目是可以被随意甚至是滥用的，想要成为真正的开源项目，不是单单把源代码开放在网上即可，必须在释出的项目当中说明，其代码是以某个开源许可证 (Open Source License) 来进行许可，将特定权利赋予给用户的同时，也规范公众的利用行为，让人们正确的享受开源所带来的好处与乐趣。">
   <meta name="author" content="Frank Lin">
 
   <!-- Webmaster tools verification -->
@@ -162,14 +162,14 @@ $.get("http://ipinfo.io", function (response) {
       var screenWidth = jWindow.width();
       var postHeight = $('#post_content').height() + 150;
       var footerHeight = $('#footer').height();
-      if(scrollHeight > 1200 && screenWidth > 1200){
-        $('#fixed_search').css({
+      if(scrollHeight > 600 && scrollHeight < postHeight && screenWidth > 1200){
+        $('#fixtoc').css({
           'position':'fixed',
           'top':'75px',
           'z-index': '0'
         });
       }else{
-        $('#fixed_search').css({
+        $('#fixtoc').css({
           'position':'static'
         });
       }
@@ -182,6 +182,7 @@ $.get("http://ipinfo.io", function (response) {
       jWindow.trigger('scroll');
     });
     </script>
+
     
     <!-- End postion detection -->
 
@@ -500,82 +501,181 @@ ds.charset = 'UTF-8';
           <div class="row"><!--  row -->
             <!-- Main content -->
             <div class="col col_9_of_12">
-              <!-- Panel title -->
-<div class="panel_title">
-  <div>
-    <h4><a id="read_douban">我的豆瓣读书</a></h4>
+              <!-- Post -->
+              <article class="post" id="post_content">
+                <!-- Media -->
+                
+                <div class="entry_media">
+                  <a href="/images/license.png" class="popup_link"><img src="/images/license.png" alt="如何选择合适的开源许可证？"></a>
+                </div>
+                
+                
+                
+                <!-- End Media -->
+                <!-- Full meta -->
+                <div class="full_meta clearfix">
+                  <span class="meta_format"><i class="fa fa-file-text"></i></span>
+                  <span class="meta_date">Jan 7, 2016</span>
+                  <span class="meta_author">Frank Lin</span>
+                  
+                  <span class="meta_tags"> <u>license</u> 
+                  
+                </div><!-- End Full meta -->
+                <!-- Entry content -->
+                <div class="entry_content">
+                  <!-- Entry title -->
+                  <h1 class="entry_title">如何选择合适的开源许可证？</h1><!-- End Entry title -->
+                  <p>将项目与代码开源，可以让更多的人与你共享代码，协同合作，让产品质量更高，更加适应社会的需求。然而，这并不代表该项目是可以被随意甚至是滥用的，想要成为真正的开源项目，不是单单把源代码开放在网上即可，必须在释出的项目当中说明，其代码是以某个开源许可证 (Open Source License) 来进行许可，将特定权利赋予给用户的同时，也规范公众的利用行为，让人们正确的享受开源所带来的好处与乐趣。</p>
+
+<h2 id="id-section">开源许可证是什么</h2>
+
+<p>为了维护作者和贡献者的合法权利，保证这些软件不被一些商业机构或个人窃取，影响软件的发展，开源社区开发出了各种的开源许可协议。许可证是具有法律效应的协议，目前已有超过 70 种被开放源代码促进会 (Open Source Initiative, OSI) 通过，GNU上有个<a href="http://www.gnu.org/licenses/license-list.html">网页</a>，上面记录了几乎所有的开源软件的许可证，有开源的，有商用的，有软件的，有文档的，多得你都不想看了，不过，常见的开源许可协议也就几种——GPL、LGPL、BSD、Apache Licence vesion 2.0、MIT等等。</p>
+
+<h2 id="id-section-1">如何选择开源许可证</h2>
+
+<p>如何在这么多的许可证中选取一个适合自己项目的呢？我们可以通过下面这张图清晰地了解：</p>
+
+<p><img src="/images/free_software_licenses.png" alt="选择开源许可协议" /><br />
+<em>图片来源于阮一峰的博客。</em></p>
+
+<p>具体而言，这几种开源许可证的特点为：</p>
+
+<p><strong>GNU Lesser General Public License (LGPL)</strong></p>
+
+<p>允许商业软件通过类库引用(link)方式使用LGPL类库而不需要开源商业软件的代码，但是如果修改LGPL协议的代码或者衍生，则所有修改的代码，涉及修改部分的额外代码和衍生的代码都必须采用LGPL协议。LGPL不适合以LGPL协议为基础的代码进行二次开发的商业软件，但是商用软件可以采用编译后的类库引用就不需要公开源代码了。采用这个协议的开源软件有：JBoss、FCKeditor、Hibernate。</p>
+
+<p><strong>Mozilla Public License (MPL)</strong></p>
+
+<p>除了接口程序的源代码以 MPL 许可证的形式对外许可外，源代码库中的源代码就可以不用 MPL 许可证的方式强制对外许可。</p>
+
+<p><strong>GNU General Public License (GPL)</strong></p>
+
+<p>可以开源或者免费地使用代码与引用、修改衍生代码，但强制修改后和衍生的代码必须在发布和销售时也必须开放源代码给用户，因此经常与闭源商业软件的商业模式有所冲突。基于这个协议的项目，极大的提高了开源软件的数量。目前用的多的是GPLV1，GPLV2。目前用的多的是GPLV1，GPLV2。</p>
+
+<p><strong>BSD</strong></p>
+
+<p>可以自由的使用，修改源代码，也可以将修改后的代码作为开源或者专有软件再发布，要包含许可协议的声明，但是不可以用开源代码的作者/机构名字和原来产品的名字做市场推广。使用者别太高兴，使用时还必须做到满足三个条件：1）如果再发布的产品中包含源代码，则在源代码中必须带有原来代码中的BSD协议。2）如果再发布的只是二进制类库/软件，则需要在类库/软件的文档和版权声明中包含原来代码中的BSD协议。3）不可以用开源代码的作者/机构名字和原来产品的名字做市场推广。适用BSD协议的开源软件有：nginx、CruiseControl、Redis。</p>
+
+<p><strong>MIT</strong></p>
+
+<p>又称X11协议。MIT与BSD类似，但是比BSD协议更加宽松，是目前最少限制的协议。你必须在你的发行版里包含原许可协议的声明，无论你是以二进制发布的还是以源代码发布的。使用MIT的软件项目有：jquery、Node.js。</p>
+
+<p><strong>Apache Licence</strong></p>
+
+<p>著名的非盈利开源组织Apache基金会采用的协议。该协议鼓励代码共享和尊重原作者的著作权，同样允许代码修改，作为开源或者商业软件再发布。但是也需要满足以下条件：1）需要给代码的用户一份Apache Licence。2）如果你修改了代码，需要再被修改的文件中说明。3）在延伸的代码中（修改和有源代码衍生的代码中）需要带有原来代码中的协议，商标，专利声明和其他原来作者规定需要包含的说明。4）如果再发布的产品中包含一个Notice文件，则在Notice文件中需要带有Apache Licence。你可以在Notice中增加自己的许可，但不可以表现为对Apache Licence构成更改。</p>
+
+<p>另外，<a href="http://choosealicense.com/">http://choosealicense.com/</a>上面也详细介绍了如何选择合适的开源许可协议。值得注意的是，如果你的内容并不是代码，而是你想分享的内容，那么<strong><a href="http://creativecommons.org/choose/">Creative Commons</a></strong>就是你的最佳选择。</p>
+
+<p>参考内容：</p>
+
+<p><a href="http://blog.gitcafe.com/?p=636">http://blog.gitcafe.com/?p=636</a><br />
+<a href="http://www.lanceyan.com/tech/arch/opensource_permission.html">http://www.lanceyan.com/tech/arch/opensource_permission.html</a></p>
+
+                </div><!-- End entry content -->
+                <div class="bottom_wrapper"><!-- bottom tags and categories -->
+                  <!-- Entry tags -->
+                  <div class="entry_tags">
+                    <span><i class="fa fa-tags"></i> Tags</span>
+                    
+                    
+                    <a href="/tags/#license">license</a>
+                    
+                    
+                  </div><!-- End Entry tags -->
+                  <!-- Entry categories -->
+                  <div class="entry_tags categories">
+                    <span><i class="fa fa-folder-open"></i> Category</span>
+                    
+                    <a href="/categories/#Tips">Tips</a>
+                    
+                  </div><!-- End Entry categories -->
+                </div><!-- end bottom tags and categories -->
+              </article><!-- End Post -->
+              <!-- Baidu Share-->
+<div class="widget">
+<div class="widget_title"><h3>Share this post</h3></div>
+<div class="tb_widget_weibo clearfix">
+  <!-- Duoshuo Share Buttons -->
+  <div class="ds-share flat" data-thread-key="flinhong/tips/2016/01/07/how-to-choose-a-license" data-title="如何选择合适的开源许可证？" data-images="/images/license.png" data-content="将项目与代码开源，可以让更多的人与你共享代码，协同合作，让产品质量更高，更加适应社会的需求。然而，这并不代表该项目是可以被随意甚至是滥用的，想要成为真正的开源项目，不是单单把源代码开放在网上即可，必须在释出的项目当中说明，其代码是以某个开源许可证 (Open Source License) 来进行许可，将特定权利赋予给用户的同时，也规范公众的利用行为，让人们正确的享受开源所带来的好处与乐趣。" data-url="http://www.flinhong.com/tips/2016/01/07/how-to-choose-a-license/">
+      <div class="ds-share-inline alignleft">
+        <ul  class="ds-share-icons-16">
+
+          <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+          <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">新浪微博</a></li>
+          <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+          <li><a class="ds-twitter" href="javascript:void(0);" data-service="twitter">Twitter</a></li>
+          <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+          <li><a class="ds-douban" href="javascript:void(0);" data-service="douban">豆瓣网</a></li>
+          <li> <a class="ds-facebook" href="javascript:void(0);" data-service="facebook">Facebook</a></li>
+
+        </ul>
+        <div class="ds-share-icons-more">
+        </div>
+      </div>
+   </div>
+  <!-- End Duoshuo Share Buttons -->
+
+  <!-- Baidu share buttons -->
+  <div class="bdsharebuttonbox alignright" data-tag="share_1">
+  	<a class="bds_tsina" data-cmd="tsina"></a>
+    <a class="bds_qzone" data-cmd="qzone" href="#"></a>
+  	<a class="bds_douban" data-cmd="douban"></a>
+    <a class="bds_weixin" data-cmd="weixin"></a>
+    <a class="bds_fbook" data-cmd="fbook"></a>
+    <a class="bds_twi" data-cmd="twi"></a>
+    <a class="bds_evernotecn" data-cmd="evernotecn"></a>
+  	<a class="bds_more" data-cmd="more">更多</a>
+  	<a class="bds_count" data-cmd="count"></a>
   </div>
-  <span>多看书，自然是不差的</span>
-</div><!-- End Panel title -->
-
-<div class="row">
-  <div class="col col_12_of_12">
-    <!-- List layout -->
-    <div class="list_posts_1">
-
-        <!-- Post item -->
-        <div class="item clearfix">
-          <div class="item_content aligncenter">
-            <script type="text/javascript" src="http://www.douban.com/service/badge/flinhong/?selection=random&amp;picsize=medium&amp;hideself=on&amp;show=collection&amp;n=21&amp;hidelogo=on&amp;cat=book&amp;columns=7"></script>
-          </div>
-        </div><!-- End Post item -->
-
-    </div><!-- End List layout -->
-  </div>
+  <script>
+  	window._bd_share_config = {
+  		common : {
+  			bdText : '如何选择合适的开源许可证？',
+  			bdDesc : '将项目与代码开源，可以让更多的人与你共享代码，协同合作，让产品质量更高，更加适应社会的需求。然而，这并不代表该项目是可以被随意甚至是滥用的，想要成为真正的开源项目，不是单单把源代码开放在网上即可，必须在释出的项目当中说明，其代码是以某个开源许可证 (Open Source License) 来进行许可，将特定权利赋予给用户的同时，也规范公众的利用行为，让人们正确的享受开源所带来的好处与乐趣。',
+  			bdUrl : 'http://www.flinhong.com/tips/2016/01/07/how-to-choose-a-license/',
+  			bdPic : '/images/license.png'
+  		},
+  		share : [{
+  			"bdSize" : 16
+  		}]
+  	}
+  	with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+  </script>
+  <!-- End Baidu Share Buttons -->
+  <hr>
 </div>
 
-<!-- Panel title -->
-<div class="panel_title">
-  <div>
-    <h4><a id="read_douban">我的豆瓣音乐</a></h4>
-  </div>
-  <span>听歌，那是想当然的事</span>
-</div><!-- End Panel title -->
-
-<div class="row">
-  <div class="col col_12_of_12">
-    <!-- List layout -->
-    <div class="list_posts_1">
-
-        <!-- Post item -->
-        <div class="item clearfix">
-          <div class="item_content aligncenter">
-            <script type="text/javascript" src="http://www.douban.com/service/badge/flinhong/?selection=random&amp;picsize=medium&amp;hideself=on&amp;show=collection&amp;n=21&amp;hidelogo=on&amp;cat=music&amp;columns=7"></script>
-          </div>
-        </div><!-- End Post item -->
-
-    </div><!-- End List layout -->
-  </div>
+<!-- Page pagination -->
+<div class="tb_widget_weibo clearfix">
+  
+    <a class="alignleft" href="/reading/2016/01/06/chen-huan-sheng-shang-cheng/"><i class="fa fa-chevron-left"></i> 上一篇：高晓声《陈奂生上城》</a>
+  
+  
+    <a class="alignright" href="/archieves/">Blog Archieves <i class="fa fa-chevron-right"></i></a>
+  
+</div>
 </div>
 
-<!-- Panel title -->
-<div class="panel_title">
-  <div>
-    <h4><a id="read_douban">我的豆瓣电影</a></h4>
+              <!-- Comments -->
+<div id="comments">
+  <div class="panel_title">
+    <div>
+      <h4>Comments</h4>
+    </div>
   </div>
-  <span>没事看电影，文艺文艺</span>
-</div><!-- End Panel title -->
 
-<div class="row">
-  <div class="col col_12_of_12">
-    <!-- List layout -->
-    <div class="list_posts_1">
+  <!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="flinhong/tips/2016/01/07/how-to-choose-a-license" data-title="如何选择合适的开源许可证？" data-url="http://www.flinhong.com/tips/2016/01/07/how-to-choose-a-license/"></div>
+<!-- 多说评论框 end -->
 
-        <!-- Post item -->
-        <div class="item clearfix">
-          <div class="item_content aligncenter">
-            <script type="text/javascript" src="http://www.douban.com/service/badge/flinhong/?selection=random&amp;picsize=medium&amp;show=collection&amp;n=21&amp;cat=movie&amp;columns=7"></script>
-          </div>
-        </div><!-- End Post item -->
 
-    </div><!-- End List layout -->
-  </div>
-</div>
+</div><!-- End Comments -->
 
             </div><!-- Main content End -->
             <!-- Sidebar -->
 <div class="col col_3_of_12">
   <!-- Widget Search widget -->
+  <div id="fixed_search">
   <div class="widget">
     <div class="widget_title"><h3>Search widget</h3></div>
     <div class="tb_widget_search">
@@ -585,7 +685,10 @@ ds.charset = 'UTF-8';
       </form>
     </div>
   </div><!-- End Widget Search widget -->
-  <!-- Widget Social widget -->
+  </div>
+
+  
+    <!-- Widget Social widget -->
 <div class="widget" id="socialize">
   <div class="widget_title"><h3>Socialize</h3></div>
   <div class="tb_widget_socialize clearfix">
@@ -608,48 +711,7 @@ ds.charset = 'UTF-8';
   </div>
 </div><!-- End Widget Social widget -->
 
-  <!-- Widget Weibo-->
-<div class="widget">
-<div class="widget_title"><h3>Recent Weibo</h3></div>
-<div class="tb_widget_weibo clearfix">
-<iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=1&ptype=0&speed=0&skin=1&isTitle=0&noborder=1&isWeibo=1&isFans=0&uid=1377982172&verifier=abd54ad9&dpc=1"></iframe>
-</div>
-</div><!-- End Widget Weibo -->
-
-  <!-- Recent Comments -->
-<div class="widget">
-  <div class="widget_title"><h3>Recent Comments</h3></div>
-    <!-- 多说最新评论 start -->
-    	<div class="ds-recent-comments" data-num-items="5" data-show-avatars="1" data-show-time="1" data-show-title="1" data-show-admin="1" data-excerpt-length="70"></div>
-    <!-- 多说最新评论 end -->
-</div>
-<!-- End Recent Comments -->
-
-  <!-- Flickr Banners -->
-<div class="widget">
-  <div class="widget_title"><h3><a href="https://www.flickr.com/photos/frankhlin/">Flickr</a></h3></div>
-  <!-- Fickr Feeds -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-  <script src="/js/jflickrfeed/jflickrfeed.js"></script>
-  <script>
-    jQuery(document).ready(function($){
-      //you can now use $ as your jQuery object.
-      $('#bannerflickr1').jflickrfeed({
-    		limit: 8,
-    		qstrings: {
-    			id: '106195235@N05'
-    		},
-        useTemplate: false,
-    		itemCallback: function(item){
-    			$(this).append("<a href='" + item.image_b + "'><img src='" + item.image_m + "' alt=''/></a>");
-    		}
-    	});
-    });
-  </script>
-  <div id="bannerflickr1" class="tb_widget_banner_125 clearfix"></div>
-</div><!-- End Banners -->
-
-  <!-- Tags -->
+    <!-- Tags -->
 <div class="widget">
   <div class="widget_title"><h3>Tags</h3></div>
   <div class="tb_widget_tagcloud clearfix">
@@ -697,6 +759,17 @@ ds.charset = 'UTF-8';
   </div>
 </div>
 <!-- End Tags -->
+
+    <!-- Toc -->
+<div class="widget">
+  <div id="fixtoc">
+    <div id="toc"></div>
+    <!-- Related to the end of js.html -->
+  </div>
+</div>
+<!-- End Toc -->
+
+  
 
 </div><!-- End Sidebar -->
 
@@ -828,6 +901,17 @@ ds.charset = 'UTF-8';
 <script type="text/javascript" src="/js/init.js"></script>
 <!-- <script id="dsq-count-scr" src="//flinhong.disqus.com/count.js" async></script> -->
 
+
+<script type="text/javascript" src="/js/toc.js"></script>
+<script>
+$(document).ready(function() {
+  // $('#toc').toc();
+  // $('#toc').toc({ noBackToTopLinks: true });
+  $('#toc').toc({ headers: '.entry_content h1, .entry_content h2, .entry_content h3, .entry_content h4, .entry_content h5, .entry_content h6'});
+  // $('#').sticky();
+  // $("#post_side_widget").stick_in_parent();
+});
+</script>
 
 
   </body>
